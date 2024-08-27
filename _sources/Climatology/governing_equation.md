@@ -186,9 +186,8 @@ where the first term on the right hand side is so-called reduced gravity. An alt
 :::
 
 
-The weak temperature gradient over the 
+## Tropical Main Energy Balance
+The weak temperature gradient derived in previous section brought many benefits. The first one is it provides strong constraint for vertical motion structure. Let's start from the clear sky energy balance. 
 
 
-test
-
-
+In the clear sky, if we assume the incomping SW radiation has 100 units, about 30$\%$ is reflected back to space (the averaged albedo). For the rest, the atmosphere is nearly transparent to the SW, thus most of them will be absorbed by the surface. (in the middle, there are also ozone and some scattered cloud which absorb $\sim$23$\%$ SW, thus a total of 46$\%$ directly goes into the surface). However, the surface emitted about 115$\%$ units of LW radiation to the space. Thus, there is net radiative cooling in the surface over the clear-sky region. This net cooling 
