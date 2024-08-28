@@ -132,7 +132,7 @@ Now consider a hydrostatic equation at low latitude, we will take a further step
 ```{math}
 :label: scaling_6
 \begin{align}
-(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla_h)\mathbf{u}+w\frac{\partial}{\partial z}+\mathbf{f}\times \mathbf{u} &= -\frac{1}{\rho}\nabla_h p \\
+(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla_h)\mathbf{u}+w\frac{\partial}{\partial z}\mathbf{u}+\mathbf{f}\times \mathbf{u} &= -\frac{1}{\rho}\nabla_h p \\
 0 &= -\frac{1}{\rho}\frac{\partial p}{\partial z}-g \\
 (\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla_h)\rho +\rho\nabla_h \cdot \mathbf{u} +\frac{\partial}{\partial z} (\rho w) &= 0 \\
 (\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla_h) \mathrm{ln}\theta + w \frac{\partial }{\partial z} \mathrm{ln}\theta &= \frac{Q}{c_p T}
@@ -221,6 +221,6 @@ w \frac{N^2}{g} \approx \frac{Q}{C_p T} \sim -0.5 \text{cm/s}
 
 It suggests the radiative cooling over the clear sky will induce the slow downward motion.
 
-As for the momentum equation, 
+As for the vorticity equation in the tropics, we can take $\nabla \times$ for the first equation of {eq}`scaling_6`
 
 
