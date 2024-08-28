@@ -189,11 +189,16 @@ where the first term on the right hand side is so-called reduced gravity. An alt
 ## Tropical Main Energy Balance
 The weak temperature gradient derived in previous section brought many benefits. The first one is it provides strong constraint for vertical motion structure. Let's start from the clear sky energy balance. 
 
-In the clear sky, if we assume the incomping SW radiation has 100 units, about 30$\%$ is reflected back to space (the averaged albedo). For the rest, the atmosphere is nearly transparent to the SW, thus most of them will be absorbed by the surface. (in the middle, there are also ozone and some scattered cloud which absorb $\sim$23$\%$ SW, thus a total of 46$\%$ directly goes into the surface). However, the surface emitted about 115$\%$ units of LW radiation to the space. Thus, there is net radiative cooling (with a unit of 69) in the surface over the clear-sky region. This net cooling should be balanced by other processes in addition to the SW. Other candidates include (1) downward LW from cloud and atmosphere, (2) surface sensible heat and latent heat. 
+In the clear sky, if we assume the incomping SW radiation has 100 units, about 30$\%$ is reflected back to space (the averaged albedo). For the rest, the atmosphere is nearly transparent to the SW, thus most of them will be absorbed by the surface. (in the middle, there are also ozone and some scattered cloud which absorb $\sim$23$\%$ SW, thus a total of 46$\%$ directly goes into the surface). However, the surface emitted about 115$\%$ units of LW radiation to the space (but 100 returns back to the surface). Thus, there is net radiative cooling (with a unit of 31) in the surface over the clear-sky region. This net cooling should be balanced by other processes in addition to the SW. Other candidates include (1) surface sensible heat and (2) latent heat. 
+
 
 ```{figure} ../tropical-dynamics-figures/radiative_balance.png
 ---
 name: FIG2-3
 ---
-The global radiative balance maps
+The global radiative balance maps (From Lidzen 1990)
 ```
+
+One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
+
+
