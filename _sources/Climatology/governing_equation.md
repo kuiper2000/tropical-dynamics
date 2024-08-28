@@ -233,3 +233,15 @@ As for the vorticity equation in the tropics, we can take $\nabla \times$ for th
 ```
 
 Again through scale analysis (everything scaled by term A), we have $A\sim 1$, $B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}$, $C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}$ $D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}$, $E\sim\frac{F^2}{R_0^2}$
+
+From the scaling above, we can see that the main balance of momentum (angular momentum) is 
+
+
+```{math}
+:label: vorticity_equation2
+\begin{align}
+\text{Tropics} & \frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = 0\\
+\text{Extratropics} & \frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = (\zeta+f)\nabla\cdot \mathbf{u}\\
+
+\end{align}
+```
