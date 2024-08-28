@@ -242,6 +242,5 @@ From the scaling above, we can see that the main balance of momentum (angular mo
 \begin{align}
 \text{Tropics} & \frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = 0\\
 \text{Extratropics} & \frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = (\zeta+f)\nabla\cdot \mathbf{u}\\
-
 \end{align}
 ```
