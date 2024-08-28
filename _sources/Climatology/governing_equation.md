@@ -199,7 +199,7 @@ name: FIG2-3
 The global radiative balance maps (From Lidzen 1990)
 ```
 
-One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
+One can estimate the net radiative cooling rate of the atmosphere using {ref}`FIG2-3`.
 
 ```{math}
 :label: radiative_balance1
@@ -209,5 +209,15 @@ One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
 \end{align}
 ```
 
-While the vale of is $-0.9$ the averaged column-cooling rate, it does vary from location to location. For example, for the latitude (0-30N), the value is around $-1.2K/day$, and higher latitude is around $-0.57K/day$.  
+While the vale of is $-0.9$ the averaged column-cooling rate, it does vary from location to location. For example, for the latitude (0-30N), the value is around $-1.2K/day$, and higher latitude is around $-0.57K/day$. 
+
+Given the weak temperature gradient over the tropics, the thermodynamics equation can be written as 
+
+
+```{math}
+:label: thermodynamics
+w \frac{N^2}{g} \approx \frac{Q}{C_p T}
+```
+
+
 
