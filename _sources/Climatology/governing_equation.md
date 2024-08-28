@@ -226,6 +226,6 @@ As for the vorticity equation in the tropics, we can take $\nabla \times$ for th
 
 ```{math}
 :label: vorticity_equation
-(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta+ [ (\zeta+f)\nabla\cdot \mathbf{u} + w\frac{\partial \zeta}{\partial z} + \nabla w \times \frac{\partial \mathbf{u}}{\partial z}]+\mathbf{u}\cdot\nabla f + f\nabla \cdot \mathbf{u} = \frac{1}{\rho^2}\nabla\rho\times\nabla\p
+\underbrace{(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta}_{A}+ [ (\zeta+f)\nabla\cdot \mathbf{u} + w\frac{\partial \zeta}{\partial z} + \nabla w \times \frac{\partial \mathbf{u}}{\partial z}]+\mathbf{u}\cdot\nabla f + f\nabla \cdot \mathbf{u} = \frac{1}{\rho^2}\nabla\rho\times\nabla p
 ```
 
