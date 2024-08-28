@@ -221,6 +221,11 @@ w \frac{N^2}{g} \approx \frac{Q}{C_p T} \sim -0.5 \text{cm/s}
 
 It suggests the radiative cooling over the clear sky will induce the slow downward motion.
 
-As for the vorticity equation in the tropics, we can take $\nabla \times$ for the first equation of {eq}`scaling_6`
+As for the vorticity equation in the tropics, we can take $\nabla \times$ for the first equation of {eq}`scaling_6`. We have 
 
+
+```{math}
+:label: vorticity_equation
+(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta
+```
 
