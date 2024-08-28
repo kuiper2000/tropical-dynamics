@@ -209,4 +209,5 @@ One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
 \end{align}
 ```
 
+While the vale of is $-0.9$ the averaged column-cooling rate, it does vary from location to location. For example, for the latitude (0-30N), the value is around $-1.2K/day$, and higher latitude is around $-0.57K/day$.  
 
