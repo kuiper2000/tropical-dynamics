@@ -201,4 +201,9 @@ The global radiative balance maps (From Lidzen 1990)
 
 One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
 
+```{math}
+:label: radiative_balance1
+\textrm{Cooling rate} = \frac{-0.31 \times \text{cross-section} \times SW_{in} \times \text{Hr/day}\times \text{second/Hr}}{\text{Specific Heat}\times \text{Column Mass}}
+```
+
 
