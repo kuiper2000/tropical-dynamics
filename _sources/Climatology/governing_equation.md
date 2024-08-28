@@ -221,6 +221,9 @@ w \frac{N^2}{g} \approx \frac{Q}{C_p T} \sim -0.5 \text{cm/s}
 
 It suggests the radiative cooling over the clear sky will induce the slow downward motion.
 
+
+## Tropical Momentum Balance 
+
 As for the vorticity equation in the tropics, we can take $\nabla \times$ for the first equation of {eq}`scaling_6`. We have 
 
 
@@ -229,3 +232,4 @@ As for the vorticity equation in the tropics, we can take $\nabla \times$ for th
 \underbrace{(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta}_{A}+ \underbrace{[ \zeta\nabla\cdot \mathbf{u} + w\frac{\partial \zeta}{\partial z} + \nabla w \times \frac{\partial \mathbf{u}}{\partial z}]}_{B}+\underbrace{\mathbf{u}\cdot\nabla f}_{C} + \underbrace{f\nabla \cdot \mathbf{u}}_{D} = \underbrace{\frac{1}{\rho^2}\nabla\rho\times\nabla p}_{E}
 ```
 
+Again through scale analysis (everything scaled by term A), we have $A\sim 1$, $B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}$, $C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}$ $D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}$, $E\sim\frac{F^2}{R_0^2}$
