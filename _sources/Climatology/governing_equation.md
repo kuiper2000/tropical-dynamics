@@ -216,8 +216,10 @@ Given the weak temperature gradient over the tropics, the thermodynamics equatio
 
 ```{math}
 :label: thermodynamics
-w \frac{N^2}{g} \approx \frac{Q}{C_p T}
+w \frac{N^2}{g} \approx \frac{Q}{C_p T} \sim -0.5 \text{cm/s}
 ```
+
+It suggests the radiative cooling over the clear sky will induce the slow downward motion. 
 
 
 
