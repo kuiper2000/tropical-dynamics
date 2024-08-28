@@ -203,7 +203,10 @@ One can estimate the net radiative cooling rate using {ref}`FIG2-3`.
 
 ```{math}
 :label: radiative_balance1
-\textrm{Cooling rate} = \frac{-0.31 \times \text{cross-section} \times SW_{in} \times \text{Hr/day}\times \text{second/Hr}}{\text{Specific Heat}\times \text{Column Mass}}
+\begin{align}
+\textrm{Cooling rate} & = \frac{-0.31 \times \text{cross-section} \times SW_{in} \times \text{Hr/day}\times \text{second/Hr}}{\text{Specific Heat}\times \text{Column Mass}} \\
+& = \frac{-0.31 \times 0.25 \times 1360\text{W/m^2} \times 24\text{Hr/day}\times 3600\text{second/Hr}}{1004\text{Specific Heat}\times 1.04*10^4\text{Column Mass}} = -0.9\text{K/day}
+\end{align}
 ```
 
 
