@@ -303,6 +303,6 @@ q_s(T) & \approx \frac{0.622 e_s}{p-0.384e_s}
 \end{align}
 ```
 
-where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim Lw\frac{\partial q}{\partial z}$ (this assumption can lead to a few problem which will be discussed more in the section of MJO). If we implement the second assumption, "fixed relative humidity" then the aformentioned relationship can be translated into $Q\sim Lw\frac{\partial q_s}{\partial z}\time \text{RH}$. This provides us some strong constraint on the projected change of tropical hydrological cycle.  
+where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim Lw\frac{\partial q}{\partial z}$ (this assumption can lead to a few problem which will be discussed more in the section of MJO). If we implement the second assumption, "fixed relative humidity" then the aformentioned relationship can be translated into $Q\sim Lw\frac{\partial q_s}{\partial z}\times \text{RH}$. This provides us some strong constraint on the projected change of tropical hydrological cycle.  
 
 
