@@ -268,4 +268,4 @@ One last useful scaling is Clausius–Clapeyron equation or so-called C-C equati
 e_s(T) = e_0 \mathrm{exp}^{1/273.15-1/T}
 ```
 
-where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. 
+where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim -Lw\frac{\partial q}{\partial z}$.
