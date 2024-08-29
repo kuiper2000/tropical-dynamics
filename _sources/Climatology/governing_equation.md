@@ -64,13 +64,16 @@ where
 ::: -->
 
 ### Hydrostatic Assumption
-The second assumption introduced here is the hydrostatic approximation, which is a robust assumption at scales larger than $\sim $20km. To see how it works, we first rewrite the third equation of {eq}`primitive2`. 
+The second assumption introduced here is the hydrostatic approximation, which is a robust assumption at scales larger than $\sim $20km. From atmospheric dynamics, we already it works for the mean state, but here we will show you it also works for the perturbation. To see how it works, we first rewrite the third equation of {eq}`primitive2`. Let $p = p_0(z)+p'(z)$ and $\rho = \rho_0(z)+\rho'(z)$
+
+
+
 
 ```{math}
 :label: hydrostatic
 \underbrace{\frac{Dw}{Dt}}_{\frac{W}{\tau}}+ \underbrace{\frac{1}{\rho}\frac{\partial p}{\partial z}}_{\frac{\delta p}{\rho D}} - \underbrace{\sigma}_{\Sigma} = \underbrace{\frac{u^2+v^2}{a}}_{\frac{U^2}{a}}+\underbrace{2\Omega u \mathrm{cos}(\phi)}_{2\Omega U}
 ```
-$\rho = -g \frac{\rho-\rho_0(z)}{\rho}$ represents the reduced gravity, where $\rho_0(z)$ corresponds to the portion of the pressure gradient force that is balanced by gravity. Consequently, vertical acceleration occurs when there is a slight imbalance, specifically when $\rho-\rho_0(z)$ is nonzero. The variables in {eq}`hydrostatic` can be substituted with their characteristic scales. (the underbrace of {eq}`hydrostatic`). 
+$\sigma = -g \frac{\rho-\rho_0(z)}{\rho}$ represents the reduced gravity, where $\rho_0(z)$ corresponds to the portion of the pressure gradient force that is balanced by gravity. Consequently, vertical acceleration occurs when there is a slight imbalance, specifically when $\rho-\rho_0(z)$ is nonzero. The variables in {eq}`hydrostatic` can be substituted with their characteristic scales. (the underbrace of {eq}`hydrostatic`). 
 
 For value of $\delta p \sim 10^2$hPa (pressure deviate from the hydrostatic balance, not the actual pressure) over the troposphere depth (20km), $\frac{\delta p}{\rho D}\sim 10^2 \text{hPa}/(1 \frac{\text{kg}}{\text{ms}}\cdot2\cdot10^4 \text{m})\sim 5\times 10^{-2}m\cdot s^{-1}$. Also, $U \sim 10m\cdot s^{-1}$, $\Omega \sim 10^{-5} s^{-1}$ and $a\sim 10^6$. $\Sigma$ has an order aorund $10^{-2}$ (gravity is reduced to one hundredth). The last two terms are relatively small and negligible. Thus, the only question remains whether $\frac{Dw}{Dt}$ is small enough to be omitted?
 
@@ -245,4 +248,9 @@ From the scaling above, we can see that the main balance of momentum (angular mo
 \end{align}
 ```
 
-This is a very important scaling. It implies that away from the region with significant vertical motion ($Ri$ is small), the flow is nearly barotropic (vorticity/angular momentum is conserved). The change in vorticity or momentum can only comes from barotropic instability or lateral forcing. 
+This is a very important scaling. It implies that away from the region with significant vertical motion ($Ri$ is small), the flow is nearly barotropic (vorticity/angular momentum is conserved) i.e., flow over different vertical levels are independent from each other! 
+
+
+To summary what we learn in this section: 
+According to the scaling above, we know 
+
