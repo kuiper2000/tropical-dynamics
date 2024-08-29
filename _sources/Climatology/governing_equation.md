@@ -267,7 +267,7 @@ One might wonder if the tropical atmosphere is nearly barotropic. Then where the
 ```{math}
 :label: tropical_energy_conversion
 \begin{align}
-& $w\frac{N^2}{g}=\frac{Q}{c_p T}$ \\
+& w\frac{N^2}{g}=\frac{Q}{c_p T} \\
 \rightarrow & <w'T'> \approx g<Q'T'>/(N^2 c_p T) 
 \end{align}
 ```
@@ -305,4 +305,4 @@ q_s(T) & \approx \frac{0.622 e_s}{p-0.384e_s}
 
 where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim Lw\frac{\partial q}{\partial z}$ (this assumption can lead to a few problem which will be discussed more in the section of MJO). If we implement the second assumption, "fixed relative humidity" then the aformentioned relationship can be translated into $Q\sim Lw\frac{\partial q_s}{\partial z}\times \text{RH}$. This provides us some strong constraint on the projected change of tropical hydrological cycle.  
 
-
+More details will be provided in the last chapter of this class. 
