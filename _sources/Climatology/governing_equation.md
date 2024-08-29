@@ -259,6 +259,21 @@ According to the scaling above, we know
 
 The last point is so-called quasi-equilibrium. The change in diabatic forcing is always balanced by the vertical motion. Through mass continuity, we also know the connection between vertical motion and horizontal wind and to solve the entire circulation pattern with given forcing. We will cover more about this topic in the week of tropical wave.
 
+## Cumulus Ensemble 
+
+One might wonder if the tropical atmosphere is nearly barotropic. Then where the kinetic comes from? To know how the energy is converted, we start from $w\frac{N^2}{g}=\frac{Q}{c_p T}$  
+
+
+```{math}
+:label: tropical_energy_conversion
+\begin{align}
+& $w\frac{N^2}{g}=\frac{Q}{c_p T}$ \\
+\righarrow & <w'T'> \approx g<Q'T'>/(N^2 c_p T) 
+\end{align}
+```
+
+Different from extratropics where the extraction of mena energy happens in $<v'T'>\sim-\frac{\partial T}{\partial y}$, we have $ <w'T'>$ in the tropics. From {eq}`tropical_energy_conversion`, it is evident such energy conversion comes from convection, which _heats where is hot, and cool where is cold_.   
+
 ## Clausius–Clapeyron equation 
 
 One last useful scaling is Clausius–Clapeyron equation or so-called C-C equation. C-C equation describes the relation between temperature, and saturation water vapor, which can be written as:   
@@ -268,4 +283,4 @@ One last useful scaling is Clausius–Clapeyron equation or so-called C-C equati
 e_s(T) = e_0 \mathrm{exp}^{1/273.15-1/T}
 ```
 
-where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim -Lw\frac{\partial q}{\partial z}$.
+where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim Lw\frac{\partial q}{\partial z}$ (this assumption can lead to a few problem which will be discussed more in the section of MJO). If we implement the second assumption, "fixed relative humidity" then the aformentioned relationship can be translated into.   
