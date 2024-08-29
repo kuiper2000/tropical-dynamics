@@ -244,3 +244,5 @@ From the scaling above, we can see that the main balance of momentum (angular mo
 \text{Extratropics:   } & (\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = (\zeta+f)\nabla\cdot \mathbf{u}\\
 \end{align}
 ```
+
+This is a very important scaling. It implies that away from the region with significant vertical motion ($Ri$ is small), the flow is nearly barotropic (vorticity/angular momentum is conserved). The change in vorticity or momentum can only comes from barotropic instability or lateral forcing. 
