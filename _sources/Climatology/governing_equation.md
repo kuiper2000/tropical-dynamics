@@ -282,6 +282,14 @@ Different from extratropics where the extraction of mena energy happens in $<v'T
 
 where $\text{Fraction}$ is the fraction of cloud and $T_{c}-T_{env}$ is the temperature difference between cloud and its surrounding environment. 
 
+However, {eq}`cumulus_ensemble` is oversimplified given that there are different types of cloud out there and each type may be characterized by different of heat transport. Therefore, a more precise way to represent the role of cloud is 
+
+```{math}
+:label: cumulus_ensemble2
+\text{Fraction} \times w_c (T_{c}-T_{env}) = M_c (T_{c}-T_{env}) = \sum_i m_i (T_{ci}-T_{env})
+```
+
+
 ## Clausius–Clapeyron equation 
 
 One last useful scaling is Clausius–Clapeyron equation or so-called C-C equation. C-C equation describes the relation between temperature, and saturation water vapor, which can be written as:   
