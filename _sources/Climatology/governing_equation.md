@@ -277,7 +277,7 @@ Different from extratropics where the extraction of mena energy happens in $<v'T
 
 ```{math}
 :label: cumulus_ensemble
-\righarrow & <w'T'> \approx \text{Fraction} \times \w_c (T_{c}-T_{env})
+<w'T'> \approx \text{Fraction} \times \w_c (T_{c}-T_{env})
 ```
 
 where $\text{Fraction}$ is the fraction of cloud and $T_{c}-T_{env}$ is the temperature difference between cloud and its surrounding environment. 
