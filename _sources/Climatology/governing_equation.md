@@ -268,7 +268,7 @@ One might wonder if the tropical atmosphere is nearly barotropic. Then where the
 :label: tropical_energy_conversion
 \begin{align}
 & $w\frac{N^2}{g}=\frac{Q}{c_p T}$ \\
-\righarrow & <w'T'> \approx g<Q'T'>/(N^2 c_p T) 
+\rightarrow & <w'T'> \approx g<Q'T'>/(N^2 c_p T) 
 \end{align}
 ```
 
