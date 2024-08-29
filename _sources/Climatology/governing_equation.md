@@ -272,7 +272,15 @@ One might wonder if the tropical atmosphere is nearly barotropic. Then where the
 \end{align}
 ```
 
-Different from extratropics where the extraction of mena energy happens in $<v'T'>\sim-\frac{\partial T}{\partial y}$, we have $ <w'T'>$ in the tropics. From {eq}`tropical_energy_conversion`, it is evident such energy conversion comes from convection, which _heats where is hot, and cool where is cold_.   
+Different from extratropics where the extraction of mena energy happens in $<v'T'>\sim-\frac{\partial T}{\partial y}$, we have $ <w'T'>$ in the tropics. From {eq}`tropical_energy_conversion`, it is evident such energy conversion comes from convection, which _heats where is hot, and cool where is cold_. This process however does not happen at large-scale but at convective scales! i.e., 
+
+
+```{math}
+:label: cumulus_ensemble
+\righarrow & <w'T'> \approx \text{Fraction} \times \w_c (T_{c}-T_{env})
+```
+
+where $\text{Fraction}$ is the fraction of cloud and $T_{c}-T_{env}$ is the temperature difference between cloud and its surrounding environment. 
 
 ## Clausius–Clapeyron equation 
 
