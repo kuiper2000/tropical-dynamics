@@ -68,7 +68,6 @@ The second assumption introduced here is the hydrostatic approximation, which is
 
 
 
-
 ```{math}
 :label: hydrostatic
 \underbrace{\frac{Dw}{Dt}}_{\frac{W}{\tau}}+ \underbrace{\frac{1}{\rho}\frac{\partial p}{\partial z}}_{\frac{\delta p}{\rho D}} - \underbrace{\sigma}_{\Sigma} = \underbrace{\frac{u^2+v^2}{a}}_{\frac{U^2}{a}}+\underbrace{2\Omega u \mathrm{cos}(\phi)}_{2\Omega U}
@@ -219,7 +218,7 @@ Given the weak temperature gradient over the tropics, the thermodynamics equatio
 
 ```{math}
 :label: thermodynamics
-w \frac{N^2}{g} \approx \frac{Q}{C_p T} \sim -0.5 \text{cm/s}
+w \frac{N^2}{g} \approx \frac{Q}{c_p T} \sim -0.5 \text{cm/s}
 ```
 
 It suggests the radiative cooling over the clear sky will induce the slow downward motion.
@@ -253,4 +252,8 @@ This is a very important scaling. It implies that away from the region with sign
 
 To summary what we learn in this section: 
 According to the scaling above, we know 
+(1) Hydrostatic assumption only works when the aspect ratio is small 
+(2) Weak Temperature Gradient is solid assumption due to big Rossby number (small Coriolis force)
+(3) Over regions without convection, the flow is barotropic. 
+(4) Over regions with convection, the main balance is $w\frac{N^2}{g}=\frac{Q}{c_p T}$
 
