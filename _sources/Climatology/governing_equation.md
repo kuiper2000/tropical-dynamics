@@ -257,3 +257,13 @@ According to the scaling above, we know
 (3) Over regions without convection, the flow is barotropic. 
 (4) Over regions with convection, the main balance is $w\frac{N^2}{g}=\frac{Q}{c_p T}$
 
+The last point is so-called quasi-equilibrium. The change in diabatic forcing is always balanced by the vertical motion. Through mass continuity, we also know the connection between vertical motion and horizontal wind and to solve the entire circulation pattern with given forcing. We will cover more about this topic in the week of tropical wave.
+
+## Clausius–Clapeyron equation 
+
+One last useful scaling is Clausius–Clapeyron equation or so-called C-C equation. C-C equation describes the relation between temperature, and saturation water vapor, which can be written as:   
+
+```{math}
+:label: C-Cequation
+e_s(T) = e_0 e^{1/273.15-1/T}
+```
