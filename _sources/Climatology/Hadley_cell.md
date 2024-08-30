@@ -7,10 +7,9 @@ Follow the discussion in previous two weeks, this week, we will look at how ener
 The zonal averaged Hadley circulation is shown in {ref}`FIG3-1`. 
 
 
+
 ```{figure} ../tropical-dynamics-figures/mass_stream_function.png
----
-name: FIG3-1
----
+:name: FIG3-1
 The long-term averaged mass stream function. 
 ``` 
 
