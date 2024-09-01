@@ -262,8 +262,7 @@ The last point is so-called quasi-equilibrium. The change in diabatic forcing is
 
 ## Cumulus Ensemble 
 
-One might wonder if the tropical atmosphere is nearly barotropic. Then where the kinetic comes from? To know how the energy is converted, we start from $w\frac{N^2}{g}=\frac{Q}{c_p T}$  
-
+A natural question arises: if the tropical atmosphere is nearly barotropic, where does the kinetic energy originate? To understand how energy is converted, we start with the relationship: 
 
 ```{math}
 :label: tropical_energy_conversion
@@ -273,7 +272,7 @@ One might wonder if the tropical atmosphere is nearly barotropic. Then where the
 \end{align}
 ```
 
-Different from extratropics where the extraction of mena energy happens in $<v'T'>\sim-\frac{\partial T}{\partial y}$, we have $ <w'T'>$ in the tropics. From {eq}`tropical_energy_conversion`, it is evident such energy conversion comes from convection, which _heats where is hot, and cool where is cold_. This process however does not happen at large-scale but at convective scales! i.e., 
+Unlike in the extratropics, where the mean energy extraction occurs via $<v'T'>\sim-\frac{\partial T}{\partial y}$, in the tropics it occurs through $<w'T'>$. From the equation above, it is clear that this energy conversion is driven by convection, which "heats where it is hot and cools where it is cold." This process occurs on convective scales rather than on large scales: 
 
 
 ```{math}
@@ -281,16 +280,16 @@ Different from extratropics where the extraction of mena energy happens in $<v'T
 <w'T'> \approx \text{Fraction} \times w_c (T_{c}-T_{env})
 ```
 
-where $\text{Fraction}$ is the fraction of cloud and $T_{c}-T_{env}$ is the temperature difference between cloud and its surrounding environment. 
+where Fraction represents the fraction of cloud cover, and $T_{c}-T_{env}$ is the temperature difference between cloud and its surrounding environment. 
 
-However, {eq}`cumulus_ensemble` is oversimplified given that there are different types of cloud out there and each type may be characterized by different of heat transport. Therefore, a more precise way to represent the role of cloud is 
+However, the above equation is a simplification, as different cloud types contribute differently to heat transport. A more accurate representation of cloud effects is:
 
 ```{math}
 :label: cumulus_ensemble2
 \text{Fraction} \times w_c (T_{c}-T_{env}) = M_c (T_{c}-T_{env}) = \sum_i m_i (T_{ci}-T_{env})
 ```
 
-More details can be found in Yanai et al. (1973) and Arakawa and Schubert (1974). 
+where more details can be found in the works of Yanai et al. (1973) and Arakawa and Schubert (1974).
 
 ## Clausius–Clapeyron equation 
 

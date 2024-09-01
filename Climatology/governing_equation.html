@@ -578,20 +578,20 @@ where
 </div>
 <div class="section" id="cumulus-ensemble">
 <h2>Cumulus Ensemble<a class="headerlink" href="#cumulus-ensemble" title="Permalink to this headline">¶</a></h2>
-<p>One might wonder if the tropical atmosphere is nearly barotropic. Then where the kinetic comes from? To know how the energy is converted, we start from <span class="math notranslate nohighlight">\(w\frac{N^2}{g}=\frac{Q}{c_p T}\)</span></p>
+<p>A natural question arises: if the tropical atmosphere is nearly barotropic, where does the kinetic energy originate? To understand how energy is converted, we start with the relationship:</p>
 <div class="math notranslate nohighlight" id="equation-tropical-energy-conversion">
 <span class="eqno">(23)<a class="headerlink" href="#equation-tropical-energy-conversion" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 &amp; w\frac{N^2}{g}=\frac{Q}{c_p T} \\
 \rightarrow &amp; &lt;w'T'&gt; \approx g&lt;Q'T'&gt;/(N^2 c_p T) 
 \end{align}\end{split}\]</div>
-<p>Different from extratropics where the extraction of mena energy happens in <span class="math notranslate nohighlight">\(&lt;v'T'&gt;\sim-\frac{\partial T}{\partial y}\)</span>, we have <span class="math notranslate nohighlight">\( &lt;w'T'&gt;\)</span> in the tropics. From <a class="reference internal" href="#equation-tropical-energy-conversion">(23)</a>, it is evident such energy conversion comes from convection, which <em>heats where is hot, and cool where is cold</em>. This process however does not happen at large-scale but at convective scales! i.e.,</p>
+<p>Unlike in the extratropics, where the mean energy extraction occurs via <span class="math notranslate nohighlight">\(&lt;v'T'&gt;\sim-\frac{\partial T}{\partial y}\)</span>, in the tropics it occurs through <span class="math notranslate nohighlight">\(&lt;w'T'&gt;\)</span>. From the equation above, it is clear that this energy conversion is driven by convection, which “heats where it is hot and cools where it is cold.” This process occurs on convective scales rather than on large scales:</p>
 <div class="math notranslate nohighlight" id="equation-cumulus-ensemble">
 <span class="eqno">(24)<a class="headerlink" href="#equation-cumulus-ensemble" title="Permalink to this equation">¶</a></span>\[&lt;w'T'&gt; \approx \text{Fraction} \times w_c (T_{c}-T_{env})\]</div>
-<p>where <span class="math notranslate nohighlight">\(\text{Fraction}\)</span> is the fraction of cloud and <span class="math notranslate nohighlight">\(T_{c}-T_{env}\)</span> is the temperature difference between cloud and its surrounding environment.</p>
-<p>However, <a class="reference internal" href="#equation-cumulus-ensemble">(24)</a> is oversimplified given that there are different types of cloud out there and each type may be characterized by different of heat transport. Therefore, a more precise way to represent the role of cloud is</p>
+<p>where Fraction represents the fraction of cloud cover, and <span class="math notranslate nohighlight">\(T_{c}-T_{env}\)</span> is the temperature difference between cloud and its surrounding environment.</p>
+<p>However, the above equation is a simplification, as different cloud types contribute differently to heat transport. A more accurate representation of cloud effects is:</p>
 <div class="math notranslate nohighlight" id="equation-cumulus-ensemble2">
 <span class="eqno">(25)<a class="headerlink" href="#equation-cumulus-ensemble2" title="Permalink to this equation">¶</a></span>\[\text{Fraction} \times w_c (T_{c}-T_{env}) = M_c (T_{c}-T_{env}) = \sum_i m_i (T_{ci}-T_{env})\]</div>
-<p>More details can be found in Yanai et al. (1973) and Arakawa and Schubert (1974).</p>
+<p>where more details can be found in the works of Yanai et al. (1973) and Arakawa and Schubert (1974).</p>
 </div>
 <div class="section" id="clausiusclapeyron-equation">
 <h2>Clausius–Clapeyron equation<a class="headerlink" href="#clausiusclapeyron-equation" title="Permalink to this headline">¶</a></h2>
