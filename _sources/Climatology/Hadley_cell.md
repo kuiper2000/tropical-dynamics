@@ -27,6 +27,7 @@ where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is th
 
 ```{math}
 :label: zonal_angular_momentum_equation
-\frac{\partial u}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} 
+\frac{\partial u}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -\frac{1}{\mathrm{cos}^2\phi} \frac{\partial }{\partial \phi} \mathrm{cos}^2\phi \overline{u'v'}-\frac{\partial \overline{u'w'}}{\partial z}
 ```
 
+One can derive {eq}`zonal_angular_momentum_equation` by writing non-linear momentum advection into the rotational acceleration and the convergence/divergence of kinetic. (see Vallis 2017). In {eq}`zonal_angular_momentum_equation`
