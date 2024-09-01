@@ -2,9 +2,9 @@
 # Week 2 and 3: Scale Analysis 
 ## Governing Equation on a Sphere 
 ### Spherical Coordinate
-To gain a clearer understanding of tropical dynamics, we will begin by analyzing the governing equations relevant to the tropics. Typically, two types of governing equations are used: (1) primitive equations on a sphere and (2) primitive equations on a beta plane. The first approach accounts for the geometric effects as we move from lower to higher latitudes, requiring area weighting to ensure the conservation laws hold. In contrast, the beta plane approximation treats areas across different latitudes as equal.
+To deepen our understanding of tropical dynamics, we start by examining the fundamental equations that apply to the tropics. These equations are typically formulated in two ways: (1) primitive equations on a spherical surface and (2) primitive equations on a beta plane. The spherical approach accounts for geometric effects as we move from low to high latitudes, requiring area weighting to maintain conservation laws. Meanwhile, the beta plane approximation simplifies the problem by treating areas across latitudes as uniform.
 
-We'll start with a simplified version of the primitive equations.
+We'll begin by considering a simplified form of the primitive equations:
 
 
 ```{math}
@@ -16,9 +16,11 @@ c_p \frac{D \mathrm{ln}\theta}{Dt} = \frac{Q}{T} \\
 p = \rho R T
 \end{cases}
 ```
-The first equation in {eq}`primitive` represents the three-dimensional momentum equation, where $\mathbf{u}$ denotes the three-dimensional momentum, $\rho$ is the density, $\mathbf{\Omega}$ is the Coriolis torque (expressed in terms of angular frequency, $7.292\times 10^{-5}$), and $\mathbf{F}$ represents the viscous or turbulent stresses. The second equation describes mass continuity, where changes in Lagrangian density are governed by the local convergence or divergence of flow (if the flow is three-dimensional incompressible, then the right-hand side of the second equation in {eq}`primitive` will be zero). The third equation is the thermodynamic equation, where $\theta$ (defined as $T(\frac{p_0}{p})^{\kappa}$, with $p_0=1000$hPa) is the potential temperature, $Q$ is the diabatic heating rate, and $T$ is the temperature. The final equation is the equation of state, where $R$ is the ideal gas constant.
 
-Here, we introduce the first assumption: the Earth's atmosphere is relatively shallow compared to its radius, and the surface is nearly a geopotential surface (i.e., a surface perpendicular to the effective gravity). Considering the Earth's geometry, the equation simplifies to a PDE problem on a sphere. 
+The first equation in {eq}`primitive` is the three-dimensional momentum equation, where $\mathbf{u}$ is the velocity vector, $\rho$ is the density, $\mathbf{\Omega}$ is the Coriolis parameter (with an angular frequency of $7.292\times 10^{-5}$), and $\mathbf{F}$ represents viscous or turbulent forces. The second equation is the continuity equation for mass, indicating that changes in density (in a Lagrangian frame) are driven by the local convergence or divergence of flow. If the flow is incompressible in three dimensions, the right-hand side of this equation becomes zero. The third equation represents the thermodynamic equation, where $\theta$ is the potential temperature (defined as $T(\frac{p_0}{p})^{\kappa}$ with $p_0=1000$ hPa), $Q$ is the diabatic heating rate, and $T$ is the temperature. The last equation is the equation of state for an ideal gas, where $R$ is the gas constant.
+
+At this point, we introduce a key assumption: the Earth's atmosphere is relatively shallow compared to its radius, and its surface can be approximated as a geopotential surface (i.e., a surface perpendicular to the effective gravity). Taking the Earth's geometry into account, this reduces the problem to a partial differential equation (PDE) system on a sphere.
+
 
 
 ```{figure} ../tropical-dynamics-figures/spherical_coordinate.png
@@ -64,19 +66,19 @@ where
 ::: -->
 
 ### Hydrostatic Assumption
-The second assumption introduced here is the hydrostatic approximation, which is a robust assumption at scales larger than $\sim $20km. From atmospheric dynamics, we already it works for the mean state, but here we will show you it also works for the perturbation. To see how it works, we first rewrite the third equation of {eq}`primitive2`. Let $p = p_0(z)+p'(z)$ and $\rho = \rho_0(z)+\rho'(z)$
-
+The second assumption we introduce is the hydrostatic approximation, which is reliable at scales larger than approximately 20 km. From atmospheric dynamics, we know it holds for the mean state, but here we will demonstrate that it also applies to perturbations. To illustrate this, let's first rewrite the third equation of {eq}`primitive2`, where we define the pressure as $p = p_0(z) + p'(z)$ and the density as $\rho = \rho_0(z) + \rho'(z)$.
 
 
 ```{math}
 :label: hydrostatic
 \underbrace{\frac{Dw}{Dt}}_{\frac{W}{\tau}}+ \underbrace{\frac{1}{\rho}\frac{\partial p}{\partial z}}_{\frac{\delta p}{\rho D}} - \underbrace{\sigma}_{\Sigma} = \underbrace{\frac{u^2+v^2}{a}}_{\frac{U^2}{a}}+\underbrace{2\Omega u \mathrm{cos}(\phi)}_{2\Omega U}
 ```
-$\sigma = -g \frac{\rho-\rho_0(z)}{\rho}$ represents the reduced gravity, where $\rho_0(z)$ corresponds to the portion of the pressure gradient force that is balanced by gravity. Consequently, vertical acceleration occurs when there is a slight imbalance, specifically when $\rho-\rho_0(z)$ is nonzero. The variables in {eq}`hydrostatic` can be substituted with their characteristic scales. (the underbrace of {eq}`hydrostatic`). 
 
-For value of $\delta p \sim 10^2$hPa (pressure deviate from the hydrostatic balance, not the actual pressure) over the troposphere depth (20km), $\frac{\delta p}{\rho D}\sim 10^2 \text{hPa}/(1 \frac{\text{kg}}{\text{ms}}\cdot2\cdot10^4 \text{m})\sim 5\times 10^{-2}m\cdot s^{-1}$. Also, $U \sim 10m\cdot s^{-1}$, $\Omega \sim 10^{-5} s^{-1}$ and $a\sim 10^6$. $\Sigma$ has an order aorund $10^{-2}$ (gravity is reduced to one hundredth). The last two terms are relatively small and negligible. Thus, the only question remains whether $\frac{Dw}{Dt}$ is small enough to be omitted?
+Here, $\sigma = -g \frac{\rho - \rho_0(z)}{\rho}$ represents the reduced gravity, where $\rho_0(z)$ corresponds to the portion of the pressure gradient force balanced by gravity. Vertical acceleration occurs when there is a slight imbalance, specifically when $\rho - \rho_0(z)$ is nonzero. The variables in {eq}`hydrostatic` can be substituted with their characteristic scales (as indicated by the underbraces in {eq}`hydrostatic`).
 
-Now consider, 
+For a pressure deviation $\delta p \sim 10^2$ hPa over the depth of the troposphere (20 km), $\frac{\delta p}{\rho D} \sim \frac{10^2 \text{hPa}}{1 \frac{\text{kg}}{\text{ms}} \cdot 2 \cdot 10^4 \text{m}} \sim 5 \times 10^{-2} \text{m} \cdot \text{s}^{-1}$. Additionally, with $U \sim 10 \text{m} \cdot \text{s}^{-1}$, $\Omega \sim 10^{-5} \text{s}^{-1}$, and $a \sim 10^6 \text{m}$, $\Sigma$ is of the order of $10^{-2}$ (with gravity reduced to one-hundredth). The last two terms are relatively small and negligible, leaving us to determine whether $\frac{Dw}{Dt}$ is small enough to be omitted.
+
+Now, consider:
 ```{math}
 :label: scaling_2
 \frac{Dw}{Dt}/ (\frac{1}{ \rho}\frac{\partial p}{\partial z}) = |\frac{W}{\tau}/\frac{\delta p}{\rho D}| 
@@ -99,34 +101,34 @@ This will yield two different time scales (1) in the case of quasigeostrophic $\
 ```
 
 
-given the major pressure perturbation happens in the horizontal direction. 
+Here, the major pressure perturbation occurs in the horizontal direction.
 
-As for the second case, we have 
+
+In the second case, we have 
 ```{math}
 :label: scaling_5
 \delta p \approx P_2 = \frac{\rho U L }{\tau} 
 ```
-where the main pressure perturbation happens in vertical direction. 
+The main pressure perturbation occurs in the vertical direction.
 
-
-In the low-frequency limit (case 1), ($1/\tau << f$ or $1 << f\tau$). {eq}`scaling_3` becomes 
+In the low-frequency limit (case 1, where $1/\tau << f$ or $1 << f\tau$), {eq}`scaling_3` becomes:
 
 ```{math}
 :label: scaling_6
 |\frac{W}{\tau}/\frac{\delta p}{\rho D}| = |\frac{W}{\tau}/\frac{P_1}{\rho D}| = |\frac{W}{\tau}/\frac{fUL}{D}|
 ```
 
-in this condition, even if $W\sim U$ and $D\sim L$ (i.e., $|\frac{W}{\tau}/\frac{\delta p}{\rho D}| \approx |\frac{1}{\tau}/f|$), we still get $\frac{W}{\tau}$ is much smaller than the pressure gradient force. Thus, the acceleration of vertical motion can be neglected. aka the hydrostatic balance is a solid assumption under the assumption of quasigeostrophic balance. One should be careful that {eq}`primitive2` has a component of $2\Omega \omega \mathrm{cos}\phi$ that is maximum at the equator! But to keep the entire equation mathematically consistent, we have to drop it (otherwise the total energy is not conserved under the hydrostatic assumption). This can shown by calculating the total kinetic energy i.e., 
+In this scenario, even if $W \sim U$ and $D \sim L$ (i.e., $\left|\frac{\frac{W}{\tau}}{\frac{\delta p}{\rho D}}\right| \approx \left|\frac{1}{\tau f}\right|$), we still find that $\frac{W}{\tau}$ is much smaller than the pressure gradient force. Therefore, vertical acceleration can be neglected, confirming that the hydrostatic balance is a robust assumption under the quasigeostrophic balance. Note that {eq}`primitive2` includes a term $2\Omega u \omega \mathrm{cos}\phi$, which is maximized at the equator. However, to maintain mathematical consistency in the entire equation, we must drop this term; otherwise, total energy is not conserved under the hydrostatic assumption. This can be shown by calculating the total kinetic energy:
 
 ```{math}
 :label: hydrostatic_KE
 \frac{1}{2}\frac{D}{Dt} [u^2+v^2] = -\frac{1}{\rho}[\frac{u}{a\mathrm{cos}\phi}\frac{\partial p }{\partial \lambda}+\frac{v}{a}\frac{\partial p}{\partial \phi}]-[2\Omega u\omega\mathrm{cos}\phi-(\frac{u^2+v^2}{a}\omega)]
 ```
 
-Integrating over the entire domain, one can find that the first term on the right-hand-side of {eq}`hydrostatic_KE` will vanish while the second term does not. This means we have to drop $2\Omega u\omega\mathrm{cos}\phi$ and $(\frac{u^2+v^2}{a}\omega)$ to make the total kinetic energy conserved.   
+Integrating over the entire domain, we find that the first term on the right-hand side of {eq}`hydrostatic_KE` vanishes, while the second term does not. This necessitates the removal of $2\Omega u \omega \mathrm{cos}\phi$ and $\frac{u^2 + v^2}{a}\omega$ to ensure total kinetic energy conservation.
 
+In the high-frequency limit, the hydrostatic assumption only holds when $W << U$ and $D/L << 1$. Thus, considering both scenarios, we should impose constraints in high-frequency limits.
 
-As for the high-frequency limit, the hydrostatic assumption only holds when $W<<U$ and $D/L<<1$. Thus, considering both scenarios, we should adopt constraints in high-frequency limits.  
 
 ## Weak temperature gradient
 
@@ -306,3 +308,4 @@ q_s(T) & \approx \frac{0.622 e_s}{p-0.384e_s}
 where $e_0\approx6.1$hPa is the saturation vapor pressure at 0 Celcius. The reason why it is important is that the tropical heat source is dominated by the convective latent heat release i.e., $Q\sim Lw\frac{\partial q}{\partial z}$ (this assumption can lead to a few problem which will be discussed more in the section of MJO). If we implement the second assumption, "fixed relative humidity" then the aformentioned relationship can be translated into $Q\sim Lw\frac{\partial q_s}{\partial z}\times \text{RH}$. This provides us some strong constraint on the projected change of tropical hydrological cycle.  
 
 More details will be provided in the last chapter of this class. 
+
