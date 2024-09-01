@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Week 2 and 3: Scale Analysis" href="governing_equation.html" />
@@ -345,12 +347,16 @@ title="Print to PDF"
 <div class="section" id="held-hou-model">
 <h2>Held-Hou Model<a class="headerlink" href="#held-hou-model" title="Permalink to this headline">¶</a></h2>
 <p>Follow the discussion in previous two weeks, this week, we will look at how energy is residtributed from tropics to other latitudes aka Hadley Cell. The early work on general circulation is motivated by the observation from Halley (1686) and Hadley (1735). They concluded that the tropical trade wind is part of large-scale ciruclation which redistributes the latitudinal difference in solar energy. Even without the upper-troposphere observation during that period, they also predicted the upper troposphere westerly, which is quite impressive.</p>
-<p>The zonal averaged Hadley circulation is shown in <a class="reference internal" href="#fig3-1"><span class="std std-numref">Fig. 9</span></a> (mass stream function).</p>
+<p>The zonal averaged Hadley circulation is shown in <a class="reference internal" href="#fig3-1"><span class="std std-numref">Fig. 9</span></a> (mass stream function). The existence of Hadley cell has two main purposes (1) redistributing the meridional potential energy, and (2) conserving the angular momentum. We will see this in a minute.</p>
 <div class="figure align-default" id="fig3-1">
 <img alt="../_images/mass_stream_function.png" src="../_images/mass_stream_function.png" />
 <p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">The long-term averaged mass stream function.</span><a class="headerlink" href="#fig3-1" title="Permalink to this image">¶</a></p>
 </div>
-<p>There are a few attampes to model the observed Hadley circulation.</p>
+<p>There are a few attempts to model the observed Hadley circulation (i.e., the strength and width). Held and Hou (1980) is one of the most famous. To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth’s angular momentum is defined as the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth’s motion.</p>
+<p>According to the definition of angular momentum of unit mass:</p>
+<div class="math notranslate nohighlight" id="equation-high-school-angular-momentum">
+<span class="eqno">(27)<a class="headerlink" href="#equation-high-school-angular-momentum" title="Permalink to this equation">¶</a></span>\[m = r \overrightarrow{u} = a \mathrm{cos}\phi (\Omega a \mathrm{cos}\phi + u)  \]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the Earth angular momentum</p>
 </div>
 </div>
 
