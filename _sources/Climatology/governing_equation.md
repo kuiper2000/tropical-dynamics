@@ -143,24 +143,24 @@ Now consider a hydrostatic equation at low latitude, we will take a further step
 \end{align}
 ```
 
-We recognize that the perturbation in pressure and density is relatively small compared to the basic state but we need a more precise estimate of their order to decide whether to drop those terms or not. Here we define a pressure height (i.e., log-pressure coordinate). $\frac{1}{H_p} = -(1/p_0)(\frac{d p_0}{dz})$. With QG assumption, we have {eq}`scaling_4`, whereupon 
+We recognize that the perturbations in pressure and density are relatively small compared to the basic state. However, a more precise estimate of their order is needed to decide whether these terms can be neglected. We define the pressure height using the log-pressure coordinate, $\frac{1}{H_p} = -\frac{1}{p_0}\frac{d p_0}{dz}$. Under the quasigeostrophic (QG) assumption, we can refer to {eq}`scaling_4`, and then
 
 ```{math}
 :label: QG_hydrostatic
 \frac{\delta p}{p_0} \approx \frac{\rho U fL}{H_p\frac{dp_0}{dz}} \approx \frac{ fU L}{gH_p} = \frac{F^2}{R_0}
 ```
-where $F$ is Froude number and $R_0$ is Rossby number. {eq}`QG_hydrostatic` shows that the ratio between perturbation pressure and basic state pressure is about the scale of geostrophic flow squared divided by the squared external gravity wave speed. i.e., $\sim 0.01$. (i.e., in extratropics, the characteristic scale of $F^2\sim 10^{-3}$ and $R_0\sim 10^{-1}$). 
+where $F$ is the Froude number and $R_0$ is the Rossby number. {eq}`QG_hydrostatic` shows that the ratio of the pressure perturbation to the basic state pressure is roughly proportional to the square of the geostrophic flow divided by the squared external gravity wave speed, i.e., approximately $0.01$ (in the extratropics, with characteristic scales of $F^2 \sim 10^{-3}$ and $R_0 \sim 10^{-1}$).
 
-
-Over the tropics, the pressure perturbation under the hydrostatic assumption can be written as 
+In the tropics, the pressure perturbation under the hydrostatic assumption can be expressed as:
 ```{math}
 :label: tropics_hydrostatic1
 \frac{\delta \rho}{\rho_0} \approx \frac{\delta p}{gD\rho_0} \approx \frac{\delta p}{p} (\frac{H_p}{D}) \approx \frac{\delta p}{p_0} = \frac{F^2}{R_0}
 ```
 
-$\frac{\delta \rho}{\rho_0}$ is reduced factor of gravitational acceleration. This can be derived given $\frac{\partial p'}{\partial z}=-g\rho'\rightarrow \frac{\delta p}{D}\approx g\delta\rho$. One can find {eq}`tropics_hydrostatic1` and {eq}`QG_hydrostatic` give us the same scaling. In general, F doesn't change much from tropics to extratropics. Thus, what really changes the order of scaling comes from Rossby number. Given the tropical $f\sim 10^{-5}$, $\frac{F^2}{R_0}$ will be around the order of $10^{-3}$. 
+Here, $\frac{\delta \rho}{\rho_0}$ represents the reduction factor for gravitational acceleration. This is derived from $\frac{\partial p'}{\partial z} = -g \rho' \rightarrow \frac{\delta p}{D} \approx g \delta \rho$. One can see that {eq}`tropics_hydrostatic1` and {eq}`QG_hydrostatic` provide the same scaling. In general, $F$ does not change significantly between the tropics and extratropics; the primary change in scaling order is due to the Rossby number. Given that in the tropics, $f \sim 10^{-5}$, $\frac{F^2}{R_0}$ is approximately $10^{-3}$.
 
-As for $\theta'$, one can also have the same exercise. (I will leave it to the readers). 
+
+As for $\theta'$, a similar analysis can be performed, which is left as an exercise for the reader.
 
 
 :::{note}
@@ -173,27 +173,26 @@ name: FIG2-2
 How the counteracting pressure gradient force makes gravity reduced. 
 ```
 
-If today we have an air parcel sitting in the location of black dot. The horizontal pressure gradient force that air parcel feels can be written as 
+Consider an air parcel at the black dot's location. The horizontal pressure gradient force acting on the air parcel can be expressed as:
 ```{math}
 :label: reduced_gravity1
 \rho a = [(\rho+\delta \rho) g (H-\overline{\eta})+\rho g (\eta(x_1))] - [\rho g \overline{\eta}] = \delta \rho g (\eta(x_1)-\overline{\eta})
 ```
-Where $a$ is the acceleration of air parcel by pressure gradient force. 
-one can find that the pressure gradient force is $\delta \rho g (\eta(x_1)-\eta)$ instead of $\delta \rho g (\eta(x_1))$. This is because the fluid above provides an counteract pressure gradient force (from the right to the left) makes the overall pressure gradient force small! If we divide both sides of equations by $\rho$, one can have 
+where $a$ is the acceleration of the air parcel due to the pressure gradient force. The pressure gradient force is $\delta \rho g (\eta(x_1) - \eta)$ instead of $\delta \rho g (\eta(x_1))$ because the fluid above creates a counteracting pressure gradient force (from right to left), reducing the overall pressure gradient force. By dividing both sides of the equation by $\rho$, we obtain:
 
 ```{math}
 :label: reduced_gravity2
 a = (\frac{\delta \rho}{\rho} g) (\eta(x_1)-\eta)
 ```
 
-where the first term on the right hand side is so-called reduced gravity. An alternative representation is "equivalent depth", where $H'=\frac{\delta \rho}{\rho} (\eta(x_1)-\eta)$. The "height" that causes the pressure gradient is not as big as we originally thought but "equivalent to" a somewhat shallower height. In the later section, we will see why it's important having such shallowness.    
+The first term on the right-hand side is called "reduced gravity." An alternative representation is the "equivalent depth," given by $H' = \frac{\delta \rho}{\rho} (\eta(x_1) - \eta)$. The "height" causing the pressure gradient is not as large as originally expected but is "equivalent to" a somewhat shallower height. Later sections will discuss the significance of such shallowness. 
 :::
 
 
 ## Tropical Main Energy Balance
-The weak temperature gradient derived in previous section brought many benefits. The first one is it provides strong constraint for vertical motion structure. Let's start from the clear sky energy balance. 
+The weak temperature gradient (WTG) assumption discussed in the previous section has several advantages. One key benefit is that it imposes a strong constraint on the structure of vertical motion. Let's explore this by examining the energy balance in clear-sky conditions.
 
-In the clear sky, if we assume the incomping SW radiation has 100 units, about 30$\%$ is reflected back to space (the averaged albedo). For the rest, the atmosphere is nearly transparent to the SW, thus most of them will be absorbed by the surface. (in the middle, there are also ozone and some scattered cloud which absorb $\sim$23$\%$ SW, thus a total of 46$\%$ directly goes into the surface). However, the surface emitted about 115$\%$ units of LW radiation to the space (but 100 returns back to the surface). Thus, there is net radiative cooling (with a unit of 31) in the surface over the clear-sky region. This net cooling should be balanced by other processes in addition to the SW. Other candidates include (1) surface sensible heat and (2) latent heat. 
+Under clear skies, if we consider the incoming shortwave (SW) radiation to be 100 units, approximately 30% is reflected back to space due to the average albedo. The remaining 70% passes through the atmosphere, which is nearly transparent to SW radiation, and most of this radiation is absorbed by the surface. Along the way, ozone and some scattered clouds absorb about 23% of the SW radiation, leaving around 46% to be directly absorbed by the surface. On the other hand, the surface emits about 115 units of longwave (LW) radiation, of which about 100 units are reabsorbed by the surface itself. This results in a net radiative cooling of 31 units at the surface in clear-sky regions. This net cooling needs to be balanced by processes other than SW radiation, such as (1) surface sensible heat and (2) latent heat fluxes.
 
 
 ```{figure} ../tropical-dynamics-figures/radiative_balance.png
