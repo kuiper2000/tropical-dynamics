@@ -212,9 +212,9 @@ One can estimate the net radiative cooling rate of the atmosphere using {ref}`FI
 \end{align}
 ```
 
-While the vale of is $-0.9$ the averaged column-cooling rate, it does vary from location to location. For example, for the latitude (0-30N), the value is around $-1.2K/day$, and higher latitude is around $-0.57K/day$. 
+While the average column cooling rate is approximately $-0.9 \text{K/day}$, this value can vary by location. For example, between latitudes 0-30N, the cooling rate is around $-1.2 \text{K/day}$, while in higher latitudes, it is approximately $-0.57 \text{K/day}$.
 
-Given the weak temperature gradient over the tropics, the thermodynamics equation can be written as 
+Given the weak temperature gradient over the tropics, the thermodynamic equation can be approximated as:
 
 
 ```{math}
@@ -222,7 +222,7 @@ Given the weak temperature gradient over the tropics, the thermodynamics equatio
 w \frac{N^2}{g} \approx \frac{Q}{c_p T} \sim -0.5 \text{cm/s}
 ```
 
-It suggests the radiative cooling over the clear sky will induce the slow downward motion.
+This indicates that radiative cooling in clear-sky conditions induces slow downward motion in the atmosphere.
 
 
 ## Tropical Momentum Balance 
