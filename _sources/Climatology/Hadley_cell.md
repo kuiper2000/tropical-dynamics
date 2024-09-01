@@ -39,4 +39,4 @@ If we assume a dynamical equilibrium (i.e., Earth's rotation is spinning up or d
 (f+\overline{\zeta})\overline{v} = 0 
 ```
 
-
+If we assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. 
