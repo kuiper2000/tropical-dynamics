@@ -23,5 +23,10 @@ According to the definition of angular momentum of unit mass:
 m = r \overrightarrow{u} = a \mathrm{cos}\phi (\Omega a \mathrm{cos}\phi + u)  
 ```
 
-where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is the zonal wind. The conservation of angular momentum in {eq}`high_school_angular_momentum` implies that $\frac{\partial m}{\partial y}=0 $
+where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is the zonal wind. The conservation of angular momentum across latitudes implies that $\frac{\partial m}{\partial y}=0$. Readers can derive the above expression from zonal momentum equation. 
+
+```{math}
+:label: zonal_angular_momentum_equation
+\frac{\partial u}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} 
+```
 
