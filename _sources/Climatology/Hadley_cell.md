@@ -46,4 +46,12 @@ If we assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. An alte
 2\Omega \mathrm{sin}\phi = \frac{1}{a}\frac{\partial \overline{u}}{\partial \phi}-\frac{\overline{u}\mathrm{tan}\phi}{a}
 ```
 
-By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integrating over $\phi$. 
+By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integrating over $\phi$ i.e., 
+
+```{math}
+:label: high_school_angular_momentum4
+\overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi}
+```
+
+
+
