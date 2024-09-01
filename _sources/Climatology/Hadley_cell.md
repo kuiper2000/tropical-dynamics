@@ -35,8 +35,14 @@ One can derive {eq}`zonal_angular_momentum_equation` by writing non-linear momen
 If we assume a dynamical equilibrium (i.e., Earth's rotation is spinning up or down and so is the atmosphere), zonally symmetric (axisymmetric) atmosphere, where the vertical advection of zonal wind is negligible. Then we have 
 
 ```{math}
-:label: high_school_angular_momentum
+:label: high_school_angular_momentum2
 (f+\overline{\zeta})\overline{v} = 0 
 ```
 
-If we assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. 
+If we assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. An alternative way to write such relationship 
+
+```{math}
+:label: high_school_angular_momentum3
+2\Omega \mathrm{sin}\phi = \frac{1}{a}\frac{\partial \overline{u}}{\partial \phi}-\frac{\overline{u}\mathrm{tan}\phi}{a}
+```
+
