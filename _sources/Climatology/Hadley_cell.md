@@ -14,7 +14,7 @@ name: FIG3-1
 The long-term averaged mass stream function. 
 ``` 
 
-There are a few attempts to model the observed Hadley circulation (i.e., the strength and width). Held and Hou (1980) is one of the most famous. To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth's angular momentum is defined as the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. 
+There are a few attempts to model the observed Hadley circulation (i.e., the strength and width). Held and Hou (1980) is one of the most famous. To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. 
 
 According to the definition of angular momentum of unit mass: 
 
@@ -23,5 +23,5 @@ According to the definition of angular momentum of unit mass:
 m = r \overrightarrow{u} = a \mathrm{cos}\phi (\Omega a \mathrm{cos}\phi + u)  
 ```
 
-where $m$ is the Earth angular momentum 
+where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is the zonal wind. The conservation of angular momentum in {eq}`high_school_angular_momentum` implies that $\frac{\partial m}{\partial y}=0 $
 
