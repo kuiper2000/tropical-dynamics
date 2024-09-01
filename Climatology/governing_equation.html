@@ -556,23 +556,24 @@ where
 </div>
 <div class="section" id="tropical-momentum-balance">
 <h2>Tropical Momentum Balance<a class="headerlink" href="#tropical-momentum-balance" title="Permalink to this headline">¶</a></h2>
-<p>As for the vorticity equation in the tropics, we can take <span class="math notranslate nohighlight">\(\nabla \times\)</span> for the first equation of <a class="reference internal" href="#equation-scaling-6">(14)</a>. We have</p>
+<p>For the vorticity equation in the tropics, we take the curl (<span class="math notranslate nohighlight">\(\nabla \times\)</span>) of the first equation in <a class="reference internal" href="#equation-scaling-6">(14)</a>. This gives us:</p>
 <div class="math notranslate nohighlight" id="equation-vorticity-equation">
 <span class="eqno">(21)<a class="headerlink" href="#equation-vorticity-equation" title="Permalink to this equation">¶</a></span>\[\underbrace{(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta}_{A}+ \underbrace{[ \zeta\nabla\cdot \mathbf{u} + w\frac{\partial \zeta}{\partial z} + \nabla w \times \frac{\partial \mathbf{u}}{\partial z}]}_{B}+\underbrace{\mathbf{u}\cdot\nabla f}_{C} + \underbrace{f\nabla \cdot \mathbf{u}}_{D} = \underbrace{\frac{1}{\rho^2}\nabla\rho\times\nabla p}_{E}\]</div>
-<p>Again through scale analysis (everything scaled by term A), we have <span class="math notranslate nohighlight">\(A\sim 1\)</span>, <span class="math notranslate nohighlight">\(B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}\)</span>, <span class="math notranslate nohighlight">\(C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}\)</span> <span class="math notranslate nohighlight">\(D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}\)</span>, <span class="math notranslate nohighlight">\(E\sim\frac{F^2}{R_0^2}\)</span></p>
-<p>From the scaling above, we can see that the main balance of momentum (angular momentum) is</p>
+<p>By performing a scale analysis, normalizing everything with respect to term <span class="math notranslate nohighlight">\(A\)</span>, we get the following scalings: <span class="math notranslate nohighlight">\(A\sim 1\)</span>, <span class="math notranslate nohighlight">\(B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}\)</span>, <span class="math notranslate nohighlight">\(C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}\)</span> <span class="math notranslate nohighlight">\(D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}\)</span>, <span class="math notranslate nohighlight">\(E\sim\frac{F^2}{R_0^2}\)</span></p>
+<p>From these scalings, we see that the primary balance of angular momentum (vorticity) is:</p>
 <div class="math notranslate nohighlight" id="equation-vorticity-equation2">
 <span class="eqno">(22)<a class="headerlink" href="#equation-vorticity-equation2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \text{Tropics:   } &amp; (\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = 0\\
 \text{Extratropics:   } &amp; (\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)(\zeta+f) = (\zeta+f)\nabla\cdot \mathbf{u}\\
 \end{align}\end{split}\]</div>
-<p>This is a very important scaling. It implies that away from the region with significant vertical motion (<span class="math notranslate nohighlight">\(Ri\)</span> is small), the flow is nearly barotropic (vorticity/angular momentum is conserved) i.e., flow over different vertical levels are independent from each other!</p>
-<p>To summary what we learn in this section:
-According to the scaling above, we know
-(1) Hydrostatic assumption only works when the aspect ratio is small
-(2) Weak Temperature Gradient is solid assumption due to big Rossby number (small Coriolis force)
-(3) Over regions without convection, the flow is barotropic.
-(4) Over regions with convection, the main balance is <span class="math notranslate nohighlight">\(w\frac{N^2}{g}=\frac{Q}{c_p T}\)</span></p>
+<p>This scaling is significant because it shows that in regions with minimal vertical motion (where <span class="math notranslate nohighlight">\(Ri\)</span> is small), the flow is nearly barotropic, meaning vorticity (or angular momentum) is conserved. As a result, the flow remains largely independent across different vertical levels.</p>
+<p>Based on the above scaling, we can conclude:</p>
+<ul class="simple">
+<li><p>The hydrostatic assumption is valid only when the aspect ratio is small.</p></li>
+<li><p>The weak temperature gradient assumption is reliable in the tropics due to a large Rossby number (implying a small Coriolis force).</p></li>
+<li><p>In regions without convection, the flow is barotropic.</p></li>
+<li><p>In regions with convection, the main balance is given by: <span class="math notranslate nohighlight">\(w\frac{N^2}{g}=\frac{Q}{c_p T}\)</span></p></li>
+</ul>
 <p>The last point is so-called quasi-equilibrium. The change in diabatic forcing is always balanced by the vertical motion. Through mass continuity, we also know the connection between vertical motion and horizontal wind and to solve the entire circulation pattern with given forcing. We will cover more about this topic in the week of tropical wave.</p>
 </div>
 <div class="section" id="cumulus-ensemble">

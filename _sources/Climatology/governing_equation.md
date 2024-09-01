@@ -227,7 +227,7 @@ This indicates that radiative cooling in clear-sky conditions induces slow downw
 
 ## Tropical Momentum Balance 
 
-As for the vorticity equation in the tropics, we can take $\nabla \times$ for the first equation of {eq}`scaling_6`. We have 
+For the vorticity equation in the tropics, we take the curl ($\nabla \times$) of the first equation in {eq}`scaling_6`. This gives us:
 
 
 ```{math}
@@ -235,9 +235,10 @@ As for the vorticity equation in the tropics, we can take $\nabla \times$ for th
 \underbrace{(\frac{\partial }{\partial t}+\mathbf{u}\cdot\nabla)\zeta}_{A}+ \underbrace{[ \zeta\nabla\cdot \mathbf{u} + w\frac{\partial \zeta}{\partial z} + \nabla w \times \frac{\partial \mathbf{u}}{\partial z}]}_{B}+\underbrace{\mathbf{u}\cdot\nabla f}_{C} + \underbrace{f\nabla \cdot \mathbf{u}}_{D} = \underbrace{\frac{1}{\rho^2}\nabla\rho\times\nabla p}_{E}
 ```
 
-Again through scale analysis (everything scaled by term A), we have $A\sim 1$, $B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}$, $C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}$ $D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}$, $E\sim\frac{F^2}{R_0^2}$
 
-From the scaling above, we can see that the main balance of momentum (angular momentum) is 
+By performing a scale analysis, normalizing everything with respect to term $A$, we get the following scalings: $A\sim 1$, $B\sim \frac{U}{L}\frac{W}{D}=\frac{1}{R_i R_0}$, $C\sim \frac{2\Omega \mathrm{cos}\phi a}{L^2}$ $D\sim \frac{U}{L}\frac{W}{D}\frac{1}{R_0}=\frac{1}{R_i R_0^2}$, $E\sim\frac{F^2}{R_0^2}$
+
+From these scalings, we see that the primary balance of angular momentum (vorticity) is:
 
 
 ```{math}
@@ -248,15 +249,14 @@ From the scaling above, we can see that the main balance of momentum (angular mo
 \end{align}
 ```
 
-This is a very important scaling. It implies that away from the region with significant vertical motion ($Ri$ is small), the flow is nearly barotropic (vorticity/angular momentum is conserved) i.e., flow over different vertical levels are independent from each other! 
+This scaling is significant because it shows that in regions with minimal vertical motion (where $Ri$ is small), the flow is nearly barotropic, meaning vorticity (or angular momentum) is conserved. As a result, the flow remains largely independent across different vertical levels.
 
+Based on the above scaling, we can conclude:
 
-To summary what we learn in this section: 
-According to the scaling above, we know 
-(1) Hydrostatic assumption only works when the aspect ratio is small 
-(2) Weak Temperature Gradient is solid assumption due to big Rossby number (small Coriolis force)
-(3) Over regions without convection, the flow is barotropic. 
-(4) Over regions with convection, the main balance is $w\frac{N^2}{g}=\frac{Q}{c_p T}$
+* The hydrostatic assumption is valid only when the aspect ratio is small.
+* The weak temperature gradient assumption is reliable in the tropics due to a large Rossby number (implying a small Coriolis force).
+* In regions without convection, the flow is barotropic.
+* In regions with convection, the main balance is given by: $w\frac{N^2}{g}=\frac{Q}{c_p T}$
 
 The last point is so-called quasi-equilibrium. The change in diabatic forcing is always balanced by the vertical motion. Through mass continuity, we also know the connection between vertical motion and horizontal wind and to solve the entire circulation pattern with given forcing. We will cover more about this topic in the week of tropical wave.
 
