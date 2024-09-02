@@ -27,12 +27,23 @@ where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is th
 
 ```{math}
 :label: zonal_angular_momentum_equation
-\frac{\partial u}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -\frac{1}{\mathrm{cos}^2\phi} \frac{\partial }{\partial \phi} (\mathrm{cos}^2\phi \overline{u'v'})-\frac{\partial \overline{u'w'}}{\partial z}
+\frac{\partial \overline{u}}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -\frac{1}{\mathrm{cos}^2\phi} \frac{\partial }{\partial \phi} (\mathrm{cos}^2\phi \overline{u'v'})-\frac{\partial \overline{u'w'}}{\partial z}
 ```
 
 One can derive {eq}`zonal_angular_momentum_equation` by writing non-linear momentum advection into the rotational acceleration and the convergence/divergence of kinetic. (see Vallis 2017). In {eq}`zonal_angular_momentum_equation`, prime and bar represent zonal mean and eddy components respectively. $(f+\overline{\zeta})\overline{v}$ is the acceleration of zonal wind by the torque of Coriolis force and relative vorticity. $\overline{w}\frac{\partial \overline{u}}{\partial z}$ is the vertical advection zonal wind. The two double prime terms on the right are eddy covariance terms (it will be discussed in a moment).
 
-If we assume a dynamical equilibrium (i.e., Earth's rotation is spinning up or down and so is the atmosphere), zonally symmetric (axisymmetric) atmosphere, where the vertical advection of zonal wind is negligible. Then we have 
+
+
+If we assume a dynamical equilibrium (i.e., Earth's rotation is spinning up or down and so is the atmosphere), zonally symmetric (axisymmetric) atmosphere, where the vertical advection of zonal wind is negligible. Then the model above can be used to describe the overturning circulation shown in {numref}`FIG3-1`
+
+```{figure} ../tropical-dynamics-figures/Held-and-Hou.png
+---
+name: FIG3-1
+---
+Held and Hou (1980) Hadley Cell model
+```
+
+Then we have 
 
 ```{math}
 :label: high_school_angular_momentum2
@@ -52,6 +63,6 @@ By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integratin
 :label: high_school_angular_momentum4
 \overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi}
 ```
-
+{eq}`high_school_angular_momentum4`
 
 
