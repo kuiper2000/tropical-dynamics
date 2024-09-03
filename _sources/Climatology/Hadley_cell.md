@@ -110,9 +110,11 @@ From the above conclusion, we can write down the following equation
 :label: angular_momentum_radiative_equilibrium
 
 \int_{-Y}^{Y} \theta_E - \theta_M dy =  0 \text{   or   } \int_{-Y}^{Y} \theta_E  =  \int_{-Y}^{Y} \theta_M dy
-
 ```
+this leads to 
 
-
-
+```{math}
+:label: Hadley_cell_boundary
+Y = (\frac{5\Delta \theta g H}{3\Omega^2\theta_0})^{\frac{1}{2}}
+```
 
