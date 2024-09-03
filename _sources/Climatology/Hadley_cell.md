@@ -33,6 +33,7 @@ Held and Hou model is a two-layer model mimicking the observed Hadley cell circu
 \theta_E (\phi) & = \theta_0 -\frac{1}{3}\Delta \theta(3 \mathrm{sin}^2\phi-1) \\
 \end{align}
 ```
+where the heating rate of a given column is determined by the energy imbalance between $\theta_E$ and $\theta$ as well as the relaxation time (first equation of {eq}`HH_model_theta_e`). The former represents the radiative equilibrium profile of received energy and the latter is the atmospheric temperature. $\theta_E$ follows the second Legendre mode which has a maximum at the equator and minimum at the pole. 
 
 
 To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. 
@@ -61,7 +62,7 @@ If we assume a dynamical equilibrium (i.e., Earth's rotation is spinning up or d
 (f+\overline{\zeta})\overline{v} = 0 
 ```
 
-If we assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. An alternative way to write such relationship 
+and further assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. An alternative way to write such relationship is
 
 ```{math}
 :label: high_school_angular_momentum3
@@ -74,6 +75,6 @@ By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integratin
 :label: high_school_angular_momentum4
 \overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi}
 ```
-{eq}`high_school_angular_momentum4`
+{eq}`high_school_angular_momentum4` shows how upper-level wind varies with latitude. Given that both hydrostatic and geostrophic balance still hold in the tropics (as long as the aspect ratio is small). 
 
 

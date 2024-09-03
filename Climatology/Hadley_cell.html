@@ -363,6 +363,7 @@ title="Print to PDF"
 \frac{d \theta}{d t} &amp; = \frac{\theta_E-\theta}{\tau} \\
 \theta_E (\phi) &amp; = \theta_0 -\frac{1}{3}\Delta \theta(3 \mathrm{sin}^2\phi-1) \\
 \end{align}\end{split}\]</div>
+<p>where the heating rate of a given column is determined by the energy imbalance between <span class="math notranslate nohighlight">\(\theta_E\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> as well as the relaxation time (first equation of <a class="reference internal" href="#equation-hh-model-theta-e">(27)</a>). The former represents the radiative equilibrium profile of received energy and the latter is the atmospheric temperature. <span class="math notranslate nohighlight">\(\theta_E\)</span> follows the second Legendre mode which has a maximum at the equator and minimum at the pole.</p>
 <p>To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth’s angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth’s motion.</p>
 <p>According to the definition of angular momentum of unit mass:</p>
 <div class="math notranslate nohighlight" id="equation-high-school-angular-momentum">
@@ -374,13 +375,13 @@ title="Print to PDF"
 <p>If we assume a dynamical equilibrium (i.e., Earth’s rotation is spinning up or down and so is the atmosphere), zonally symmetric (axisymmetric) atmosphere, where the vertical advection of zonal wind is negligible. Then we have</p>
 <div class="math notranslate nohighlight" id="equation-high-school-angular-momentum2">
 <span class="eqno">(30)<a class="headerlink" href="#equation-high-school-angular-momentum2" title="Permalink to this equation">¶</a></span>\[(f+\overline{\zeta})\overline{v} = 0 \]</div>
-<p>If we assume <span class="math notranslate nohighlight">\(v\)</span> is not zero, then it leads to <span class="math notranslate nohighlight">\((f+\overline{\zeta})=0\)</span>. An alternative way to write such relationship</p>
+<p>and further assume <span class="math notranslate nohighlight">\(v\)</span> is not zero, then it leads to <span class="math notranslate nohighlight">\((f+\overline{\zeta})=0\)</span>. An alternative way to write such relationship is</p>
 <div class="math notranslate nohighlight" id="equation-high-school-angular-momentum3">
 <span class="eqno">(31)<a class="headerlink" href="#equation-high-school-angular-momentum3" title="Permalink to this equation">¶</a></span>\[2\Omega \mathrm{sin}\phi = \frac{1}{a}\frac{\partial \overline{u}}{\partial \phi}-\frac{\overline{u}\mathrm{tan}\phi}{a}\]</div>
 <p>By assuming the zonal wind at <span class="math notranslate nohighlight">\(\phi=0\)</span>, we can solve the above ODE by integrating over <span class="math notranslate nohighlight">\(\phi\)</span> i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-high-school-angular-momentum4">
 <span class="eqno">(32)<a class="headerlink" href="#equation-high-school-angular-momentum4" title="Permalink to this equation">¶</a></span>\[\overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi}\]</div>
-<p><a class="reference internal" href="#equation-high-school-angular-momentum4">(32)</a></p>
+<p><a class="reference internal" href="#equation-high-school-angular-momentum4">(32)</a> shows how upper-level wind varies with latitude. Given that both hydrostatic and geostrophic balance still hold in the tropics (as long as the aspect ratio is small).</p>
 </div>
 </div>
 
