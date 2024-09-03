@@ -118,3 +118,9 @@ this leads to
 Y = (\frac{5\Delta \theta g H}{3\Omega^2\theta_0})^{\frac{1}{2}}
 ```
 
+and the equatorial temperature represented by $\theta_0$, $\Delta\theta$, $a$ and $\Omega$. 
+
+```{math}
+:label: Hadley_cell_boundary
+\theta_{M0} = \theta_{E0}-\frac{5\Delta \theta^2 gH}{18a^2\Omega^2\theta_0}
+```
