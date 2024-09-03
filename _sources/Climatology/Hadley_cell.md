@@ -24,6 +24,16 @@ name: FIG3-2
 Held and Hou (1980) Hadley Cell model
 ```
 
+Held and Hou model is a two-layer model mimicking the observed Hadley cell circulation which has poleward flow in the upper layer transporting higher potential energy to other latitudes and equatorward return flow at the lower layer. In the middle, an interface of radiative-equilibrium potential temperature represents the difference in received energy over latitudes, which can be formulated as 
+
+```{math}
+:label: HH_model_theta_e
+\begin{align}
+\frac{d \theta}{d t} & = \frac{\theta_E-\theta}{\tau} \\
+\theta_E & =  \\
+\end{align}
+```
+
 
 To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. 
 
