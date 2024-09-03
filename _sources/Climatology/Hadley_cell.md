@@ -132,4 +132,9 @@ Taking $\theta_0=255\text{K}$, $\Delta \theta=40\text{K}$ and $H=12\text{km}$. W
 name: FIG3-4
 ---
 The upper-level wind estimated in Held and Hou (1980) model. 
-``` 
+```
+
+For $y>2400\text{km}$, we use thermal wind relation to estimate $u_M$.  
+
+
+While Held and Hou model provides a prediction on the geometry of Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion (homework assignment).   
