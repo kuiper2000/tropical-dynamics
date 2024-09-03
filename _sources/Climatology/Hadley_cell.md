@@ -124,3 +124,12 @@ and the equatorial temperature represented by $\theta_0$, $\Delta\theta$, $a$ an
 :label: Hadley_cell_boundary
 \theta_{M0} = \theta_{E0}-\frac{5\Delta \theta^2 gH}{18a^2\Omega^2\theta_0}
 ```
+
+Taking $\theta_0=255\text{K}$, $\Delta \theta=40\text{K}$ and $H=12\text{km}$. We have $Y\approx2400\text{km}$. Using {eq}`high_school_angular_momentum4`, we can calculate the zonal wind at the upper level. 
+
+```{figure} ../tropical-dynamics-figures/u_M.png
+---
+name: FIG3-4
+---
+The upper-level wind estimated in Held and Hou (1980) model. 
+``` 
