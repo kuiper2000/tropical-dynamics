@@ -140,5 +140,5 @@ For $y>2400\text{km}$, we use thermal wind relation to estimate $u_M$.
 While Held and Hou model provides a prediction on the geometry of Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion (homework assignment).   
 
 
-
 ## Energy Flux Equator 
+As indicated previously, the main ascending motion of Hadley is located in the summer hemisphere. 
