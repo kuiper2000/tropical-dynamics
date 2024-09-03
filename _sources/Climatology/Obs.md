@@ -4,7 +4,7 @@
 
 The tropics and subtropics are typically defined as regions influenced by the Hadley circulation. However, this definition can be ambiguous and vary between individuals. Additionally, defining the boundary of the Hadley cell is a challenging and often unresolved issue.
 
-To better understand tropical dynamics, it is essential to first identify the characteristics and components of the tropics. The figure below illustrates the long-term average zonal-mean radiative energy at the top of the atmosphere (TOA). It is evident that the outgoing long-wave radiation (OLR) is relatively stable compared to the incoming shortwave radiation at the TOA. OLR generally indicates the amount of energy radiated into space from the top of the atmosphere and can sometimes serve as a proxy for emission temperature. 
+To better understand tropical dynamics, it is essential to first identify the characteristics and components of the tropics. The figure below illustrates the long-term average zonal-mean radiative energy at the top of the atmosphere (TOA). It is evident that the outgoing long-wave radiation (OLR) is relatively flat compared to the incoming shortwave radiation at the TOA. OLR generally indicates the amount of energy radiated into space from the top of the atmosphere and can sometimes serve as a proxy for emission temperature. 
 
 ```{figure} ../tropical-dynamics-figures/LW_SW.PNG
 ---
