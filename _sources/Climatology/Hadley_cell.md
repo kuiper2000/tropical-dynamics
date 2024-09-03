@@ -30,7 +30,7 @@ Held and Hou model is a two-layer model mimicking the observed Hadley cell circu
 :label: HH_model_theta_e
 \begin{align}
 \frac{d \theta}{d t} & = \frac{\theta_E-\theta}{\tau} \\
-\theta_E & =  \\
+\theta_E (\phi) & = \theta_0 -\frac{1}{3}\Delta \theta(3 \mathrm{sin}^2\phi-1) \\
 \end{align}
 ```
 
