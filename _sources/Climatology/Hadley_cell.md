@@ -101,6 +101,6 @@ The second equation represents the necessary meridional temperature gradient to 
 ---
 name: FIG3-3
 ---
-The long-term averaged mass stream function. 
+The angular-momentum conserved $\theta$ (black) versus radiative-equilibrium $\theta$ (orange). 
 ``` 
 
