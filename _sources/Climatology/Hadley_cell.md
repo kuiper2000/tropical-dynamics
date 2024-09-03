@@ -131,14 +131,14 @@ Taking $\theta_0=255\text{K}$, $\Delta \theta=40\text{K}$ and $H=12\text{km}$. W
 ---
 name: FIG3-4
 ---
-The upper-level wind estimated in Held and Hou (1980) model. 
+The upper-level wind is estimated in Held and Hou (1980) model. 
 ```
 
 For $y>2400\text{km}$, we use thermal wind relation to estimate $u_M$.  
 
-While Held and Hou model provides a prediction on the geometry of Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion (homework assignment).   
+While Held and Hou model predicts the geometry of the Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion (homework assignment).   
 
 
 ## Energy Flux Equator 
-As indicated previously, the main ascending motion of Hadley is located in the summer hemisphere. 
+As indicated previously, Hadley's main ascending motion is in the summer hemisphere. 
 
