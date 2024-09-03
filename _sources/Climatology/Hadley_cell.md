@@ -73,7 +73,7 @@ By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integratin
 
 ```{math}
 :label: high_school_angular_momentum4
-\overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi}
+\overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi} = \frac{\Omega}{a}y^2
 ```
 {eq}`high_school_angular_momentum4` shows how upper-level wind varies with latitude. Given that both hydrostatic and geostrophic balance still hold in the tropics (as long as the aspect ratio is small), we can further links {eq}`high_school_angular_momentum4` to {eq}`HH_model_theta_e`
 
