@@ -81,7 +81,10 @@ By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integratin
 
 ```{math}
 :label: thermal_wind
-\frac{\partial \overline{u}}{\partial z} = \frac{u_M}{H}
+\begin{align}
+f\frac{\partial \overline{u}}{\partial z} &= \frac{u_M}{H} \approx 2\Omega \frac{y}{a}= \frac{\Omega}{aH}y^2
+\frac{]partial \theta_M}{\partial      y} &=  
+\end{align}
 ```
 
 
