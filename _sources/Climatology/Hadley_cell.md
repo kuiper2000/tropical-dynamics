@@ -105,3 +105,7 @@ name: FIG3-3
 The angular-momentum conserved $\theta$ (black) versus radiative-equilibrium $\theta$ (orange). 
 ``` 
 
+In {numref}`FIG3-3`, if we move along the black curves, the total angular momentum is conserved. On the other hand, the orange curve represents the conservation of radiative energy. Therefore, if the observed temperature follows the black curve, the Hadley should redistribute energy from the tropics (the regions where orange curve surpasses black curve) to the energy sink of subtropics (black curve surpasses orange curve). 
+
+
+
