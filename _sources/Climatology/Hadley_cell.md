@@ -36,9 +36,9 @@ Held and Hou model is a two-layer model mimicking the observed Hadley cell circu
 where the heating rate of a given column is determined by the energy imbalance between $\theta_E$ and $\theta$ as well as the relaxation time (first equation of {eq}`HH_model_theta_e`). The former represents the radiative equilibrium profile of received energy and the latter is the atmospheric temperature. $\theta_E$ follows the second Legendre mode which has a maximum at the equator and minimum at the pole. 
 
 
-To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. 
+To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. 
 
-According to the definition of angular momentum of unit mass: 
+The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. According to the definition of angular momentum of unit mass: 
 
 ```{math}
 :label: high_school_angular_momentum
