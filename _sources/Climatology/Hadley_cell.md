@@ -30,7 +30,8 @@ Held and Hou model is a two-layer model mimicking the observed Hadley cell circu
 :label: HH_model_theta_e
 \begin{align}
 \frac{d \theta}{d t} & = \frac{\theta_E-\theta}{\tau} \\
-\theta_E (\phi) & = \theta_0 -\frac{1}{3}\Delta \theta(3 \mathrm{sin}^2\phi-1)  = \theta_0 -\Delta \theta \frac{y^2}{a^2} \text{given that $\phi \approx \mathrm{sin}\phi \approx \frac{y}{a}$}\\
+\theta_E (\phi) & = \theta_0 -\frac{1}{3}\Delta \theta(3 \mathrm{sin}^2\phi-1)  = \theta_0 -\Delta \theta \frac{y^2}{a^2} \\
+& \text{given that $\phi \approx \mathrm{sin}\phi \approx \frac{y}{a}$}\\
 \end{align}
 ```
 where the heating rate of a given column is determined by the energy imbalance between $\theta_E$ and $\theta$ as well as the relaxation time (first equation of {eq}`HH_model_theta_e`). The former represents the radiative equilibrium profile of received energy and the latter is the atmospheric temperature. $\theta_E$ follows the second Legendre mode which has a maximum at the equator and minimum at the pole. 
