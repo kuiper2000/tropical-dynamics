@@ -102,14 +102,16 @@ name: FIG3-3
 ---
 The angular-momentum conserved $\theta$ (black) versus radiative-equilibrium $\theta$ (orange). 
 ``` 
-In {numref}`FIG3-3`, moving along the black curves implies conserved total angular momentum, while the orange curve represents conservation of radiative energy. If the observed temperature follows the black curve, the Hadley cell should redistribute energy from the tropics (regions where the orange curve is above the black curve) to the subtropics (where the black curve is above the orange curve). The second intersection between the orange and black curves defines the boundary of the Hadley cell!
+In {numref}`FIG3-3`, moving along the black curves implies conserved total angular momentum, while the orange curve represents conservation of radiative energy. If the observed temperature follows the black curve, the Hadley cell should redistribute energy from the tropics (regions where the orange curve is above the black curve) to the subtropics (where the black curve is above the orange curve). The second intersection between the orange and black curves defines the boundary of the Hadley cell! While this might not be exactly true, it does provide mean of studying the boundary of Hadley cell. 
 
+From the above conclusion, we can write down the following equation 
 
+```{math}
+:label: angular_momentum_radiative_equilibrium
 
+\int_{-Y}^{Y} \theta_E - \theta_M dy =  0 \text{   or   } \int_{-Y}^{Y} \theta_E  =  \int_{-Y}^{Y} \theta_M dy
 
-
-
-
+```
 
 
 
