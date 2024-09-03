@@ -89,11 +89,18 @@ f\frac{\partial \overline{u}}{\partial z} &= \frac{u_M}{H} \approx 2\Omega \frac
 The second equation represents the necessary meridional temperature gradient to maintain an angular-momentum conserved thermal wind. Integrating over y, we have 
 
 ```{math}
-:label: thermal_wind
+:label: angular_momentum_theta
 \begin{align}
 \theta_M = \theta_{M0}-\frac{\Omega^2\theta_0}{2a^2gH}y^4
 \end{align}
 ```
 
+{eq}`angular_momentum_theta` can be summarized as the following figure. 
 
+```{figure} ../tropical-dynamics-figures/angular_momentum_energy_balance.png
+---
+name: FIG3-3
+---
+The long-term averaged mass stream function. 
+``` 
 
