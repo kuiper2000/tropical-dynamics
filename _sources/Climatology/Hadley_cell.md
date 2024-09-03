@@ -2,9 +2,9 @@
 # Week 4 and 5: Hadley Cell 
 ## Held-Hou Model
 
-Follow the discussion in previous two weeks, this week, we will look at how energy is residtributed from tropics to other latitudes. The early work on general circulation is motivated by the observation from Halley (1686) and Hadley (1735). They concluded that the tropical trade wind is part of large-scale ciruclation which redistributes the latitudinal difference in solar energy. Even without the upper-troposphere observation during that period, they also predicted the upper troposphere westerly, which is quite impressive. 
+Building on the discussions from the past two weeks, this week we will explore how energy is redistributed from the tropics to other latitudes. Early studies on general circulation were inspired by observations made by Halley (1686) and Hadley (1735). They concluded that the tropical trade winds are part of a large-scale circulation that redistributes solar energy across latitudes. Impressively, even without upper-troposphere observations available at that time, they predicted the existence of westerly winds in the upper troposphere.
 
-The zonal averaged Hadley circulation is shown in {numref}`FIG3-1` (mass stream function). The existence of Hadley cell has two main purposes (1) redistributing the meridional potential energy, and (2) conserving the angular momentum. We will see this in a minute. According to these two purposes, a few interesting features shown in {numref}`FIG3-1` lead to intriguing conclusions. First, the maximum ascending motion centers around $5^o$N suggesting the inter-hemisphere imbalance of incoming energy. Therefore, the Hadley cell will transport the energy from one hemisphere to the other hemisphere. Second, the descending branch is around 30$^o$N, which is relatively asymmetric about the hemisphere. (Indeed, if one flips {numref}`FIG1-1` with respect to the equator, a nearly identical incoming shortwave radiation can be found in both hemispheres). This implies the energy balance within this region is quite symmetric.   
+The zonally averaged Hadley circulation is depicted in {numref}FIG3-1 (mass stream function). The Hadley cell serves two main purposes: (1) redistributing meridional potential energy, and (2) conserving angular momentum. We'll delve into these shortly. Several interesting features shown in {numref}`FIG3-1` lead to notable conclusions. First, the maximum ascending motion is centered around $5^o$N, suggesting an imbalance in incoming energy between the hemispheres. Consequently, the Hadley cell transports energy from one hemisphere to the other. Second, the descending branch is located around 30$^o$N, which is relatively asymmetric between the hemispheres. (Indeed, if {numref}`FIG1-1` were flipped about the equator, we would observe nearly identical incoming shortwave radiation in both hemispheres.) This suggests a fairly symmetric energy balance within this region.
 
 
 ```{figure} ../tropical-dynamics-figures/mass_stream_function.png
@@ -14,7 +14,7 @@ name: FIG3-1
 The long-term averaged mass stream function. 
 ``` 
 
-To model how the energy and angular momentum are redistributed via Hadley cell, there were a few attempts traced back to 1980s. Held and Hou (1980) is one of the pioneers in this field. Held and Hou (1980) model can be briefly summarized by {numref}`FIG3-2`. 
+To model how energy and angular momentum are redistributed via the Hadley cell, several studies have been conducted, dating back to the 1980s. Held and Hou (1980) were pioneers in this area, and their model is summarized in {numref}`FIG3-2`.
 
 
 ```{figure} ../tropical-dynamics-figures/Held-and-Hou.png
@@ -24,7 +24,7 @@ name: FIG3-2
 Held and Hou (1980) Hadley Cell model
 ```
 
-Held and Hou model is a two-layer model mimicking the observed Hadley cell circulation which has poleward flow in the upper layer transporting higher potential energy to other latitudes and equatorward return flow at the lower layer. In the middle, an interface of radiative-equilibrium potential temperature represents the difference in received energy over latitudes, which can be formulated as 
+The Held and Hou model is a two-layer representation of the observed Hadley cell circulation, featuring poleward flow in the upper layer, which transports higher potential energy to other latitudes, and an equatorward return flow in the lower layer. In between these layers, a radiative-equilibrium potential temperature interface represents the variation in received energy across latitudes, which can be formulated as:
 
 ```{math}
 :label: HH_model_theta_e
@@ -34,50 +34,48 @@ Held and Hou model is a two-layer model mimicking the observed Hadley cell circu
 & \text{given that $\phi \approx \mathrm{sin}\phi \approx \frac{y}{a}$}\\
 \end{align}
 ```
-where the heating rate of a given column is determined by the energy imbalance between $\theta_E$ and $\theta$ as well as the relaxation time (first equation of {eq}`HH_model_theta_e`). The former represents the radiative equilibrium profile of received energy and the latter is the atmospheric temperature. $\theta_E$ follows the second Legendre mode which has a maximum at the equator and minimum at the pole. 
+Here, the heating rate of a given column is determined by the energy imbalance between $\theta_E$ and $\theta$ and the relaxation time (as shown in the first equation of {eq}`HH_model_theta_e`). $\theta_E$ represents the radiative equilibrium profile of received energy, and $\theta$ represents the atmospheric temperature. $\theta_E$ follows the second Legendre mode, which peaks at the equator and reaches a minimum at the pole.
 
+To understand how angular momentum is balanced and energy is redistributed, we begin with the zonal mean zonal momentum equation.
 
-To understand how the angular momentum is balanced and energy is redistributed, we start with a zonal mean zonal momentum equation. 
-
-The Earth's angular momentum is the combination of two components: (1) the tangential velocity from solid body rotation and (2) the wind relative to the Earth's motion. According to the definition of angular momentum of unit mass: 
+The Earth's angular momentum combines two components: (1) the tangential velocity from solid-body rotation, and (2) the wind relative to the Earth's motion. According to the definition of angular momentum for a unit mass:
 
 ```{math}
 :label: high_school_angular_momentum
 m = r \overrightarrow{u} = a \mathrm{cos}\phi (\Omega a \mathrm{cos}\phi + u)  
 ```
 
-where $m$ is the Earth angular momentum, $a$ is the Earth's radius and $u$ is the zonal wind. The conservation of angular momentum across latitudes implies that $\frac{\partial m}{\partial y}=0$. Readers can derive the above expression from zonal momentum equation. 
+where $m$ is the Earth's angular momentum, $a$ is the Earth's radius, and $u$ is the zonal wind. The conservation of angular momentum across latitudes implies that $\frac{\partial m}{\partial y}=0$. Readers can derive the above expression from the zonal momentum equation.
 
 ```{math}
 :label: zonal_angular_momentum_equation
 \frac{\partial \overline{u}}{\partial t} - (f+\overline{\zeta})\overline{v} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -\frac{1}{\mathrm{cos}^2\phi} \frac{\partial }{\partial \phi} (\mathrm{cos}^2\phi \overline{u'v'})-\frac{\partial \overline{u'w'}}{\partial z}
 ```
 
-One can derive {eq}`zonal_angular_momentum_equation` by writing non-linear momentum advection into the rotational acceleration and the convergence/divergence of kinetic. (see Vallis 2017). In {eq}`zonal_angular_momentum_equation`, prime and bar represent zonal mean and eddy components respectively. $(f+\overline{\zeta})\overline{v}$ is the acceleration of zonal wind by the torque of Coriolis force and relative vorticity. $\overline{w}\frac{\partial \overline{u}}{\partial z}$ is the vertical advection zonal wind. The two double prime terms on the right are eddy covariance terms (it will be discussed in a moment).
+One can derive {eq}`zonal_angular_momentum_equation` by decomposing nonlinear momentum advection into rotational acceleration and the convergence/divergence of kinetic energy (see Vallis 2017). In {eq}`zonal_angular_momentum_equation`, the prime and bar denote zonal mean and eddy components, respectively. $(f+\overline{\zeta})\overline{v}$ represents the acceleration of the zonal wind due to the torque of the Coriolis force and relative vorticity, while $\overline{w}\frac{\partial \overline{u}}{\partial z}$ accounts for the vertical advection of the zonal wind. The two double-prime terms on the right represent eddy covariance terms, which we will discuss shortly.
 
-
-If we assume a dynamical equilibrium (i.e., Earth's rotation is not spinning up or down), zonally symmetric (axisymmetric) atmosphere, where the vertical advection of zonal wind is negligible. Then we have 
+If we assume dynamical equilibrium (i.e., Earth's rotation is not accelerating or decelerating), a zonally symmetric (axisymmetric) atmosphere, and negligible vertical advection of the zonal wind, we have:
 
 ```{math}
 :label: high_school_angular_momentum2
 (f+\overline{\zeta})\overline{v} = 0 
 ```
 
-and further assume $v$ is not zero, then it leads to $(f+\overline{\zeta})=0$. An alternative way to write such relationship is
+Assuming $v$ is not zero, this leads to $(f+\overline{\zeta})=0$. An alternative way to express this relationship is:
 
 ```{math}
 :label: high_school_angular_momentum3
 2\Omega \mathrm{sin}\phi = \frac{1}{a}\frac{\partial \overline{u}}{\partial \phi}-\frac{\overline{u}\mathrm{tan}\phi}{a}
 ```
 
-By assuming the zonal wind at $\phi=0$, we can solve the above ODE by integrating over $\phi$ i.e., 
+By assuming the zonal wind is zero at $\phi=0$, we can solve the above ODE by integrating over $\phi$, giving:
 
 ```{math}
 :label: high_school_angular_momentum4
 \overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi} \rightarrow \overline{u}_M=\frac{\Omega}{a}y^2  \\ 
 \text{given that $\phi \approx \mathrm{sin}\phi \approx \frac{y}{a}$ and 0 surface wind}
 ```
-{eq}`high_school_angular_momentum4` shows how upper-level wind varies with latitude. Given that both hydrostatic and geostrophic balances hold in the tropics (as long as the aspect ratio is small), we can further link {eq}`high_school_angular_momentum4` to {eq}`HH_model_theta_e`. i.e., ($f\frac{\partial \overline{u}}{\partial z}= -\frac{g}{\theta_0}\frac{\partial \theta}{\partial y}$)
+{eq}`high_school_angular_momentum4` illustrates how upper-level wind varies with latitude. Since both hydrostatic and geostrophic balances are maintained in the tropics (as long as the aspect ratio is small), we can further relate {eq}high_school_angular_momentum4 to {eq}HH_model_theta_e, i.e., ($f\frac{\partial \overline{u}}{\partial z}= -\frac{g}{\theta_0}\frac{\partial \theta}{\partial y}$)
 
 ```{math}
 :label: thermal_wind
@@ -87,7 +85,7 @@ f\frac{\partial \overline{u}}{\partial z} &= \frac{u_M}{H} \approx 2\Omega \frac
 \end{align}
 ```
 
-The second equation represents the necessary meridional temperature gradient to maintain an angular-momentum conserved thermal wind. Integrating over y, we have 
+The second equation represents the meridional temperature gradient necessary to maintain an angular momentum-conserved thermal wind. Integrating over $y$, we obtain:
 
 ```{math}
 :label: angular_momentum_theta
@@ -104,8 +102,15 @@ name: FIG3-3
 ---
 The angular-momentum conserved $\theta$ (black) versus radiative-equilibrium $\theta$ (orange). 
 ``` 
+In {numref}`FIG3-3`, moving along the black curves implies conserved total angular momentum, while the orange curve represents conservation of radiative energy. If the observed temperature follows the black curve, the Hadley cell should redistribute energy from the tropics (regions where the orange curve is above the black curve) to the subtropics (where the black curve is above the orange curve). The second intersection between the orange and black curves defines the boundary of the Hadley cell!
 
-In {numref}`FIG3-3`, if we move along the black curves, the total angular momentum is conserved. On the other hand, the orange curve represents the conservation of radiative energy. Therefore, if the observed temperature follows the black curve, the Hadley should redistribute energy from the tropics (the regions where orange curve surpasses black curve) to the energy sink of subtropics (black curve surpasses orange curve). 
+
+
+
+
+
+
+
 
 
 
