@@ -153,8 +153,8 @@ where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\te
 ```{math}
 :label: Bichoff_and_Schneidor1
 \begin{align}
-<\overline{vh}>_\delta  = <\overline{vh}> (0+\delta) = <\overline{vh}>_0 + a\delta \frac{\partial }{\partial y} <\overline{vh}>(0) \\
-\text{where} a\mathrm{cos}\delta \approx a \delta \text{  when $\delta$ is small}
+<\overline{vh}>_\delta  & = <\overline{vh}> (0+\delta) = <\overline{vh}>_0 + a\delta \frac{\partial }{\partial y} <\overline{vh}>(0) \\
+& \text{where   } a\mathrm{cos}\delta \approx a \delta \text{  when $\delta$ is small}
 \end{align}
 ```
 
