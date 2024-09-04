@@ -152,7 +152,7 @@ where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\te
 
 ```{math}
 :label: Bichoff_and_Schneidor1
-<\nabla\cdot \overline{vh}>_\delta  = <\nabla\cdot \overline{vh}> (0+\delta y) = <\nabla\cdot \overline{vh}>_0 + \delta y \frac{\partial }{\partial y} <\nabla\cdot \overline{vh}> (0) 
+<\nabla\cdot \overline{vh}>_\delta  = <\nabla\cdot \overline{vh}> (0+\delta) = <\nabla\cdot \overline{vh}>_0 + \delta \frac{\partial }{\partial y} <\nabla\cdot \overline{vh}>(0) = <\nabla\cdot \overline{vh}>_0 + a \delta\phi \frac{\partial }{\partial y} <\nabla\cdot \overline{vh}>(0)
 ```
 
 
