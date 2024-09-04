@@ -143,8 +143,16 @@ While Held and Hou model predicts the geometry of the Hadley cell (i.e., boundar
 As indicated previously, Hadley's main ascending motion is in the summer hemisphere, where energy is transported to the other hemisphere. Bichoff and Schneidor (2014) demonstrated the main ascending motion of Hadley cell i.e., ITCZ is closely tied to the cross-equatorial energy flux. Start from the energy balance equation:    
 
 ```{math}
-:label: Bichoff_and_Schneidor
+:label: Bichoff_and_Schneidor1
 \text{SW}-\text{LW}-\text{O} = <\nabla\cdot \overline{vh}> 
 ```
 
-where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\text{O}$ is the storage by ocean, and $<\nabla\cdot \overline{vh}> $ is the energy flux divergence. 
+where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\text{O}$ is the storage by ocean, and $<\nabla\cdot \overline{vh}> $ is the energy flux divergence. The ITCZ is located close to the latitude $\delta$ where the energy flux change sign i.e., $<\overline{vh}>_\delta\sim 0$, the so-called energy flux equator. Taking Taylor expansion around the equator, we have 
+
+
+```{math}
+:label: Bichoff_and_Schneidor1
+<\nabla\cdot \overline{vh}>_\delta  = <\nabla\cdot \overline{vh}> (0+\delta y) = <\nabla\cdot \overline{vh}>_0 + \delta y \frac{\partial }{\partial y} <\nabla\cdot \overline{vh}> (0) 
+```
+
+
