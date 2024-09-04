@@ -151,11 +151,22 @@ where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\te
 
 
 ```{math}
-:label: Bichoff_and_Schneidor1
+:label: Bichoff_and_Schneidor2
 \begin{align}
 <\overline{vh}>_\delta  & = <\overline{vh}> (0+\delta) = <\overline{vh}>_0 + a\delta \frac{\partial }{\partial y} <\overline{vh}>_0 \\
 & \text{where   } a\mathrm{cos}\delta \approx a \delta \text{  when $\delta$ is small}
 \end{align}
 ```
+
+where leads to
+
+```{math}
+:label: Bichoff_and_Schneidor3
+\begin{align}
+\delta = -\frac{1}{a}\frac{ <\overline{vh}>_0}{\text{SW}-\text{LW}-\text{O}}
+\end{align}
+```
+
+
 
 
