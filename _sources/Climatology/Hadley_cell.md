@@ -163,12 +163,11 @@ where leads to
 ```{math}
 :label: Bichoff_and_Schneidor3
 \begin{align}
-\delta = -\frac{1}{a}\frac{ <\overline{vh}>_0}{\text{SW}-\text{LW}-\text{O}}
+\delta \approx -\frac{1}{a}\frac{ <\overline{vh}>_0}{\text{SW}-\text{LW}-\text{O}}
 \end{align}
 ```
 
-It is obvious that the meridional shift of ITCZ is determined by two factors (1) 
-
+It is obvious that the meridional shift of ITCZ is determined by two factors (1) the cross-equatorial energy flux and (2) the net energy on the equator. A more negative $ <\overline{vh}>_0$ (stronger transport from the North Hemisphere to the South Hemisphere) leads to a more poleward shift of ITCZ. On the other hand, more energy input ($\text{SW}-\text{LW}-\text{O}$) to the colder hemisphere will make such shift smaller (because inter-hemisphere energy difference is smaller!)
 
 
 
