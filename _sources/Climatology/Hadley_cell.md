@@ -167,7 +167,17 @@ where leads to
 \end{align}
 ```
 
-It is obvious that the meridional shift of ITCZ is determined by two factors (1) the cross-equatorial energy flux and (2) the net energy on the equator. A more negative $ <\overline{vh}>_0$ (stronger transport from the North Hemisphere to the South Hemisphere) leads to a more poleward shift of ITCZ. On the other hand, more energy input ($\text{SW}-\text{LW}-\text{O}$) to the colder hemisphere will make such shift smaller (because the inter-hemisphere energy difference is smaller!) In general, {eq}`Bichoff_and_Schneidor3` provides a simple law for diagnosing the location of ITCZ. (one should notice that I used diagnose rather than). It works when the location of ITCZ linearly various with the energy flux on the equator. {eq}`Bichoff_and_Schneidor3` breaks down when such linearity is violated. In such case, higher-order terms may be required to have a more accurate approximation.   
+It is obvious that the meridional shift of ITCZ is determined by two factors (1) the cross-equatorial energy flux and (2) the net energy on the equator. A more negative $ <\overline{vh}>_0$ (stronger transport from the North Hemisphere to the South Hemisphere) leads to a more poleward shift of ITCZ. On the other hand, more energy input ($\text{SW}-\text{LW}-\text{O}$) to the colder hemisphere will make such shift smaller (because the inter-hemisphere energy difference is smaller!) In general, {eq}`Bichoff_and_Schneidor3` provides a simple law for diagnosing the location of ITCZ. (one should notice that I used diagnose rather than). It works when the location of ITCZ linearly various with the energy flux on the equator. {eq}`Bichoff_and_Schneidor3` breaks down when such linearity is violated. In such case, higher-order terms may be required to have a more accurate approximation. 
+
+As discussed in the axisymmetric model, the boundary of Hadley is also modulated by the strength of eddy. Therefore, if we employ two integrations of  {eq}`Bichoff_and_Schneidor2`: one from the equator to the Northern edge of Hadley and the other one from the equator to the Southern edge. i.e.,  
+
+
+```{math}
+:label: Bichoff_and_Schneidor3
+\begin{align}
+\int_0^{\phi\sim 35^{\circ}}<\overline{vh}>  
+\end{align}
+```
 
 
 
