@@ -175,8 +175,17 @@ As discussed in the axisymmetric model, the boundary of Hadley is also modulated
 ```{math}
 :label: Bichoff_and_Schneidor4
 \begin{align}
-\int_0^{\phi\sim 35^{\circ}}\text{S}-\text{L}-\text{O}dy &= <\overline{vh}>_{\phi_{35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
-\int_0^{\phi\sim -35^{\circ}}\text{S}-\text{L}-\text{O}dy &= <\overline{vh}>_{\phi_{-35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\int_0^{\phi\sim 35^{\circ}}\text{SW}-\text{LW}-\text{O}dy &= <\overline{vh}>_{\phi_{35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\int_0^{\phi\sim -35^{\circ}}\text{SW}-\text{LW}-\text{O}dy &= <\overline{vh}>_{\phi_{-35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\end{align}
+```
+
+at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overline{h}>$) vanishes, which leads to $<\overline{vh}> \approx <\overline{v'h'}>$
+
+```{math}
+:label: Bichoff_and_Schneidor4
+\begin{align}
+<\overline{vh}>_{0^{\circ}} \approx \{ <v'h'>
 \end{align}
 ```
 
