@@ -189,9 +189,9 @@ at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overli
 \end{align}
 ```
 
-where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. (2) the inter-hemisphere asymmetry of eddy heat (energy) flux (one should notice the direction of integration is opposite between the first and the second equation in {eq}`Bichoff_and_Schneidor4`). 
+where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the inter-hemisphere asymmetry in net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. (2) the inter-hemisphere asymmetry of eddy heat (energy) flux (one should notice the direction of integration is opposite between the first and the second equation in {eq}`Bichoff_and_Schneidor4`). 
 
-
+For example, if there is more energy input into box within region of $0^{\circ}$ and $35^{\circ}N$ than $0^{\circ}$ and $35^{\circ}S$. Then the Hadley circulation should transport more energy from Northern hemisphere subtropics to the Southern hemisphere subtropics. 
 
 
 
