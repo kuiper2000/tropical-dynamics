@@ -183,11 +183,17 @@ As discussed in the axisymmetric model, the boundary of Hadley is also modulated
 at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overline{h}>$) vanishes, which leads to $<\overline{vh}> \approx <\overline{v'h'}>$
 
 ```{math}
-:label: Bichoff_and_Schneidor4
+:label: Bichoff_and_Schneidor5
 \begin{align}
-<\overline{vh}>_{0^{\circ}} \approx \{ <v'h'>^{\phi_{35^\circ}}_{-\phi_{35^\circ}} \} -\{\int^{y}_{0^{\circ}} (\text{SW}-\text{LW}-\text{O})dy\} ^{\phi_{35^\circ}} _{-\phi_{35^\circ}}
+<\overline{vh}>_{0^{\circ}} \approx \{ <v'h'>^{\phi_{35^\circ}}_{\phi_{-35^\circ}} \} -\{\int^{y}_{0^{\circ}} (\text{SW}-\text{LW}-\text{O})dy\} ^{\phi_{35^\circ}} _{\phi_{-35^\circ}}
 \end{align}
 ```
+
+where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. 
+
+
+
+
 
 
 
