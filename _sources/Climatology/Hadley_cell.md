@@ -185,7 +185,7 @@ at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overli
 ```{math}
 :label: Bichoff_and_Schneidor4
 \begin{align}
-<\overline{vh}>_{0^{\circ}} \approx \{ <v'h'>
+<\overline{vh}>_{0^{\circ}} \approx \{ <v'h'>^{\phi_{35^\circ}}_{-\phi_{35^\circ}} \} -\{\int^{y}_{0^{\circ}} (\text{SW}-\text{LW}-\text{O})dy\} ^{\phi_{35^\circ}} _{-\phi_{35^\circ}}
 \end{align}
 ```
 
