@@ -173,9 +173,10 @@ As discussed in the axisymmetric model, the boundary of Hadley is also modulated
 
 
 ```{math}
-:label: Bichoff_and_Schneidor3
+:label: Bichoff_and_Schneidor4
 \begin{align}
-\int_0^{\phi\sim 35^{\circ}}<\overline{vh}>  
+\int_0^{\phi\sim 35^{\circ}}\text{S}-\text{L}-\text{O}dy &= <\overline{vh}>_{\phi_{35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\int_0^{\phi\sim -35^{\circ}}\text{S}-\text{L}-\text{O}dy &= <\overline{vh}>_{\phi_{-35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
 \end{align}
 ```
 
