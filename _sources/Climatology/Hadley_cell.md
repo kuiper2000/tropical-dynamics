@@ -203,5 +203,12 @@ The energy flux equator and inter-hemisphere asymmetry of energy input.
 Bischoff and Schneider (2014) examined the applicability of {eq}`Bichoff_and_Schneidor3` in an idealized GCM (two-stream radiative scheme without cloud and aerosol), where they vary the longwave optical depth (absorbing more/less longwave). It is found that {eq}`Bichoff_and_Schneidor3` works well when $\delta$ is small, consistent with the 0th order assumption of Taylor expansion.   
 
 
+## What sets the boundary of Hadley cell
+While Held and Hou (1980) provides a dynamical constraint of Hadley cell boundary (inertial stability), Kapikova and Schneider (2024) (Princeton 2024 summer workshop) provided a simple framework for diagnosing the boundary of Hadley cell.  
 
-
+```{math}
+:label: Bichoff_and_Schneidor5
+\begin{align}
+\phi_{N} \approx \underbrace{( <\overline{v'h'}>_{\phi_N}-<\overline{v'h'}>_{\phi_S})}_{\text{Total poleward Energy transport}}
+\end{align}
+```
