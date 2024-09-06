@@ -200,6 +200,8 @@ name: FIG3-5
 The energy flux equator and inter-hemisphere asymmetry of energy input. 
 ```
 
+Bischoff and Schneider (2014) examined the applicability of {eq}`Bichoff_and_Schneidor3` in an idealized GCM (two-stream radiative scheme without cloud and aerosol), where they vary the longwave optical depth (absorbing more/less longwave). It is found that {eq}`Bichoff_and_Schneidor3` works well when $\delta$ is small, consistent with the 0th order assumption of Taylor expansion.   
+
 
 
 
