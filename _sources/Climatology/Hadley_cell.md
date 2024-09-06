@@ -175,8 +175,8 @@ As discussed in the axisymmetric model, the boundary of Hadley is also modulated
 ```{math}
 :label: Bichoff_and_Schneidor4
 \begin{align}
-\int_0^{\phi\sim 35^{\circ}}\text{SW}-\text{LW}-\text{O}dy &= <\overline{vh}>_{\phi_{35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
-\int_0^{\phi\sim -35^{\circ}}\text{SW}-\text{LW}-\text{O}dy &= <\overline{vh}>_{\phi_{-35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\int_0^{\phi\sim 35^{\circ}}(\text{SW}-\text{LW}-\text{O})dy &= <\overline{vh}>_{\phi_{35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
+\int_0^{\phi\sim -35^{\circ}}(\text{SW}-\text{LW}-\text{O})dy' &= <\overline{vh}>_{\phi_{-35^\circ}}-<\overline{vh}>_{\phi_{0^\circ}} \\ 
 \end{align}
 ```
 
@@ -189,7 +189,7 @@ at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overli
 \end{align}
 ```
 
-where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. 
+where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. (2) the inter-hemisphere asymmetry of eddy heat (energy) flux (one should notice the direction of integration is opposite between the first and the second equation in {eq}`Bichoff_and_Schneidor4`). 
 
 
 
