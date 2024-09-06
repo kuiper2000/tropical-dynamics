@@ -209,6 +209,6 @@ While Held and Hou (1980) provides a dynamical constraint of Hadley cell boundar
 ```{math}
 :label: Bichoff_and_Schneidor5
 \begin{align}
-\phi_{N} \approx \underbrace{( <\overline{v'h'}>_{\phi_N}-<\overline{v'h'}>_{\phi_S})}_{\text{Total poleward Energy transport}}
+\phi_{N} \sim \underbrace{( <\overline{v'h'}>_{\phi_N}-<\overline{v'h'}>_{\phi_S})}_{\text{Total poleward Energy transport}} + \underbrace{\{\int^{y}_{0^{\circ}} (\text{SW}-\text{LW}-\text{O})dy\} ^{\phi_{N} _{\phi_{S}}}_{\text{Inter-hemisphere asymmetry of energy input}}
 \end{align}
 ```
