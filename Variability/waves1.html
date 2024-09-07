@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -343,7 +345,11 @@ title="Print to PDF"
 <span id="waves1"></span><h1>Week 6 and 7: Tropical Wave Theory<a class="headerlink" href="#week-6-and-7-tropical-wave-theory" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="shallow-water-model">
 <h2>Shallow Water Model<a class="headerlink" href="#shallow-water-model" title="Permalink to this headline">¶</a></h2>
-<p>In addition to zonal mean circulation, eddy also plays an important role in shaping tropical climatology. Here we repeat the same scaling in <a class="reference internal" href="../Climatology/governing_equation.html#scale-analysis"><span class="std std-ref">Week 2 and 3: Scale Analysis</span></a>.</p>
+<p>In addition to zonal mean circulation, eddy also plays an important role in shaping tropical climatology. Here we repeat the same scale analysis in  <a class="reference internal" href="../Climatology/governing_equation.html#scale-analysis"><span class="std std-ref">Week 2 and 3: Scale Analysis</span></a>.</p>
+<div class="math notranslate nohighlight" id="equation-shallow-water-1">
+<span class="eqno">()<a class="headerlink" href="#equation-shallow-water-1" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}+w\frac{\partial u}{\partial z}]-\beta yv &amp; = -\frac{1}{\rho}\frac{\partial p}{\partial x}\\
+\end{align}\end{split}\]</div>
 </div>
 </div>
 
