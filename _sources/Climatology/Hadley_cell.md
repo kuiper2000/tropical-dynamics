@@ -75,12 +75,12 @@ By assuming the zonal wind is zero at $\phi=0$, we can solve the above ODE by in
 \overline{u}(\phi) = \frac{\Omega a \mathrm{sin}^2\phi}{\mathrm{cos}\phi} \rightarrow \overline{u}_M=\frac{\Omega}{a}y^2  \\ 
 \text{given that $\phi \approx \mathrm{sin}\phi \approx \frac{y}{a}$ and 0 surface wind}
 ```
-{eq}`high_school_angular_momentum4` illustrates how upper-level wind varies with latitude. Since both hydrostatic and geostrophic balances are maintained in the tropics (as long as the aspect ratio is small), we can further relate {eq}high_school_angular_momentum4 to {eq}HH_model_theta_e, i.e., ($f\frac{\partial \overline{u}}{\partial z}= -\frac{g}{\theta_0}\frac{\partial \theta}{\partial y}$)
+{eq}`high_school_angular_momentum4` illustrates how upper-level wind varies with latitude. Since both hydrostatic and geostrophic balances are maintained in the tropics (as long as the aspect ratio is small), we can further relate {eq}high_school_angular_momentum4 to {eq}`HH_model_theta_e`, i.e., ($f\frac{\partial \overline{u}}{\partial z}= -\frac{g}{\theta_0}\frac{\partial \theta}{\partial y}$)
 
 ```{math}
 :label: thermal_wind
 \begin{align}
-f\frac{\partial \overline{u}}{\partial z} &= \frac{u_M}{H} \approx 2\Omega \frac{y}{a}= \frac{\Omega}{aH}y^2 \\
+f\frac{\partial \overline{u}}{\partial z} &= 2\Omega \frac{y}{a} \frac{u_M}{H} = \frac{\Omega}{aH}y^2 \\
 \frac{\partial \theta_M}{\partial      y} &= -\frac{2\Omega^2\theta_0}{a^2g H}y^3 
 \end{align}
 ```
