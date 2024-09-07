@@ -141,3 +141,5 @@ One reason that the moisture is relatively localized is that there is no strong 
 Moisture is also the fuel of convection. From the observation, the tropical precipitation is a function of column water vapor (CWV). Cetain threshold should be satisfied for existence of deep convection. Interestingly, this threshold may vary over different climate states suggesting that it's the value of CWV relative to its neighbor matters rather than the absolute value of CWV. More details will be provided in the later of this semester. 
 
 
+```{bibliography}
+```
