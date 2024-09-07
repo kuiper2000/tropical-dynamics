@@ -226,4 +226,4 @@ name: FIG3-6
 The seasonal cycle of South Asia monsoon. Scatters indicated the latitudes with maximum precipitation. 
 ```
 
-
+In general, the South Asia monsoon is closer to the angular momentum conserved state. One reason is that the poleward migration of ITCZ accompanied by strong cross-equatorial flow is less influenced upper troposphere of eddy (there is "less" baroclinic eddy in deep tropics). Second, South Asia high (around Tibet) in the upper troposphere is more zonally elongated. A less tilted wave structure makes the eddy momentum transport weaker and thus has modest impacts on Hadley cell angular momentum. 
