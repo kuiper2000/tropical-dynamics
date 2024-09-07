@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Week 4 and 5: Hadley Cell" href="../Climatology/Hadley_cell.html" />
@@ -350,12 +352,11 @@ title="Print to PDF"
 <div class="section" id="shallow-water-model">
 <h2>Shallow Water Model<a class="headerlink" href="#shallow-water-model" title="Permalink to this headline">¶</a></h2>
 <p>In addition to zonal mean circulation, eddy also plays an important role in shaping tropical climatology. Here we repeat the same scale analysis in  <a class="reference internal" href="../Climatology/governing_equation.html#scale-analysis"><span class="std std-ref">Week 2 and 3: Scale Analysis</span></a>.</p>
-<!-- ```{math}
-:label: shallow_water_1
-\begin{align}
-\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}+w\frac{\partial u}{\partial z}]-\beta yv & = -\frac{1}{\rho}\frac{\partial p}{\partial x}\\
-\end{align}
-``` --></div>
+<div class="math notranslate nohighlight" id="equation-shallow-water-1">
+<span class="eqno">(44)<a class="headerlink" href="#equation-shallow-water-1" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}\begin{align}
+\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}+w\frac{\partial u}{\partial z}]-\beta yv &amp; = -\frac{1}{\rho}\frac{\partial p}{\partial x}\\\end{split}\\\begin{split}\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}+w\frac{\partial v}{\partial z}]+ \beta yu &amp; =-\frac{1}{\rho}\frac{\partial p}{\partial y} \\
+\end{align}\end{split}\end{aligned}\end{align} \]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
