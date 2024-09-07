@@ -136,18 +136,18 @@ The upper-level wind is estimated in Held and Hou (1980) model.
 
 For $y>2400\text{km}$, we use thermal wind relation to estimate $u_M$.  
 
-While Held and Hou model predicts the geometry of the Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion (homework assignment).   
+While Held and Hou model predicts the geometry of the Hadley cell (i.e., boundary and zonal wind), it also has some unrealistic features such as too weak meridional wind and vertical motion. Readers will complete the corresponding scale analysis in the homework assignment.   
 
 
 ## Energy Flux Equator 
-As indicated previously, Hadley's main ascending motion is in the summer hemisphere, where energy is transported to the other hemisphere. Bischoff and Schneider (2014) demonstrated the main ascending motion of Hadley cell i.e., ITCZ is closely tied to the cross-equatorial energy flux. Start from the energy balance equation:    
+As mentioned earlier, the primary ascending motion of the Hadley cell occurs in the summer hemisphere, where energy is transported to the opposite hemisphere. Bischoff and Schneider (2014) illustrated that the main ascending branch of the Hadley cell, also known as the ITCZ, is closely linked to the cross-equatorial energy flux. Beginning with the energy balance equation: 
 
 ```{math}
 :label: Bichoff_and_Schneidor1
 \text{SW}-\text{LW}-\text{O} = <\nabla\cdot \overline{vh}> 
 ```
 
-where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\text{O}$ is the storage by ocean, and $<\nabla\cdot \overline{vh}> $ is the energy flux divergence. The ITCZ is located close to the latitude $\delta$ where the energy flux change sign i.e., $<\overline{vh}>_\delta\sim 0$, the so-called energy flux equator. Taking Taylor expansion around the equator, we have 
+where $\text{SW}$ represents the incoming shortwave radiation, $\text{LW}$ the outgoing longwave radiation, $\text{O}$ the ocean storage, and $<\nabla\cdot \overline{vh}>$ the divergence of energy flux. The ITCZ is typically located near the latitude $\delta$ where the energy flux changes sign, i.e., $<\overline{vh}>_\delta\sim 0$, which is referred to as the energy flux equator. By performing a Taylor expansion around the equator, we obtain:
 
 
 ```{math}
@@ -158,7 +158,7 @@ where $\text{SW}$ is incoming short wave, $\text{LW}$ is outgoing longwave, $\te
 \end{align}
 ```
 
-where leads to
+This leads to the equation:
 
 ```{math}
 :label: Bichoff_and_Schneidor3
@@ -167,10 +167,9 @@ where leads to
 \end{align}
 ```
 
-It is obvious that the meridional shift of ITCZ is determined by two factors (1) the cross-equatorial energy flux and (2) the net energy on the equator. A more negative $ <\overline{vh}>_0$ (stronger transport from the North Hemisphere to the South Hemisphere) leads to a more poleward shift of ITCZ. On the other hand, more energy input ($\text{SW}-\text{LW}-\text{O}$) to the colder hemisphere will make such shift smaller (because the inter-hemisphere energy difference is smaller!) In general, {eq}`Bichoff_and_Schneidor3` provides a simple law for diagnosing the location of ITCZ. (one should notice that I used diagnose rather than). It works when the location of ITCZ linearly various with the energy flux on the equator. {eq}`Bichoff_and_Schneidor3` breaks down when such linearity is violated. In such case, higher-order terms may be required to have a more accurate approximation. 
+Clearly, the meridional shift of the ITCZ is influenced by two factors: (1) the cross-equatorial energy flux and (2) the net energy at the equator. A more negative $<\overline{vh}>_0$ (indicating stronger energy transport from the Northern Hemisphere to the Southern Hemisphere) results in a more poleward shift of the ITCZ. Conversely, an increase in energy input ($\text{SW}-\text{LW}-\text{O}$) to the cooler hemisphere reduces this shift because the energy difference between the hemispheres becomes smaller. In general, {eq}`Bichoff_and_Schneidor3` offers a straightforward method for determining the ITCZ location. It is valid when the ITCZ position varies linearly with the energy flux at the equator. However, when this linearity is not present, higher-order terms may be required for a more precise approximation.
 
-As discussed in the axisymmetric model, the boundary of Hadley is also modulated by the strength of eddy. Therefore, if we employ two integrations of  {eq}`Bichoff_and_Schneidor2`: one from the equator to the Northern edge of Hadley and the other one from the equator to the Southern edge. i.e.,  
-
+In the axisymmetric model, the boundary of the Hadley cell is also influenced by the strength of eddy activity. Thus, integrating {eq}`Bichoff_and_Schneidor2` from the equator to both the Northern and Southern edges of the Hadley cell yields:
 
 ```{math}
 :label: Bichoff_and_Schneidor4
@@ -180,7 +179,7 @@ As discussed in the axisymmetric model, the boundary of Hadley is also modulated
 \end{align}
 ```
 
-at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overline{h}>$) vanishes, which leads to $<\overline{vh}> \approx <\overline{v'h'}>$
+At the Hadley cell's edge, the mean meridional transport ($<\overline{v}\overline{h}>$) vanishes, which simplifies to $<\overline{vh}> \approx <\overline{v'h'}>$:
 
 ```{math}
 :label: Bichoff_and_Schneidor5
@@ -189,9 +188,9 @@ at the edge of Hadley cell, the mean meridional transport ($<\overline{v}\overli
 \end{align}
 ```
 
-where $\{\}$ is the arithmetic mean. {eq}`Bichoff_and_Schneidor5` indicates that the cross-equatorial energy flux is determined by (1) the inter-hemisphere asymmetry in net radiative energy within $\phi_{-35^\circ}$ and $\phi_{35^\circ}$. (2) the inter-hemisphere asymmetry of eddy heat (energy) flux (one should notice the direction of integration is opposite between the first and the second equation in {eq}`Bichoff_and_Schneidor4`). 
+Here, ${}$ denotes the arithmetic mean. {eq}`Bichoff_and_Schneidor5` suggests that the cross-equatorial energy flux is determined by: (1) the asymmetry in net radiative energy between $\phi_{-35^\circ}$ and $\phi_{35^\circ}$, and (2) the asymmetry in eddy heat (energy) flux between the hemispheres (note the opposite integration directions in the two equations of {eq}`Bichoff_and_Schneidor4`).
 
-For example, if there is more energy input into the box within the region of $0^{\circ}$ and $35^{\circ}N$ than $0^{\circ}$ and $35^{\circ}S$. Then the Hadley circulation should transport more energy from the Northern hemisphere subtropics to the Southern hemisphere subtropics. (i.e., {numref}`FIG3-5`)
+For instance, if the region between $0^{\circ}$ and $35^{\circ}N$ receives more energy than the region between $0^{\circ}$ and $35^{\circ}S$, the Hadley circulation will transport more energy from the Northern Hemisphere subtropics to the Southern Hemisphere subtropics (as seen in {numref}`FIG3-5`).
 
 ```{figure} ../tropical-dynamics-figures/Bischoff_and_Schneider.png
 ---
@@ -200,11 +199,11 @@ name: FIG3-5
 The energy flux equator and inter-hemisphere asymmetry of energy input. 
 ```
 
-Bischoff and Schneider (2014) examined the applicability of {eq}`Bichoff_and_Schneidor3` in an idealized GCM (two-stream radiative scheme without cloud and aerosol), where they vary the longwave optical depth (absorbing more/less longwave). It is found that {eq}`Bichoff_and_Schneidor3` works well when $\delta$ is small, consistent with the 0th order assumption of Taylor expansion.   
+Bischoff and Schneider (2014) explored the validity of {eq}`Bichoff_and_Schneidor3` using an idealized general circulation model (GCM) with a two-stream radiative scheme (excluding clouds and aerosols). They varied the longwave optical depth and found that {eq}`Bichoff_and_Schneidor3` holds well when $\delta$ is small, consistent with the 0th order assumption of the Taylor expansion.
 
 
 ## What sets the boundary of Hadley cell
-While Held and Hou (1980) provides a dynamical constraint of Hadley cell boundary (inertial stability), Kapikova and Schneider (2024) (Princeton 2024 summer workshop) provided a simple framework for diagnosing the boundary of Hadley cell.  
+While Held and Hou (1980) established a dynamical constraint for the Hadley cell boundary based on inertial stability, Kapikova and Schneider (2024) (Princeton 2024 summer workshop) proposed a simplified framework for diagnosing this boundary:
 
 ```{math}
 :label: Bichoff_and_Schneidor6
@@ -213,11 +212,13 @@ While Held and Hou (1980) provides a dynamical constraint of Hadley cell boundar
 \end{align}
 ```
 
-One can compare the formula above with the {eq}`Hadley_cell_boundary`, where a dynamical constraint is implemented. (Note that {eq}`Bichoff_and_Schneidor6` is a purely energetic constraint). {eq}`Hadley_cell_boundary` states that when the meridional temperature gradient is large and the inertial stability is small, the extent of the Hadley cell boundary will be more poleward. {eq}`Bichoff_and_Schneidor6` states that when the eddy heat flux is stronger (similar to increased meridional temperature gradient) and the inter-hemisphere asymmetry exists, then the boundary of Hadley cell will migrate more poleward in the warmer hemisphere. Readers can think about where these two statements are really the same.
+This formula can be compared to {eq}`Hadley_cell_boundary`, which includes a dynamical constraint. {eq}`Bichoff_and_Schneidor6`, being purely energy-based, suggests that a stronger eddy heat flux (similar to an increased meridional temperature gradient) and inter-hemisphere energy asymmetry cause the Hadley cell boundary to shift poleward in the warmer hemisphere. Readers may consider how these two models relate.
 
 
 ## The link between axisymmetric Hadley cell and South Asia monsoon
-An interesting fact is that the migration of Hadley cell on seasonal timescales is dominated by the South Asia branch (more abrupt) while the Eastern Pacific Hadley shows less seasonal migration. Therefore, what we saw in inter-hemisphere asymmetry of net energy is probably dominated by the South Asia monsoon system. {numref}`FIG3-6`. 
+An interesting observation is that the seasonal migration of the Hadley cell is primarily driven by the South Asia branch, which shows more abrupt movement, while the Eastern Pacific branch exhibits less seasonal migration. The inter-hemisphere asymmetry in net energy is likely dominated by the South Asia monsoon system ({numref}`FIG3-6`).
+
+
 
 ```{figure} ../tropical-dynamics-figures/South_Asia_monsoon.png
 ---
@@ -226,4 +227,4 @@ name: FIG3-6
 The seasonal cycle of South Asia monsoon. Scatters indicated the latitudes with maximum precipitation. 
 ```
 
-In general, the South Asia monsoon is closer to the angular momentum conserved state. One reason is that the poleward migration of ITCZ accompanied by strong cross-equatorial flow is less influenced upper troposphere of eddy (there is "less" baroclinic eddy in deep tropics). Second, South Asia high (around Tibet) in the upper troposphere is more zonally elongated. A less tilted wave structure makes the eddy momentum transport weaker and thus has modest impacts on Hadley cell angular momentum. 
+The South Asia monsoon is generally closer to an angular momentum-conserved state. One reason for this is that the poleward migration of the ITCZ, accompanied by strong cross-equatorial flow, is less influenced by upper tropospheric eddies (as the deep tropics experience less baroclinic eddy activity). Additionally, the South Asia high, located over Tibet in the upper troposphere, is more zonally elongated. This reduced tilt in wave structure weakens eddy momentum transport, thus having a limited impact on the Hadley cell’s angular momentum. 
