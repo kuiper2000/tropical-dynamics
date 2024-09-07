@@ -218,8 +218,6 @@ This formula can be compared to {eq}`Hadley_cell_boundary`, which includes a dyn
 ## The link between axisymmetric Hadley cell and South Asia monsoon
 An interesting observation is that the seasonal migration of the Hadley cell is primarily driven by the South Asia branch, which shows more abrupt movement, while the Eastern Pacific branch exhibits less seasonal migration. The inter-hemisphere asymmetry in net energy is likely dominated by the South Asia monsoon system ({numref}`FIG3-6`).
 
-
-
 ```{figure} ../tropical-dynamics-figures/South_Asia_monsoon.png
 ---
 name: FIG3-6
