@@ -178,14 +178,14 @@ Consider an air parcel at the black dot's location. The horizontal pressure grad
 :label: reduced_gravity1
 \rho a = [(\rho+\delta \rho) g (\eta(x_1)-\overline{\eta})+\rho g (H-\eta(x_1))] - [\rho g \overline{\eta}] = \delta \rho g (\eta(x_1)-\overline{\eta})
 ```
-where $a$ is the acceleration of the air parcel due to the pressure gradient force. The pressure gradient force is $\delta \rho g (\eta(x_1) - \eta)$ instead of $\delta \rho g (\eta(x_1))$ because the fluid above creates a counteracting pressure gradient force (from right to left), reducing the overall pressure gradient force. By dividing both sides of the equation by $\rho$, we obtain:
+where $a$ is the acceleration of the air parcel due to the pressure gradient force. The pressure gradient force is $\delta \rho g (\eta(x_1) - \overline{\eta})$ instead of $\rho g (\eta(x_1)-\overline{\eta})$ because the fluid above creates a counteracting pressure gradient force (from right to left), reducing the overall pressure gradient force. By dividing both sides of the equation by $\rho$, we obtain:
 
 ```{math}
 :label: reduced_gravity2
-a = (\frac{\delta \rho}{\rho} g) (\eta(x_1)-\eta)
+a = (\frac{\delta \rho}{\rho} g) (\eta(x_1)-\overline{\eta})
 ```
 
-The first term on the right-hand side is called "reduced gravity." An alternative representation is the "equivalent depth," given by $H' = \frac{\delta \rho}{\rho} (\eta(x_1) - \eta)$. The "height" causing the pressure gradient is not as large as originally expected but is "equivalent to" a somewhat shallower height. Later sections will discuss the significance of such shallowness. 
+The first term on the right-hand side is called "reduced gravity." An alternative representation is the "equivalent depth," given by $H' = \frac{\delta \rho}{\rho} (\eta(x_1) - \overline{\eta})$. The "height" causing the pressure gradient is not as large as originally expected but is "equivalent to" a somewhat shallower height. Later sections will discuss the significance of such shallowness. 
 :::
 
 
