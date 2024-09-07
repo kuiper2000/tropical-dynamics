@@ -207,10 +207,23 @@ Bischoff and Schneider (2014) examined the applicability of {eq}`Bichoff_and_Sch
 While Held and Hou (1980) provides a dynamical constraint of Hadley cell boundary (inertial stability), Kapikova and Schneider (2024) (Princeton 2024 summer workshop) provided a simple framework for diagnosing the boundary of Hadley cell.  
 
 ```{math}
-:label: Bichoff_and_Schneidor5
+:label: Bichoff_and_Schneidor6
 \begin{align}
 \phi_{N} \sim \underbrace{( <\overline{v'h'}>_{\phi_N}-<\overline{v'h'}>_{\phi_S})}_{\text{Total poleward Energy transport}} + \underbrace{ \{\int^{y}_{0^{\circ}} (\text{SW}-\text{LW}-\text{O})dy\}^{\phi_{N}}_{\phi_{S}}}_{\text{Inter-hemisphere asymmetry of energy input}}
 \end{align}
+```
+
+One can compare the formula above with the {eq}`Hadley_cell_boundary`, where a dynamical constraint is implemented. (Note that {eq}`Bichoff_and_Schneidor6` is a purely energetic constraint). {eq}`Hadley_cell_boundary` states that when the meridional temperature gradient is large and the inertial stability is small, the extent of the Hadley cell boundary will be more poleward. {eq}`Bichoff_and_Schneidor6` states that when the eddy heat flux is stronger (similar to increased meridional temperature gradient) and the inter-hemisphere asymmetry exists, then the boundary of Hadley cell will migrate more poleward in the warmer hemisphere. Readers can think about where these two statements are really the same.
+
+
+## The link between axisymmetric Hadley cell and South Asia monsoon
+An interesting fact is that the migration of Hadley cell on seasonal timescales is dominated by the South Asia branch (more abrupt) while the Eastern Pacific Hadley shows less seasonal migration. Therefore, what we saw in inter-hemisphere asymmetry of net energy is probably dominated by the South Asia monsoon system. {numref}`FIG3-6`. 
+
+```{figure} ../tropical-dynamics-figures/South_Asia_monsoon.png
+---
+name: FIG3-6
+---
+The seasonal cycle of South Asia monsoon. Scatters indicated the latitudes with maximum precipitation. 
 ```
 
 
