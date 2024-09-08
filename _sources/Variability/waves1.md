@@ -25,4 +25,4 @@ w(z) & = -z (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial x}) + w_0
 \end{align}
 ```
 
-where $w(z)$ is the 
+where $H$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d H}{dt}$. 
