@@ -20,7 +20,7 @@ Following {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1`
 :label: shallow_water_1
 \begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g\frac{\partial H}{\partial x}\\
-\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial H}{\partial x}\\
+\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial H}{\partial y}\\
 w(z) & = -z (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial x}) + w_0 
 \end{align}
 ```
