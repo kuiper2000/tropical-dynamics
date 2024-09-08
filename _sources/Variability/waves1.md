@@ -33,8 +33,6 @@ Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanc
 ```{math}
 :label: shallow_water_2
 \begin{align}
-\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g\frac{\partial h}{\partial x}\\
-\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial h}{\partial y}\\
 w(z) & = \frac{d \eta}{dt} = \frac{\partial \eta}{\partial t}+\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = \frac{g}{N^2}\frac{Q}{c_p T}
 \end{align}
 ```
