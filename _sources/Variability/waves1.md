@@ -15,18 +15,18 @@ In addition to zonal mean circulation, eddy also plays an important role in shap
 \end{align}
 ```
 
-Following {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1` 
+Following {eq}`reduced_gravity2` and integrating the third equation from the top of the boundary layer, we can rewrite {eq}`shallow_water_1` 
 
 ```{math}
 :label: shallow_water_2
 \begin{align}
-\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g\frac{\partial h}{\partial x}\\
-\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial h}{\partial y}\\
+\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g'\frac{\partial h}{\partial x}\\
+\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g'\frac{\partial h}{\partial y}\\
 w(z) & = \frac{d \eta}{dt} = \frac{\partial \eta}{\partial t}+\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = 0
 \end{align}
 ```
 
-where $h$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d h}{dt}$. 
+where $h$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d h}{dt} = \frac{d \eta}{dt}$. 
 
 Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by adiabatic cooling/heating of vertical motion. i.e., {eq}`thermodynamics`. Therefore, the last equation is also subject to a forcing term, which can be written as 
 
