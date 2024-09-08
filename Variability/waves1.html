@@ -361,15 +361,15 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <p>Following <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a> (reduced gravity) and integrating the third equation from top of the boundary layer to the interface <span class="math notranslate nohighlight">\(\eta\)</span>, we can rewrite <a class="reference internal" href="#equation-shallow-water-1">(44)</a></p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-2">
-<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(45)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv &amp; = -g'\frac{\partial h}{\partial x}\\
 \frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu &amp; = -g'\frac{\partial h}{\partial y}\\
 w(z=\eta) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  
 \end{align}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(h\)</span> is the location of interface defined as <span class="math notranslate nohighlight">\(\eta(x)-\overline{\eta}\)</span> (see <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a>) and <span class="math notranslate nohighlight">\(w(t)\)</span> is the rate change in this displacement i.e., <span class="math notranslate nohighlight">\(w(z)=\frac{d h}{dt} = \frac{d \eta}{dt}\)</span>.</p>
 <p>Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by adiabatic cooling/heating of vertical motion. i.e., <a class="reference internal" href="../Climatology/governing_equation.html#equation-thermodynamics">(20)</a>. Therefore, the last equation is also subject to a forcing term, which can be written as</p>
-<div class="math notranslate nohighlight" id="equation-shallow-water-2">
-<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<div class="math notranslate nohighlight" id="equation-shallow-water-3">
+<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  &amp; = \frac{g}{N^2}\frac{Q}{c_p T} \\
 &amp; = \frac{g}{g\frac{\partial \mathrm{ln}\theta}{\partial z}}\frac{Q}{c_p T} \\
 &amp; = \frac{1}{\frac{\partial \mathrm{ln}T}{\partial z}-\frac{R}{c_p}\frac{\partial \mathrm{ln}p}{\partial z}} \frac{Q}{c_p T} \\
@@ -378,9 +378,10 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 \text{using geopotential height to rewrite above equation} &amp; \\
 \frac{d \phi}{dt} &amp; =  -g\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) = \frac{Q}{ (1-\Gamma/\Gamma_d)}
 \end{align}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi\)</span> is <span class="math notranslate nohighlight">\(g\eta\)</span>. The last equation of <a class="reference internal" href="#equation-shallow-water-3">(46)</a> states that the diabatic heating-induced vertical motion differentiation nearly balances the convergence/divergence of horizontal flow. This relation holds for both external (i.e., g is not reduced) and internal modes (i.e., g is reduced).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>One should notice that <span class="math notranslate nohighlight">\( w_0\)</span> in <a class="reference internal" href="#equation-shallow-water-2">(46)</a> is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain.</p>
+<p>One should notice that <span class="math notranslate nohighlight">\( w_0\)</span> in <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain.</p>
 </div>
 </div>
 </div>
