@@ -36,6 +36,10 @@ Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanc
 w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  & = \frac{g}{N^2}\frac{Q}{c_p T} \\
 & = \frac{g}{g\frac{\partial \mathrm{ln}\theta}{\partial z}}\frac{Q}{c_p T} \\
 & = \frac{1}{\frac{\partial \mathrm{ln}T}{\partial z}-\frac{R}{c_p}\frac{\partial \mathrm{ln}p}{\partial z}} \frac{Q}{c_p T} \\
+& = \frac{1}{\frac{\partial T}{\partial z}-\frac{g}{c_p}}Q \\
+& = \frac{Q}{c_p (\Gamma-\Gamma_d)} \\
+\text{using geopotential height to rewrite above equation} & \\
+\frac{d \phi}{dt} & =  -g\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) = \frac{Q}{ (1-\Gamma/\Gamma_d)}
 \end{align}
 ```
 
