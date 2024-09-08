@@ -359,19 +359,21 @@ title="Print to PDF"
 \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z} &amp;= 0 \\
 \frac{\partial p}{\partial z} &amp;= -\rho g \\
 \end{align}\end{split}\]</div>
-<p>Following <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a> and integrating the third equation from the top of the boundary layer, we can rewrite <a class="reference internal" href="#equation-shallow-water-1">(44)</a></p>
+<p>Following <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a> (reduced gravity) and integrating the third equation from top of the boundary layer to the interface <span class="math notranslate nohighlight">\(\eta\)</span>, we can rewrite <a class="reference internal" href="#equation-shallow-water-1">(44)</a></p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-2">
 <span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv &amp; = -g'\frac{\partial h}{\partial x}\\
 \frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu &amp; = -g'\frac{\partial h}{\partial y}\\
-w(z) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = 0
+w(z=\eta) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  
 \end{align}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(h\)</span> is the location of interface defined as <span class="math notranslate nohighlight">\(\eta(x)-\overline{\eta}\)</span> (see <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a>) and <span class="math notranslate nohighlight">\(w(t)\)</span> is the rate change in this displacement i.e., <span class="math notranslate nohighlight">\(w(z)=\frac{d h}{dt} = \frac{d \eta}{dt}\)</span>.</p>
 <p>Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by adiabatic cooling/heating of vertical motion. i.e., <a class="reference internal" href="../Climatology/governing_equation.html#equation-thermodynamics">(20)</a>. Therefore, the last equation is also subject to a forcing term, which can be written as</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-2">
-<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{align}
-w(z) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = \frac{g}{N^2}\frac{Q}{c_p T}
-\end{align}\]</div>
+<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  &amp; = \frac{g}{N^2}\frac{Q}{c_p T} \\
+&amp; = \frac{g}{g\frac{\partial \mathrm{ln}\theta}{\partial z}}\frac{Q}{c_p T} \\
+&amp; = \frac{1}{\frac{\partial \mathrm{ln}T}{\partial z}-\frac{R}{c_p}\frac{\partial \mathrm{ln}p}{\partial z}} \frac{Q}{c_p T} \\
+\end{align}\end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>One should notice that <span class="math notranslate nohighlight">\( w_0\)</span> in <a class="reference internal" href="#equation-shallow-water-2">(46)</a> is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain.</p>

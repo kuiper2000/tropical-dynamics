@@ -15,14 +15,14 @@ In addition to zonal mean circulation, eddy also plays an important role in shap
 \end{align}
 ```
 
-Following {eq}`reduced_gravity2` and integrating the third equation from the top of the boundary layer, we can rewrite {eq}`shallow_water_1` 
+Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from top of the boundary layer to the interface $\eta$, we can rewrite {eq}`shallow_water_1` 
 
 ```{math}
 :label: shallow_water_2
 \begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g'\frac{\partial h}{\partial x}\\
 \frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g'\frac{\partial h}{\partial y}\\
-w(z) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = 0
+w(z=\eta) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  
 \end{align}
 ```
 
@@ -33,7 +33,9 @@ Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanc
 ```{math}
 :label: shallow_water_2
 \begin{align}
-w(z) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  = \frac{g}{N^2}\frac{Q}{c_p T}
+w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  & = \frac{g}{N^2}\frac{Q}{c_p T} \\
+& = \frac{g}{g\frac{\partial \mathrm{ln}\theta}{\partial z}}\frac{Q}{c_p T} \\
+& = \frac{1}{\frac{\partial \mathrm{ln}T}{\partial z}-\frac{R}{c_p}\frac{\partial \mathrm{ln}p}{\partial z}} \frac{Q}{c_p T} \\
 \end{align}
 ```
 
