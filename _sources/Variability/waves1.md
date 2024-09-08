@@ -19,11 +19,11 @@ Following {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1`
 ```{math}
 :label: shallow_water_1
 \begin{align}
-\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g\frac{\partial H}{\partial x}\\
-\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial H}{\partial y}\\
-w(z) & = \frac{dH}{dt} = -H (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial x}) + w_0 
+\frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv & = -g\frac{\partial h}{\partial x}\\
+\frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu & = -g\frac{\partial h}{\partial y}\\
+w(z) & = \frac{dh}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0 
 \end{align}
 ```
 
-where $H$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d H}{dt}$. 
+where $h$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d h}{dt}$. Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by 
 
