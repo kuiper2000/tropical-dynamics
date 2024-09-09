@@ -34,7 +34,7 @@ w(z=\eta) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x
 \end{align}
 ```
 
-where $h$ is the location of interface defined as $\eta(x)-\overline{\eta}$ (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)=\frac{d h}{dt} = \frac{d \eta}{dt}$. 
+where $\eta$ is the location of interface (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)= \frac{d \eta}{dt}$. 
 
 Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by adiabatic cooling/heating of vertical motion. i.e., {eq}`thermodynamics`. Therefore, the last equation is also subject to a forcing term, which can be written as 
 
