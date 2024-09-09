@@ -61,3 +61,16 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 ```
 {eq}`boundary_layer` states that the normal velocity exists through two processes (1) the advection of $h_B$ (inhomogeneous in space) by $u$ and $v$ at $h_B$ or (2) the convergence/divergence of $h_B$ (homogeneous but non-zero).   
 :::
+
+## Conservation of Shallow Water PV
+{eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
+
+
+```{math}
+:label: shallow_water_4
+\begin{align}
+\frac{d\zeta}{dt} = \frac{\partial \zeta}{\partial t} + u\frac{\partial \zeta}{\partial x}+v\frac{\partial \zeta}{\partial y} = -(\zeta+f)(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})
+\end{align}
+```
+
+
