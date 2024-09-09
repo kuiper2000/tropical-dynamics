@@ -75,4 +75,6 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 \end{align}
 ```
 
+the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$
+
 
