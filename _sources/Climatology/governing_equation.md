@@ -166,7 +166,7 @@ As for $\theta'$, a similar analysis can be performed, which is left as an exerc
 :::{note}
 One might wonder why we care about reduced gravity in horizontal direction. This can be found in the following schematic plot. 
 
-```{figure} ../tropical-dynamics-figures/radiative_balance.png
+```{figure} ../tropical-dynamics-figures/reduced_gravity.png
 ---
 name: FIG2-2
 ---
