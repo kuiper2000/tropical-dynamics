@@ -23,7 +23,7 @@ As in {numref}`FIG2-2` except that $h_B\neq0$
 ```
 
 
-Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from top of the boundary layer to the interface $\eta$ (i.e., {numref}`FIG4-1`), we can rewrite {eq}`shallow_water_1` 
+Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from surface (or top of the boundary) to the interface $\eta$ (i.e., {numref}`FIG4-1`), we can rewrite {eq}`shallow_water_1` 
 
 ```{math}
 :label: shallow_water_2
