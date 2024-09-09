@@ -46,5 +46,5 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 where $\phi$ is $g\eta$. The last equation of {eq}`shallow_water_3` states that the diabatic heating-induced vertical motion differentiation nearly balances the convergence/divergence of horizontal flow. This relation holds for both external (i.e., g is not reduced) and internal modes (i.e., g is reduced). 
 
 :::{note}
-One should notice that $ w_0$ in {eq}`shallow_water_2` is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain, it requires that $w(x,y,z=h_B,t) = u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}$ (at the boundary, $\frac{\partial h_B}{\partial t}=0$)  
+One should notice that $ w_0$ in {eq}`shallow_water_2` is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain, it requires that $w(x,y,z=h_B,t) = u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}$ (at the boundary, $\frac{\partial h_B}{\partial t}=0$). This leads to $w_0=u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}+h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})$  
 :::
