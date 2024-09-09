@@ -70,7 +70,8 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 :label: shallow_water_4
 \begin{align}
 \frac{d\zeta}{dt} = \frac{\partial \zeta}{\partial t} + u\frac{\partial \zeta}{\partial x}+v\frac{\partial \zeta}{\partial y} &= -(\zeta+f)(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) \\
-& = \frac{\zeta+f}{\overline{\eta}}\frac{d\eta}{dt}
+& = \frac{\zeta+f}{\overline{\eta}}\frac{d\eta}{dt} \text{  or}\\
+& \rightarrow  \frac{1}{\zeta+f}\frac{d\zeta+f}{dt} = \frac{1}{\overline{\eta}}\frac{d\eta}{dt}
 \end{align}
 ```
 
