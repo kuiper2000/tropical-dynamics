@@ -176,7 +176,10 @@ How the counteracting pressure gradient force makes gravity reduced.
 Consider an air parcel at the black dot's location. The horizontal pressure gradient force acting on the air parcel can be expressed as:
 ```{math}
 :label: reduced_gravity1
-\rho a = (\rho+\delta \rho) g (\eta(x_1)-\eta(x_2))+\rho g (H-\eta(x_1)-(H-\eta(x_2))) = \delta \rho g (\eta(x_1)-\eta(x_2))
+\begin{align}
+\rho a &= (\rho+\delta \rho) g (\eta(x_1)-\eta(x_2))+\rho g (H-\eta(x_1)-(H-\eta(x_2))) \\
+& = \delta \rho g (\eta(x_1)-\eta(x_2))
+\end{align}
 ```
 where $a$ is the acceleration of the air parcel due to the pressure gradient force. The pressure gradient force is $\delta \rho g (\eta(x_1) - \eta(x_2))$ instead of $\rho g (\eta(x_1)-\eta(x_2))$ because the fluid above creates a counteracting pressure gradient force (from right to left), reducing the overall pressure gradient force. By dividing both sides of the equation by $\rho$, we obtain:
 
