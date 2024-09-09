@@ -166,7 +166,7 @@ As for $\theta'$, a similar analysis can be performed, which is left as an exerc
 :::{note}
 One might wonder why we care about reduced gravity in horizontal direction. This can be found in the following schematic plot. 
 
-```{figure} ../tropical-dynamics-figures/reduced_gravity.PNG
+```{figure} ../tropical-dynamics-figures/reduced_gravity.png
 ---
 name: FIG2-2
 ---
@@ -177,7 +177,7 @@ Consider an air parcel at the black dot's location. The horizontal pressure grad
 ```{math}
 :label: reduced_gravity1
 \begin{align}
-\rho a &= (\rho+\delta \rho) g (\eta(x_1)-\eta(x_2))+\rho g (H-\eta(x_1)-(H-\eta(x_2))) \\
+\rho a &= (\rho+\delta \rho) g [\eta(x_1)-\eta(x_2)]+\rho g [(H-\eta(x_1))-(H-\eta(x_2))] \\
 & = \delta \rho g (\eta(x_1)-\eta(x_2))
 \end{align}
 ```
