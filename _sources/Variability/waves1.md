@@ -15,7 +15,15 @@ In addition to zonal mean circulation, eddy also plays an important role in shap
 \end{align}
 ```
 
-Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from top of the boundary layer to the interface $\eta$, we can rewrite {eq}`shallow_water_1` 
+```{figure} ../tropical-dynamics-figures/reduced_gravity2.PNG
+---
+name: FIG4-1
+---
+As in {numref}`FIG2-2` except that $h_B\neq0$
+```
+
+
+Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from top of the boundary layer to the interface $\eta$ (i.e., {numref}`FIG4-1`), we can rewrite {eq}`shallow_water_1` 
 
 ```{math}
 :label: shallow_water_2
