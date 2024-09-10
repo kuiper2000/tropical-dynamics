@@ -62,7 +62,7 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 {eq}`boundary_layer` states that the normal velocity exists through two processes (1) the advection of $h_B$ (inhomogeneous in space) by $u$ and $v$ at $h_B$ or (2) the convergence/divergence of $h_B$ (homogeneous but non-zero).   
 :::
 
-## Conservation of Shallow Water PV
+### Conservation of Shallow Water PV
 {eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
 
 
@@ -75,6 +75,7 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 \end{align}
 ```
 
-the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$
+the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$. (One should notice that the expression in the last equation of {eq}`shallow_water_2` will yield a more rigorous constraint on PV conservation). One can also prove {eq}`shallow_water_4` from {eq}`shallow_water_2` using the Kelvin circulation theorem. (HW)
 
-
+### Equatorial Wave Solution 
+while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. 

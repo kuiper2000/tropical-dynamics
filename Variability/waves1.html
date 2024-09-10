@@ -312,11 +312,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#shallow-water-model">
    Shallow Water Model
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
-   Conservation of Shallow Water PV
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
+     Conservation of Shallow Water PV
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equatorial-wave-solution">
+     Equatorial Wave Solution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -341,11 +348,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#shallow-water-model">
    Shallow Water Model
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
-   Conservation of Shallow Water PV
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
+     Conservation of Shallow Water PV
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equatorial-wave-solution">
+     Equatorial Wave Solution
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -400,9 +414,8 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <span class="eqno">(47)<a class="headerlink" href="#equation-boundary-layer" title="Permalink to this equation">¶</a></span>\[w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}}_{\text{momentum advection}}+\underbrace{h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})}_{\text{mass convergence from lower bound}}\]</div>
 <p><a class="reference internal" href="#equation-boundary-layer">(47)</a> states that the normal velocity exists through two processes (1) the advection of <span class="math notranslate nohighlight">\(h_B\)</span> (inhomogeneous in space) by <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(v\)</span> at <span class="math notranslate nohighlight">\(h_B\)</span> or (2) the convergence/divergence of <span class="math notranslate nohighlight">\(h_B\)</span> (homogeneous but non-zero).</p>
 </div>
-</div>
 <div class="section" id="conservation-of-shallow-water-pv">
-<h2>Conservation of Shallow Water PV<a class="headerlink" href="#conservation-of-shallow-water-pv" title="Permalink to this headline">¶</a></h2>
+<h3>Conservation of Shallow Water PV<a class="headerlink" href="#conservation-of-shallow-water-pv" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#equation-shallow-water-2">(45)</a> also conserves the potential vorticity. To prove that, we can take <span class="math notranslate nohighlight">\(\nabla\times\)</span> of the first equation, we have</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-4">
 <span class="eqno">(48)<a class="headerlink" href="#equation-shallow-water-4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
@@ -410,7 +423,12 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 &amp; = \frac{\zeta+f}{\overline{\eta}}\frac{d\eta}{dt} \text{  or}\\
 &amp; \rightarrow  \frac{1}{\zeta+f}\frac{d\zeta+f}{dt} = \frac{1}{\overline{\eta}}\frac{d\eta}{dt}
 \end{align}\end{split}\]</div>
-<p>the last equation of <a class="reference internal" href="#equation-shallow-water-4">(48)</a> the rate change in absolute vorticity is proportional to the rate change in height indicating that <span class="math notranslate nohighlight">\(\frac{d}{dt}\frac{\zeta+f}{\eta} = 0\)</span></p>
+<p>the last equation of <a class="reference internal" href="#equation-shallow-water-4">(48)</a> the rate change in absolute vorticity is proportional to the rate change in height indicating that <span class="math notranslate nohighlight">\(\frac{d}{dt}\frac{\zeta+f}{\eta} = 0\)</span>. (One should notice that the expression in the last equation of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> will yield a more rigorous constraint on PV conservation). One can also prove <a class="reference internal" href="#equation-shallow-water-4">(48)</a> from <a class="reference internal" href="#equation-shallow-water-2">(45)</a> using the Kelvin circulation theorem. (HW)</p>
+</div>
+<div class="section" id="equatorial-wave-solution">
+<h3>Equatorial Wave Solution<a class="headerlink" href="#equatorial-wave-solution" title="Permalink to this headline">¶</a></h3>
+<p>while <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is well simplified, it remains unsolvable due to its nonlinearity.</p>
+</div>
 </div>
 </div>
 
