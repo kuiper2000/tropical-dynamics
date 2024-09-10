@@ -78,4 +78,12 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$. (One should notice that the expression in the last equation of {eq}`shallow_water_2` will yield a more rigorous constraint on PV conservation). One can also prove {eq}`shallow_water_4` from {eq}`shallow_water_2` using the Kelvin circulation theorem. (HW)
 
 ### Equatorial Wave Solution 
-while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. 
+while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption ($u=\overline{u}+u'$ where $\overline{u}$ is independent of time or $\overline{u}=0$ for resting basic state) with resting boundary condition $w_0=0$. The equation set is then simplified as 
+```{math}
+:label: shallow_water_linear
+\begin{align}
+\frac{\partial u}{\partial t} -\beta yv & = -\frac{\partial \phi'}{\partial x}\\
+\frac{\partial v}{\partial t} +\beta yu & = -\frac{\partial \phi'}{\partial y}\\
+\frac{\partial \phi'}{\partial t} + \overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) = 0  
+\end{align}
+```
