@@ -84,6 +84,6 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 \begin{align}
 \frac{\partial u}{\partial t} -\beta yv & = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu & = -\frac{\partial \phi'}{\partial y}\\
-\frac{\partial \phi'}{\partial t} + \overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) = 0  
+\frac{\partial \phi'}{\partial t} + g'\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0  \text{    where $g'\eta=C_0^2$, $C_0$ is gravity wave speed}
 \end{align}
 ```
