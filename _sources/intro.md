@@ -26,7 +26,9 @@ __Part I: Climatology__
 __Part II: Variability__
 * {ref}`waves1`
     * Governing equation and assumptions of tropical atmospheric waves
-    * Vertical normal modes
+        * Conservation of shallow water PV
+        * Equatorial wave solution 
+        * Vertical normal modes
     * Convective-coupled Waves
     * Weak temperature gradient and moisture mode theory
     * Madden-Julian oscillations
