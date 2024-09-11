@@ -429,7 +429,7 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <h3>Equatorial Wave Solution<a class="headerlink" href="#equatorial-wave-solution" title="Permalink to this headline">¶</a></h3>
 <p>while <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption (<span class="math notranslate nohighlight">\(u=\overline{u}+u'\)</span> where <span class="math notranslate nohighlight">\(\overline{u}\)</span> is independent of time or <span class="math notranslate nohighlight">\(\overline{u}=0\)</span> for resting basic state) with resting boundary condition <span class="math notranslate nohighlight">\(w_0=0\)</span>. The equation set is then simplified as</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear">
-<span class="eqno">(49)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -\beta yv &amp; = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu &amp; = -\frac{\partial \phi'}{\partial y}\\
 \frac{\partial \phi'}{\partial t} + g'\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0  
@@ -437,8 +437,14 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <p>where <span class="math notranslate nohighlight">\(g'\eta=C_0^2\)</span>, <span class="math notranslate nohighlight">\(C_0\)</span> is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the linearization of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> significantly simplifies the problem, the trade-off also leads to a few problems. The linear momentum equation doesn’t allow the existence of energy cascade into new scales (i.e., filament structure of vorticity). Such a feature is very important in redistributing the lower troposphere moisture.</p>
+<p>While the linearization of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn’t allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won’t happen). Such a feature is very important in redistributing the lower troposphere moisture.</p>
 </div>
+<p>To further simplify the problem, we can non-dimentionalize each variable by representing them with 1 or multiple non-dimentional parameters.</p>
+<div class="math notranslate nohighlight" id="equation-shallow-water-linear">
+<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+(x,y) &amp; = \sqrt (\frac{C_0}{\beta})(x',y') \\
+t     &amp; = t\frac{1}{\beta C_0}
+\end{align}\end{split}\]</div>
 </div>
 </div>
 </div>

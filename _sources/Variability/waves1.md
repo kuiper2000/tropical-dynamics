@@ -92,5 +92,17 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set. 
 
 :::{note}
-While the linearization of {eq}`shallow_water_2` significantly simplifies the problem, the trade-off also leads to a few problems. The linear momentum equation doesn't allow the existence of energy cascade into new scales (i.e., filament structure of vorticity). Such a feature is very important in redistributing the lower troposphere moisture.  
+While the linearization of {eq}`shallow_water_2` significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn't allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won't happen). Such a feature is very important in redistributing the lower troposphere moisture.  
 :::
+
+
+To further simplify the problem, we can non-dimentionalize each variable by representing them with 1 or multiple non-dimentional parameters. 
+
+
+```{math}
+:label: shallow_water_linear
+\begin{align}
+(x,y) & = \sqrt (\frac{C_0}{\beta})(x',y') \\
+t     & = t\frac{1}{\beta C_0}
+\end{align}
+```

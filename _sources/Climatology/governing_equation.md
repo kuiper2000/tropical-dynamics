@@ -71,7 +71,7 @@ The second assumption we introduce is the hydrostatic approximation, which is re
 
 ```{math}
 :label: hydrostatic
-\underbrace{\frac{Dw}{Dt}}_{\frac{W}{\tau}}+ \underbrace{\frac{1}{\rho}\frac{\partial p}{\partial z}}_{\frac{\delta p}{\rho D}} - \underbrace{\sigma}_{\Sigma} = \underbrace{\frac{u^2+v^2}{a}}_{\frac{U^2}{a}}+\underbrace{2\Omega u \mathrm{cos}(\phi)}_{2\Omega U}
+\underbrace{\frac{Dw}{Dt}}_{\frac{W}{\tau}}+ \underbrace{\frac{1}{\rho}\frac{\partial p'}{\partial z}}_{\frac{\delta p}{\rho D}} - \underbrace{\sigma}_{\Sigma} = \underbrace{\frac{u^2+v^2}{a}}_{\frac{U^2}{a}}+\underbrace{2\Omega u \mathrm{cos}(\phi)}_{2\Omega U}
 ```
 
 Here, $\sigma = -g \frac{\rho - \rho_0(z)}{\rho}$ represents the reduced gravity, where $\rho_0(z)$ corresponds to the portion of the pressure gradient force balanced by gravity. Vertical acceleration occurs when there is a slight imbalance, specifically when $\rho - \rho_0(z)$ is nonzero. The variables in {eq}`hydrostatic` can be substituted with their characteristic scales (as indicated by the underbraces in {eq}`hydrostatic`).
