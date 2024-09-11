@@ -105,6 +105,10 @@ To further simplify the problem, we can non-dimentionalize each variable by repr
 (x,y) & = \sqrt {\frac{C_0}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
 t     & = \frac{t^{\text{non}}}{\sqrt{\beta C_0}} \\
 u     & = C_0 u^{\text{non}} \\
-\phi^{'}  & = C_0^2 \phi^{^{\text{non}}} 
+\phi^{'}  & = C_0^2 \phi^{\text{non}} 
 \end{align}
 ```
+
+where the superscript $\text{non}$ represents the non-dimensional variable. With such scaling, we can isolate the independent parameters. By varying these parameters, we can see how the circulation changes in various parameter regimes. 
+
+
