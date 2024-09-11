@@ -102,7 +102,9 @@ To further simplify the problem, we can non-dimentionalize each variable by repr
 ```{math}
 :label: shallow_water_linear
 \begin{align}
-(x,y) & = \sqrt {\frac{C_0}{\beta}}(x',y') \\
-t     & = \frac{t'}{\sqrt{\beta C_0}}
+(x,y) & = \sqrt {\frac{C_0}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
+t     & = \frac{t^{\text{non}}}{\sqrt{\beta C_0}} \\
+u     & = C_0 u^{\text{non}} \\
+\phi^{'}  & = C_0^2 \phi^{^{\text{non}}} 
 \end{align}
 ```
