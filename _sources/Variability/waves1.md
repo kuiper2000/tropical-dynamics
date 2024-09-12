@@ -109,6 +109,16 @@ u     & = C_0 u^{\text{non}} \\
 \end{align}
 ```
 
-where the superscript $\text{non}$ represents the non-dimensional variable. With such scaling, we can isolate the independent parameters. By varying these parameters, we can see how the circulation changes in various parameter regimes. 
+where the superscript $\text{non}$ represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)
 
+```{math}
+:label: shallow_water_linear_no_dimension
+\begin{align}
+\frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
+\frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
+\frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0   \\
+\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}
+\end{align}
+```
 
+One should notice that the last equation is a diagnostic equation that connects the vertical and horizontal structures. 

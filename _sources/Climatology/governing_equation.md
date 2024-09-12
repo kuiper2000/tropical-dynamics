@@ -36,7 +36,7 @@ Coordinate variables defined on a sphere.
 \frac{Du}{Dt} - \frac{uv \mathrm{tan}(\phi)}{a}+\frac{uw}{a} = -\frac{1}{\rho a \mathrm{cos}(\phi)} \frac{\partial p}{\partial \lambda}+2\Omega v \mathrm{sin}\phi-2\Omega w \mathrm{cos}(\phi) \\
 \frac{Dv}{Dt} + \frac{u^2 \mathrm{tan}(\phi)}{a}+\frac{vw}{a} =   -\frac{1}{\rho a } \frac{\partial p}{\partial \phi}-2\Omega u \mathrm{sin}(\phi) \\
 \frac{Dw}{Dt} -\frac{u^2+v^2}{a} = -\frac{1}{\rho}\frac{\partial p}{\partial z} - g + 2\Omega u  \mathrm{cos}(\phi) \\
-\frac{D\rho}{Dt} = -\frac{\rho}{a\mathrm{cos}(\phi)} \frac{\partial u}{\partial \lambda}+\frac{\partial }{\partial \phi}(v\mathrm{cos}(\phi))-\rho\frac{\partial w}{\partial z}-2\rho \frac{w}{a}
+\frac{D\rho}{Dt} = -\frac{\rho}{a\mathrm{cos}(\phi)} [\frac{\partial u}{\partial \lambda}+\frac{\partial }{\partial \phi}(v\mathrm{cos}(\phi))]-\rho\frac{\partial w}{\partial z}-2\rho \frac{w}{a}
 \end{cases}
 ```
 
