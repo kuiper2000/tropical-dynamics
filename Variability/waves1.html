@@ -414,22 +414,26 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <span class="eqno">(47)<a class="headerlink" href="#equation-boundary-layer" title="Permalink to this equation">¶</a></span>\[w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}}_{\text{momentum advection}}+\underbrace{h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})}_{\text{mass convergence from lower bound}}\]</div>
 <p><a class="reference internal" href="#equation-boundary-layer">(47)</a> states that the normal velocity exists through two processes (1) the advection of <span class="math notranslate nohighlight">\(h_B\)</span> (inhomogeneous in space) by <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(v\)</span> at <span class="math notranslate nohighlight">\(h_B\)</span> or (2) the convergence/divergence of <span class="math notranslate nohighlight">\(h_B\)</span> (homogeneous but non-zero).</p>
 </div>
+<p>An alternative but more useful form of the last equation of <a class="reference internal" href="#equation-shallow-water-3">(46)</a> is</p>
+<div class="math notranslate nohighlight" id="equation-hydrostatic-thermo">
+<span class="eqno">(48)<a class="headerlink" href="#equation-hydrostatic-thermo" title="Permalink to this equation">¶</a></span>\[\frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi_p =-\alpha\)</span> , <span class="math notranslate nohighlight">\(\omega=\overline{\rho}gw\)</span> and <span class="math notranslate nohighlight">\(\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_a}{p^2}\)</span>. <span class="math notranslate nohighlight">\(C_a\)</span> is the external gravity wave speed. <a class="reference internal" href="#equation-hydrostatic-thermo">(48)</a> is the hydrostatic thermodynamics equation, which can be derived by multiplying <a class="reference internal" href="../Climatology/governing_equation.html#equation-primitive">(5)</a> with <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
 <div class="section" id="conservation-of-shallow-water-pv">
 <h3>Conservation of Shallow Water PV<a class="headerlink" href="#conservation-of-shallow-water-pv" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#equation-shallow-water-2">(45)</a> also conserves the potential vorticity. To prove that, we can take <span class="math notranslate nohighlight">\(\nabla\times\)</span> of the first equation, we have</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-4">
-<span class="eqno">(48)<a class="headerlink" href="#equation-shallow-water-4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(49)<a class="headerlink" href="#equation-shallow-water-4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{d\zeta}{dt} = \frac{\partial \zeta}{\partial t} + u\frac{\partial \zeta}{\partial x}+v\frac{\partial \zeta}{\partial y} &amp;= -(\zeta+f)(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) \\
 &amp; = \frac{\zeta+f}{\overline{\eta}}\frac{d\eta}{dt} \text{  or}\\
 &amp; \rightarrow  \frac{1}{\zeta+f}\frac{d\zeta+f}{dt} = \frac{1}{\overline{\eta}}\frac{d\eta}{dt}
 \end{align}\end{split}\]</div>
-<p>the last equation of <a class="reference internal" href="#equation-shallow-water-4">(48)</a> the rate change in absolute vorticity is proportional to the rate change in height indicating that <span class="math notranslate nohighlight">\(\frac{d}{dt}\frac{\zeta+f}{\eta} = 0\)</span>. (One should notice that the expression in the last equation of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> will yield a more rigorous constraint on PV conservation). One can also prove <a class="reference internal" href="#equation-shallow-water-4">(48)</a> from <a class="reference internal" href="#equation-shallow-water-2">(45)</a> using the Kelvin circulation theorem. (HW)</p>
+<p>the last equation of <a class="reference internal" href="#equation-shallow-water-4">(49)</a> the rate change in absolute vorticity is proportional to the rate change in height indicating that <span class="math notranslate nohighlight">\(\frac{d}{dt}\frac{\zeta+f}{\eta} = 0\)</span>. (One should notice that the expression in the last equation of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> will yield a more rigorous constraint on PV conservation). One can also prove <a class="reference internal" href="#equation-shallow-water-4">(49)</a> from <a class="reference internal" href="#equation-shallow-water-2">(45)</a> using the Kelvin circulation theorem. (HW)</p>
 </div>
 <div class="section" id="equatorial-wave-solution">
 <h3>Equatorial Wave Solution<a class="headerlink" href="#equatorial-wave-solution" title="Permalink to this headline">¶</a></h3>
 <p>while <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption (<span class="math notranslate nohighlight">\(u=\overline{u}+u'\)</span> where <span class="math notranslate nohighlight">\(\overline{u}\)</span> is independent of time or <span class="math notranslate nohighlight">\(\overline{u}=0\)</span> for resting basic state) with resting boundary condition <span class="math notranslate nohighlight">\(w_0=0\)</span>. The equation set is then simplified as</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear">
-<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -\beta yv &amp; = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu &amp; = -\frac{\partial \phi'}{\partial y}\\
 \frac{\partial \phi'}{\partial t} + g'\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0  
@@ -441,7 +445,7 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 </div>
 <p>To further simplify the problem, we can non-dimentionalize each variable by representing them with 1 or multiple non-dimentional parameters.</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear">
-<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 (x,y) &amp; = \sqrt {\frac{C_0}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
 t     &amp; = \frac{t^{\text{non}}}{\sqrt{\beta C_0}} \\
 u     &amp; = C_0 u^{\text{non}} \\
@@ -449,7 +453,7 @@ u     &amp; = C_0 u^{\text{non}} \\
 \end{align}\end{split}\]</div>
 <p>where the superscript <span class="math notranslate nohighlight">\(\text{non}\)</span> represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension">
-<span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(52)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0   \\

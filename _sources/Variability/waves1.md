@@ -62,6 +62,15 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 {eq}`boundary_layer` states that the normal velocity exists through two processes (1) the advection of $h_B$ (inhomogeneous in space) by $u$ and $v$ at $h_B$ or (2) the convergence/divergence of $h_B$ (homogeneous but non-zero).   
 :::
 
+
+An alternative but more useful form of the last equation of {eq}`shallow_water_3` is 
+```{math}
+:label: hydrostatic_thermo
+\frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha
+```
+
+where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_a}{p^2}$. $C_a$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by multiplying {eq}`primitive` with $\alpha$.  
+
 ### Conservation of Shallow Water PV
 {eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
 
@@ -77,6 +86,9 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 
 the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$. (One should notice that the expression in the last equation of {eq}`shallow_water_2` will yield a more rigorous constraint on PV conservation). One can also prove {eq}`shallow_water_4` from {eq}`shallow_water_2` using the Kelvin circulation theorem. (HW)
 
+
+
+
 ### Equatorial Wave Solution 
 while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption ($u=\overline{u}+u'$ where $\overline{u}$ is independent of time or $\overline{u}=0$ for resting basic state) with resting boundary condition $w_0=0$. The equation set is then simplified as 
 
@@ -90,6 +102,7 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 ```
 
 where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set. 
+
 
 :::{note}
 While the linearization of {eq}`shallow_water_2` significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn't allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won't happen). Such a feature is very important in redistributing the lower troposphere moisture.  
