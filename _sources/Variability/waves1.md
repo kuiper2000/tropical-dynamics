@@ -88,7 +88,6 @@ the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity
 
 
 
-
 ### Equatorial Wave Solution 
 while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption ($u=\overline{u}+u'$ where $\overline{u}$ is independent of time or $\overline{u}=0$ for resting basic state) with resting boundary condition $w_0=0$. The equation set is then simplified as 
 
@@ -103,6 +102,10 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 ```
 
 where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set. 
+
+One can find {eq}`shallow_water_linear` has four unknowns and four equations, which makes it solvable.  
+
+On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\overhat{u}, \overhat{v}, \overhat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and  
 
 
 :::{note}
