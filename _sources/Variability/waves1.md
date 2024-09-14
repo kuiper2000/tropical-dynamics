@@ -115,6 +115,9 @@ One can find {eq}`shallow_water_linear` has four unknowns and four equations, wh
 \end{align}
 ```
 
+If we rearrange the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, left-hand side is solely a function of pressure while the right-hand side is solely a function of $(x,y,t)$. This implies  
+
+
 
 :::{note}
 While the linearization of {eq}`shallow_water_2` significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn't allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won't happen). Such a feature is very important in redistributing the lower troposphere moisture.  
