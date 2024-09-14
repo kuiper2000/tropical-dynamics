@@ -105,7 +105,7 @@ where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the fam
 
 One can find {eq}`shallow_water_linear` has four unknowns and four equations, which makes it solvable.  
 
-On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\overhat{u}, \overhat{v}, \overhat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and  
+On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\overhat{u}, \overhat{v}, \overhat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and $w=\overhat{w}(x,y,t)W(p)$. 
 
 
 :::{note}
