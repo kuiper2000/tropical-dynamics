@@ -69,7 +69,7 @@ An alternative but more useful form of the last equation of {eq}`shallow_water_3
 \frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha
 ```
 
-where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_a}{p^2}$. $C_a$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by multiplying {eq}`primitive` with $\alpha$.  
+where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_a}{p^2}$. $C_a$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by multiplying {eq}`primitive` with $\alpha$. {eq}`hydrostatic_thermo` is an easier form to approach the solution of vertical since the pressure weighting has been considered in the pressure velocity.  
 
 ### Conservation of Shallow Water PV
 {eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
