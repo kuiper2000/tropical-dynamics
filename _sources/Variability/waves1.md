@@ -103,9 +103,7 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 
 where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set. 
 
-One can find {eq}`shallow_water_linear` has four unknowns and four equations, which makes it solvable.  
-
-On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\widehat{u}, \widehat{v}, \widehat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and $w=\widehat{w}(x,y,t)W(p)$. 
+One can find {eq}`shallow_water_linear` has four unknowns and four equations, which makes it solvable.  On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\widehat{u}, \widehat{v}, \widehat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and $w=\widehat{w}(x,y,t)W(p)$. 
 
 
 :::{note}
