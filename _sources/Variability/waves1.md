@@ -129,8 +129,8 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \begin{align}
 \frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
-\frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0   \\
-\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}
+\frac{\partial \phi_p}{\partial t} + \frac{C_a}{p^2}\omega &= 0   \\
+\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial \omega}{\partial p}
 \end{align}
 ```
 
