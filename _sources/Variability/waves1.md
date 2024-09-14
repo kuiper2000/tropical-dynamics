@@ -69,7 +69,7 @@ An alternative but more useful form of the last equation of {eq}`shallow_water_3
 \frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha
 ```
 
-where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_a}{p^2}$. $C_a$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by rewriting $d \mathrm{ln}\theta$ in {eq}`primitive` with $\frac{c_p}{R}\mathrm{ln}\alpha$. {eq}`hydrostatic_thermo` is an easier form to approach the solution of vertical since the pressure weighting has been considered in the pressure velocity.  
+where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_0}{p^2}$. $C_0$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by rewriting $d \mathrm{ln}\theta$ in {eq}`primitive` with $\frac{c_p}{R}\mathrm{ln}\alpha$. {eq}`hydrostatic_thermo` is an easier form to approach the solution of vertical since the pressure weighting has been considered in the pressure velocity.  
 
 ### Conservation of Shallow Water PV
 {eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
@@ -98,7 +98,7 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 \frac{\partial u}{\partial t} -\beta yv & = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu & = -\frac{\partial \phi'}{\partial y}\\
 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} + \frac{\partial \omega}{\partial p}& = 0 \\
-\frac{\partial \phi_p'}{\partial t} + \frac{C_a^2}{p^2} \omega &= 0  
+\frac{\partial \phi_p'}{\partial t} + \frac{C_0^2}{p^2} \omega &= 0  
 \end{align}
 ```
 
@@ -130,7 +130,7 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \begin{align}
 \frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
-\frac{\partial \phi_p}{\partial t} + \frac{C_a}{p^2}\omega &= 0   \\
+\frac{\partial \phi_p}{\partial t} + \frac{C_0}{p^2}\omega &= 0   \\
 \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial \omega}{\partial p}
 \end{align}
 ```
