@@ -115,8 +115,7 @@ One can find {eq}`shallow_water_linear` has four unknowns and four equations, wh
 \end{align}
 ```
 
-If we rearrange the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, left-hand side is solely a function of pressure while the right-hand side is solely a function of $(x,y,t)$. This implies $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}=\lambda$. According to Sturm-Liouville theory, $\lambda$ is a series of non-repeated integers (i.e., $\lambda=1,2,3$).   
-
+If we rearrange the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, left-hand side is solely a function of pressure while the right-hand side is solely a function of $(x,y,t)$. This implies $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}=\lambda$. According to Sturm-Liouville theory, $\lambda$ is a series of non-repeated integers (i.e., $\lambda=1,2,3$). We can further rewrite $\lambda$ as $\frac{C_0^2}{C^2}$ therefore  $C^2=\frac{C_0^2}{\lambda}$.  
 
 
 :::{note}
