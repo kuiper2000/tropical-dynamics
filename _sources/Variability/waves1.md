@@ -97,7 +97,8 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 \begin{align}
 \frac{\partial u}{\partial t} -\beta yv & = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu & = -\frac{\partial \phi'}{\partial y}\\
-\frac{\partial \phi'}{\partial t} + g'\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0  
+\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} + \frac{\partial \omega}{\partial p}& = 0 \\
+\frac{\partial \phi_p'}{\partial t} + \frac{C_a^2}{p^2} \omega &= 0  
 \end{align}
 ```
 
