@@ -485,12 +485,18 @@ u     &amp; = C u^{\text{non}} \\
 \end{align}\end{split}\]</div>
 <p>where the superscript <span class="math notranslate nohighlight">\(\text{non}\)</span> represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension">
-<span class="eqno">(54)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(55)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0   \\
 \end{align}\end{split}\]</div>
-<p>One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, <span class="math notranslate nohighlight">\(R_0\)</span> (Rossby number) ranges from 0 to 1.</p>
+<p>One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, <a class="reference internal" href="#equation-shallow-water-linear-no-dimension">(55)</a>. We can further employ the following assumption to separate the meridional and zonal structure of waves.</p>
+<div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension">
+<span class="eqno">(55)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+u &amp;= U(y)e^{ikx-i\omega t} \\
+v &amp;= V(y)e^{ikx-i\omega t} \\
+\phi &amp;= \Phi(y)e^{ikx-i\omega t} \\
+\end{align}\end{split}\]</div>
 </div>
 </div>
 </div>

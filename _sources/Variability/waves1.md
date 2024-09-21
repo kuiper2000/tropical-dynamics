@@ -163,4 +163,14 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \end{align}
 ```
 
-One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, $R_0$ (Rossby number) ranges from 0 to 1. 
+One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension`. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
+
+```{math}
+:label: shallow_water_linear_no_dimension
+\begin{align}
+u &= U(y)e^{ikx-i\omega t} \\
+v &= V(y)e^{ikx-i\omega t} \\
+\phi &= \Phi(y)e^{ikx-i\omega t} \\
+\end{align}
+```
+
