@@ -135,7 +135,7 @@ With the separation of variables, we can rewrite the governing equation
 \end{align}
 ```
 
-where the first three equations only have horizontal structure and the last equation only 
+where the first three equations only have horizontal structure and the last equation only has vertical structure, which makes both set of equations solvable. 
 
 
 
