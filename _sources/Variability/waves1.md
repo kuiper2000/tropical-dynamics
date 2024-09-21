@@ -126,7 +126,7 @@ While the linearization of {eq}`shallow_water_2` significantly simplifies the pr
 With the separation of variables, we can rewrite the governing equation
 
 ```{math}
-:label: shallow_water_linear2
+:label: shallow_water_linear3
 \begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta y\widehat{v} & = -\frac{\partial \widehat{\phi'}}{\partial x}\\
 \frac{\partial \widehat{v}}{\partial t} +\beta y\widehat{u} & = -\frac{\partial \widehat{\phi'}}{\partial y}\\
@@ -143,7 +143,7 @@ To further simplify the problem, we can non-dimentionalize each variable by subt
 
 
 ```{math}
-:label: shallow_water_linear3
+:label: shallow_water_linear4
 \begin{align}
 (x,y) & = \sqrt {\frac{C}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
 t     & = \frac{t^{\text{non}}}{\sqrt{\beta C}} \\
@@ -155,7 +155,7 @@ u     & = C u^{\text{non}} \\
 where the superscript $\text{non}$ represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)
 
 ```{math}
-:label: shallow_water_linear_no_dimension
+:label: shallow_water_linear_no_dimension1
 \begin{align}
 \frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
@@ -163,10 +163,10 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \end{align}
 ```
 
-One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension`. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
+One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension1`. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
 
 ```{math}
-:label: shallow_water_linear_no_dimension
+:label: shallow_water_linear_no_dimension1
 \begin{align}
 u &= U(y)e^{ikx-i\omega t} \\
 v &= V(y)e^{ikx-i\omega t} \\
