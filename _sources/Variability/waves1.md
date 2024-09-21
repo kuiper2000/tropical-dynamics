@@ -88,7 +88,7 @@ the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity
 
 
 
-### Equatorial Wave Solution 
+### Equatorial Wave Equations  
 while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption ($u=\overline{u}+u'$ where $\overline{u}$ is independent of time or $\overline{u}=0$ for resting basic state) with resting boundary condition $w_0=0$. The equation set is then simplified as 
 
 ```{math}
@@ -130,25 +130,25 @@ With the separation of variables, we can rewrite the governing equation
 \begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta y\widehat{v} & = -\frac{\partial \widehat{\phi'}}{\partial x}\\
 \frac{\partial \widehat{v}}{\partial t} +\beta y\widehat{u} & = -\frac{\partial \widehat{\phi'}}{\partial y}\\
-\frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &= 0 
+\frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &= 0 \\
 \frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &=0
 \end{align}
 ```
 
-where the first three equations only have horizontal structure and the last equation only has vertical structure, which makes both set of equations solvable. 
+where the first three equations only have horizontal structure and the last equation only has vertical structure, which makes both set of equations solvable. We will start with the horizontal structure and followed by the discussion of vertical structure. 
 
 
+### Horizontal Wave Solutions 
+To further simplify the problem, we can non-dimentionalize each variable by subtracting non-dimentional parameters. 
 
-<!-- To further simplify the problem, we can non-dimentionalize each variable by subtracting non-dimentional parameters. 
- -->
 
 ```{math}
-:label: shallow_water_linear
+:label: shallow_water_linear3
 \begin{align}
-(x,y) & = \sqrt {\frac{C_0}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
-t     & = \frac{t^{\text{non}}}{\sqrt{\beta C_0}} \\
-u     & = C_0 u^{\text{non}} \\
-\phi^{'}  & = C_0^2 \phi^{\text{non}} 
+(x,y) & = \sqrt {\frac{C}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
+t     & = \frac{t^{\text{non}}}{\sqrt{\beta C}} \\
+u     & = C u^{\text{non}} \\
+\phi^{'}  & = C^2 \phi^{\text{non}} 
 \end{align}
 ```
 
@@ -159,8 +159,7 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \begin{align}
 \frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
-\frac{\partial \phi_p}{\partial t} + \frac{C_0}{p^2}\omega &= 0   \\
-\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial \omega}{\partial p}
+\frac{\partial \phi}{\partial t} + \frac{C}(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0   \\
 \end{align}
 ```
 
