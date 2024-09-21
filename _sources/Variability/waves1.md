@@ -123,16 +123,19 @@ While the linearization of {eq}`shallow_water_2` significantly simplifies the pr
 :::
 
 
-With the separation of variables, we can rewrite the governing equation for horizontal structure only. 
+With the separation of variables, we can rewrite the governing equation
 
 ```{math}
 :label: shallow_water_linear2
 \begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta y\widehat{v} & = -\frac{\partial \widehat{\phi'}}{\partial x}\\
 \frac{\partial \widehat{v}}{\partial t} +\beta y\widehat{u} & = -\frac{\partial \widehat{\phi'}}{\partial y}\\
-\frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &= 0  
+\frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &= 0 
+\frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &=0
 \end{align}
 ```
+
+where the first three equations only have horizontal structure and the last equation only 
 
 
 
