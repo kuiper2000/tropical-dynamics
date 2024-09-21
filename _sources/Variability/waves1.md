@@ -202,8 +202,10 @@ and the corresponding differential equation can be written as
 ```{math}
 :label: dispersion
 \begin{align}
-\frac{\omega}{k} &= 1 \\
+\frac{\omega}{k} &= \mp 1 \\
 \omega^2-k^2-\frac{k}{\omega} &= 2m+1 \text{   where} m\in[0,1,2,\cdots]\\
 \end{align}
 ```
+
+One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). 
 
