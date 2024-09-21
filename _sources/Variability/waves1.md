@@ -198,4 +198,12 @@ and the corresponding differential equation can be written as
 \frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0
 ```
 
+{eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` leads to two different dispersion relationship, where waves' amplitude is conserved over the characteristic lines
+```{math}
+:label: dispersion
+\begin{align}
+\frac{\omega}{k} &= 1 \\
+\omega^2-k^2-\frac{k}{\omega} &= 2m+1 \text{   where} m\in[0,1,2,\cdots]\\
+\end{align}
+```
 
