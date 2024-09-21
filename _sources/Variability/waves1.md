@@ -181,4 +181,4 @@ Substitute {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water
 \frac{d^2}{dy^2} V^2 + (\omega^2-k^2+\frac{k}{\omega}-y^2)V = 0
 \end{align}
 ```
-Here we implement a boundary condition, where $V(y)$ taper toward 0 at $y\rightarrow$. 
+Here we implement a boundary condition, where $V(y)$ taper toward 0 at $y\rightarrow \pm \infty$. 
