@@ -198,20 +198,17 @@ and the corresponding differential equation can be written as
 \frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0
 ```
 
-{eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` leads to two different dispersion relationship, where waves' amplitude is conserved over the characteristic lines
+{eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` leads to two different dispersion relationships, where wave's amplitude is conserved over the characteristic lines. 
+
 ```{math}
 :label: dispersion
 \begin{align}
 \frac{\omega}{k} &= \mp 1 \\
-\omega^2-k^2+\frac{k}{\omega} &= 2m+1 \text{   where} m\in[0,1,2,\cdots]\\
-& \[
-0+\lefteqn{\overbrace{\phantom{1+2+3}}}1+
-\underbrace{2+3+\overbrace{x+y+z}+
-\lefteqn{\overbrace{\phantom{4+5}}}4}+5
-\]
-
+\omega^2-k^2+\frac{k}{\omega} &= 2m+1 \text{   where } m\in[0,1,2,\cdots]\\
 \end{align}
 ```
 
-One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). The second equation can be solved using Sturm-Liouville theorem. 
+One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). $2m+1$ in the second equation comes from the Sturm-Liouville theorem. 
+
+Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e., the wave length won't influence the propagation speed). 
 
