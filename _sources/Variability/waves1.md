@@ -166,7 +166,7 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension1`. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
 
 ```{math}
-:label: shallow_water_linear_no_dimension1
+:label: shallow_water_linear_no_dimension2
 \begin{align}
 u &= U(y)e^{ikx-i\omega t} \\
 v &= V(y)e^{ikx-i\omega t} \\
@@ -174,3 +174,11 @@ v &= V(y)e^{ikx-i\omega t} \\
 \end{align}
 ```
 
+Substitute {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water_linear_no_dimension1` and elimating the terms of $U(y)$ and $\Phi(y)$. One can have the another differential equation which is used to describe the meridional structure of tropical waves. 
+
+```{math}
+:label: y_differential_equation
+\frac{d^2}{dy^2} V^2 + (\omega^2-k^2+\frac{k}{\omega}-y^2)V = 0
+\end{align}
+```
+Here we implement a boundary condition, where $V(y)$ taper toward 0 at $y\rightarrow$. 
