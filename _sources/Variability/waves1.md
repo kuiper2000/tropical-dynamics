@@ -203,9 +203,15 @@ and the corresponding differential equation can be written as
 :label: dispersion
 \begin{align}
 \frac{\omega}{k} &= \mp 1 \\
-\omega^2-k^2-\frac{k}{\omega} &= 2m+1 \text{   where} m\in[0,1,2,\cdots]\\
+\omega^2-k^2+\frac{k}{\omega} &= 2m+1 \text{   where} m\in[0,1,2,\cdots]\\
+& \[
+0+\lefteqn{\overbrace{\phantom{1+2+3}}}1+
+\underbrace{2+3+\overbrace{x+y+z}+
+\lefteqn{\overbrace{\phantom{4+5}}}4}+5
+\]
+
 \end{align}
 ```
 
-One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). 
+One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). The second equation can be solved using Sturm-Liouville theorem. 
 
