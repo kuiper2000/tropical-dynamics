@@ -159,8 +159,8 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \begin{align}
 \frac{\partial u}{\partial t} -yv & = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu & = -\frac{\partial \phi}{\partial y}\\
-\frac{\partial \phi}{\partial t} + \frac{C}(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0   \\
+\frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &= 0   \\
 \end{align}
 ```
 
-One should notice that the last equation is a diagnostic equation that connects the vertical and horizontal structures. 
+One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. 
