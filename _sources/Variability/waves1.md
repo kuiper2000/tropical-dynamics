@@ -163,4 +163,4 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \end{align}
 ```
 
-One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. 
+One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, $R_0$ (Rossby number) ranges from 0 to 1. 
