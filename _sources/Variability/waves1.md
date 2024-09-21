@@ -210,5 +210,5 @@ and the corresponding differential equation can be written as
 
 One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). $2m+1$ in the second equation comes from the Sturm-Liouville theorem. 
 
-Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e., the wave length won't influence the propagation speed). 
+Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e.,  wave length won't influence the propagation speed). In addition, it represents a pure gravity wave, which can be proved by calculating the PV in {eq}`shallow_water_linear_no_dimension3`.  
 
