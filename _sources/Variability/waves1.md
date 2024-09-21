@@ -180,13 +180,22 @@ Substitute {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water
 :label: y_differential_equation
 \frac{d^2}{dy^2} V^2 + (\omega^2-k^2+\frac{k}{\omega}-y^2)V = 0
 ```
+
 Here we implement a boundary condition, where $V(y)$ tapers toward 0 at $y= \pm \infty$, to solve the above equations. Another interesting condition happens when we implement the long-wave approximation ($v$ vanish, because the wave is so long that its zonal boundaries (meridional wind happens) is barely observed in a limited domain), which leads to 
 
 ```{math}
-:label: shallow_water_linear_no_dimension1
+:label: shallow_water_linear_no_dimension3
 \begin{align}
 \frac{\partial u}{\partial t} & = -\frac{\partial \phi}{\partial x}\\
 yu & = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}) &= 0   \\
 \end{align}
 ```
+
+and the corresponding differential equation can be written as 
+```{math}
+:label: Kelvin_wave_equation
+\frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0
+```
+
+
