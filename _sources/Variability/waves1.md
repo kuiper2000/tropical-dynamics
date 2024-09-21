@@ -62,8 +62,8 @@ w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y
 {eq}`boundary_layer` states that the normal velocity exists through two processes (1) the advection of $h_B$ (inhomogeneous in space) by $u$ and $v$ at $h_B$ or (2) the convergence/divergence of $h_B$ (homogeneous but non-zero).   
 :::
 
+One easy way to make {eq}`shallow_water_3` an internal wave equation is calculating the difference between two vertical layers (such that you have a counteracting force from the fluid on the top). or an alternative but more useful form of the last equation of {eq}`shallow_water_3` is 
 
-An alternative but more useful form of the last equation of {eq}`shallow_water_3` is 
 ```{math}
 :label: hydrostatic_thermo
 \frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha
