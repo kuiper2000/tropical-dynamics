@@ -212,10 +212,11 @@ One should notice that the minus sign in the first equation doesn't really exist
 
 Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e.,  wave length won't influence the propagation speed). In addition, it represents a pure gravity wave, which can be proved by calculating the PV in {eq}`shallow_water_linear_no_dimension3` (I will leave the practice to the reviewer). For the second equation, we can category the terms into three groups. (1) Rossby wave dominated regimes (2) Gravity wave dominated regimes, and (3) in-between. 
 
-#### Case 1
+#### Case 1: Rossby wave regime
 The main balance happens between $-k^2+\frac{k}{\omega}\approx 2m+1$ (i.e., $\omega$ is really small). In this case, $\omega \approx \frac{k}{k^2+2m+1}$, which is similar to what we derived in barotropic vorticity equation. Indeed, when $\omega$ is small, it represents the low-frequency limit. 
 
-#### Case 2
-The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. 
+#### Case 2: Inertia gravity wave 
+The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
 
-
+#### Case 3: Mixed Rossby gravity wave (Yanai wave)
+The main balance happens within all terms. 
