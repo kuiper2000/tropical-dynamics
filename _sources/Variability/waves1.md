@@ -219,4 +219,4 @@ The main balance happens between $-k^2+\frac{k}{\omega}\approx 2m+1$ (i.e., $\om
 The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
 
 #### Case 3: Mixed Rossby gravity wave (Yanai wave)
-The main balance happens within all terms. 
+There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega-k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=k$, $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=k$ apparently has a gravity wave-like behavior. $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
