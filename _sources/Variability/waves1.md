@@ -178,7 +178,7 @@ Substitute {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water
 
 ```{math}
 :label: y_differential_equation
-\frac{d^2}{dy^2} V^2 + (\omega^2-k^2+\frac{k}{\omega}-y^2)V = 0
+\frac{d^2}{dy^2} V^2 + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0
 ```
 
 Here we implement a boundary condition, where $V(y)$ tapers toward 0 at $y= \pm \infty$, to solve the above equations. Another interesting condition happens when we implement the long-wave approximation ($v$ vanish, because the wave is so long that its zonal boundaries (meridional wind happens) is barely observed in a limited domain), which leads to 
@@ -204,7 +204,7 @@ and the corresponding differential equation can be written as
 :label: dispersion
 \begin{align}
 \frac{\omega}{k} &= \mp 1 \\
-\omega^2-k^2+\frac{k}{\omega} &= 2m+1 \text{   where } m\in[0,1,2,\cdots]\\
+\omega^2-k^2-\frac{k}{\omega} &= 2m+1 \text{   where } m\in[0,1,2,\cdots]\\
 \end{align}
 ```
 
@@ -213,13 +213,19 @@ One should notice that the minus sign in the first equation doesn't really exist
 Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e.,  wave length won't influence the propagation speed). In addition, it represents a pure gravity wave, which can be proved by calculating the PV in {eq}`shallow_water_linear_no_dimension3` (I will leave the practice to the reviewer). For the second equation, we can category the terms into three groups. (1) Rossby wave dominated regimes (2) Gravity wave dominated regimes, and (3) in-between. 
 
 #### Case 1: Rossby wave regime
-The main balance happens between $-k^2+\frac{k}{\omega}\approx 2m+1$ (i.e., $\omega$ is really small). In this case, $\omega \approx \frac{k}{k^2+2m+1}$, which is similar to what we derived in barotropic vorticity equation. Indeed, when $\omega$ is small, it represents the low-frequency limit. 
+The main balance happens between $-k^2-\frac{k}{\omega}\approx 2m+1$ (i.e., $\omega$ is really small). In this case, $\omega \approx -\frac{k}{k^2+2m+1}$, which is similar to what we derived in barotropic vorticity equation. Indeed, when $\omega$ is small, it represents the low-frequency limit. 
 
 #### Case 2: Inertia gravity wave 
-The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
+The main balance happens between $\omega^2-k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
 
 #### Case 3: Mixed Rossby gravity wave (Yanai wave)
-There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega-k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=k$, $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=k$ apparently has a gravity wave-like behavior. $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
+There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega+k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega==k$, $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=k$ apparently has a gravity wave-like behavior. $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
 
+If we plot all three cases together, 
 
-If we plot all of these curves 
+```{figure} ../tropical-dynamics-figures/Dispersion_Relationship.PNG
+---
+name: FIG4-2
+---
+The dispersion relationship of tropical waves 
+```
