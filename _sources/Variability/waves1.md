@@ -163,7 +163,7 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \end{align}
 ```
 
-One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension1`. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
+One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension1` stay solid. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
 
 ```{math}
 :label: shallow_water_linear_no_dimension2
@@ -220,3 +220,6 @@ The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is b
 
 #### Case 3: Mixed Rossby gravity wave (Yanai wave)
 There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega-k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=k$, $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=k$ apparently has a gravity wave-like behavior. $\omega = -\frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = -\frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
+
+
+If we plot all of these curves 
