@@ -216,6 +216,6 @@ Observing {eq}`dispersion`, it's not hard to find that the first equation is non
 The main balance happens between $-k^2+\frac{k}{\omega}\approx 2m+1$ (i.e., $\omega$ is really small). In this case, $\omega \approx \frac{k}{k^2+2m+1}$, which is similar to what we derived in barotropic vorticity equation. Indeed, when $\omega$ is small, it represents the low-frequency limit. 
 
 #### Case 2
-The main balance happens between $\omega^2+\frac{k}{\omega}\approx 2m+1$
+The main balance happens between $\omega^2+k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. 
 
 
