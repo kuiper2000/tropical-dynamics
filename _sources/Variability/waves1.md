@@ -223,7 +223,7 @@ There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega+k)(\
 
 If we plot all three cases together, 
 
-```{figure} ../tropical-dynamics-figures/Dispersion_Relationship.PNG
+```{figure} ../tropical-dynamics-figures/Dispersion_Relationship.png
 ---
 name: FIG4-2
 ---
