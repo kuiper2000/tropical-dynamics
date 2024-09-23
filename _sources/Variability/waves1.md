@@ -235,11 +235,11 @@ name: FIG4-2
 The dispersion relationship of tropical waves. 
 ```
 
-An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below). If we track along specific feature, the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $\frac{\omega}{k}$.    
+An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`TRMM_DYNAMO.png`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $\frac{\omega}{k}=\text{const}$.    
 
 ```{figure} ../tropical-dynamics-figures/TRMM_DYNAMO.png
 ---
-name: FIG4-2
+name: FIG4-3
 ---
 The meridional averaged precipitation from TRMM product during the DYNAMO field campaign. 
 ```
