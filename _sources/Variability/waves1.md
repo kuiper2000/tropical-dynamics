@@ -247,4 +247,14 @@ The meridional averaged precipitation from TRMM product during the DYNAMO field 
 ```
 
 ### Vertical Normal Mode
-An important thing is {eq}`shallow_water_linear4` is scaled by $C$ rather than $C_0$ indicating that we still need to determine $C$ to close the problem. According to the separation of variable, we know $\frac{C_0^2}{C^2}=\lambda$ or $C = \sqrt{\frac{C_0^2}{\lambda}}$. $\lambda$ on the other hand represents the "ID" of a wave's vertical structure (we will see that in a minute).  
+An important thing is {eq}`shallow_water_linear4` is scaled by $C$ rather than $C_0$ indicating that we still need to determine $C$ to close the problem. According to the separation of variable, we know $\frac{C_0^2}{C^2}=\lambda$ or $C = \sqrt{\frac{C_0^2}{\lambda}}$. $\lambda$ on the other hand represents the "ID" of a wave's vertical structure. To see what $\lambda$ stands for, we will complete the derivation of vertical normal mode. 
+
+
+```{math}
+:label: vertical_normal_mode1
+\begin{align}
+\frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 
+\end{align}
+```
+
+
