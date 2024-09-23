@@ -27,7 +27,8 @@ __Part II: Variability__
 * {ref}`waves1`
     * Governing equation and assumptions of tropical atmospheric waves
         * Conservation of shallow water PV
-        * Equatorial wave solution 
+        * Equatorial wave equation
+        * Horizontal wave solution 
         * Vertical normal modes
     * Convective-coupled Waves
     * Weak temperature gradient and moisture mode theory
