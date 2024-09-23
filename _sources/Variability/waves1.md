@@ -120,7 +120,8 @@ As {eq}`shallow_water_linear` contains four unknowns and four equations, it is i
 
 Rearranging the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, the left-hand side is solely a function of pressure, while the right-hand side depends only on $(x, y, t)$. This leads to $\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}} = \lambda$. According to Sturm-Liouville theory, $\lambda$ represents a series of distinct integers (i.e., $\lambda = 1, 2, 3$). We can rewrite $\lambda$ as $\frac{C_0^2}{C^2}$, so that $C^2 = \frac{C_0^2}{\lambda}$.
 
-:::{note} While linearizing {eq}`shallow_water_2` significantly simplifies the problem, it introduces limitations. The linear momentum equation prevents the energy cascade into new scales (i.e., it does not capture the filamentary structure of vorticity). This feature is crucial for redistributing moisture in the lower troposphere. :::
+:::{note} While linearizing {eq}`shallow_water_2` significantly simplifies the problem, it introduces limitations. The linear momentum equation prevents the energy cascade into new scales (i.e., it does not capture the filamentary structure of vorticity). This feature is crucial for redistributing moisture in the lower troposphere. 
+:::
 
 With the separation of variables, we can rewrite the governing equations as:
 
