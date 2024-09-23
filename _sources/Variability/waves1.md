@@ -236,7 +236,7 @@ name: FIG4-2
 The dispersion relationship of tropical waves. 
 ```
 
-An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`FIG4-3`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $(\omega,k)$ is specific pair    
+An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`FIG4-3`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $(\omega,k)$ is a specific pair. One can also take Fourier transform twice (one along time and the other along longitude coordinate) of the Hovmoller diagram, the yielded result is also the space-time diagram.     
 
 ```{figure} ../tropical-dynamics-figures/TRMM_DYNAMO.png
 :width: 400px
@@ -245,3 +245,6 @@ name: FIG4-3
 ---
 The meridional averaged precipitation from TRMM product during the DYNAMO field campaign. 
 ```
+
+### Vertical Normal Mode
+An important thing is {eq}`shallow_water_linear4` is scaled by $C$ rather than $C_0$ indicating that we still need to determine $C$ to close the problem. According to the separation of variable, we know $\frac{C_0^2}{C^2}=\lambda$ or $C = \sqrt{\frac{C_0^2}{\lambda}}$. $\lambda$ on the other hand represents the "ID" of a wave's vertical structure (we will see that in a minute).  
