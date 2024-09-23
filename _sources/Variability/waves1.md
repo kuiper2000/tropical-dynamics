@@ -90,7 +90,7 @@ The last equation of {eq}`shallow_water_4` indicates that the rate of change in 
 
 
 ### Equatorial Wave Equations  
-while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption ($u=\overline{u}+u'$ where $\overline{u}$ is independent of time or $\overline{u}=0$ for resting basic state) with resting boundary condition $w_0=0$. The equation set is then simplified as 
+Although {eq}`shallow_water_2` is significantly simplified, it remains unsolvable due to its nonlinear nature. To address this, we can begin with a linear approximation or assume a resting basic state ($u = \overline{u} + u'$ where $\overline{u}$ is independent of time, or $\overline{u} = 0$ for a resting basic state) with a boundary condition of $w_0 = 0$. This simplifies the equations as follows:
 
 ```{math}
 :label: shallow_water_linear
@@ -102,9 +102,11 @@ while {eq}`shallow_water_2` is well simplified, it remains unsolvable due to its
 \end{align}
 ```
 
-where $g'\eta=C_0^2$, $C_0$ is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set. 
+where $g'\eta = C_0^2$, with $C_0$ representing the gravity wave speed. This set of equations is the well-known formulation derived by Matsuno (1966) and is a solvable system.
 
-One can find {eq}`shallow_water_linear` has four unknowns and four equations, which makes it solvable.  On the other hand, {eq}`shallow_water_linear` has a separable form. Thus one can first assume a solution of $u,v,\phi = \{\widehat{u}, \widehat{v}, \widehat{\phi}\}(x,y,t)\frac{dW(p)}{dp}$ and $w=\widehat{w}(x,y,t)W(p)$ to separate horizontal and vertical structure. Substitute back into {eq}`shallow_water_linear`, we have 
+As {eq}`shallow_water_linear` contains four unknowns and four equations, it is inherently solvable. Additionally, the equation has a separable form, allowing us to assume a solution of the form $u, v, \phi = {\widehat{u}, \widehat{v}, \widehat{\phi}}(x, y, t) \frac{dW(p)}{dp}$ and $w = \widehat{w}(x, y, t) W(p)$ to separate the horizontal and vertical structures. Substituting this back into {eq}`shallow_water_linear`, we obtain:
+
+
 
 ```{math}
 :label: shallow_water_linear2
@@ -116,15 +118,12 @@ One can find {eq}`shallow_water_linear` has four unknowns and four equations, wh
 \end{align}
 ```
 
-If we rearrange the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, left-hand side is solely a function of pressure while the right-hand side is solely a function of $(x,y,t)$. This implies $\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}=\lambda$. According to Sturm-Liouville theory, $\lambda$ is a series of non-repeated integers (i.e., $\lambda=1,2,3$). We can further rewrite $\lambda$ as $\frac{C_0^2}{C^2}$ therefore  $C^2=\frac{C_0^2}{\lambda}$.  
+Rearranging the last equation of {eq}`shallow_water_linear2` as $\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}$, the left-hand side is solely a function of pressure, while the right-hand side depends only on $(x, y, t)$. This leads to $\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}} = \lambda$. According to Sturm-Liouville theory, $\lambda$ represents a series of distinct integers (i.e., $\lambda = 1, 2, 3$). We can rewrite $\lambda$ as $\frac{C_0^2}{C^2}$, so that $C^2 = \frac{C_0^2}{\lambda}$.
 
+:::{note} While linearizing {eq}`shallow_water_2` significantly simplifies the problem, it introduces limitations. The linear momentum equation prevents the energy cascade into new scales (i.e., it does not capture the filamentary structure of vorticity). This feature is crucial for redistributing moisture in the lower troposphere. :::
 
-:::{note}
-While the linearization of {eq}`shallow_water_2` significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn't allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won't happen). Such a feature is very important in redistributing the lower troposphere moisture.  
-:::
+With the separation of variables, we can rewrite the governing equations as:
 
-
-With the separation of variables, we can rewrite the governing equation
 
 ```{math}
 :label: shallow_water_linear3
@@ -136,11 +135,12 @@ With the separation of variables, we can rewrite the governing equation
 \end{align}
 ```
 
-where the first three equations only have horizontal structure and the last equation only has vertical structure, which makes both set of equations solvable. We will start with the horizontal structure and followed by the discussion of vertical structure. 
+Here, the first three equations describe the horizontal structure, while the last equation describes the vertical structure, making both sets of equations solvable. We will begin by solving for the horizontal structure, followed by a discussion of the vertical structure.
+
 
 
 ### Horizontal Wave Solutions 
-To further simplify the problem, we can non-dimentionalize each variable by subtracting non-dimentional parameters. 
+To further simplify the problem, we can non-dimensionalize each variable by introducing non-dimensional parameters:
 
 
 ```{math}
@@ -153,7 +153,7 @@ u     & = C u^{\text{non}} \\
 \end{align}
 ```
 
-where the superscript $\text{non}$ represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)
+Here, the superscript $\text{non}$ indicates the non-dimensional variable. With this scaling, we can isolate the independent parameters, and the resulting equations can be written as follows (for simplicity, the superscripts are dropped):
 
 ```{math}
 :label: shallow_water_linear_no_dimension1
@@ -164,7 +164,8 @@ where the superscript $\text{non}$ represents the non-dimensional variable. With
 \end{align}
 ```
 
-One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, {eq}`shallow_water_linear_no_dimension1` stay solid. We can further employ the following assumption to separate the meridional and zonal structure of waves. 
+One advantage of using this non-dimensional form is its broad applicability to different parameter spaces. For instance, as long as the shallow water assumption holds, this set of equations remains valid regardless of the Rossby number. We can further simplify by assuming a separable structure for the meridional and zonal components of the waves:
+
 
 ```{math}
 :label: shallow_water_linear_no_dimension2
@@ -175,14 +176,16 @@ v &= V(y)e^{ikx-i\omega t} \\
 \end{align}
 ```
 
-Substitute {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water_linear_no_dimension1` and elimating the terms of $U(y)$ and $\Phi(y)$. One can have the another differential equation which is used to describe the meridional structure of tropical waves. 
+Substituting {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_water_linear_no_dimension1` and eliminating terms involving $U(y)$ and $\Phi(y)$, we derive a differential equation that describes the meridional structure of tropical waves:
+
+
 
 ```{math}
 :label: y_differential_equation
 \frac{d^2}{dy^2} V^2 + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0
 ```
 
-Here we implement a boundary condition, where $V(y)$ tapers toward 0 at $y= \pm \infty$, to solve the above equations. Another interesting condition happens when we implement the long-wave approximation ($v$ vanish, because the wave is so long that its zonal boundaries (meridional wind happens) is barely observed in a limited domain), which leads to 
+We can solve this equation by applying the boundary condition that $V(y)$ tapers off to zero as $y \to \pm \infty$. Another special case arises when we use the long-wave approximation (where $v$ vanishes due to the wave's length being so large that the zonal boundaries, where meridional winds occur, are negligible in a limited domain). This leads to:
 
 ```{math}
 :label: shallow_water_linear_no_dimension3
@@ -193,7 +196,8 @@ yu & = -\frac{\partial \phi}{\partial y}\\
 \end{align}
 ```
 
-and the corresponding differential equation can be written as 
+The corresponding differential equation is:
+
 ```{math}
 :label: Kelvin_wave_equation
 \frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0

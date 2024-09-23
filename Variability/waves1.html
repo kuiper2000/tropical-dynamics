@@ -475,7 +475,7 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 </div>
 <div class="section" id="equatorial-wave-equations">
 <h3>Equatorial Wave Equations<a class="headerlink" href="#equatorial-wave-equations" title="Permalink to this headline">¶</a></h3>
-<p>while <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is well simplified, it remains unsolvable due to its nonlinearity. We can start with a linear version or resting basic state assumption (<span class="math notranslate nohighlight">\(u=\overline{u}+u'\)</span> where <span class="math notranslate nohighlight">\(\overline{u}\)</span> is independent of time or <span class="math notranslate nohighlight">\(\overline{u}=0\)</span> for resting basic state) with resting boundary condition <span class="math notranslate nohighlight">\(w_0=0\)</span>. The equation set is then simplified as</p>
+<p>Although <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is significantly simplified, it remains unsolvable due to its nonlinear nature. To address this, we can begin with a linear approximation or assume a resting basic state (<span class="math notranslate nohighlight">\(u = \overline{u} + u'\)</span> where <span class="math notranslate nohighlight">\(\overline{u}\)</span> is independent of time, or <span class="math notranslate nohighlight">\(\overline{u} = 0\)</span> for a resting basic state) with a boundary condition of <span class="math notranslate nohighlight">\(w_0 = 0\)</span>. This simplifies the equations as follows:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear">
 <span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -\beta yv &amp; = -\frac{\partial \phi'}{\partial x}\\
@@ -483,8 +483,8 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} + \frac{\partial \omega}{\partial p}&amp; = 0 \\
 \frac{\partial \phi_p'}{\partial t} + \frac{C_0^2}{p^2} \omega &amp;= 0  
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(g'\eta=C_0^2\)</span>, <span class="math notranslate nohighlight">\(C_0\)</span> is gravity wave speed. The above equation is the famous equation set derived by Matsuno (1966), which is a solvable equation set.</p>
-<p>One can find <a class="reference internal" href="#equation-shallow-water-linear">(50)</a> has four unknowns and four equations, which makes it solvable.  On the other hand, <a class="reference internal" href="#equation-shallow-water-linear">(50)</a> has a separable form. Thus one can first assume a solution of <span class="math notranslate nohighlight">\(u,v,\phi = \{\widehat{u}, \widehat{v}, \widehat{\phi}\}(x,y,t)\frac{dW(p)}{dp}\)</span> and <span class="math notranslate nohighlight">\(w=\widehat{w}(x,y,t)W(p)\)</span> to separate horizontal and vertical structure. Substitute back into <a class="reference internal" href="#equation-shallow-water-linear">(50)</a>, we have</p>
+<p>where <span class="math notranslate nohighlight">\(g'\eta = C_0^2\)</span>, with <span class="math notranslate nohighlight">\(C_0\)</span> representing the gravity wave speed. This set of equations is the well-known formulation derived by Matsuno (1966) and is a solvable system.</p>
+<p>As <a class="reference internal" href="#equation-shallow-water-linear">(50)</a> contains four unknowns and four equations, it is inherently solvable. Additionally, the equation has a separable form, allowing us to assume a solution of the form <span class="math notranslate nohighlight">\(u, v, \phi = {\widehat{u}, \widehat{v}, \widehat{\phi}}(x, y, t) \frac{dW(p)}{dp}\)</span> and <span class="math notranslate nohighlight">\(w = \widehat{w}(x, y, t) W(p)\)</span> to separate the horizontal and vertical structures. Substituting this back into <a class="reference internal" href="#equation-shallow-water-linear">(50)</a>, we obtain:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear2">
 <span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta yv &amp; = -\frac{\partial \widehat{\phi'}}{\partial x}\\
@@ -492,12 +492,11 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} + \widehat{\omega}&amp; = 0 \\
 \frac{\partial \widehat{\phi'}}{\partial t}\frac{d^2W}{dp^2} + \frac{C_0^2}{p^2} \widehat{\omega}W(p) &amp;= 0  
 \end{align}\end{split}\]</div>
-<p>If we rearrange the last equation of <a class="reference internal" href="#equation-shallow-water-linear2">(51)</a> as <span class="math notranslate nohighlight">\(\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}\)</span>, left-hand side is solely a function of pressure while the right-hand side is solely a function of <span class="math notranslate nohighlight">\((x,y,t)\)</span>. This implies <span class="math notranslate nohighlight">\(\frac{d^2 W}{dp^2}/\frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}=\lambda\)</span>. According to Sturm-Liouville theory, <span class="math notranslate nohighlight">\(\lambda\)</span> is a series of non-repeated integers (i.e., <span class="math notranslate nohighlight">\(\lambda=1,2,3\)</span>). We can further rewrite <span class="math notranslate nohighlight">\(\lambda\)</span> as <span class="math notranslate nohighlight">\(\frac{C_0^2}{C^2}\)</span> therefore  <span class="math notranslate nohighlight">\(C^2=\frac{C_0^2}{\lambda}\)</span>.</p>
+<p>Rearranging the last equation of <a class="reference internal" href="#equation-shallow-water-linear2">(51)</a> as <span class="math notranslate nohighlight">\(\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}}\)</span>, the left-hand side is solely a function of pressure, while the right-hand side depends only on <span class="math notranslate nohighlight">\((x, y, t)\)</span>. This leads to <span class="math notranslate nohighlight">\(\frac{d^2 W}{dp^2} / \frac{W}{p^2} = -\frac{C_0^2 \omega}{\widehat{\phi'}} = \lambda\)</span>. According to Sturm-Liouville theory, <span class="math notranslate nohighlight">\(\lambda\)</span> represents a series of distinct integers (i.e., <span class="math notranslate nohighlight">\(\lambda = 1, 2, 3\)</span>). We can rewrite <span class="math notranslate nohighlight">\(\lambda\)</span> as <span class="math notranslate nohighlight">\(\frac{C_0^2}{C^2}\)</span>, so that <span class="math notranslate nohighlight">\(C^2 = \frac{C_0^2}{\lambda}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the linearization of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> significantly simplifies the problem, the trade-off also leads to a few issues. The linear momentum equation doesn’t allow the existence of energy cascade into new scales (i.e., filament structure of vorticity won’t happen). Such a feature is very important in redistributing the lower troposphere moisture.</p>
-</div>
-<p>With the separation of variables, we can rewrite the governing equation</p>
+<p>While linearizing <a class="reference internal" href="#equation-shallow-water-2">(45)</a> significantly simplifies the problem, it introduces limitations. The linear momentum equation prevents the energy cascade into new scales (i.e., it does not capture the filamentary structure of vorticity). This feature is crucial for redistributing moisture in the lower troposphere. :::</p>
+<p>With the separation of variables, we can rewrite the governing equations as:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear3">
 <span class="eqno">(52)<a class="headerlink" href="#equation-shallow-water-linear3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta y\widehat{v} &amp; = -\frac{\partial \widehat{\phi'}}{\partial x}\\
@@ -505,11 +504,12 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 \frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &amp;= 0 \\
 \frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &amp;=0
 \end{align}\end{split}\]</div>
-<p>where the first three equations only have horizontal structure and the last equation only has vertical structure, which makes both set of equations solvable. We will start with the horizontal structure and followed by the discussion of vertical structure.</p>
+<p>Here, the first three equations describe the horizontal structure, while the last equation describes the vertical structure, making both sets of equations solvable. We will begin by solving for the horizontal structure, followed by a discussion of the vertical structure.</p>
+</div>
 </div>
 <div class="section" id="horizontal-wave-solutions">
 <h3>Horizontal Wave Solutions<a class="headerlink" href="#horizontal-wave-solutions" title="Permalink to this headline">¶</a></h3>
-<p>To further simplify the problem, we can non-dimentionalize each variable by subtracting non-dimentional parameters.</p>
+<p>To further simplify the problem, we can non-dimensionalize each variable by introducing non-dimensional parameters:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear4">
 <span class="eqno">(53)<a class="headerlink" href="#equation-shallow-water-linear4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 (x,y) &amp; = \sqrt {\frac{C}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
@@ -517,31 +517,31 @@ t     &amp; = \frac{t^{\text{non}}}{\sqrt{\beta C}} \\
 u     &amp; = C u^{\text{non}} \\
 \phi^{'}  &amp; = C^2 \phi^{\text{non}} 
 \end{align}\end{split}\]</div>
-<p>where the superscript <span class="math notranslate nohighlight">\(\text{non}\)</span> represents the non-dimensional variable. With such scaling, we can isolate the independent parameters and the yielded equations can be written as follows (we drop the superscript for simplification)</p>
+<p>Here, the superscript <span class="math notranslate nohighlight">\(\text{non}\)</span> indicates the non-dimensional variable. With this scaling, we can isolate the independent parameters, and the resulting equations can be written as follows (for simplicity, the superscripts are dropped):</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension1">
 <span class="eqno">(54)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension1" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0   \\
 \end{align}\end{split}\]</div>
-<p>One advantage of using such non-dimensional equation is that we can apply it to a wide range of parameter space. For example, as long as the shallow water assumption holds, regardless of Rossby number, <a class="reference internal" href="#equation-shallow-water-linear-no-dimension1">(54)</a> stay solid. We can further employ the following assumption to separate the meridional and zonal structure of waves.</p>
+<p>One advantage of using this non-dimensional form is its broad applicability to different parameter spaces. For instance, as long as the shallow water assumption holds, this set of equations remains valid regardless of the Rossby number. We can further simplify by assuming a separable structure for the meridional and zonal components of the waves:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension2">
 <span class="eqno">(55)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 u &amp;= U(y)e^{ikx-i\omega t} \\
 v &amp;= V(y)e^{ikx-i\omega t} \\
 \phi &amp;= \Phi(y)e^{ikx-i\omega t} \\
 \end{align}\end{split}\]</div>
-<p>Substitute <a class="reference internal" href="#equation-shallow-water-linear-no-dimension2">(55)</a> back into <a class="reference internal" href="#equation-shallow-water-linear-no-dimension1">(54)</a> and elimating the terms of <span class="math notranslate nohighlight">\(U(y)\)</span> and <span class="math notranslate nohighlight">\(\Phi(y)\)</span>. One can have the another differential equation which is used to describe the meridional structure of tropical waves.</p>
+<p>Substituting <a class="reference internal" href="#equation-shallow-water-linear-no-dimension2">(55)</a> back into <a class="reference internal" href="#equation-shallow-water-linear-no-dimension1">(54)</a> and eliminating terms involving <span class="math notranslate nohighlight">\(U(y)\)</span> and <span class="math notranslate nohighlight">\(\Phi(y)\)</span>, we derive a differential equation that describes the meridional structure of tropical waves:</p>
 <div class="math notranslate nohighlight" id="equation-y-differential-equation">
 <span class="eqno">(56)<a class="headerlink" href="#equation-y-differential-equation" title="Permalink to this equation">¶</a></span>\[\frac{d^2}{dy^2} V^2 + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0\]</div>
-<p>Here we implement a boundary condition, where <span class="math notranslate nohighlight">\(V(y)\)</span> tapers toward 0 at <span class="math notranslate nohighlight">\(y= \pm \infty\)</span>, to solve the above equations. Another interesting condition happens when we implement the long-wave approximation (<span class="math notranslate nohighlight">\(v\)</span> vanish, because the wave is so long that its zonal boundaries (meridional wind happens) is barely observed in a limited domain), which leads to</p>
+<p>We can solve this equation by applying the boundary condition that <span class="math notranslate nohighlight">\(V(y)\)</span> tapers off to zero as <span class="math notranslate nohighlight">\(y \to \pm \infty\)</span>. Another special case arises when we use the long-wave approximation (where <span class="math notranslate nohighlight">\(v\)</span> vanishes due to the wave’s length being so large that the zonal boundaries, where meridional winds occur, are negligible in a limited domain). This leads to:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension3">
 <span class="eqno">(57)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} &amp; = -\frac{\partial \phi}{\partial x}\\
 yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}) &amp;= 0   \\
 \end{align}\end{split}\]</div>
-<p>and the corresponding differential equation can be written as</p>
+<p>The corresponding differential equation is:</p>
 <div class="math notranslate nohighlight" id="equation-kelvin-wave-equation">
 <span class="eqno">(58)<a class="headerlink" href="#equation-kelvin-wave-equation" title="Permalink to this equation">¶</a></span>\[\frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0\]</div>
 <p><a class="reference internal" href="#equation-y-differential-equation">(56)</a> and <a class="reference internal" href="#equation-kelvin-wave-equation">(58)</a> leads to two different dispersion relationships, where wave’s amplitude is conserved over the characteristic lines.</p>
