@@ -203,7 +203,7 @@ The corresponding differential equation is:
 \frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0
 ```
 
-{eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` leads to two different dispersion relationships, where wave's amplitude is conserved over the characteristic lines. 
+Equations {eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` yield two distinct dispersion relationships where the wave amplitude is conserved along characteristic lines:
 
 ```{math}
 :label: dispersion
@@ -213,22 +213,20 @@ The corresponding differential equation is:
 \end{align}
 ```
 
-One should notice that the minus sign in the first equation doesn't really exist due to physical constrain. (Readers will try to figure out this point in the homework assignment). $2m+1$ in the second equation comes from the Sturm-Liouville theorem. 
+Note that the negative sign in the first equation is unphysical due to certain constraints (this is an exercise left for the reader). The term $2m+1$ in the second equation is derived from Sturm-Liouville theory.
 
-Observing {eq}`dispersion`, it's not hard to find that the first equation is non-dispersive (i.e.,  wave length won't influence the propagation speed). In addition, it represents a pure gravity wave, which can be proved by calculating the PV in {eq}`shallow_water_linear_no_dimension3` (I will leave the practice to the reviewer). For the second equation, we can category the terms into three groups. (1) Rossby wave dominated regimes (2) Gravity wave dominated regimes, and (3) in-between. 
+Looking at {eq}dispersion, we see that the first equation is non-dispersive (i.e., the wavelength does not affect the wave propagation speed). This represents a pure gravity wave, which can be proven by calculating the potential vorticity in {eq}shallow_water_linear_no_dimension3 (another exercise for the reader). The second equation can be broken down into three distinct regimes: (1) Rossby wave-dominated, (2) gravity wave-dominated, and (3) mixed regimes.
 
 #### Case 1: Rossby wave regime
-The main balance happens between $-k^2-\frac{k}{\omega}\approx 2m+1$ (i.e., $\omega$ is really small). In this case, $\omega \approx -\frac{k}{k^2+2m+1}$, which is similar to what we derived in barotropic vorticity equation. Indeed, when $\omega$ is small, it represents the low-frequency limit. 
+In this case, the dominant balance is $-k^2-\frac{k}{\omega} \approx 2m+1$, meaning $\omega$ is small. Therefore, $\omega \approx -\frac{k}{k^2+2m+1}$, similar to the result from the barotropic vorticity equation. This regime represents the low-frequency limit.
 
-#### Case 2: Inertia gravity wave 
-The main balance happens between $\omega^2-k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
+#### Case 2: Inertia-gravity wave regime
+Here, $\omega^2-k^2 \approx 2m+1$, meaning $\omega$ is large. In this case, $\omega = \pm \sqrt{k^2+2m+1}$. For large $k$, $\omega \approx \pm k$, indicating the wave is dominated by gravity wave propagation. (The reader can continue the analysis for small $k$).
 
-#### Case 3: Mixed Rossby gravity wave (Yanai wave)
-There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega+k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=-k$, $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=-k$ apparently has a gravity wave-like behavior. $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
+#### Case 3: Mixed Rossby-gravity wave (Yanai wave)
+A special case occurs when $m=0$, leading to the simplified dispersion relation $(\omega+k)(\omega^2+k\omega-1)=0$. The three roots are $\omega=-k$, $\omega = \frac{k}{2}+\sqrt{\left(\frac{k}{2}\right)^2+1}$, and $\omega = \frac{k}{2}-\sqrt{\left(\frac{k}{2}\right)^2+1}$. The root $\omega=-k$ behaves like a gravity wave, while the other two can be categorized into three cases (eastward propagation, westward propagation with small $k$, and westward propagation with large $k$). In the eastward-propagating case, it tapers toward the inertia gravity wave's dispersion relationship. In low wave number to westward propagating cases, it behaves like a Rossby wave. Therefore, this special case is called mixed Rossby-gravity wave, which has the characters of both waves. In the real world, MRG is an important embryo for cyclone genesis. 
 
-
-
-Combining all three cases, show them in the figure below. 
+These three cases are summarized and shown in the figure below. 
 
 ```{figure} ../tropical-dynamics-figures/Dispersion_Relationship.png
 ---
