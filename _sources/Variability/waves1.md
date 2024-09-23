@@ -2,7 +2,7 @@
 # Week 6 and 7: Tropical Wave Theory
 ## Shallow Water Model
 
-In addition to zonal mean circulation, eddy also plays an important role in shaping tropical climatology. Here we adopt the result in {ref}`scale_analysis`. 
+Aside from the zonal mean circulation, eddies significantly influence tropical climatology. We refer to the results from {ref}`scale_analysis` in this section.
 
 
 ```{math}
@@ -23,7 +23,7 @@ As in {numref}`FIG2-2` except that $h_B\neq0$
 ```
 
 
-Following {eq}`reduced_gravity2` (reduced gravity) and integrating the third equation from surface (or top of the boundary) to the interface $\eta$ (i.e., {numref}`FIG4-1`), we can rewrite {eq}`shallow_water_1` 
+By integrating the third equation from the surface (or the boundary top) to the interface $\eta$ (refer to {numref}FIG4-1) and using the reduced gravity concept from {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1`.
 
 ```{math}
 :label: shallow_water_2
@@ -34,9 +34,9 @@ w(z=\eta) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x
 \end{align}
 ```
 
-where $\eta$ is the location of interface (see {eq}`reduced_gravity2`) and $w(t)$ is the rate change in this displacement i.e., $w(z)= \frac{d \eta}{dt}$. 
+Here, $\eta$ represents the interface location (see {eq}`reduced_gravity2`), and $w(z)$ denotes the rate of displacement change, expressed as $\frac{d \eta}{dt}$.
 
-Also, according to quasi-equilibrium, we know diabatic heating/cooling is balanced by adiabatic cooling/heating of vertical motion. i.e., {eq}`thermodynamics`. Therefore, the last equation is also subject to a forcing term, which can be written as 
+Furthermore, based on quasi-equilibrium principles, we understand that diabatic heating and cooling are counterbalanced by the adiabatic cooling and heating from vertical motion, as indicated by {eq}thermodynamics. Consequently, a forcing term can be introduced into the final equation, expressed as:
 
 ```{math}
 :label: shallow_water_3
@@ -51,28 +51,29 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 \end{align}
 ```
 
-where $\phi$ is $g\eta$. The last equation of {eq}`shallow_water_3` states that the diabatic heating-induced vertical motion differentiation nearly balances the convergence/divergence of horizontal flow. This relation holds for both external (i.e., g is not reduced) and internal modes (i.e., g is reduced). 
+This uses the geopotential height to rewrite the previous equation. The last line of {eq}`shallow_water_3` shows that diabatic heating-driven vertical motion almost balances horizontal flow convergence/divergence. This applies to both external (with unreduced gravity) and internal modes (with reduced gravity).
 
-:::{note}
-One should notice that $ w_0$ in {eq}`shallow_water_2` is not necessarily 0. To ensure non-normal flow at the lower boundary of the domain, it requires that $w(x,y,z=h_B,t) = u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}$ (at the boundary, $\frac{\partial h_B}{\partial t}=0$). This leads to 
+:::{note} It's important to note that $w_0$ in {eq}`shallow_water_2` isn't necessarily zero. For non-normal flow at the lower boundary, we need $w(x, y, z = h_B, t) = u\frac{\partial h_B}{\partial x} + v\frac{\partial h_B}{\partial y}$, assuming $\frac{\partial h_B}{\partial t} = 0$ at the boundary. This results in:
+
 ```{math}
 :label: boundary_layer
 w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}}_{\text{momentum advection}}+\underbrace{h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})}_{\text{mass convergence from lower bound}}
 ```
-{eq}`boundary_layer` states that the normal velocity exists through two processes (1) the advection of $h_B$ (inhomogeneous in space) by $u$ and $v$ at $h_B$ or (2) the convergence/divergence of $h_B$ (homogeneous but non-zero).   
+{eq}`boundary_layer` shows that normal velocity arises from two processes: (1) momentum advection of $h_B$ by $u$ and $v$, and (2) mass convergence/divergence at $h_B$. 
 :::
 
-One easy way to make {eq}`shallow_water_3` an internal wave equation is calculating the difference between two vertical layers (such that you have a counteracting force from the fluid on the top). or an alternative but more useful form of the last equation of {eq}`shallow_water_3` is 
+To simplify {eq}`shallow_water_3` into an internal wave equation, we can calculate the difference between two vertical layers, introducing a counteracting force from the upper fluid. Alternatively, a more useful form of the final equation in {eq}`shallow_water_3` is:
+
 
 ```{math}
 :label: hydrostatic_thermo
 \frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha
 ```
 
-where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \rho g}(\Gamma_d-\Gamma) = \frac{N^2}{\rho^2 g^2}=\frac{C_0}{p^2}$. $C_0$ is the external gravity wave speed. {eq}`hydrostatic_thermo` is the hydrostatic thermodynamics equation, which can be derived by rewriting $d \mathrm{ln}\theta$ in {eq}`primitive` with $\frac{c_p}{R}\mathrm{ln}\alpha$. {eq}`hydrostatic_thermo` is an easier form to approach the solution of vertical since the pressure weighting has been considered in the pressure velocity.  
+Here, $\phi_p = -\alpha$, $\omega = \overline{\rho} g w$, and $\sigma = \frac{R}{p \rho g} (\Gamma_d - \Gamma) = \frac{N^2}{\rho^2 g^2} = \frac{C_0}{p^2}$, where $C_0$ is the external gravity wave speed. {eq}`hydrostatic_thermo` represents the hydrostatic thermodynamic equation, derived by rewriting $d \mathrm{ln}\theta$ from {eq}`primitive` with $\frac{c_p}{R} \mathrm{ln}\alpha$. This form makes it easier to solve vertical motion since pressure velocity weighting is already factored in.
 
 ### Conservation of Shallow Water PV
-{eq}`shallow_water_2` also conserves the potential vorticity. To prove that, we can take $\nabla\times$ of the first equation, we have 
+{eq}`shallow_water_2` also conserves potential vorticity. To demonstrate this, we can take the curl of the first equation, resulting in:
 
 
 ```{math}
@@ -84,7 +85,7 @@ where $\phi_p =-\alpha$ , $\omega=\overline{\rho}gw$ and $\sigma = \frac{R}{p \r
 \end{align}
 ```
 
-the last equation of {eq}`shallow_water_4` the rate change in absolute vorticity is proportional to the rate change in height indicating that $\frac{d}{dt}\frac{\zeta+f}{\eta} = 0$. (One should notice that the expression in the last equation of {eq}`shallow_water_2` will yield a more rigorous constraint on PV conservation). One can also prove {eq}`shallow_water_4` from {eq}`shallow_water_2` using the Kelvin circulation theorem. (HW)
+The last equation of {eq}`shallow_water_4` indicates that the rate of change in absolute vorticity is proportional to the rate of change in height, implying that $\frac{d}{dt}\left( \frac{\zeta + f}{\eta} \right) = 0$. (Note that the expression derived in the final equation of {eq}`shallow_water_2` imposes a stricter constraint on potential vorticity conservation.) Furthermore, {eq}shallow_water_4 can also be derived from {eq}`shallow_water_2` using the Kelvin circulation theorem (homework).
 
 
 
@@ -219,13 +220,17 @@ The main balance happens between $-k^2-\frac{k}{\omega}\approx 2m+1$ (i.e., $\om
 The main balance happens between $\omega^2-k^2\approx 2m+1$ (i.e., $\omega$ is big). In such case, $\omega = \pm \sqrt{k^2+2m+1}$. It's not hard to find that when $k$ is really big, $\omega \approx \pm k$ indicating it's dominated by gravity wave propagation in both directions. (Readers will complete the discussion of small $k$ case). 
 
 #### Case 3: Mixed Rossby gravity wave (Yanai wave)
-There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega+k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=-k$, $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=k$ apparently has a gravity wave-like behavior. $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
+There is a special case where $m=0$, then {eq}`dispersion` becomes $(\omega+k)(\omega^2+k\omega-1)=0$. The three roots of this equation are $\omega=-k$, $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$. $\omega=-k$ apparently has a gravity wave-like behavior. $\omega = \frac{k}{2}+\sqrt{(\frac{k}{2})^2+1}$ and $\omega = \frac{k}{2}-\sqrt{(\frac{k}{2})^2+1}$ can be further categorized into three cases for discussion (eastward propagation, westward propagation with small k and westward propagation with large k). 
 
-If we plot all three cases together, 
+
+
+Combining all three cases, show them in the figure below. 
 
 ```{figure} ../tropical-dynamics-figures/Dispersion_Relationship.png
 ---
 name: FIG4-2
 ---
-The dispersion relationship of tropical waves 
+The dispersion relationship of tropical waves. 
 ```
+
+From {ref}`FIG4-2`, it's not hard to find 
