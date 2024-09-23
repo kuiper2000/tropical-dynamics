@@ -205,7 +205,7 @@ name: FIG2-3
 The global radiative balance maps (From Lidzen 1990)
 ```
 
-One can estimate the net radiative cooling rate of the atmosphere using {ref}`FIG2-3`.
+One can estimate the net radiative cooling rate of the atmosphere using {numref}`FIG2-3`.
 
 ```{math}
 :label: radiative_balance1
