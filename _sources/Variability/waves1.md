@@ -279,9 +279,11 @@ Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have
 ```{math}
 :label: vertical_normal_mode3
 \begin{cases} 
-W(p_s) &= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
-W(p_t) &= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
+W(p_s) &= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
+W(p_t) &= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
 \end{cases}
 ```
 
-which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}$ (readers will complete the steps in the HW). 
+which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}$ and $B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}$ (readers will complete the steps in the HW). 
+
+
