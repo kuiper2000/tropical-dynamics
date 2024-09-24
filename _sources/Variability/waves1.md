@@ -271,6 +271,16 @@ The above equation yields two solution
 ```{math}
 :label: vertical_normal_mode3
 \begin{align}
-W(p) = A e^{-i\sqrt{\lambda}d\mathrm{ln}(\frac p)}+Be^{i\sqrt{\lambda}d\mathrm{ln}(\frac p)}
+W(p) = A e^{-i\sqrt{\lambda}d\mathrm{ln}( p)}+Be^{i\sqrt{\lambda}d\mathrm{ln}(p)}
+\end{align}
+```
+
+Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have 
+
+```{math}
+:label: vertical_normal_mode3
+\begin{align}
+\Bigg\{ aaa \\
+bbb 
 \end{align}
 ```
