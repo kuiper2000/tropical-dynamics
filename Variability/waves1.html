@@ -599,16 +599,20 @@ yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-vertical-normal-mode2">(61)</a> is an Euler differential equation, which can be solved by assuming a solution form of <span class="math notranslate nohighlight">\(W(p)=\sum_n=0^\infty C_n p^{n+r}\)</span>. Using this series solution, we can have</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode3">
-<span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(62)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{align}
 W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
 \end{align}\]</div>
-<p>Substitute two boundary conditions into <a class="reference internal" href="#equation-vertical-normal-mode3">(63)</a> we have</p>
-<div class="math notranslate nohighlight" id="equation-vertical-normal-mode3">
-<span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases} 
+<p>Substitute two boundary conditions into <a class="reference internal" href="#equation-vertical-normal-mode3">(62)</a> we have</p>
+<div class="math notranslate nohighlight" id="equation-vertical-normal-mode4">
+<span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases} 
 W(p_s) &amp;= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
 W(p_t) &amp;= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
 \end{cases}\end{split}\]</div>
-<p>which implies <span class="math notranslate nohighlight">\(\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}\)</span> and <span class="math notranslate nohighlight">\(B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}\)</span> (readers will complete the steps in the HW).</p>
+<p>which implies <span class="math notranslate nohighlight">\(\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}\)</span> and <span class="math notranslate nohighlight">\(B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}\)</span> (readers will complete the steps in the HW). The vertical structure solution can therefore be written as</p>
+<div class="math notranslate nohighlight" id="equation-vertical-normal-mode5">
+<span class="eqno">(64)<a class="headerlink" href="#equation-vertical-normal-mode5" title="Permalink to this equation">¶</a></span>\[\begin{cases} 
+W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}p^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
+\end{cases}\]</div>
 </div>
 </div>
 </div>
