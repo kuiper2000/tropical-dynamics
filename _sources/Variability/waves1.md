@@ -271,6 +271,6 @@ The above equation yields two solution
 ```{math}
 :label: vertical_normal_mode3
 \begin{align}
-W(p) = 
+W(p) = A e^{-i\sqrt{\lambda}d\mathrm{ln}(\frac p)}+Be^{i\sqrt{\lambda}d\mathrm{ln}(\frac p)}
 \end{align}
 ```
