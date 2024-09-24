@@ -302,3 +302,5 @@ name: FIG4-4
 ---
 The vertical normal mode for m=1,2,3,4
 ```
+
+Recall that $\lambda = \frac{C_0^2}{C^2}$. Also $1/4-\lambda=-\frac{\pi^2 m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}$ 
