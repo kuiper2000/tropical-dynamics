@@ -596,20 +596,19 @@ yu &amp; = -\frac{\partial \phi}{\partial y}\\
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode2">
 <span class="eqno">(61)<a class="headerlink" href="#equation-vertical-normal-mode2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 &amp; \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
-\rightarrow &amp; (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
 \end{align}\end{split}\]</div>
-<p>The above equation yields two solution</p>
+<p><a class="reference internal" href="#equation-vertical-normal-mode2">(61)</a> is an Euler differential equation, which can be solved by assuming a solution form of <span class="math notranslate nohighlight">\(W(p)=\sum_n=0^\infty C_n p^{n+r}\)</span>. Using this series solution, we can have</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode3">
 <span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{align}
-W(p) = A e^{-i\sqrt{\lambda}d\mathrm{ln}( p)}+Be^{i\sqrt{\lambda}d\mathrm{ln}(p)}
+W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
 \end{align}\]</div>
 <p>Substitute two boundary conditions into <a class="reference internal" href="#equation-vertical-normal-mode3">(63)</a> we have</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode3">
 <span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases} 
-W(p_s) &amp;= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_s)}\\
-W(p_t) %= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_t)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_t)}
+W(p_s) &amp;= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
+W(p_t) &amp;= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
 \end{cases}\end{split}\]</div>
-<p>Using Gauss elimination, we have <span class="math notranslate nohighlight">\(B(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})})=0\)</span> or <span class="math notranslate nohighlight">\(A(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_t}{p_s})})=0\)</span>. For non-trivial solution, either way we will have <span class="math notranslate nohighlight">\(i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})=i2\pi m\)</span> or <span class="math notranslate nohighlight">\(\sqrt{\lambda}=\frac{\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}\)</span></p>
+<p>which implies <span class="math notranslate nohighlight">\(\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}\)</span> (readers will complete the steps in the HW).</p>
 </div>
 </div>
 </div>

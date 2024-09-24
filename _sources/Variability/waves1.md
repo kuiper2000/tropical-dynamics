@@ -263,15 +263,14 @@ Here we implement two boundary conditions. At $p=p_s$ and $p=p_t$, $W(p)=0$, whi
 :label: vertical_normal_mode2
 \begin{align}
 & \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
-\rightarrow & (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
 \end{align}
 ```
-The above equation yields two solution
+{eq}`vertical_normal_mode2` is an Euler differential equation, which can be solved by assuming a solution form of $W(p)=\sum_n=0^\infty C_n p^{n+r}$. Using this series solution, we can have 
 
 ```{math}
 :label: vertical_normal_mode3
 \begin{align}
-W(p) = A e^{-i\sqrt{\lambda}d\mathrm{ln}( p)}+Be^{i\sqrt{\lambda}d\mathrm{ln}(p)}
+W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
 \end{align}
 ```
 
@@ -280,9 +279,9 @@ Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have
 ```{math}
 :label: vertical_normal_mode3
 \begin{cases} 
-W(p_s) &= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_s)}\\
-W(p_t) %= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_t)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_t)}
+W(p_s) &= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
+W(p_t) &= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
 \end{cases}
 ```
 
-Using Gauss elimination, we have $B(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})})=0$ or $A(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_t}{p_s})})=0$. For non-trivial solution, either way we will have $i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})=i2\pi m$ or $\sqrt{\lambda}=\frac{\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}$
+which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}$ (readers will complete the steps in the HW). 
