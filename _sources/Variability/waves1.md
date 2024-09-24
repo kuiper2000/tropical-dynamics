@@ -186,7 +186,9 @@ Substituting {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_wat
 \frac{d^2}{dy^2} V^2 + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0
 ```
 
-We can solve this equation by applying the boundary condition that $V(y)$ tapers off to zero as $y \to \pm \infty$. Another special case arises when we use the long-wave approximation (where $v$ vanishes due to the wave's length being so large that the zonal boundaries, where meridional winds occur, are negligible in a limited domain). This leads to:
+We can solve this equation by applying the boundary condition that $V(y)$ tapers off to zero as $y \to \pm \infty$ and assume $V(y)=\widehat{V(y)}e^{-y^2}$. This assumption can convert {eq}`y_differential_equation` into a typical Hermite differential equation, where $\widehat{V(y)}=H_m(y)$ is so-called Hermite polynomial. 
+
+Another special case arises when we use the long-wave approximation (where $v$ vanishes due to the wave's length being so large that the zonal boundaries, where meridional winds occur, are negligible in a limited domain). This leads to:
 
 ```{math}
 :label: shallow_water_linear_no_dimension3
@@ -216,7 +218,7 @@ Equations {eq}`y_differential_equation` and {eq}`Kelvin_wave_equation` yield two
 
 Note that the negative sign in the first equation is unphysical due to certain constraints (this is an exercise left for the reader). The term $2m+1$ in the second equation is derived from Sturm-Liouville theory.
 
-Looking at {eq}dispersion, we see that the first equation is non-dispersive (i.e., the wavelength does not affect the wave propagation speed). This represents a pure gravity wave, which can be proven by calculating the potential vorticity in {eq}shallow_water_linear_no_dimension3 (another exercise for the reader). The second equation can be broken down into three distinct regimes: (1) Rossby wave-dominated, (2) gravity wave-dominated, and (3) mixed regimes.
+Looking at {eq}`dispersion`, we see that the first equation is non-dispersive (i.e., the wavelength does not affect the wave propagation speed). This represents a pure gravity wave, which can be proven by calculating the potential vorticity in {eq}`shallow_water_linear_no_dimension3` (another exercise for the reader). The second equation can be broken down into three distinct regimes: (1) Rossby wave-dominated, (2) gravity wave-dominated, and (3) mixed regimes.
 
 #### Case 1: Rossby wave regime
 In this case, the dominant balance is $-k^2-\frac{k}{\omega} \approx 2m+1$, meaning $\omega$ is small. Therefore, $\omega \approx -\frac{k}{k^2+2m+1}$, similar to the result from the barotropic vorticity equation. This regime represents the low-frequency limit (i.e., the time scales dominated by the Earth's rotation)
