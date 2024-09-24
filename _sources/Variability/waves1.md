@@ -303,4 +303,7 @@ name: FIG4-4
 The vertical normal mode for m=1,2,3,4
 ```
 
-Recall that $\lambda = \frac{C_0^2}{C^2}$, also $1/4-\lambda=-\frac{\pi^2 m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}$. Two equations lead to $C^2=\frac{C_0^2}{\frac{1}{4}+\frac{\pi^2m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}}$.  
+Recall that $\lambda = \frac{C_0^2}{C^2}$, also $1/4-\lambda=-\frac{\pi^2 m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}$. Two equations lead to $C^2=\frac{C_0^2}{\frac{1}{4}+\frac{\pi^2m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}}$. 
+
+
+It's not hard to find that bigger $m$ corresponds to more complicated vertical structure and slower propagating speed. 
