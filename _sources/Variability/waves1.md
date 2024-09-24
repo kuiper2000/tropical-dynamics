@@ -291,5 +291,5 @@ which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{ln}(\frac{p_s}{
 W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}p^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
 ```
 
-It is obvious that two basis functions constitute the vertical structure solution i.e., $p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$ and $p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$
+It is obvious that two basis functions constitute the vertical structure solution i.e., $p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$ and $p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$. Results are plotted in the figure below 
 
