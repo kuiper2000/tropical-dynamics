@@ -279,8 +279,6 @@ Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have
 
 ```{math}
 :label: vertical_normal_mode3
-\begin{align}
 \Bigg\{ aaa \\
 bbb 
-\end{align}
 ```
