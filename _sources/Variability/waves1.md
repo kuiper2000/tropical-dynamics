@@ -263,8 +263,14 @@ Here we implement two boundary conditions. At $p=p_s$ and $p=p_t$, $W(p)=0$, whi
 :label: vertical_normal_mode2
 \begin{align}
 & \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
-& (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
+\rightarrow & (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
 \end{align}
 ```
+The above equation yields two solution
 
-
+```{math}
+:label: vertical_normal_mode3
+\begin{align}
+W(p) = 
+\end{align}
+```
