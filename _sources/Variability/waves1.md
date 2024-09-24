@@ -279,6 +279,10 @@ Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have
 
 ```{math}
 :label: vertical_normal_mode3
-\Bigg\{ W(p_s) = Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{-i\sqrt{\lambda}d\mathrm{ln}(p_s)}\\
-W(p_t) = Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{-i\sqrt{\lambda}d\mathrm{ln}(p_s)}
+\begin{cases} 
+W(p_s) &= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_s)}\\
+W(p_t) %= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_t)}+Be^{+i\sqrt{\lambda}d\mathrm{ln}(p_t)}
+\end{cases}
 ```
+
+Using Gauss elimination, we have $B(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})})=0$ or $A(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_t}{p_s})})=0$. For non-trivial solution, we have $i2\mathrm{ln}(\frac{p_s}{p_t})=i2\pi m$
