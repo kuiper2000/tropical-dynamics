@@ -285,4 +285,4 @@ W(p_t) %= Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_t)}+Be^{+i\sqrt{\lambda}d\mathrm{ln
 \end{cases}
 ```
 
-Using Gauss elimination, we have $B(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})})=0$ or $A(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_t}{p_s})})=0$. For non-trivial solution, we have $i2\mathrm{ln}(\frac{p_s}{p_t})=i2\pi m$
+Using Gauss elimination, we have $B(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})})=0$ or $A(1-e^{i2\sqrt{\lambda}\mathrm{ln}(\frac{p_t}{p_s})})=0$. For non-trivial solution, either way we will have $i2\sqrt{\lambda}\mathrm{ln}(\frac{p_s}{p_t})=i2\pi m$
