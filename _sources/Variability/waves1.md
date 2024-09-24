@@ -284,7 +284,7 @@ W(p_t) &= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{
 \end{cases}
 ```
 
-which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{\frac{p_s}{p_t}}}$ and $B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}$ (readers will complete the steps in the HW). The vertical structure solution can therefore be written as 
+which implies $\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{ln}(\frac{p_s}{p_t})}$ and $B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}$ (readers will complete the steps in the HW). The vertical structure solution can therefore be written as 
 
 ```{math}
 :label: vertical_normal_mode5
