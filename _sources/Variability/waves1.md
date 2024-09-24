@@ -293,3 +293,10 @@ W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\la
 
 It is obvious that two basis functions constitute the vertical structure solution i.e., $p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$ and $p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$. Results are plotted in the figure below 
 
+```{figure} ../tropical-dynamics-figures/Vertical Normal Mode.png
+:width: 400px
+---
+name: FIG4-4
+---
+The vertical normal mode for m=1,2,3,4
+```
