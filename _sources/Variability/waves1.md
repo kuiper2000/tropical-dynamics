@@ -257,4 +257,14 @@ An important thing is {eq}`shallow_water_linear4` is scaled by $C$ rather than $
 \end{align}
 ```
 
+Here we implement two boundary conditions. At $p=p_s$ and $p=p_t$, $W(p)=0$, which represents the ridge-lid boundary condition. (one should notice that the lower boundary is not necessarily 0 given the frictional convergence plays a certain role in wave dynamics).  
+
+```{math}
+:label: vertical_normal_mode2
+\begin{align}
+& \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
+& (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
+\end{align}
+```
+
 

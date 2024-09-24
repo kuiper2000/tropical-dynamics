@@ -592,6 +592,12 @@ yu &amp; = -\frac{\partial \phi}{\partial y}\\
 <span class="eqno">(60)<a class="headerlink" href="#equation-vertical-normal-mode1" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 
 \end{align}\]</div>
+<p>Here we implement two boundary conditions. At <span class="math notranslate nohighlight">\(p=p_s\)</span> and <span class="math notranslate nohighlight">\(p=p_t\)</span>, <span class="math notranslate nohighlight">\(W(p)=0\)</span>, which represents the ridge-lid boundary condition. (one should notice that the lower boundary is not necessarily 0 given the frictional convergence plays a certain role in wave dynamics).</p>
+<div class="math notranslate nohighlight" id="equation-vertical-normal-mode2">
+<span class="eqno">(61)<a class="headerlink" href="#equation-vertical-normal-mode2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+&amp; \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
+&amp; (\frac{d}{dp}+i\frac{\sqrt{\lambda}}{p})(\frac{d}{dp}-i\frac{\sqrt{\lambda}}{p})W(p) = 0 \\
+\end{align}\end{split}\]</div>
 </div>
 </div>
 </div>

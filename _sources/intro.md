@@ -31,6 +31,7 @@ __Part II: Variability__
         * Horizontal wave solution 
         * Vertical normal modes
     * Convective-coupled Waves
+* {ref}`MJO`
     * Weak temperature gradient and moisture mode theory
     * Madden-Julian oscillations
 
