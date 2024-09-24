@@ -279,6 +279,6 @@ Substitute two boundary conditions into {eq}`vertical_normal_mode3` we have
 
 ```{math}
 :label: vertical_normal_mode3
-\Bigg\{ aaa \\
-bbb 
+\Bigg\{ W(p_s) = Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{-i\sqrt{\lambda}d\mathrm{ln}(p_s)}\\
+W(p_t) = Ae^{-i\sqrt{\lambda}\mathrm{ln}( p_s)}+Be^{-i\sqrt{\lambda}d\mathrm{ln}(p_s)}
 ```
