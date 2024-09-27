@@ -36,7 +36,7 @@ w(z=\eta) & = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x
 
 Here, $\eta$ represents the interface location (see {eq}`reduced_gravity2`), and $w(z)$ denotes the rate of displacement change, expressed as $\frac{d \eta}{dt}$.
 
-Furthermore, based on quasi-equilibrium principles, we understand that diabatic heating and cooling are counterbalanced by the adiabatic cooling and heating from vertical motion, as indicated by {eq}thermodynamics. Consequently, a forcing term can be introduced into the final equation, expressed as:
+Furthermore, based on quasi-equilibrium principles, we understand that diabatic heating and cooling are counterbalanced by the adiabatic cooling and heating from vertical motion, as indicated by {eq}`thermodynamics`. Consequently, a forcing term can be introduced into the final equation, expressed as:
 
 ```{math}
 :label: shallow_water_3
