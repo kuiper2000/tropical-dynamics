@@ -23,7 +23,7 @@ As in {numref}`FIG2-2` except that $h_B\neq0$
 ```
 
 
-By integrating the third equation from the surface (or the boundary top) to the interface $\eta$ (refer to {numref}FIG4-1) and using the reduced gravity concept from {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1`.
+By integrating the third equation from the surface (or the boundary top) to the interface $\eta$ (refer to {numref}`FIG4-1`) and using the reduced gravity concept from {eq}`reduced_gravity2`, we can rewrite {eq}`shallow_water_1`.
 
 ```{math}
 :label: shallow_water_2
@@ -238,7 +238,7 @@ name: FIG4-2
 The dispersion relationship of tropical waves. 
 ```
 
-An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`FIG4-3`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $(\omega,k)$ is a specific pair. One can also take Fourier transform twice (one along time and the other along longitude coordinate) of the Hovmoller diagram, the yielded result is also the space-time diagram.     
+An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`FIG4-2`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $(\omega,k)$ is a specific pair. One can also take Fourier transform twice (one along time and the other along longitude coordinate) of the Hovmoller diagram, the yielded result is also the space-time diagram.     
 
 ```{figure} ../tropical-dynamics-figures/TRMM_DYNAMO.png
 :width: 400px
@@ -296,7 +296,7 @@ W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\la
 It is obvious that two basis functions constitute the vertical structure solution i.e., $p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$ and $p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$. Results are plotted in the figure below 
 
 ```{figure} ../tropical-dynamics-figures/Vertical_Normal_Mode.png
-:width: 600px
+:width: 700px
 ---
 name: FIG4-4
 ---
