@@ -2,7 +2,7 @@
 # Week 6 and 7: Tropical Wave Theory
 ## Shallow Water Model
 
-Aside from the zonal mean circulation, eddies significantly influence tropical climatology. We refer to the results from {ref}`scale_analysis` in this section for the discussion of this week. In a hydrostatic, and low-latitude atmosphere (weak temperature gradient with reduced), the governing equation can be written as. 
+Aside from the zonal mean circulation, eddies significantly influence tropical climatology. We refer to the results from {ref}`scale_analysis` in this section for the discussion of this week. In a hydrostatic, and low-latitude atmosphere (weak temperature gradient), the governing equation can be written as. 
 
 
 ```{math}
