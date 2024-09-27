@@ -267,7 +267,7 @@ Here we implement two boundary conditions. At $p=p_s$ and $p=p_t$, $W(p)=0$, whi
 & \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
 \end{align}
 ```
-{eq}`vertical_normal_mode2` is an Euler differential equation, which can be solved by assuming a solution form of $W(p)=\sum_n=0^\infty C_n p^{n+r}$. Using this series solution, we can have 
+{eq}`vertical_normal_mode2` is an Euler differential equation, which can be solved by assuming a solution form of $W(p)=\sum_{n=0}^{\infty} C_n p^{n+r}$. Using this series solution, we can have 
 
 ```{math}
 :label: vertical_normal_mode3
