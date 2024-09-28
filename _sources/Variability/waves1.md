@@ -307,3 +307,7 @@ Recall that $\lambda = \frac{C_0^2}{C^2}$, also $1/4-\lambda=-\frac{\pi^2 m^2}{(
 
 
 It's not hard to find that bigger $m$ corresponds to a more complicated vertical structure and slower propagating speed. Indeed, higher $m$ usually represents are more stratified fluid and therefore the density difference between two adjacent layers is smaller as well. Small density difference leads to more reduction in gravitational acceleration. 
+
+
+If one substitutes the non-dimension parameters with typical tropical conditions, we will have $C_0\sim 76\frac{m}{s}$, $C_1\sim 50\frac{m}{s}$, $C_2\sim 26.2\frac{m}{s}$,...
+
