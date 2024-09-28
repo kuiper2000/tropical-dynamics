@@ -314,7 +314,7 @@ If one substitutes the non-dimension parameters with typical tropical conditions
 
 ## Convective Coupled Wave 
 
-While {eq}`dispersion` seems over-simplified (linear, resting basic states...), the observation is however closely tied to the analytical solution of tropical wave solution. The figure below shows the symmetric components of tropical OLR (averaged over 5$^{\circ}$N-5$^{\circ}$S). 
+While {eq}`dispersion` seems over-simplified (linear, resting basic states...), the observation is however closely tied to the analytical solution of tropical wave solution. The figure below shows the symmetric components of tropical OLR (averaged over 15$^{\circ}$N-15$^{\circ}$S). One can find two peaks stand out, one follows the dispersion relationship of Kelvin and the other one follows the equatorial Rossby waves. 
 
 
 ```{figure} ../tropical-dynamics-figures/Dispersion_Relationship_OLR.png
