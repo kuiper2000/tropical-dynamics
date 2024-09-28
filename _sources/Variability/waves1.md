@@ -322,5 +322,5 @@ While {eq}`dispersion` seems over-simplified (linear, resting basic states...), 
 ---
 name: FIG4-5
 ---
-The OLR power spectrum superimposed with the analytical dispersion relationship. 
+The OLR power spectrum superimposed with the analytical dispersion relationship. The three curves (from top to bottom) for each type of wave correspond to different equivalent depths (50,25 and 12 meter). 
 ```
