@@ -309,12 +309,12 @@ Recall that $\lambda = \frac{C_0^2}{C^2}$, also $\frac{1}{4}-\lambda=-\frac{\pi^
 It's not hard to find that bigger $m$ corresponds to a more complicated vertical structure and slower propagating speed. Indeed, higher $m$ usually represents are more stratified fluid and therefore the density difference between two adjacent layers is smaller as well. Small density difference leads to more reduction in gravitational acceleration. 
 
 
-If one substitutes the non-dimension parameters with typical tropical conditions, we will have $C_0\sim 76\frac{m}{s}$, $C_1\sim 50\frac{m}{s}$, $C_2\sim 26.2\frac{m}{s}$,... The first baroclinic structure has a wave speed around 50$\frac{m}{s}$ which is much faster than the observed tropical wave phase speed. Madden-Julian oscillation (one of the dominant tropical variability), has a phase speed around 5-10$\frac{m}{s}$ closer to the fourth baroclinic. MJO is, however, dominant by the first baroclinic mode structure. This inconsistency drives the community to study MJO in two different directions (1) the MJO is governed by wave dynamics with various vertical structure and (2) the MJO's characteristic timesccales is determined by something else rather than the internal timescales of freewave solution. We will have a more in-depth discussion next week.  
+If one substitutes the non-dimension parameters with typical tropical conditions, we will have $C_0\sim 76\frac{m}{s}$, $C_1\sim 50\frac{m}{s}$, $C_2\sim 26.2\frac{m}{s}$,... The first baroclinic structure has a wave speed around 50$\frac{m}{s}$ which is much faster than the observed tropical wave phase speed. Madden-Julian oscillation (one of the dominant tropical variability), has a phase speed around 5-10$\frac{m}{s}$ closer to the fourth baroclinic mode. MJO is, however, dominated by the first baroclinic mode structure. This inconsistency drives the community to study MJO in two different directions (1) the MJO is governed by wave dynamics with various vertical structures or (2) the MJO's characteristic time sccales are determined by something else other than the internal timescales of free-wave solution. We will have a more in-depth discussion next week.  
 
 
 ## Convective Coupled Wave 
 
-While {eq}`dispersion` seems over-simplified (linear, resting basic states...), the observation is however closely tied to the analytical solution of tropical wave solution. The figure below shows the symmetric components of tropical OLR (averaged over 15$^{\circ}$N-15$^{\circ}$S). One can find two peaks stand out, one follows the dispersion relationship of Kelvin and the other one follows the equatorial Rossby waves. 
+While {eq}`dispersion` seems over-simplified (linear, resting basic states...), the observation is however closely tied to the analytical solution of tropical wave solution. The figure below shows the symmetric components of tropical OLR (averaged over 15$^{\circ}$N-15$^{\circ}$S). One can find two peaks stand out, one follows the dispersion relationship of Kelvin wave and the other one follows the equatorial Rossby waves. Given that OLR is a good proxy of convection, {numref}`FIG4-5` suggests that the convectively coupled tropical waves to some degree can be considered as a forced response of free-wave solution, where the forcing time scales are either much shorter or equivalent to the internal time scales of free-wave solutions.   
 
 
 ```{figure} ../tropical-dynamics-figures/Dispersion_Relationship_OLR.png
@@ -322,5 +322,5 @@ While {eq}`dispersion` seems over-simplified (linear, resting basic states...), 
 ---
 name: FIG4-5
 ---
-The OLR power spectrum superimposed with analytical dispersion relationship. 
+The OLR power spectrum superimposed with the analytical dispersion relationship. 
 ```
