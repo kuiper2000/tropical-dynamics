@@ -324,3 +324,5 @@ name: FIG4-5
 ---
 The OLR power spectrum superimposed with the analytical dispersion relationship. The three curves (from top to bottom) for each type of wave correspond to different equivalent depths (50,25 and 12 meter). 
 ```
+
+Another interesting but less addressed feature is the maximum around $k=1-4$ and $\text{CPD}\leq 0.05$ (i.e., period lower than 20 days). This is the famous Madden-Julian oscillation. Its distinct spectrum 
