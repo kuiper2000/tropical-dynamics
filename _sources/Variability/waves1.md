@@ -309,5 +309,5 @@ Recall that $\lambda = \frac{C_0^2}{C^2}$, also $\frac{1}{4}-\lambda=-\frac{\pi^
 It's not hard to find that bigger $m$ corresponds to a more complicated vertical structure and slower propagating speed. Indeed, higher $m$ usually represents are more stratified fluid and therefore the density difference between two adjacent layers is smaller as well. Small density difference leads to more reduction in gravitational acceleration. 
 
 
-If one substitutes the non-dimension parameters with typical tropical conditions, we will have $C_0\sim 76\frac{m}{s}$, $C_1\sim 50\frac{m}{s}$, $C_2\sim 26.2\frac{m}{s}$,...
+If one substitutes the non-dimension parameters with typical tropical conditions, we will have $C_0\sim 76\frac{m}{s}$, $C_1\sim 50\frac{m}{s}$, $C_2\sim 26.2\frac{m}{s}$,... The first baroclinic structure has a wave speed around 50$\frac{m}{s}$ which is much faster than the observed tropical wave phase speed. Madden-Julian oscillation (one of the dominant tropical variability), has a phase speed around 5-10$\frac{m}{s}$ closer to the fourth baroclinic. MJO is however, dominant by the first baroclinic mode structure. 
 
