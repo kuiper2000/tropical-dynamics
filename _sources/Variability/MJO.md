@@ -14,7 +14,12 @@ name: FIG5-1
 The power spectrum of tropical intraseasonal variability
 ```
 
-Though the dominant signal of MJO, the communities struggled modeling the underlying mechanisms. 
+The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclone and drought. Its interation with subtropical jet can creates quasi-stationary Rossby wave, where the wave energy propagates into the North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity as well as the polar vortex.  
+
+Though the dominant signal of MJO, the communities struggled modeling the underlying dynamics of MJO. 
+
+
+
 
 
 ```{bibliography}
