@@ -32,7 +32,7 @@ __Part II: Variability__
         * Vertical normal modes
     * Convective-coupled Waves
 * {ref}`MJO`
-    * Weak temperature gradient and moisture mode theory
+    * Weak temperature gradient: From tropical wave to moisture mode theory 
     * Madden-Julian oscillations
 
 * {ref}`waves2`
