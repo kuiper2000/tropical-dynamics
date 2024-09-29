@@ -14,6 +14,8 @@ name: FIG5-1
 The power spectrum of tropical intraseasonal variability
 ```
 
+Though the dominant signal of MJO, the communities struggled modeling the underlying mechanisms. 
+
 
 ```{bibliography}
 ```
