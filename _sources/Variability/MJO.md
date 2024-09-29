@@ -15,3 +15,6 @@ The power spectrum of tropical intraseasonal variability
 ```
 
 
+```{bibliography}
+```
+
