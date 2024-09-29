@@ -1,4 +1,4 @@
-(waves1)=
+(MJO)=
 # Week 8: Madden Julian oscillation
 ## Weak Temperature and Steady State Response 
 
