@@ -19,7 +19,7 @@ The MJO has pronounced global impacts. It modulates South/Southeast Asia summer 
 
 ## Wave Dynamics
 
-From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave 
+From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reason. First, MJO's circulation pattern is very similar to those found in the forced Kelvin, where the horizontal wind is characterized by a Gill-like response with easterly to its equatorial east and westerly to the west. 
 
 
 
