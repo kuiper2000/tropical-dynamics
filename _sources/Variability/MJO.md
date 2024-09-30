@@ -19,7 +19,9 @@ The MJO has pronounced global impacts. It modulates South/Southeast Asia summer 
 
 ## Wave Dynamics
 
-From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reason. First, MJO's circulation pattern is very similar to those found in the forced Kelvin wave, where the horizontal wind is characterized by a Gill-like response (we will talk a bit more about Gill solution later) with easterly/westerly to the east/west of convection. In addition, the easterly region is usually characterized by shallower circulation (as well as cloud height) while the westerly phase is characterized by stratiform (top-heavy heating profile). The shallow circulation can recharge moist entropy into the free troposphere due to shallower divergence to export  
+From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reason. First, MJO's circulation pattern is very similar to those found in the forced Kelvin wave, where the horizontal wind is characterized by a Gill-like response (we will talk a bit more about Gill solution later) with easterly/westerly to the east/west of convection. In addition, the easterly region is usually characterized by shallower circulation (as well as cloud height) while the westerly phase is characterized by stratiform (top-heavy heating profile). The shallow circulation can recharge moist entropy into the free troposphere due to shallow divergent flow (export lower dry static energy). On the contrary, the deep circulation can efficiently discharge the column moist entropy to other regions.    
+
+The tilting vertical structure from east to the west closely mimics the observed structure in equatorial Kelvin waves. In tropical wave theory, such shallow circulation can be explained through the momentum balance in a frictional planetary boundary. 
 
 
 ```{figure} ../tropical-dynamics-figures/MJO_vertical_structure.png 
