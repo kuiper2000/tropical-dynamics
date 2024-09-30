@@ -19,8 +19,16 @@ The MJO has pronounced global impacts. It modulates South/Southeast Asia summer 
 
 ## Wave Dynamics
 
-From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reason. First, MJO's circulation pattern is very similar to those found in the forced Kelvin, where the horizontal wind is characterized by a Gill-like response with easterly to its equatorial east and westerly to the west. 
+From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reason. First, MJO's circulation pattern is very similar to those found in the forced Kelvin wave, where the horizontal wind is characterized by a Gill-like response (we will talk a bit more about Gill solution later) with easterly/westerly to the east/west of convection. In addition, the easterly region is usually characterized by shallower circulation (as well as cloud height) while the westerly phase is characterized by stratiform (top-heavy heating profile). 
 
+
+```{figure} ../tropical-dynamics-figures/MJO_vertical_structure.png
+:width: 700px
+---
+name: FIG5-2
+---
+The vertical structure of MJO and CMIP5 model. 
+```
 
 
 ```{bibliography}
