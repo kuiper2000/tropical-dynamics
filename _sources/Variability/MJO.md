@@ -23,7 +23,8 @@ There are two main theories for MJO: (1) wave dynamics and (2) moisture mode fra
 ```{math}
 :label: MJO_wave
 \begin{align}
-\frac{\partial \phi_p}{\partial t} \neq 0 \\
+\frac{\partial \text{Div}}{\partial t} \neq 0 \\
+\frac{\partial \zeta}{\partial t} \neq 0 \\
 \frac{\partial \phi_p}{\partial t} \neq 0 \\
 \end{align}
 ```
