@@ -38,9 +38,10 @@ In the moisture mode framework, it is assumed the internal adjustment of gravity
 ```{math}
 :label: MJO_wave
 \begin{align}
-\frac{\partial \text{Div}}{\partial t} \sim 0  \\
-\frac{\partial \zeta}{\partial t} \sim O(...) \\
-w\frac{N^2}{g}=\frac{Q}{c_p T} \\
+\frac{\partial \text{Div}}{\partial t} &\sim 0  \\
+\frac{\partial \zeta}{\partial t} &\sim O(...) \\
+w\frac{N^2}{g}&=\frac{Q}{c_p T} \\
+Q &\sim L\frac{dq}{dt}+Q_R\\
 \end{align}
 ```
 
