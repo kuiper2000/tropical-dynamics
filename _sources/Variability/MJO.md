@@ -18,20 +18,36 @@ The MJO has pronounced global impacts. It modulates South/Southeast Asia summer 
 
 
 ## Theory for MJO
+### wave perspective
 There are two main theories for MJO: (1) wave dynamics and (2) moisture mode framework. Each of them satisfy different thresholds. For wave dynamics, the tendency associated with gravity/Rossby wave is non-neglegible and quasi-equilibrium i.e., 
 
 ```{math}
 :label: MJO_wave
 \begin{align}
-\frac{\partial \text{Div}}{\partial t} \neq 0 \\
-\frac{\partial \zeta}{\partial t} \neq 0 \\
-\frac{\partial \phi_p}{\partial t} \neq 0 \\
+\frac{\partial \text{Div}}{\partial t} \sim O(...)  \\
+\frac{\partial \zeta}{\partial t} \sim O(...) \\
+\frac{\partial \phi_p}{\partial t} \sim O(...) \\
 \end{align}
 ```
 
-where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. In wave dynamics   
+where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. In wave dynamics, the tendency terms have equivalent amplitude to other terms. 
 
-## Wave Dynamics
+### moisture mode framework
+In the moisture mode framework, it is assumed the internal adjustment of gravity has reached a dynamical equilibrium (the first equation is discarded). Also, according to the weak temperature gradient approximation, the last equation is written as 
+
+```{math}
+:label: MJO_wave
+\begin{align}
+\frac{\partial \text{Div}}{\partial t} \sim O(...)  \\
+\frac{\partial \zeta}{\partial t} \sim O(...) \\
+w\frac{N^2}{g}=\frac{Q}{c_p T} \\
+\end{align}
+```
+
+
+
+
+## Some Evidence from Wave Dynamics Perspective
 
 From wave dynamics perspective, the MJO has long been considered as a type of convectively coupled wave for two reanson. First, MJO's circulation pattern is very similar to those found in the forced Kelvin wave, where the horizontal wind is characterized by a Gill-like response (we will talk a bit more about Gill solution later) with easterly/westerly to the east/west of convection. In addition, the easterly region is usually characterized by shallower circulation (as well as cloud height) while the westerly phase is characterized by stratiform (top-heavy heating profile). The shallow circulation can recharge moist entropy into the free troposphere due to shallow divergent flow (export lower dry static energy). On the contrary, the deep circulation can efficiently discharge the column moist entropy to other regions. Such recharge-discharge of column energy plays a key role in MJO dynamics, which in turn determines the diabatic heating intensity/distribution. This has been a missing part in the traditional wave dynamics theory. (more discussion will be provided in the section of a Gill solution). 
 
