@@ -24,9 +24,10 @@ There are two main theories for MJO: (1) wave dynamics and (2) moisture mode fra
 ```{math}
 :label: MJO_wave
 \begin{align}
-\frac{\partial \text{Div}}{\partial t} \sim O(...)  \\
-\frac{\partial \zeta}{\partial t} \sim O(...) \\
-\frac{\partial \phi_p}{\partial t} \sim O(...) \\
+\frac{\partial \text{Div}}{\partial t} &\sim O(...)  \\
+\frac{\partial \zeta}{\partial t} &\sim O(...) \\
+\frac{\partial \phi_p}{\partial t} &\sim O(...) \\
+Q &\sim -Lw\frac{\partial \tilde{q}}{\partial z} \\
 \end{align}
 ```
 
@@ -36,7 +37,7 @@ where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the t
 In the moisture mode framework, it is assumed the internal adjustment of gravity has reached a dynamical equilibrium (the first equation is discarded). Also, according to the weak temperature gradient approximation, the third equation is written as:   
 
 ```{math}
-:label: MJO_wave
+:label: MJO_moisture_mode
 \begin{align}
 \frac{\partial \text{Div}}{\partial t} &\sim 0  \\
 \frac{\partial \zeta}{\partial t} &\sim O(...) \\
@@ -46,8 +47,6 @@ Q &\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 ```
 
 In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. 
-
-
 
 
 ## Some Evidence from Wave Dynamics Perspective
