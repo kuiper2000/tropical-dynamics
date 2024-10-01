@@ -30,19 +30,21 @@ There are two main theories for MJO: (1) wave dynamics and (2) moisture mode fra
 \end{align}
 ```
 
-where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. In wave dynamics, the tendency terms have equivalent amplitude to other terms. 
+where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. In wave dynamics, the tendency terms have equivalent (i.e., the difference falls within an order) amplitude to other terms. 
 
 ### moisture mode framework
-In the moisture mode framework, it is assumed the internal adjustment of gravity has reached a dynamical equilibrium (the first equation is discarded). Also, according to the weak temperature gradient approximation, the last equation is written as 
+In the moisture mode framework, it is assumed the internal adjustment of gravity has reached a dynamical equilibrium (the first equation is discarded). Also, according to the weak temperature gradient approximation, the third equation is written as:   
 
 ```{math}
 :label: MJO_wave
 \begin{align}
-\frac{\partial \text{Div}}{\partial t} \sim O(...)  \\
+\frac{\partial \text{Div}}{\partial t} \sim 0  \\
 \frac{\partial \zeta}{\partial t} \sim O(...) \\
 w\frac{N^2}{g}=\frac{Q}{c_p T} \\
 \end{align}
 ```
+
+In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. 
 
 
 
