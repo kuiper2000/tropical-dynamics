@@ -3,7 +3,7 @@
 ## Weak Temperature and Steady State Response 
 
 
-MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which characterized by planetary scale circulation (zonal wave number around $1-4$ and ) intraseasonal timescales (20-90 days of period). That's why it's also called _tropical intraseasonal variability_. Its signal is so strong that we can even observe it from the raw sounding data. Figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from {cite}`Madden1971-ao` paper. The local maximum around periods of 40-50 days shows the finger-print of MJO. 
+MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which is characterized by planetary scale circulation (zonal wave number around $1-4$ and ) intraseasonal timescales (20-90 days of period). That's why it's also called _tropical intraseasonal variability_. Its signal is so strong that we can even observe it from the raw sounding data. Figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from {cite}`Madden1971-ao` paper. The local maximum around periods of 40-50 days shows the finger-print of MJO. 
 
 
 ```{figure} ../tropical-dynamics-figures/MJO_power_spectrum.png
@@ -14,7 +14,7 @@ name: FIG5-1
 The power spectrum of tropical intraseasonal variability
 ```
 
-The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclone and drought. Its interation with subtropical jet can creates quasi-stationary Rossby wave, where the wave energy propagates into the North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity as well as the polar vortex. Although the global influenes from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key variables are especially important (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects about the MJO. 
+The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclone and drought. Its interation with subtropical jet can creates quasi-stationary Rossby wave, where the wave energy propagates into the North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity as well as the polar vortex. Although the global influenes from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key characteristics are essential in the MJO problem (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects about the MJO and look into how the details in these aspects influence the modeled behavior of MJO.  
 
 
 ## Theory for MJO
@@ -46,7 +46,9 @@ Q &\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 \end{align}
 ```
 
-In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. From these two difference, we can conclude that (1) wave dynamics focus on the timescales where gravity waves haven't reached a dynamical equilibrium state and the moisture is a prognostic variable (the gradient comes from the mean state vertical moisture gradient) (2) moisture mode theory focuses on the timescales where gravity waves ``have'' reached a dynamical equilibrium  
+In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. From these two differences, we can conclude that (1) wave dynamics focus on the timescales where gravity waves haven't reached a dynamical equilibrium state and the moisture is a diagnostic variable (dominated by tge vertical moisture advection) (2) moisture mode theory focuses on the timescales where gravity waves ``have'' reached a dynamical equilibrium while the moisture is prognostic. 
+
+One should notice that these two are sitting on either side of parameter spectrum (wave-like vs MSE variability-like) and there is a lot of tropical variability sitting in the middle ground.  
 
 
 ## Some Evidence from Wave Dynamics Perspective
