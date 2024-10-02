@@ -46,7 +46,7 @@ Q &\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 \end{align}
 ```
 
-In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. From these two difference, we can conclude that (1) wave dynamics focus on the timescales where gravity waves haven't reached a dynamical equilibrium state and the moisture is a prognostic variable (the gradient comes from the mean state vertical moisture gradient) (2) moisture mode theory focuses on the timescales where gravity waves ``have'' reached a dynamical equilibrium.  
+In the moisture mode framework, there is one additional component that makes it distinct from the traditional wave framework. The forcing itself is a prognostic variable rather than a diagnostic variable. From these two difference, we can conclude that (1) wave dynamics focus on the timescales where gravity waves haven't reached a dynamical equilibrium state and the moisture is a prognostic variable (the gradient comes from the mean state vertical moisture gradient) (2) moisture mode theory focuses on the timescales where gravity waves ``have'' reached a dynamical equilibrium  
 
 
 ## Some Evidence from Wave Dynamics Perspective
