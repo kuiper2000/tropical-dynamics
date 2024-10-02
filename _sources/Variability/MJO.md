@@ -40,7 +40,7 @@ In the moisture mode framework, it is assumed the internal adjustment of gravity
 :label: MJO_moisture_mode
 \begin{align}
 \frac{\partial \text{Div}}{\partial t} &\sim 0  \\
-\frac{\partial \zeta}{\partial t} &\sim O(...) \\
+\frac{\partial \zeta}{\partial t} &\sim O(\nabla \cdot (f+\zeta)\times \vec{u}) \\
 w\frac{N^2}{g}&=\frac{Q}{c_p T} \\
 Q &\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 \end{align}
