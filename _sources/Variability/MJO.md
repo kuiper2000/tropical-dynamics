@@ -25,8 +25,8 @@ There are two main theories for MJO: (1) wave dynamics and (2) moisture mode fra
 :label: MJO_wave
 \begin{align}
 \frac{\partial \text{Div}}{\partial t} &\sim O( \nabla \cdot (f+\zeta)\times \vec{u})  \\
-\frac{\partial \zeta}{\partial t} &\sim O(...) \\
-\frac{\partial \phi_p}{\partial t} &\sim O(...) \\
+\frac{\partial \zeta}{\partial t} &\sim O(\nabla \cdot (f+\zeta)\times \vec{u}) \\
+\frac{\partial \phi_p}{\partial t} &\sim O(w\frac{N^2}{g}-\frac{Q}{c_p T}) \\
 Q &\sim -Lw\frac{\partial \tilde{q}}{\partial z} \\
 \end{align}
 ```
