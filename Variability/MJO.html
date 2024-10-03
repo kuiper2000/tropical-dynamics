@@ -314,13 +314,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#weak-temperature-and-steady-state-response">
-   Weak Temperature and Steady State Response
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theory-for-mjo">
-   Theory for MJO
+  <a class="reference internal nav-link" href="#theories-for-mjo">
+   Theories for MJO
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -360,13 +355,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#weak-temperature-and-steady-state-response">
-   Weak Temperature and Steady State Response
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theory-for-mjo">
-   Theory for MJO
+  <a class="reference internal nav-link" href="#theories-for-mjo">
+   Theories for MJO
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -398,20 +388,17 @@ title="Print to PDF"
                 
   <div class="section" id="week-8-madden-julian-oscillation">
 <span id="mjo"></span><h1>Week 8: Madden-Julian oscillation<a class="headerlink" href="#week-8-madden-julian-oscillation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="weak-temperature-and-steady-state-response">
-<h2>Weak Temperature and Steady State Response<a class="headerlink" href="#weak-temperature-and-steady-state-response" title="Permalink to this headline">¶</a></h2>
-<p>MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which is characterized by planetary scale circulation (zonal wave number around <span class="math notranslate nohighlight">\(1-4\)</span> and ) intraseasonal timescales (20-90 days of period). That’s why it’s also called <em>tropical intraseasonal variability</em>. Its signal is so strong that we can even observe it from the raw sounding data. Figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from <span id="id1">[<a class="reference internal" href="#id7"><span>MJ71</span></a>]</span> paper. The local maximum around periods of 40-50 days shows the finger-print of MJO.</p>
+<p>MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which is characterized by planetary scale circulation (zonal wave number around <span class="math notranslate nohighlight">\(1-4\)</span> and ) intraseasonal timescales (20-90 days of period). That’s why it’s also called <em>tropical intraseasonal variability</em>. Its signal is so strong that we can even observe it from the raw-sounding data. The figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from <span id="id1">[<a class="reference internal" href="#id7"><span>MJ71</span></a>]</span> paper. The local maximum of around 40-50 days shows the fingerprint of MJO.</p>
 <div class="figure align-default" id="id8">
 <a class="reference internal image-reference" href="../_images/MJO_power_spectrum.png"><img alt="../_images/MJO_power_spectrum.png" src="../_images/MJO_power_spectrum.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">The power spectrum of tropical intraseasonal variability</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
-<p>The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclone and drought. Its interation with subtropical jet can creates quasi-stationary Rossby wave, where the wave energy propagates into the North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity as well as the polar vortex. Although the global influenes from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key characteristics are essential in the MJO problem (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects about the MJO and look into how the details in these aspects influence modeled behavior of MJO.</p>
-</div>
-<div class="section" id="theory-for-mjo">
-<h2>Theory for MJO<a class="headerlink" href="#theory-for-mjo" title="Permalink to this headline">¶</a></h2>
+<p>The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclones and drought. Its interaction with the subtropical jet can create quasi-stationary Rossby waves, where the wave energy propagates into North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity and the polar vortex. Although the global influences from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key characteristics are essential in the MJO problem (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects of the MJO and look into how the details in these aspects influence the modeled behavior of MJO.</p>
+<div class="section" id="theories-for-mjo">
+<h2>Theories for MJO<a class="headerlink" href="#theories-for-mjo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="wave-perspective">
 <h3>wave perspective<a class="headerlink" href="#wave-perspective" title="Permalink to this headline">¶</a></h3>
-<p>There are two main theories for MJO: (1) wave dynamics and (2) moisture mode framework. Each of them satisfy different thresholds. For wave dynamics, the tendency associated with gravity/Rossby wave is non-neglegible and quasi-equilibrium i.e.,</p>
+<p>There are two main theories for MJO: (1) wave dynamics and (2) moisture mode framework. Each of them satisfies different thresholds. For wave dynamics, the tendency associated with gravity/Rossby wave is non-negligible i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-mjo-wave">
 <span class="eqno">(65)<a class="headerlink" href="#equation-mjo-wave" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{\partial \text{Div}}{\partial t} &amp;\sim O( \nabla \cdot (f+\zeta)\times \vec{u})  \\
@@ -419,7 +406,7 @@ title="Print to PDF"
 \frac{\partial \phi_p}{\partial t} &amp;\sim O(w\frac{N^2}{g}-\frac{Q}{c_p T}) \\
 Q &amp;\sim -Lw\frac{\partial \tilde{q}}{\partial z} \\
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\text{Div}\)</span>, <span class="math notranslate nohighlight">\(\zeta\)</span> and <span class="math notranslate nohighlight">\(\phi_p\)</span> are the divergence, vorticity and the temperature respectively. In wave dynamics, the tendency terms have equivalent (i.e., the difference falls within an order) amplitude to other terms.</p>
+<p>where <span class="math notranslate nohighlight">\(\text{Div}\)</span>, <span class="math notranslate nohighlight">\(\zeta\)</span> and <span class="math notranslate nohighlight">\(\phi_p\)</span> are the divergence, vorticity and the temperature respectively. One can find that the tendency terms in <a class="reference internal" href="#equation-mjo-wave">(65)</a> have equivalent (i.e., the difference falls within an order) amplitude to other terms such as advection. The existence of inertial term</p>
 </div>
 <div class="section" id="moisture-mode-framework">
 <h3>moisture mode framework<a class="headerlink" href="#moisture-mode-framework" title="Permalink to this headline">¶</a></h3>

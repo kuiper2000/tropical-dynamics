@@ -1,9 +1,8 @@
 (MJO)=
 # Week 8: Madden-Julian oscillation
-## Weak Temperature and Steady State Response 
 
 
-MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which is characterized by planetary scale circulation (zonal wave number around $1-4$ and ) intraseasonal timescales (20-90 days of period). That's why it's also called _tropical intraseasonal variability_. Its signal is so strong that we can even observe it from the raw sounding data. Figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from {cite}`Madden1971-ao` paper. The local maximum around periods of 40-50 days shows the finger-print of MJO. 
+MJO is a unique feature existing in the tropical Indian Ocean and the Western Pacific, which is characterized by planetary scale circulation (zonal wave number around $1-4$ and ) intraseasonal timescales (20-90 days of period). That's why it's also called _tropical intraseasonal variability_. Its signal is so strong that we can even observe it from the raw-sounding data. The figure below shows the power spectrum of tropical sea-level pressure collecting at various sounding sites from {cite}`Madden1971-ao` paper. The local maximum of around 40-50 days shows the fingerprint of MJO. 
 
 
 ```{figure} ../tropical-dynamics-figures/MJO_power_spectrum.png
@@ -14,12 +13,12 @@ name: FIG5-1
 The power spectrum of tropical intraseasonal variability
 ```
 
-The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclone and drought. Its interation with subtropical jet can creates quasi-stationary Rossby wave, where the wave energy propagates into the North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity as well as the polar vortex. Although the global influenes from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key characteristics are essential in the MJO problem (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects about the MJO and look into how the details in these aspects influence the modeled behavior of MJO.  
+The MJO has pronounced global impacts. It modulates South/Southeast Asia summer monsoon variability and the associated extremes such as tropical cyclones and drought. Its interaction with the subtropical jet can create quasi-stationary Rossby waves, where the wave energy propagates into North America (so-called Pacific-North America pattern, PNA) and influences the winter storm activity and the polar vortex. Although the global influences from MJO are significant, the communities have struggled to model its underlying dynamics since its first discovery. Two key characteristics are essential in the MJO problem (1) frequency (or period) and (2) shallow-to-deep vertical structure evolution. We will begin with various aspects of the MJO and look into how the details in these aspects influence the modeled behavior of MJO.  
 
 
-## Theory for MJO
+## Theories for MJO
 ### wave perspective
-There are two main theories for MJO: (1) wave dynamics and (2) moisture mode framework. Each of them satisfy different thresholds. For wave dynamics, the tendency associated with gravity/Rossby wave is non-neglegible and quasi-equilibrium i.e., 
+There are two main theories for MJO: (1) wave dynamics and (2) moisture mode framework. Each of them satisfies different thresholds. For wave dynamics, the tendency associated with gravity/Rossby wave is non-negligible i.e., 
 
 ```{math}
 :label: MJO_wave
@@ -31,7 +30,7 @@ Q &\sim -Lw\frac{\partial \tilde{q}}{\partial z} \\
 \end{align}
 ```
 
-where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. In wave dynamics, the tendency terms have equivalent (i.e., the difference falls within an order) amplitude to other terms. 
+where $\text{Div}$, $\zeta$ and $\phi_p$ are the divergence, vorticity and the temperature respectively. One can find that the tendency terms in {eq}`MJO_wave` have equivalent (i.e., the difference falls within an order) amplitude to other terms such as advection. The existence of inertial term  
 
 ### moisture mode framework
 In the moisture mode framework, it is assumed the internal adjustment of gravity has reached a dynamical equilibrium (the first equation is discarded). Also, according to the weak temperature gradient approximation, the third equation is written as:   
