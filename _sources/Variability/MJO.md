@@ -6,10 +6,10 @@ The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in t
 
 
 ```{figure} ../tropical-dynamics-figures/MJO_power_spectrum.png
-:width: 700px
 ---
 name: FIG5-1
 ---
+:width: 700px
 The power spectrum of tropical intraseasonal variability
 ```
 
@@ -79,7 +79,8 @@ name: FIG5-2
 The vertical structure of MJO and the cross-section at westerly/easterly phase. From {cite}`Adames2015-rm`
 ```
 
-
+## Some Evidence from Moisture Mode Perspective 
+On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation is more solid on intraseasonal time scales (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). Second, 
 
 
 
