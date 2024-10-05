@@ -15,9 +15,9 @@ The power spectrum of tropical intraseasonal variability
 ```
 
 ```{figure} ../tropical-dynamics-figures/latest72hrs.gif
-:width: 700px
 ---
 name: FIG5-2
+width: 700px
 ---
 The total precipitable water of an MJO event in wester Pacific from MIMIC-TPW. 
 ```
@@ -73,9 +73,9 @@ The vertical structure of the MJO, which tilts from east to west, strongly resem
 To better understand how these different components affect the characteristic timescales of the MJO, the following sections will explore these concepts in more detail.
 
 ```{figure} ../tropical-dynamics-figures/MJO_vertical_structure.png 
-:width: 700px
 ---
 name: FIG5-2
+width: 700px
 ---
 The vertical structure of MJO and the cross-section at westerly/easterly phase. From {cite}`Adames2015-rm`
 ```

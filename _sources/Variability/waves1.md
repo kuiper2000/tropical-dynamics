@@ -241,9 +241,9 @@ The dispersion relationship of tropical waves.
 An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below {numref}`FIG4-2`). If we track along a specific feature (let's say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., $(\omega,k)$ is a specific pair. One can also take Fourier transform twice (one along time and the other along longitude coordinate) of the Hovmoller diagram, the yielded result is also the space-time diagram.     
 
 ```{figure} ../tropical-dynamics-figures/TRMM_DYNAMO.png
-:width: 400px
 ---
 name: FIG4-3
+width: 400px
 ---
 The meridional averaged precipitation from TRMM product during the DYNAMO field campaign. 
 ```
@@ -296,9 +296,9 @@ W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\la
 It is obvious that two basis functions constitute the vertical structure solution i.e., $p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$ and $p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}$. Results are plotted in the figure below 
 
 ```{figure} ../tropical-dynamics-figures/Vertical_Normal_Mode.png
-:width: 700px
 ---
 name: FIG4-4
+width: 700px
 ---
 The vertical normal mode for m=1,2,3,4
 ```
@@ -318,9 +318,9 @@ While {eq}`dispersion` seems over-simplified (linear, resting basic states...), 
 
 
 ```{figure} ../tropical-dynamics-figures/Dispersion_Relationship_OLR.png
-:width: 700px
 ---
 name: FIG4-5
+width: 700px
 ---
 The OLR power spectrum superimposed with the analytical dispersion relationship. The three curves (from top to bottom) for each type of wave correspond to different equivalent depths (50,25 and 12 meter). 
 ```
