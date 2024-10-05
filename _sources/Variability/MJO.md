@@ -8,8 +8,9 @@ The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in t
 ```{figure} ../tropical-dynamics-figures/MJO_power_spectrum.png
 ---
 name: FIG5-1
+width: 700px
 ---
-:width: 700px
+
 The power spectrum of tropical intraseasonal variability
 ```
 
