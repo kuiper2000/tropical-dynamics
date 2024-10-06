@@ -23,7 +23,6 @@ The total precipitable water of an MJO event in wester Pacific from MIMIC-TPW.
 ```
 
 
-
 The MJO has significant global effects. It plays a key role in modulating the variability of the summer monsoon in South and Southeast Asia, influencing related extreme events such as tropical cyclones and droughts. Additionally, its interaction with the subtropical jet stream can generate quasi-stationary Rossby waves, allowing wave energy to propagate toward North America, creating the Pacific-North America (PNA) pattern. This, in turn, impacts winter storms and the polar vortex. Despite the considerable global influence of the MJO, modeling its dynamics has posed challenges for the scientific community since its discovery. Two critical aspects in understanding the MJO are its (1) frequency (or period) and (2) the evolution of its vertical structure from shallow to deep convection. We will explore these various characteristics and examine how they affect the ability to accurately model the MJO.
 
 
@@ -66,11 +65,10 @@ It's important to note that these two frameworks represent opposite ends of the 
 
 From the perspective of wave dynamics, the MJO has long been regarded as a type of convectively coupled wave for several reasons. First, the circulation pattern associated with the MJO closely resembles that of a forced Kelvin wave, where the horizontal winds exhibit a Gill-like response (which we will explore in more detail later). Specifically, there are easterly winds to the east of the convection and westerly winds to the west. The eastern portion of the MJO shows similarities to observed convectively coupled Kelvin waves, while the western part is often characterized by twin cyclones. Moreover, the easterly phase is associated with shallower circulation (and lower cloud heights), while the westerly phase is linked to stratiform clouds, featuring a top-heavy heating profile.
 
-The shallow circulation aids in recharging moist entropy into the free troposphere through shallow divergent flow, which exports lower dry static energy. Conversely, deep circulation efficiently discharges moist entropy from the column to other regions. This recharge-discharge process of column energy is crucial to MJO dynamics, as it directly influences the intensity and distribution of diabatic heating. This aspect has been largely absent from traditional wave dynamics theories, and we will delve deeper into this topic when discussing the Gill solution.
+The shallow circulation aids in recharging moist entropy into the free troposphere through shallow divergent flow, which exports lower dry static energy but imports moist-laden air from the boundary layer. Conversely, deep circulation efficiently discharges moist entropy from the column to other regions. This recharge-discharge process of column energy is crucial to MJO dynamics, as it directly influences the intensity and distribution of diabatic heating. This aspect has been largely absent from traditional wave dynamics theories (or more focus on the recharge of DSE from wave dynamics perspective). We will delve deeper into this topic when discussing the Gill solution.
 
 The vertical structure of the MJO, which tilts from east to west, strongly resembles the structure observed in equatorial Kelvin waves. In tropical wave theory, the presence of shallow circulation can be explained by momentum balance within a frictional planetary boundary layer. Upward motion at the top of this boundary layer induces shallow heating (around the 4th baroclinic mode), which in turn slows the propagation speed. During the convective phase, the maximum upward motion near 300 hPa, coupled with divergence in the upper troposphere, creates a first baroclinic mode structure. This process allows the column to export energy, which accelerates the propagation speed. The coupling between shallow and deep heating profiles results in a wave speed that falls between these two modes. However, even with shallow heating factored in, the phase speed remains faster than what is observed.
 
-To better understand how these different components affect the characteristic timescales of the MJO, the following sections will explore these concepts in more detail.
 
 ```{figure} ../tropical-dynamics-figures/MJO_vertical_structure.png 
 ---
@@ -79,6 +77,18 @@ width: 700px
 ---
 The vertical structure of MJO and the cross-section at westerly/easterly phase. From {cite}`Adames2015-rm`
 ```
+
+### The boundary layer momentum balance
+In the boundary layer, the momentum equation can be written as 
+
+```{math}
+:label: wave_boundary_layer
+\begin{align}
+\frac{\partial u_B}{\partial t} -\beta y v_B &= -\frac{\partial \phi}{\partial x}-E u_B \\
+\frac{\partial v_B}{\partial t} +\beta y v_B &= -\frac{\partial \phi}{\partial y}-E v_B \\
+\end{align}
+```
+
 
 ## Some Evidence from Moisture Mode Perspective 
 On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important.    

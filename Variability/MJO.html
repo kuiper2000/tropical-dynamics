@@ -334,6 +334,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">
    Some Evidence from Wave Dynamics Perspective
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">
+     The boundary layer momentum balance
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">
@@ -380,6 +387,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">
    Some Evidence from Wave Dynamics Perspective
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">
+     The boundary layer momentum balance
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">
@@ -439,12 +453,20 @@ Q &amp;\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 <div class="section" id="some-evidence-from-wave-dynamics-perspective">
 <h2>Some Evidence from Wave Dynamics Perspective<a class="headerlink" href="#some-evidence-from-wave-dynamics-perspective" title="Permalink to this headline">¶</a></h2>
 <p>From the perspective of wave dynamics, the MJO has long been regarded as a type of convectively coupled wave for several reasons. First, the circulation pattern associated with the MJO closely resembles that of a forced Kelvin wave, where the horizontal winds exhibit a Gill-like response (which we will explore in more detail later). Specifically, there are easterly winds to the east of the convection and westerly winds to the west. The eastern portion of the MJO shows similarities to observed convectively coupled Kelvin waves, while the western part is often characterized by twin cyclones. Moreover, the easterly phase is associated with shallower circulation (and lower cloud heights), while the westerly phase is linked to stratiform clouds, featuring a top-heavy heating profile.</p>
-<p>The shallow circulation aids in recharging moist entropy into the free troposphere through shallow divergent flow, which exports lower dry static energy. Conversely, deep circulation efficiently discharges moist entropy from the column to other regions. This recharge-discharge process of column energy is crucial to MJO dynamics, as it directly influences the intensity and distribution of diabatic heating. This aspect has been largely absent from traditional wave dynamics theories, and we will delve deeper into this topic when discussing the Gill solution.</p>
+<p>The shallow circulation aids in recharging moist entropy into the free troposphere through shallow divergent flow, which exports lower dry static energy but imports moist-laden air from the boundary layer. Conversely, deep circulation efficiently discharges moist entropy from the column to other regions. This recharge-discharge process of column energy is crucial to MJO dynamics, as it directly influences the intensity and distribution of diabatic heating. This aspect has been largely absent from traditional wave dynamics theories (or more focus on the recharge of DSE from wave dynamics perspective). We will delve deeper into this topic when discussing the Gill solution.</p>
 <p>The vertical structure of the MJO, which tilts from east to west, strongly resembles the structure observed in equatorial Kelvin waves. In tropical wave theory, the presence of shallow circulation can be explained by momentum balance within a frictional planetary boundary layer. Upward motion at the top of this boundary layer induces shallow heating (around the 4th baroclinic mode), which in turn slows the propagation speed. During the convective phase, the maximum upward motion near 300 hPa, coupled with divergence in the upper troposphere, creates a first baroclinic mode structure. This process allows the column to export energy, which accelerates the propagation speed. The coupling between shallow and deep heating profiles results in a wave speed that falls between these two modes. However, even with shallow heating factored in, the phase speed remains faster than what is observed.</p>
-<p>To better understand how these different components affect the characteristic timescales of the MJO, the following sections will explore these concepts in more detail.</p>
 <div class="figure align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/MJO_vertical_structure.png"><img alt="../_images/MJO_vertical_structure.png" src="../_images/MJO_vertical_structure.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">The vertical structure of MJO and the cross-section at westerly/easterly phase. From <span id="id2">[<a class="reference internal" href="#id5"><span>AW15</span></a>]</span></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="the-boundary-layer-momentum-balance">
+<h3>The boundary layer momentum balance<a class="headerlink" href="#the-boundary-layer-momentum-balance" title="Permalink to this headline">¶</a></h3>
+<p>In the boundary layer, the momentum equation can be written as</p>
+<div class="math notranslate nohighlight" id="equation-wave-boundary-layer">
+<span class="eqno">(67)<a class="headerlink" href="#equation-wave-boundary-layer" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+\frac{\partial u_B}{\partial t} -\beta y v_B &amp;= -\frac{\partial \phi}{\partial x}-E u_B \\
+\frac{\partial v_B}{\partial t} +\beta y v_B &amp;= -\frac{\partial \phi}{\partial y}-E v_B \\
+\end{align}\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="some-evidence-from-moisture-mode-perspective">
