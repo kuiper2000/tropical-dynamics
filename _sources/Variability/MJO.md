@@ -36,7 +36,7 @@ Two primary theories have been developed to explain the MJO: (1) wave dynamics a
 \frac{\partial \text{Div}}{\partial t} &\sim O( \nabla \cdot (f+\zeta)\times \vec{u})  \\
 \frac{\partial \zeta}{\partial t} &\sim O(\nabla \cdot (f+\zeta)\times \vec{u}) \\
 \frac{\partial \phi_p}{\partial t} &\sim O(w\frac{N^2}{g}-\frac{Q}{c_p T}) \\
-Q &\sim -Lw\frac{\partial \tilde{q}}{\partial z} \\
+Q &\sim -Lw\frac{\partial \tilde{q}}{\partial z}(\text{SST}) \\
 \end{align}
 ```
 
@@ -88,6 +88,8 @@ In the boundary layer, the momentum equation can be written as
 \frac{\partial v_B}{\partial t} +\beta y v_B &= -\frac{\partial \phi}{\partial y}-E v_B \\
 \end{align}
 ```
+
+where the subscript _B_ represents boundary layer. One should notice that we don't include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere. Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same idea for scale analysis, we can also drop the tendency term due to the fast adjustment.    
 
 
 ## Some Evidence from Moisture Mode Perspective 
