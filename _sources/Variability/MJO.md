@@ -89,7 +89,15 @@ In the boundary layer, the momentum equation can be written as
 \end{align}
 ```
 
-where the subscript _B_ represents boundary layer. One should notice that we don't include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere. Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same idea for scale analysis, we can also drop the tendency term due to the fast adjustment.    
+where the subscript _B_ represents boundary layer. One should notice that we don't include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere. Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same idea for scale analysis, we can also drop the tendency term due to the fast adjustment, leading to   
+
+```{math}
+:label: wave_boundary_layer
+\begin{align}
+-\beta y v_B &= -\frac{\partial \phi}{\partial x}-E u_B \\
+\beta y v_B &= -\frac{\partial \phi}{\partial y}-E v_B \\
+\end{align}
+```
 
 
 ## Some Evidence from Moisture Mode Perspective 
