@@ -2,7 +2,7 @@
 # Week 8: Madden-Julian oscillation
 
 
-The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO's signal is so strong that it can even be detected in raw-sounding data and water vapor channels. {numref}`FIG5-1` below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the {cite}`Madden1971-ao` paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, {numref}`FIG5-2` shows an observed MJO event located at the western Pacific. 
+The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO's signal is so strong that it can even be detected in raw-sounding data and water vapor channels. {numref}`FIG5-1` below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the {cite}`Madden1971-ao` paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, {numref}`FIG5-2` shows an observed MJO event located at the western Pacific from unfiltered column water vapor.  
 
 
 ```{figure} ../tropical-dynamics-figures/MJO_power_spectrum.png
@@ -81,7 +81,7 @@ The vertical structure of MJO and the cross-section at westerly/easterly phase. 
 ```
 
 ## Some Evidence from Moisture Mode Perspective 
-On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation is more solid on intraseasonal time scales (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). Second, 
+On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important.    
 
 
 
