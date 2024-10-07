@@ -113,7 +113,7 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 In large-scale motion (where the pressure gradient is small), the second term is the dominant forcing where the lower-troposphere westerly/esterly is characterized by boundary layer top convergence/divergence. Such boundary-top convergence/divergence will further lead to the downward/upward motion in the lower troposphere. In the off-equatorial region, Severdrup balance (negative planetary PV advection balanced by stretching) is the main cause of the lower-troposphere vertical motion. 
 
 :::{note}
-Severdrup balance has also been applied to explain 
+Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. 
 :::
 
 
