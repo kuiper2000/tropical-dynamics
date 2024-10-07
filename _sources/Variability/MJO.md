@@ -106,9 +106,17 @@ From {eq}`wave_boundary_layer2` we also know the steady motion of boundary layer
 ```{math}
 :label: wave_boundary_layer2
 \begin{align}
-D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\beta u}_{Ekman Pumping} +\underbrace{\beta^2 yv/E}_{Sverdrup Balance})/(E^2+\beta^2y^2)
+D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\beta u}_{\text{Ekman Pumping}} +\underbrace{\beta^2 yv/E}_{\text{Sverdrup Balance}})/(E^2+\beta^2y^2)
 \end{align}
 ```
+
+In large-scale motion (where the pressure gradient is small), the second term is the dominant forcing where the lower-troposphere westerly/esterly is characterized by boundary layer top convergence/divergence. Such boundary-top convergence/divergence will further lead to the downward/upward motion in the lower troposphere. In the off-equatorial region, Severdrup balance (negative planetary PV advection balanced by stretching) is the main cause of the lower-troposphere vertical motion. 
+
+:::{note}
+Severdrup balance has also been applied to explain 
+:::
+
+
 
 
 ## Some Evidence from Moisture Mode Perspective 
