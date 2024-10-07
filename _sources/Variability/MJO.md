@@ -72,7 +72,7 @@ The vertical structure of the MJO, which tilts from east to west, strongly resem
 
 ```{figure} ../tropical-dynamics-figures/MJO_vertical_structure.png 
 ---
-name: FIG5-2
+name: FIG5-3
 width: 700px
 ---
 The vertical structure of MJO and the cross-section at westerly/easterly phase. From {cite}`Adames2015-rm`
@@ -120,7 +120,7 @@ Severdrup balance has also been applied to explain the stationary Rossby wave re
 
 
 ## Some Evidence from Moisture Mode Perspective 
-On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important.    
+On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important. This picture can be observed more clearly in {numref}`FIG5-2`.     
 
 
 
