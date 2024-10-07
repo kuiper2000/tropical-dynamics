@@ -89,13 +89,24 @@ In the boundary layer, the momentum equation can be written as
 \end{align}
 ```
 
-where the subscript _B_ represents boundary layer. One should notice that we don't include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere. Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same idea for scale analysis, we can also drop the tendency term due to the fast adjustment, leading to   
+where the subscript _B_ represents boundary layer. One should notice that we don't include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere (not a perfect but workable assumption). Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same assumption (fast adjustment) for scale analysis, we can also drop the tendency term due to the fast adjustment, leading to   
 
 ```{math}
-:label: wave_boundary_layer
+:label: wave_boundary_layer2
 \begin{align}
 -\beta y v_B &= -\frac{\partial \phi}{\partial x}-E u_B \\
 \beta y v_B &= -\frac{\partial \phi}{\partial y}-E v_B \\
+\end{align}
+```
+
+{eq}`wave_boundary_layer2` is a diagnostic equation, i.e., as long as we know the pressure gradient force in the free troposphere, we know $u_B$ and $v_B$ in the boundary layer. The boundary layer in turn feedback to the free troposphere through {eq}`boundary_layer` ($\tilde{w}$). The shallow vertical motion can trigger shallow mode of heating and recharge the column MSE.  
+
+From {eq}`wave_boundary_layer2` we also know the steady motion of boundary layer convergence on an equatorial beta plane can be written as 
+
+```{math}
+:label: wave_boundary_layer2
+\begin{align}
+D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\beta u}_{Ekman Pumping} +\underbrace{\beta^2 yv/E}_{Sverdrup Balance})/(E^2+\beta^2y^2)
 \end{align}
 ```
 
