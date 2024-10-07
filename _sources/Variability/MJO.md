@@ -120,7 +120,9 @@ Severdrup balance has also been applied to explain the stationary Rossby wave re
 
 
 ## Some Evidence from Moisture Mode Perspective 
-On the other hand, there are also evidences supporting the moisture mode framework. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a better approximation on intraseasonal timescales than wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important. This picture can be observed more clearly in {numref}`FIG5-2`.     
+Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly. 
+
+According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important. Precipitation anomaly is in generaly highly correlated to column moisture if it's linearized in intraseasonal timescales. 
 
 
 
