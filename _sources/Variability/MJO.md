@@ -104,7 +104,7 @@ where the subscript _B_ represents boundary layer. One should notice that we don
 From {eq}`wave_boundary_layer2` we also know the steady motion of boundary layer convergence on an equatorial beta plane can be written as 
 
 ```{math}
-:label: wave_boundary_layer2
+:label: wave_boundary_layer3
 \begin{align}
 D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\beta u}_{\text{Ekman Pumping}} +\underbrace{\beta^2 yv/E}_{\text{Sverdrup Balance}})/(E^2+\beta^2y^2)
 \end{align}
