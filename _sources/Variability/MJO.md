@@ -128,7 +128,7 @@ Overall, MJO has satisfied all three criteria in the region of the Indian Ocean,
 
 
 ### Gill Solution (the forced wave solution)
-The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state solution, we adopt {eq}`shallow_water_linear3` 
+The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt {eq}`shallow_water_linear3` 
 
 
 ```{math}
@@ -141,7 +141,9 @@ The Gill solution is a steady state, forced response of the wave solution. To ac
 \end{align}
 ```
 
-where $W_m(p)$ is the eigen basis of vertical normal mode decomposition and $Q_{m}$ is the coefficient of the corresponding mode. 
+where $W_m(p)$ is the eigen basis of vertical normal mode decomposition and $Q_{m}$ is the coefficient of the corresponding vertical mode. (see {eq}`vertical_normal_mode2`). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., $Q_m$ in the third equation of {eq}`Gill_solution`) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in {eq}`Gill_solution`) 
+
+Gill solution has been applied to explain the observed circulation on a beta plane with a resting basic state. 
 
 
 

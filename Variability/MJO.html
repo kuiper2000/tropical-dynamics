@@ -508,7 +508,7 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <p>Overall, MJO has satisfied all three criteria in the region of the Indian Ocean, and it meets either one or two criteria over other basins. Details can be found in XXX.</p>
 <div class="section" id="gill-solution-the-forced-wave-solution">
 <h3>Gill Solution (the forced wave solution)<a class="headerlink" href="#gill-solution-the-forced-wave-solution" title="Permalink to this headline">¶</a></h3>
-<p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
+<p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
 <span class="eqno">(70)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \epsilon u -\beta yv &amp; = -\frac{\partial \phi}{\partial x}\\
@@ -516,7 +516,8 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 \epsilon \phi + C_m^2 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} &amp;= Q_{m} \\
 \frac{Q}{c_p T} &amp;=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding mode.</p>
+<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(70)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in <a class="reference internal" href="#equation-gill-solution">(70)</a>)</p>
+<p>Gill solution has been applied to explain the observed circulation on a beta plane with a resting basic state.</p>
 <p id="id4"><dl class="citation">
 <dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">AW15</a></span></dt>
 <dd><p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
