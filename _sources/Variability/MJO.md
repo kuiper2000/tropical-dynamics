@@ -137,7 +137,7 @@ The Gill solution is a steady state, forced response of the wave solution. To ac
 \epsilon u -\beta yv & = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu & = -\frac{\partial \phi}{\partial y}\\
 \epsilon \phi + C_m^2 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} &= Q_{m} \\
-\frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &=\sum_{m} 
+\frac{Q}{c_p T} &=\sum_{m} Q_{m} W_m(p) \\ \text{ where $W_m(p)$ is the eigen basis of vertical normal mode decomposition}
 \end{align}
 ```
 
