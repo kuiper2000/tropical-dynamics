@@ -122,8 +122,24 @@ Severdrup balance has also been applied to explain the stationary Rossby wave re
 ## Some Evidence from Moisture Mode Perspective 
 Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly. 
 
-According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens on horizontal directions is equally important. Precipitation anomaly is in generaly highly correlated to column moisture if it's linearized in intraseasonal timescales. 
+According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens in horizontal directions is equally important. Precipitation anomaly is in generally highly correlated to column moisture if it's linearized in intraseasonal timescales. 
 
+Overall, MJO has satisfied all three criteria in the region of the Indian Ocean, and it meets either one or two criteria over other basins. Details can be found in XXX. 
+
+
+### Gill Solution (the forced wave solution)
+The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state solution, we adopt {eq}`shallow_water_linear3` 
+
+
+```{math}
+:label: Gill_solution
+\begin{align}
+\epsilon u -\beta yv & = -\frac{\partial \phi}{\partial x}\\
+\epsilon v +\beta yu & = -\frac{\partial \phi}{\partial y}\\
+\epsilon \phi + C_m^2 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} &= Q_{m} \\
+\frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &=\sum_{m} 
+\end{align}
+```
 
 
 
