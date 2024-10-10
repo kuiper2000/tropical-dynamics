@@ -189,8 +189,7 @@ Following the discussion in the first week, one can find that the moisture mode 
 More details can be found in {cite}`Adames2016-cm`. 
 
 ### Gross Moist Stability and Gross Moist Stratification  
-
-
+The last important concept in moisture theory is the _Gross Moist Stability_. 
 
 
 
