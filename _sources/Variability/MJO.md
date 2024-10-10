@@ -148,7 +148,7 @@ Also, given the 3-D boundary layer temperature as a function of surface temperat
 ```{math}
 :label: LN87_temperature_3D 
 \begin{align}
-T(\lambda,\phi,z) = \overbar{T}_s(\phi) -\alpha z + T'(1-\gamma\frac{Z}{H_0}) 
+T(\lambda,\phi,z) = \overline{T}_s(\phi) -\alpha z + T'(1-\gamma\frac{Z}{H_0}) 
 \end{align}
 ```
 
