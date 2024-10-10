@@ -340,6 +340,11 @@ title="Print to PDF"
      The boundary layer momentum balance
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lidzen-nigam-model">
+     Lidzen-Nigam Model
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -348,13 +353,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gill-solution-the-forced-wave-solution">
-     Gill Solution (the forced wave solution)
+    <a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">
+     Gill Solution (the forced and steady state wave solution)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gross-moist-stability">
-     Gross-moist stability
+    <a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">
+     Gross Moist Stability and Gross Moist Stratification
     </a>
    </li>
   </ul>
@@ -405,6 +410,11 @@ title="Print to PDF"
      The boundary layer momentum balance
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lidzen-nigam-model">
+     Lidzen-Nigam Model
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -413,13 +423,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gill-solution-the-forced-wave-solution">
-     Gill Solution (the forced wave solution)
+    <a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">
+     Gill Solution (the forced and steady state wave solution)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gross-moist-stability">
-     Gross-moist stability
+    <a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">
+     Gross Moist Stability and Gross Moist Stratification
     </a>
    </li>
   </ul>
@@ -510,29 +520,40 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="#id11"><span>RH96</span></a>]</span></p>
 </div>
 </div>
+<div class="section" id="lidzen-nigam-model">
+<h3>Lidzen-Nigam Model<a class="headerlink" href="#lidzen-nigam-model" title="Permalink to this headline">¶</a></h3>
+<p>In the previous subsection, we show that the boundary convergence/divergence is determined through 3 processes. (1) pressure gradient force at the top of boundary layer (2) Ekman pumping and (3) Sverdrup balance. However, all three processes are controls from the lower free troposphere. The lower boundary i.e., SST, on the other hand, also plays a role in the boundary layer convergence. Lidzen-Nigam model (Lidzen and Nigam 1987) is one of the few model exploring the contribution of SST.</p>
+<p>In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.</p>
+<div class="math notranslate nohighlight" id="equation-wave-boundary-layer4">
+<span class="eqno">(70)<a class="headerlink" href="#equation-wave-boundary-layer4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+-\beta y v &amp; = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+\beta y u &amp; = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+\end{align}\end{split}\]</div>
+<p>To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation, i.e., <span class="math notranslate nohighlight">\(\frac{\partial p}{\partial z}=-\rho g\rightarrow\)</span></p>
+</div>
 </div>
 <div class="section" id="some-evidence-from-moisture-mode-perspective">
 <h2>Some Evidence from Moisture Mode Perspective<a class="headerlink" href="#some-evidence-from-moisture-mode-perspective" title="Permalink to this headline">¶</a></h2>
 <p>Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly.</p>
 <p>According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., <span class="math notranslate nohighlight">\(w\frac{N^2}{g}=\frac{Q}{c_p T}\)</span> is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere (<span class="math notranslate nohighlight">\(\sim\)</span>700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens in horizontal directions is equally important. Precipitation anomaly is in generally highly correlated to column moisture if it’s linearized in intraseasonal timescales.</p>
 <p>Overall, MJO has satisfied all three criteria in the region of the Indian Ocean, and it meets either one or two criteria over other basins. Details can be found in XXX.</p>
-<div class="section" id="gill-solution-the-forced-wave-solution">
-<h3>Gill Solution (the forced wave solution)<a class="headerlink" href="#gill-solution-the-forced-wave-solution" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gill-solution-the-forced-and-steady-state-wave-solution">
+<h3>Gill Solution (the forced and steady state wave solution)<a class="headerlink" href="#gill-solution-the-forced-and-steady-state-wave-solution" title="Permalink to this headline">¶</a></h3>
 <p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
-<span class="eqno">(70)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(71)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \epsilon u -\beta yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \epsilon \phi + C_m^2 (\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y}) &amp;= Q_{m} \\
 \frac{Q}{c_p T} &amp;=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(70)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in <a class="reference internal" href="#equation-gill-solution">(70)</a>)</p>
+<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(71)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in <a class="reference internal" href="#equation-gill-solution">(71)</a>)</p>
 <p>Gill’s solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it’s the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution.</p>
 <p>Following the discussion in the first week, one can find that the moisture mode starts from an energetic perspective and emphasizes on the role of moisture in determining the intraseasonal variation of moist static energy. Thus, the intrinsic timescales of moisture mode variability is determined by the redistribution of MSE rather than the adjustment of DSE.</p>
 <p>More details can be found in <span id="id4">[<a class="reference internal" href="#id9"><span>AK16</span></a>]</span>.</p>
 </div>
-<div class="section" id="gross-moist-stability">
-<h3>Gross-moist stability<a class="headerlink" href="#gross-moist-stability" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gross-moist-stability-and-gross-moist-stratification">
+<h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Permalink to this headline">¶</a></h3>
 <p id="id5"><dl class="citation">
 <dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id4">AK16</a></span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>

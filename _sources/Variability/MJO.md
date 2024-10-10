@@ -118,6 +118,23 @@ One key take-home message is that the boundary-layer top easterly collocated wit
 Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See {cite}`Rodwell1996-bz`
 :::
 
+### Lidzen-Nigam Model 
+In the previous subsection, we show that the boundary convergence/divergence is determined through 3 processes. (1) pressure gradient force at the top of boundary layer (2) Ekman pumping and (3) Sverdrup balance. However, all three processes are controls from the lower free troposphere. The lower boundary i.e., SST, on the other hand, also plays a role in the boundary layer convergence. Lidzen-Nigam model (Lidzen and Nigam 1987) is one of the few model exploring the contribution of SST. 
+
+In Lidzen-Nigam model, we have a balanced momentum equation on a sphere. 
+
+```{math}
+:label: wave_boundary_layer4
+\begin{align}
+-\beta y v & = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+\beta y u & = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+\end{align}
+```
+
+To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation, i.e., $\frac{\partial p}{\partial z}=-\rho g\rightarrow$
+
+
+
 
 ## Some Evidence from Moisture Mode Perspective 
 Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly. 
@@ -127,7 +144,7 @@ According to these criteria, there are evidences supporting the moisture mode fr
 Overall, MJO has satisfied all three criteria in the region of the Indian Ocean, and it meets either one or two criteria over other basins. Details can be found in XXX. 
 
 
-### Gill Solution (the forced wave solution)
+### Gill Solution (the forced and steady state wave solution)
 The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt {eq}`shallow_water_linear3` 
 
 
@@ -149,7 +166,8 @@ Following the discussion in the first week, one can find that the moisture mode 
 
 More details can be found in {cite}`Adames2016-cm`. 
 
-### Gross-moist stability 
+### Gross Moist Stability and Gross Moist Stratification  
+
 
 
 
