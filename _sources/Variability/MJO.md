@@ -136,14 +136,16 @@ The Gill solution is a steady state, forced response of the wave solution. To ac
 \begin{align}
 \epsilon u -\beta yv & = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu & = -\frac{\partial \phi}{\partial y}\\
-\epsilon \phi + C_m^2 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} &= Q_{m} \\
+\epsilon \phi + C_m^2 (\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y}) &= Q_{m} \\
 \frac{Q}{c_p T} &=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}
 ```
 
 where $W_m(p)$ is the eigen basis of vertical normal mode decomposition and $Q_{m}$ is the coefficient of the corresponding vertical mode. (see {eq}`vertical_normal_mode2`). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., $Q_m$ in the third equation of {eq}`Gill_solution`) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in {eq}`Gill_solution`) 
 
-Gill solution has been applied to explain the observed circulation on a beta plane with a resting basic state. 
+Gill's solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it's the core of moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution (or in quasi-geostrophic, we can have barotropic equation). 
+
+Following the discussion in the first week, one can find that the framework of moisture centers around the energetic framework. Therefore, 
 
 
 
