@@ -533,15 +533,16 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <p>Different from <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a>, we would like to link such pressure gradient force to the surface temperature. To achieve that, one can integrate the hydrostatic equation vertically, i.e., <span class="math notranslate nohighlight">\(\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz\)</span>. Given the Bousinessq approximation is solid in the boundary layer, the density change can be directly attributed to the change in temperature. i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-ln87-temperature">
 <span class="eqno">(71)<a class="headerlink" href="#equation-ln87-temperature" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
-\rho(T) &amp; = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T \\
+\rho(T) &amp; = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T = \rho_0[2-\frac{T}{T_0}]\\
 \text{ comes from } &amp; \frac{\rho -\rho_0}{\rho_0} = -\frac{T-T_0}{T_0}
 \end{align}\end{split}\]</div>
 <p>Also, given the 3-D boundary layer temperature as a function of surface temperature, we have</p>
 <div class="math notranslate nohighlight" id="equation-ln87-temperature-3d">
 <span class="eqno">(72)<a class="headerlink" href="#equation-ln87-temperature-3d" title="Permalink to this equation">¶</a></span>\[\begin{align}
-T(\lambda,\phi,z) = \overline{T}_s(\phi) -\alpha z + T'(1-\gamma\frac{Z}{H_0}) 
+T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean SST}}  + \underbrace{T'(1-\gamma\frac{Z}{H_0})}_{\text{eddy component SST (decay faster)}} 
 \end{align}\]</div>
-<p>where <a class="reference internal" href="#equation-ln87-temperature-3d">(72)</a> tells us the temperature is a function of (1) zonal mean <span class="math notranslate nohighlight">\(\overbar{T}_s\)</span>,</p>
+<p>The surface temperature has two components (1) zonal mean and (2) eddy. The eddy component decays faster than the zonal mean temperature due to the weak temperature gradient in the free troposphere.</p>
+<p>Substituting <a class="reference internal" href="#equation-ln87-temperature-3d">(72)</a> and <a class="reference internal" href="#equation-ln87-temperature">(71)</a> back into <a class="reference internal" href="#equation-wave-boundary-layer4">(70)</a>, one can easily diagnose the boundary convergence. Readers will find that the meridional SST gradient plays the dominant role in determining the boundary layer convergence as long as the pressure gradient at the boundary layer top is small. This is especially the case for Eastern Pacific ITCZ and the boreal winter ITCZ at Indian ocean. (see Lidzen and Nigam 1987 for more details)</p>
 </div>
 </div>
 <div class="section" id="some-evidence-from-moisture-mode-perspective">

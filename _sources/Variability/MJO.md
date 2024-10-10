@@ -138,7 +138,7 @@ Different from {eq}`wave_boundary_layer2`, we would like to link such pressure g
 ```{math}
 :label: LN87_temperature 
 \begin{align}
-\rho(T) & = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T \\
+\rho(T) & = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T = \rho_0[2-\frac{T}{T_0}]\\
 \text{ comes from } & \frac{\rho -\rho_0}{\rho_0} = -\frac{T-T_0}{T_0}
 \end{align}
 ```
@@ -148,11 +148,13 @@ Also, given the 3-D boundary layer temperature as a function of surface temperat
 ```{math}
 :label: LN87_temperature_3D 
 \begin{align}
-T(\lambda,\phi,z) = \overline{T}_s(\phi) -\alpha z + T'(1-\gamma\frac{Z}{H_0}) 
+T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean SST}}  + \underbrace{T'(1-\gamma\frac{Z}{H_0})}_{\text{eddy component SST (decay faster)}} 
 \end{align}
 ```
 
-where {eq}`LN87_temperature_3D` tells us the temperature is a function of (1) zonal mean $\overbar{T}_s$,  
+The surface temperature has two components (1) zonal mean and (2) eddy. The eddy component decays faster than the zonal mean temperature due to the weak temperature gradient in the free troposphere. 
+
+Substituting {eq}`LN87_temperature_3D` and {eq}`LN87_temperature` back into {eq}`wave_boundary_layer4`, one can easily diagnose the boundary convergence. Readers will find that the meridional SST gradient plays the dominant role in determining the boundary layer convergence as long as the pressure gradient at the boundary layer top is small. This is especially the case for Eastern Pacific ITCZ and the boreal winter ITCZ at Indian ocean. (see Lidzen and Nigam 1987 for more details) 
 
 
 
