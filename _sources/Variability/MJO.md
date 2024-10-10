@@ -131,7 +131,7 @@ In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.
 \end{align}
 ```
 
-To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation, i.e., $\frac{\partial p}{\partial z}=-\rho g\rightarrow$
+To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation vertically, i.e., $\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz$
 
 
 
