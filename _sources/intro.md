@@ -32,8 +32,15 @@ __Part II: Variability__
         * Vertical normal modes
     * Convective-coupled Waves
 * {ref}`MJO`
-    * Weak temperature gradient: From tropical wave to moisture mode theory 
-    * Madden-Julian oscillations
+    * Theories for MJO
+        * Wave Perspective
+        * Moisture Mode Framework
+    * Some Evidence from Wave Dynamics Perspective
+        * Boundary Layer Momentum Balance
+        * Lidzen-Nigam Model 
+    * Some Evidence from Moisture Mode Framework
+        * Gill Solution
+        * Gross-moist Stability 
 
 * {ref}`waves2`
     * Quasi-Bieannial Oscillation
