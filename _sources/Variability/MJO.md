@@ -126,8 +126,8 @@ In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.
 ```{math}
 :label: wave_boundary_layer4
 \begin{align}
--\beta y v & = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
-\beta y u & = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+-\beta y v & = -\frac{1}{\rho a \mathrm{cos}\phi}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
+\beta y u & = -\frac{1}{\rho a }\frac{\partial p}{\partial \phi}+\frac{1}{\rho}\frac{\partial \tau_y}{\partial z} \\ 
 \end{align}
 ```
 
@@ -138,9 +138,22 @@ Different from {eq}`wave_boundary_layer2`, we would like to link such pressure g
 ```{math}
 :label: LN87_temperature 
 \begin{align}
-\rho = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T
+\rho(T) & = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T \\
+\text{ comes from } & \frac{\rho -\rho_0}{\rho_0} = -\frac{T-T_0}{T_0}
 \end{align}
 ```
+
+Also, given the 3-D boundary layer temperature as a function of surface temperature, we have 
+
+```{math}
+:label: LN87_temperature_3D 
+\begin{align}
+T(\lambda,\phi,z) = \overbar{T}_s(\phi) -\alpha z + T'(1-\gamma\frac{Z}{H_0}) 
+\end{align}
+```
+
+where {eq}`LN87_temperature_3D` tells us the temperature is a function of (1) zonal mean $\overbar{T}_s$,  
+
 
 
 ## Some Evidence from Moisture Mode Perspective 
