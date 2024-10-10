@@ -529,7 +529,12 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 -\beta y v &amp; = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
 \beta y u &amp; = -\frac{1}{\rho a \mathrm{cos}\theta}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
 \end{align}\end{split}\]</div>
-<p>To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation vertically, i.e., <span class="math notranslate nohighlight">\(\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz\)</span></p>
+<p>Similar to <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a>, <a class="reference internal" href="#equation-wave-boundary-layer4">(70)</a> is a diagnostic equation, indicating that as long as we have the information of pressure gradient force, we know the convergence within the boundary layer.</p>
+<p>Different from <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a>, we would like to link such pressure gradient force to the surface temperature. To achieve that, one can integrate the hydrostatic equation vertically, i.e., <span class="math notranslate nohighlight">\(\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz\)</span>. Given the Bousinessq approximation is solid in the boundary layer, the density change can be directly attributed to the change in temperature. i.e.,</p>
+<div class="math notranslate nohighlight" id="equation-ln87-temperature">
+<span class="eqno">(71)<a class="headerlink" href="#equation-ln87-temperature" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\rho = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T
+\end{align}\]</div>
 </div>
 </div>
 <div class="section" id="some-evidence-from-moisture-mode-perspective">
@@ -541,13 +546,13 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <h3>Gill Solution (the forced and steady state wave solution)<a class="headerlink" href="#gill-solution-the-forced-and-steady-state-wave-solution" title="Permalink to this headline">¶</a></h3>
 <p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
-<span class="eqno">(71)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(72)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \epsilon u -\beta yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \epsilon \phi + C_m^2 (\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y}) &amp;= Q_{m} \\
 \frac{Q}{c_p T} &amp;=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(71)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in <a class="reference internal" href="#equation-gill-solution">(71)</a>)</p>
+<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(72)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in <a class="reference internal" href="#equation-gill-solution">(72)</a>)</p>
 <p>Gill’s solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it’s the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution.</p>
 <p>Following the discussion in the first week, one can find that the moisture mode starts from an energetic perspective and emphasizes on the role of moisture in determining the intraseasonal variation of moist static energy. Thus, the intrinsic timescales of moisture mode variability is determined by the redistribution of MSE rather than the adjustment of DSE.</p>
 <p>More details can be found in <span id="id4">[<a class="reference internal" href="#id9"><span>AK16</span></a>]</span>.</p>

@@ -131,9 +131,16 @@ In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.
 \end{align}
 ```
 
-To know the averaged pressure gradient force in the boundary, we can integrate the hydrostatic equation vertically, i.e., $\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz$
+Similar to {eq}`wave_boundary_layer2`, {eq}`wave_boundary_layer4` is a diagnostic equation, indicating that as long as we have the information of pressure gradient force, we know the convergence within the boundary layer.  
 
+Different from {eq}`wave_boundary_layer2`, we would like to link such pressure gradient force to the surface temperature. To achieve that, one can integrate the hydrostatic equation vertically, i.e., $\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz$. Given the Bousinessq approximation is solid in the boundary layer, the density change can be directly attributed to the change in temperature. i.e., 
 
+```{math}
+:label: LN87_temperature 
+\begin{align}
+\rho = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T
+\end{align}
+```
 
 
 ## Some Evidence from Moisture Mode Perspective 
