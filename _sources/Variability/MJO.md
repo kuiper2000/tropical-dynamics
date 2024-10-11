@@ -197,8 +197,7 @@ Following the discussion in the first week, one can find that the moisture mode 
 More details can be found in {cite}`Adames2016-cm`. 
 
 ### Gross Moist Stability and Gross Moist Stratification  
-The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in 
-redistributing column moist static energy. 
+The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. 
 
 
 ```{bibliography}
