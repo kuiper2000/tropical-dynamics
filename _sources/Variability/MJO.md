@@ -190,7 +190,6 @@ width: 700px
 Gill solution. Contours are prescribed heating patterns and vectors show the circulation driven by heating.
 ```
 
-
 Gill's solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it's the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution. 
 
 Following the discussion in the first week, one can find that the moisture mode starts from an energetic perspective and emphasizes on the role of moisture in determining the intraseasonal variation of moist static energy. Thus, the intrinsic timescales of moisture mode variability is determined by the redistribution of MSE rather than the adjustment of DSE. 
@@ -198,8 +197,8 @@ Following the discussion in the first week, one can find that the moisture mode 
 More details can be found in {cite}`Adames2016-cm`. 
 
 ### Gross Moist Stability and Gross Moist Stratification  
-The last important concept in moisture theory is the _Gross Moist Stability_. 
-
+The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in 
+redistributing column moist static energy. 
 
 
 ```{bibliography}
