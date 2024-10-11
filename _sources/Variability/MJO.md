@@ -19,7 +19,7 @@ The power spectrum of tropical intraseasonal variability
 name: FIG5-2
 width: 700px
 ---
-The total precipitable water of an MJO event in wester Pacific from MIMIC-TPW. 
+The total precipitable water of an MJO event in Indian ocean from MIMIC-TPW. 
 ```
 
 
