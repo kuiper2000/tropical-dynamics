@@ -183,7 +183,7 @@ Substituting {eq}`shallow_water_linear_no_dimension2` back into {eq}`shallow_wat
 
 ```{math}
 :label: y_differential_equation
-\frac{d^2}{dy^2} V^2 + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0
+\frac{d^2}{dy^2} V + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0
 ```
 
 We can solve this equation by applying the boundary condition that $V(y)$ tapers off to zero as $y \to \pm \infty$ and assume $V(y)=\widehat{V(y)}e^{-y^2}$. This assumption can convert {eq}`y_differential_equation` into a typical Hermite differential equation, where $\widehat{V(y)}=H_m(y)$ is so-called Hermite polynomial. 
