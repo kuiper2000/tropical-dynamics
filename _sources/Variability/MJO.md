@@ -180,7 +180,16 @@ The Gill solution is a steady state, forced response of the wave solution. To ac
 \end{align}
 ```
 
-where $W_m(p)$ is the eigen basis of vertical normal mode decomposition and $Q_{m}$ is the coefficient of the corresponding vertical mode. (see {eq}`vertical_normal_mode2`). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., $Q_m$ in the third equation of {eq}`Gill_solution`) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., first 3 equations in {eq}`Gill_solution`) 
+where $W_m(p)$ is the eigen basis of vertical normal mode decomposition and $Q_{m}$ is the coefficient of the corresponding vertical mode. (see {eq}`vertical_normal_mode2`). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., $Q_m$ in the third equation of {eq}`Gill_solution`) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., the first 3 equations in {eq}`Gill_solution`). In Gill (1980), he employed variable transformation to solve the analytical solution of a Gaussian-like heating on the equator. To the west of the heating shows a twin-cyclone and to the east of the heating is characterized by a Kelvin wave-like feature. 
+
+```{figure} ../tropical-dynamics-figures/Gill.png 
+---
+name: FIG5-3
+width: 700px
+---
+Gill solution. Contours are prescribed heating patterns and vectors show the circulation driven by heating.
+```
+
 
 Gill's solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it's the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution. 
 
