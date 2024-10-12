@@ -259,7 +259,7 @@ where the overline is time mean and prime is the transient components. The disap
 
 The term ${\Delta \overline{m}} $ or $\Delta \overline{s}-Lq_2$ is so-called gross moist stability. It is defined as the weighted moist static energy by vertical velocity and take the difference between upper layer and the lower layer (kind of similar to static stability but take the effect of convective heating into account). Physically, it quantifies how much of the column energy can be exported through the unit convergence/divergence. i.e., ${\Delta \overline{m}} \sim \frac{\overline{F_B}-\overline{F_T}}{-\nabla \cdot \overline{\mathbf{V_2}}} $ . A similar equation can be found in the moisture budget, so-called gross moist stratification. 
 
-Back to the moisture mode framework (i.e., {eq}`MJO_moisture_mode`), the gross moist stability/stratification states how efficient it is for convection to redistribute (export) the column MSE or moisture. The reason why vertical structure matters is that ${\Delta \overline{m}}$ is column weighted (by vertical velocity), thus, different vertical structures of convection can lead to different efficiencies of MSE transport. 
+Back to the moisture mode framework (i.e., {eq}`MJO_moisture_mode`), the gross moist stability/stratification states how efficient it is for convection to redistribute (export) the column MSE or moisture. The reason why vertical structure matters is that ${\Delta \overline{m}}$ is column weighted (by vertical velocity), thus, different vertical structures of convection can lead to different efficiencies of MSE transport. Details can also be found in the discussion of {cite}`Adames2016-cm`. 
 
 
 
