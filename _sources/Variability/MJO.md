@@ -219,15 +219,27 @@ where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (
 While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
 
 ```{math}
-:label: GMS2
+:label: GMS3
 \begin{cases}
 \nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot \mathbf{V} dp = -\nabla \cdot \mathbf{V_1} =  -\frac{1}{g}\int_{p_T}^{p_m} \nabla \cdot \mathbf{V} dp \\ 
 m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
 m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_1})^{-1} \\
+\Delta m = m_1- m_2 
 \end{cases}
 ```
 
-where the first equation of {eq}`GMS2` indicates the nature of mass continuity in the first baroclinic structure. $m_2$ and $m_1$ are the vertical velocity weighted (mass flux) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973). 
+where the first equation of {eq}`GMS2` indicates the nature of mass continuity in the first baroclinic structure. $m_2$ and $m_1$ are the vertical velocity weighted (mass flux i.e., the integration of divergence) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973). In a steady state, {eq}`GMS3` leads to 
+
+```{math}
+:label: GMS4
+\begin{cases}
+-\Delta \overline{s} \nabla \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle = \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
+\Delta \overline{q} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle = \overline{E} - \overline{P}
+\end{cases}
+```
+
+where the overline is time mean. 
+
 
 
 ```{bibliography}

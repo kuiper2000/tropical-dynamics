@@ -579,15 +579,22 @@ T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean
 \end{cases} \rightarrow \end{split}\\\frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial \omega m}{\partial p} = g\partial_p (F^{m})\end{aligned}\end{align} \]</div>
 <p>where <span class="math notranslate nohighlight">\(F^{R}\)</span>, <span class="math notranslate nohighlight">\(F^{S}\)</span> and <span class="math notranslate nohighlight">\(F^{LH}\)</span> are fluxes of radiation, dry static energy (s), and latent energy respectively. <span class="math notranslate nohighlight">\(-Q_{LH}\)</span> is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). The column-integrated m can therefore be written as</p>
 <div class="math notranslate nohighlight" id="equation-gms2">
-<span class="eqno">(76)<a class="headerlink" href="#equation-gms2" title="Permalink to this equation">¶</a></span>\[\langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}\]</div>
+<span class="eqno">(75)<a class="headerlink" href="#equation-gms2" title="Permalink to this equation">¶</a></span>\[\langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}\]</div>
 <p>While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship</p>
-<div class="math notranslate nohighlight" id="equation-gms2">
-<span class="eqno">(76)<a class="headerlink" href="#equation-gms2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+<div class="math notranslate nohighlight" id="equation-gms3">
+<span class="eqno">(76)<a class="headerlink" href="#equation-gms3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
 \nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot \mathbf{V} dp = -\nabla \cdot \mathbf{V_1} =  -\frac{1}{g}\int_{p_T}^{p_m} \nabla \cdot \mathbf{V} dp \\ 
 m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
 m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_1})^{-1} \\
+\Delta m = m_1- m_2 
 \end{cases}\end{split}\]</div>
-<p>where the first equation of <a class="reference internal" href="#equation-gms2">(76)</a> indicates the nature of mass continuity in the first baroclinic structure. <span class="math notranslate nohighlight">\(m_2\)</span> and <span class="math notranslate nohighlight">\(m_1\)</span> are the vertical velocity weighted (mass flux) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973)</p>
+<p>where the first equation of <a class="reference internal" href="#equation-gms2">(75)</a> indicates the nature of mass continuity in the first baroclinic structure. <span class="math notranslate nohighlight">\(m_2\)</span> and <span class="math notranslate nohighlight">\(m_1\)</span> are the vertical velocity weighted (mass flux i.e., the integration of divergence) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973). In a steady state, <a class="reference internal" href="#equation-gms3">(76)</a> leads to</p>
+<div class="math notranslate nohighlight" id="equation-gms4">
+<span class="eqno">(77)<a class="headerlink" href="#equation-gms4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+-\Delta \overline{s} \nabla \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle = \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
+\Delta \overline{q} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle = \overline{E} - \overline{P}
+\end{cases}\end{split}\]</div>
+<p>where the overline is time mean.</p>
 <p id="id6"><dl class="citation">
 <dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id5">AK16</a></span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
