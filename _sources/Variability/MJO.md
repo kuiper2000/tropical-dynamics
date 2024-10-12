@@ -205,7 +205,7 @@ The last important concept in moisture theory is the _Gross Moist Stability_. Th
 \frac{\partial Lq}{\partial t}+ \nabla \cdot L\mathbf{V}q + \frac{\partial L\omega q}{\partial p} = -Q_{LH} + g\partial_p (F^{LH}) \\ 
 \end{cases} \rightarrow 
 
-\frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = g\partial_p (F^{m})
+\frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial \omega m}{\partial p} = g\partial_p (F^{m})
 ```
 
 where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (s), and latent energy respectively. $-Q_{LH}$ is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). The column-integrated m can therefore be written as 
