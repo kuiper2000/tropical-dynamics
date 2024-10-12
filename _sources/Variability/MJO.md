@@ -215,8 +215,8 @@ where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (
 \langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}
 ```
 
+While the observed tropical circulation is dominated by the first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
 
-While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
 
 ```{math}
 :label: GMS3
@@ -233,12 +233,12 @@ where the first equation of {eq}`GMS2` indicates the nature of mass continuity i
 ```{math}
 :label: GMS4
 \begin{align}
--\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle &= \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}}  + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle &= \overline{E} - \overline{P} 
+-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle &= \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
+\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}}  + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle &= \overline{E} - \overline{P} 
 \end{align}
 ```
 
-where the overline is time mean. 
+where the overline is time mean and prime is the transient components.  
 
 
 
