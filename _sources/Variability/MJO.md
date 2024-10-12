@@ -251,12 +251,13 @@ where the overline is time mean and prime is the transient components. The disap
 
 
 ```{math}
-:label: GMS5
+:label: GMS6
 \begin{align}
-- \nabla \cdot \overline{\mathbf{V_2}} \sim \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{m}} \sim  \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{s}-q_2} (\text{given that $q_1\sim 0$})\\ 
+- \nabla \cdot \overline{\mathbf{V_2}} \sim \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{m}} \sim  \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{s}-Lq_2} (\text{given that $q_1\sim 0$})\\ 
 \end{align}
 ```
 
+The term ${\Delta \overline{m}} $ or $\Delta \overline{s}-Lq_2$ is so-called gross moist stability. It is defined as the weighted moist static energy by vertical velocity and take the difference between upper layer and the lower layer (kind of similar to static stability but take the effect of convective heating into account). 
 
 ```{bibliography}
 ```
