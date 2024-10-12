@@ -213,9 +213,9 @@ where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (
 ```{math}
 :label: GMS2
 \begin{cases}
-\nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot V dp = -\nabla \cdot \mathbf{V_1} \\ 
-m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot V dp (\nabla\cdot\mathbf{V_2})^{-1} \\
-m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot V dp (\nabla\cdot\mathbf{V_2})^{-1} \\
+\nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot \mathbf{V} dp = -\nabla \cdot \mathbf{V_1} =  -\frac{1}{g}\int_{p_T}^{p_m} \nabla \cdot \mathbf{V} dp \\ 
+m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
+m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
 \end{cases}
 ```
 
