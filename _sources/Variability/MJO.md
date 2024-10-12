@@ -208,16 +208,26 @@ The last important concept in moisture theory is the _Gross Moist Stability_. Th
 \frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = g\partial_p (F^{m})
 ```
 
-where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (s), and latent energy respectively. $-Q_{LH}$ is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
+where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (s), and latent energy respectively. $-Q_{LH}$ is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). The column-integrated m can therefore be written as 
+
+```{math}
+:label: GMS2
+\l \frac{\partial m}{\partial t}\r+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = F^{m}_{B}-F^{m}_{T}
+```
+
+
+While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
 
 ```{math}
 :label: GMS2
 \begin{cases}
 \nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot \mathbf{V} dp = -\nabla \cdot \mathbf{V_1} =  -\frac{1}{g}\int_{p_T}^{p_m} \nabla \cdot \mathbf{V} dp \\ 
 m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
-m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
+m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_1})^{-1} \\
 \end{cases}
 ```
+
+where the first equation of {eq}`GMS2` indicates the nature of mass continuity in the first baroclinic structure. $m_2$ and $m_1$ are the vertical velocity weighted (mass flux) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973) 
 
 
 ```{bibliography}
