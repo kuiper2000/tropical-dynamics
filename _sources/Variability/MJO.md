@@ -232,10 +232,10 @@ where the first equation of {eq}`GMS2` indicates the nature of mass continuity i
 
 ```{math}
 :label: GMS4
-\begin{cases}
--\Delta \overline{s} \nabla \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle = \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
-\Delta \overline{q} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle = \overline{E} - \overline{P}
-\end{cases}
+\begin{align}
+-\Delta \overline{s} \nabla \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle &= \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
+\Delta \overline{q} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  + \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle &= \overline{E} - \overline{P} 
+\end{align}
 ```
 
 where the overline is time mean. 
