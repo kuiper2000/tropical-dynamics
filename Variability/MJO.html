@@ -50,6 +50,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 9: Quasi-biennial Oscillation" href="QBO.html" />
     <link rel="prev" title="Week 6 and 7: Tropical Wave Theory" href="waves1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -134,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Week 8: Madden-Julian oscillation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="QBO.html">
+   Week 9: Quasi-biennial Oscillation
   </a>
  </li>
 </ul>
@@ -446,7 +452,7 @@ title="Print to PDF"
                 
   <div class="section" id="week-8-madden-julian-oscillation">
 <span id="mjo"></span><h1>Week 8: Madden-Julian oscillation<a class="headerlink" href="#week-8-madden-julian-oscillation" title="Permalink to this headline">¶</a></h1>
-<p>The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO’s signal is so strong that it can even be detected in raw-sounding data and water vapor channels. <a class="reference internal" href="#fig5-1"><span class="std std-numref">Fig. 20</span></a> below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the <span id="id1">[<a class="reference internal" href="#id11"><span>MJ71</span></a>]</span> paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, <a class="reference internal" href="#fig5-2"><span class="std std-numref">Fig. 21</span></a> shows an observed MJO event located at the western Pacific from unfiltered column water vapor.</p>
+<p>The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO’s signal is so strong that it can even be detected in raw-sounding data and water vapor channels. <a class="reference internal" href="#fig5-1"><span class="std std-numref">Fig. 20</span></a> below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the <span id="id1">[<a class="reference internal" href="QBO.html#id6"><span>MJ71</span></a>]</span> paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, <a class="reference internal" href="#fig5-2"><span class="std std-numref">Fig. 21</span></a> shows an observed MJO event located at the western Pacific from unfiltered column water vapor.</p>
 <div class="figure align-default" id="fig5-1">
 <a class="reference internal image-reference" href="../_images/MJO_power_spectrum.png"><img alt="../_images/MJO_power_spectrum.png" src="../_images/MJO_power_spectrum.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">The power spectrum of tropical intraseasonal variability</span><a class="headerlink" href="#fig5-1" title="Permalink to this image">¶</a></p>
@@ -491,7 +497,7 @@ Q &amp;\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 <p>The vertical structure of the MJO, which tilts from east to west, strongly resembles the structure observed in equatorial Kelvin waves. In tropical wave theory, the presence of shallow circulation can be explained by momentum balance within a frictional planetary boundary layer. Upward motion at the top of this boundary layer induces shallow heating (around the 4th baroclinic mode), which in turn slows the propagation speed. During the convective phase, the maximum upward motion near 300 hPa, coupled with divergence in the upper troposphere, creates a first baroclinic mode structure. This process allows the column to export energy, which accelerates the propagation speed. The coupling between shallow and deep heating profiles results in a wave speed that falls between these two modes. However, even with shallow heating factored in, the phase speed remains faster than what is observed.</p>
 <div class="figure align-default" id="fig5-3">
 <a class="reference internal image-reference" href="../_images/MJO_vertical_structure.png"><img alt="../_images/MJO_vertical_structure.png" src="../_images/MJO_vertical_structure.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">The vertical structure of MJO and the cross-section at westerly/easterly phase. From <span id="id2">[<a class="reference internal" href="#id7"><span>AW15</span></a>]</span></span><a class="headerlink" href="#fig5-3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">The vertical structure of MJO and the cross-section at westerly/easterly phase. From <span id="id2">[<a class="reference internal" href="QBO.html#id2"><span>AW15</span></a>]</span></span><a class="headerlink" href="#fig5-3" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="the-boundary-layer-momentum-balance">
 <h3>The boundary layer momentum balance<a class="headerlink" href="#the-boundary-layer-momentum-balance" title="Permalink to this headline">¶</a></h3>
@@ -517,7 +523,7 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <p>One key take-home message is that the boundary-layer top easterly collocated with boundary ascending motion, which is a quarter phase leading the mid-troposphere ascending motion. Thus, as long as the surface friction exists, we can always see such phase difference between the boundary layer ascending motion and the mid-troposhere ascending motion.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="#id12"><span>RH96</span></a>]</span></p>
+<p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="QBO.html#id7"><span>RH96</span></a>]</span></p>
 </div>
 </div>
 <div class="section" id="lidzen-nigam-model-optional-reading">
@@ -567,7 +573,7 @@ T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean
 </div>
 <p>Gill’s solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it’s the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution.</p>
 <p>Following the discussion in the first week, one can find that the moisture mode starts from an energetic perspective and emphasizes on the role of moisture in determining the intraseasonal variation of moist static energy. Thus, the intrinsic timescales of moisture mode variability is determined by the redistribution of MSE rather than the adjustment of DSE.</p>
-<p>More details can be found in <span id="id5">[<a class="reference internal" href="#id10"><span>AK16</span></a>]</span>.</p>
+<p>More details can be found in <span id="id5">[<a class="reference internal" href="QBO.html#id5"><span>AK16</span></a>]</span>.</p>
 </div>
 <div class="section" id="gross-moist-stability-and-gross-moist-stratification">
 <h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Permalink to this headline">¶</a></h3>
@@ -605,7 +611,7 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
 - \nabla \cdot \overline{\mathbf{V_2}} \sim \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{m}} \sim  \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{s}-Lq_2} (\text{given that $q_1\sim 0$})\\ 
 \end{align}\end{split}\]</div>
 <p>The term <span class="math notranslate nohighlight">\({\Delta \overline{m}} \)</span> or <span class="math notranslate nohighlight">\(\Delta \overline{s}-Lq_2\)</span> is so-called gross moist stability. It is defined as the weighted moist static energy by vertical velocity and take the difference between upper layer and the lower layer (kind of similar to static stability but take the effect of convective heating into account). Physically, it quantifies how much of the column energy can be exported through the unit convergence/divergence. i.e., <span class="math notranslate nohighlight">\({\Delta \overline{m}} \sim \frac{\overline{F_B}-\overline{F_T}}{-\nabla \cdot \overline{\mathbf{V_2}}} \)</span> . A similar equation can be found in the moisture budget, so-called gross moist stratification.</p>
-<p>Back to the moisture mode framework (i.e., <a class="reference internal" href="#equation-mjo-moisture-mode">(66)</a>), the gross moist stability/stratification states how efficient it is for convection to redistribute the</p>
+<p>Back to the moisture mode framework (i.e., <a class="reference internal" href="#equation-mjo-moisture-mode">(66)</a>), the gross moist stability/stratification states how efficient it is for convection to redistribute (export) the column MSE or moisture. The reason why vertical structure matters is that <span class="math notranslate nohighlight">\({\Delta \overline{m}}\)</span> is column weighted (by vertical velocity), thus, different vertical structures of convection can lead to different efficiencies of MSE transport.</p>
 <p id="id6"><dl class="citation">
 <dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id5">AK16</a></span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
@@ -661,6 +667,13 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Week 6 and 7: Tropical Wave Theory</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="QBO.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 9: Quasi-biennial Oscillation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

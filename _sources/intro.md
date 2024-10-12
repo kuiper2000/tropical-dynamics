@@ -42,7 +42,7 @@ __Part II: Variability__
         * Gill Solution
         * Gross-moist Stability 
 
-* {ref}`waves2`
+* {ref}`QBO`
     * Quasi-Bieannial Oscillation
     * Holton-Tan Model  
   
