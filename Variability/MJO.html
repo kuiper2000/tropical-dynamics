@@ -573,10 +573,11 @@ T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean
 <h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Permalink to this headline">¶</a></h3>
 <p>The last important concept in moisture theory is the <em>Gross Moist Stability</em>. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. It starts from the dry and moist static energy equations</p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
-<span class="eqno">(74)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
-\epsilon u -\beta yv = -\frac{\partial \phi}{\partial x}\\
-\epsilon v +\beta yu = -\frac{\partial \phi}{\partial y}\\
-\end{cases}\end{split}\]</div>
+<span class="eqno">(74)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}\begin{cases}
+\frac{\partial s}{\partial t}+ \nabla \cdot \mathbf{V}s + \frac{\partial \omega s}{\partial p} = g\partial_p (F^{R}+F^{S})+Q_{LH} \\ 
+\frac{\partial Lq}{\partial t}+ \nabla \cdot L\mathbf{V}q + \frac{\partial L\omega q}{\partial p} = -Q_{LH} + g\partial_p (F^{LH}) \\ 
+\end{cases} \rightarrow \end{split}\\\frac{\partial m}{\partial t}+ \nabla \cdot L\mathbf{V}m + \frac{\partial L\omega m}{\partial p} = g\partial_p (F^{m})\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(F^{R}\)</span>, <span class="math notranslate nohighlight">\(F^{S}\)</span> and <span class="math notranslate nohighlight">\(F^{LH}\)</span> are fluxes of radiation, dry static energy, and latent energy respectively. <span class="math notranslate nohighlight">\(-Q_{LH}\)</span> is the latent heating due to the phase transition from water vapor to cloud liquid water. The combination of the dry static energy equation with the moisture equation, we have the prognostic equation of MSE.</p>
 <p id="id6"><dl class="citation">
 <dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id5">AK16</a></span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
