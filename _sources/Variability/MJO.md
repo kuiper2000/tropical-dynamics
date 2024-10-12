@@ -238,8 +238,24 @@ where the first equation of {eq}`GMS2` indicates the nature of mass continuity i
 \end{align}
 ```
 
-where the overline is time mean and prime is the transient components. The disappearance of $\overline{F_B^{S}}$ indicates there is no sensible heat transport at the tropopause. In the convective regions, the main balance happens $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$, while in clear sky region $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}$. One can find that the static stability plays a role in $\Delta \overline{s}$ since it represents the vertical difference in dry static energy. Similar balance happens in moisture budget, where in convective regions:  $-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$ and in other regions  $-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}+E$. The problem is $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}$  as well as $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$ are not viable equations given that they don't link to the boundary condition. 
+where the overline is time mean and prime is the transient components. The disappearance of $\overline{F_B^{S}}$ indicates there is no sensible heat transport at the tropopause. In the convective regions, the main balance happens $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$, while in clear sky region $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}$. One can find that the static stability plays a role in $\Delta \overline{s}$ since it represents the vertical difference in dry static energy. Similar balance happens in moisture budget, where in convective regions:  $-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$ and in other regions  $-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}+E$. The problem is $-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}$  as well as $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$ are not viable equations given that they don't link convergence or precipitation to the boundary forcing (i.e., not a predictive theory). Thus, the small flux terms at the boundary must be retained to form a predictive theory. i.e., 
 
+```{math}
+:label: GMS5
+\begin{align}
+-\Delta \overline{m} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B}-\overline{F_T} \\ 
+\end{align}
+```
+
+{eq}`GMS5` says that the vertical transport of moist energy static energy is mainly balanced by the difference in flux at the top and the bottom of the column. Through this, we can have a simple diagnostic equation for convergence. 
+
+
+```{math}
+:label: GMS5
+\begin{align}
+- \nabla \cdot \overline{\mathbf{V_2}} \sim \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{m}} \sim  \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{s}-q_2} (\text{given that $q_1\sim 0$})\\ 
+\end{align}
+```
 
 
 ```{bibliography}
