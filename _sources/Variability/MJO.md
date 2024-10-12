@@ -212,7 +212,7 @@ where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (
 
 ```{math}
 :label: GMS2
-\langle \frac{\partial m}{\partial t}\rangle+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = F^{m}_{B}-F^{m}_{T}
+\langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}
 ```
 
 
@@ -227,7 +227,7 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
 \end{cases}
 ```
 
-where the first equation of {eq}`GMS2` indicates the nature of mass continuity in the first baroclinic structure. $m_2$ and $m_1$ are the vertical velocity weighted (mass flux) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973) 
+where the first equation of {eq}`GMS2` indicates the nature of mass continuity in the first baroclinic structure. $m_2$ and $m_1$ are the vertical velocity weighted (mass flux) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973). 
 
 
 ```{bibliography}
