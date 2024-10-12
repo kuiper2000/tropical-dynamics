@@ -118,7 +118,7 @@ One key take-home message is that the boundary-layer top easterly collocated wit
 Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See {cite}`Rodwell1996-bz`
 :::
 
-### Lidzen-Nigam Model 
+### Lidzen-Nigam Model (optional reading)
 In the previous subsection, we show that the boundary convergence/divergence is determined through 3 processes. (1) pressure gradient force at the top of boundary layer (2) Ekman pumping and (3) Sverdrup balance. However, all three processes are controls from the lower free troposphere. The lower boundary i.e., SST, on the other hand, also plays a role in the boundary layer convergence. Lidzen-Nigam model (Lidzen and Nigam 1987) is one of the few model exploring the contribution of SST. 
 
 In Lidzen-Nigam model, we have a balanced momentum equation on a sphere. 
@@ -157,8 +157,7 @@ where $\alpha$ is the lapse rate of zonal mean temperature (~3K/km) and $1-\gamm
 Substituting {eq}`LN87_temperature_3D` and {eq}`LN87_temperature` back into {eq}`wave_boundary_layer4`, one can easily diagnose the boundary convergence. Readers will find that the meridional SST gradient plays the dominant role in determining the boundary layer convergence as long as the pressure gradient at the boundary layer top is small. This is especially the case for Eastern Pacific ITCZ and the boreal winter ITCZ at Indian ocean. (see Lidzen and Nigam 1987 for more details) 
 
 
-
-## Some Evidence from Moisture Mode Perspective 
+## Some Evidence from Moisture Mode Perspective  
 Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly. 
 
 According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., $w\frac{N^2}{g}=\frac{Q}{c_p T}$ is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere ($\sim$700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens in horizontal directions is equally important. Precipitation anomaly is in generally highly correlated to column moisture if it's linearized in intraseasonal timescales. 
@@ -197,7 +196,15 @@ Following the discussion in the first week, one can find that the moisture mode 
 More details can be found in {cite}`Adames2016-cm`. 
 
 ### Gross Moist Stability and Gross Moist Stratification  
-The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. 
+The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. It starts from the dry and moist static energy equations 
+
+```{math}
+:label: Gill_solution
+\begin{cases}
+\epsilon u -\beta yv = -\frac{\partial \phi}{\partial x}\\
+\epsilon v +\beta yu = -\frac{\partial \phi}{\partial y}\\
+\end{cases}
+```
 
 
 ```{bibliography}

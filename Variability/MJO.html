@@ -341,8 +341,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lidzen-nigam-model">
-     Lidzen-Nigam Model
+    <a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">
+     Lidzen-Nigam Model (optional reading)
     </a>
    </li>
   </ul>
@@ -411,8 +411,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lidzen-nigam-model">
-     Lidzen-Nigam Model
+    <a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">
+     Lidzen-Nigam Model (optional reading)
     </a>
    </li>
   </ul>
@@ -520,8 +520,8 @@ D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\be
 <p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="#id12"><span>RH96</span></a>]</span></p>
 </div>
 </div>
-<div class="section" id="lidzen-nigam-model">
-<h3>Lidzen-Nigam Model<a class="headerlink" href="#lidzen-nigam-model" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="lidzen-nigam-model-optional-reading">
+<h3>Lidzen-Nigam Model (optional reading)<a class="headerlink" href="#lidzen-nigam-model-optional-reading" title="Permalink to this headline">¶</a></h3>
 <p>In the previous subsection, we show that the boundary convergence/divergence is determined through 3 processes. (1) pressure gradient force at the top of boundary layer (2) Ekman pumping and (3) Sverdrup balance. However, all three processes are controls from the lower free troposphere. The lower boundary i.e., SST, on the other hand, also plays a role in the boundary layer convergence. Lidzen-Nigam model (Lidzen and Nigam 1987) is one of the few model exploring the contribution of SST.</p>
 <p>In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.</p>
 <div class="math notranslate nohighlight" id="equation-wave-boundary-layer4">
@@ -554,13 +554,13 @@ T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean
 <h3>Gill Solution (the forced and steady state wave solution)<a class="headerlink" href="#gill-solution-the-forced-and-steady-state-wave-solution" title="Permalink to this headline">¶</a></h3>
 <p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
-<span class="eqno">(73)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(74)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \epsilon u -\beta yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \epsilon \phi + C_m^2 (\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y}) &amp;= Q_{m} \\
 \frac{Q}{c_p T} &amp;=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(73)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., the first 3 equations in <a class="reference internal" href="#equation-gill-solution">(73)</a>). In Gill (1980), he employed variable transformation to solve the analytical solution of a Gaussian-like heating on the equator. To the west of the heating shows a twin-cyclone and to the east of the heating is characterized by a Kelvin wave-like feature.</p>
+<p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(74)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., the first 3 equations in <a class="reference internal" href="#equation-gill-solution">(74)</a>). In Gill (1980), he employed variable transformation to solve the analytical solution of a Gaussian-like heating on the equator. To the west of the heating shows a twin-cyclone and to the east of the heating is characterized by a Kelvin wave-like feature.</p>
 <div class="figure align-default" id="id4">
 <a class="reference internal image-reference" href="../_images/Gill.png"><img alt="../_images/Gill.png" src="../_images/Gill.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Gill solution. Contours are prescribed heating patterns and vectors show the circulation driven by heating.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
@@ -571,7 +571,12 @@ T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean
 </div>
 <div class="section" id="gross-moist-stability-and-gross-moist-stratification">
 <h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Permalink to this headline">¶</a></h3>
-<p>The last important concept in moisture theory is the <em>Gross Moist Stability</em>. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy.</p>
+<p>The last important concept in moisture theory is the <em>Gross Moist Stability</em>. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. It starts from the dry and moist static energy equations</p>
+<div class="math notranslate nohighlight" id="equation-gill-solution">
+<span class="eqno">(74)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+\epsilon u -\beta yv = -\frac{\partial \phi}{\partial x}\\
+\epsilon v +\beta yu = -\frac{\partial \phi}{\partial y}\\
+\end{cases}\end{split}\]</div>
 <p id="id6"><dl class="citation">
 <dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id5">AK16</a></span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
