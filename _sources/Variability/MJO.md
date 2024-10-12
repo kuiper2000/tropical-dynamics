@@ -199,16 +199,25 @@ More details can be found in {cite}`Adames2016-cm`.
 The last important concept in moisture theory is the _Gross Moist Stability_. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. It starts from the dry and moist static energy equations 
 
 ```{math}
-:label: Gill_solution
+:label: GMS1
 \begin{cases}
 \frac{\partial s}{\partial t}+ \nabla \cdot \mathbf{V}s + \frac{\partial \omega s}{\partial p} = g\partial_p (F^{R}+F^{S})+Q_{LH} \\ 
 \frac{\partial Lq}{\partial t}+ \nabla \cdot L\mathbf{V}q + \frac{\partial L\omega q}{\partial p} = -Q_{LH} + g\partial_p (F^{LH}) \\ 
 \end{cases} \rightarrow 
 
-\frac{\partial m}{\partial t}+ \nabla \cdot L\mathbf{V}m + \frac{\partial L\omega m}{\partial p} = g\partial_p (F^{m})
+\frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = g\partial_p (F^{m})
 ```
 
-where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy, and latent energy respectively. $-Q_{LH}$ is the latent heating due to the phase transition from water vapor to cloud liquid water. The combination of the dry static energy equation with the moisture equation, we have the prognostic equation of MSE. 
+where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (s), and latent energy respectively. $-Q_{LH}$ is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). While the observed tropical circulation is dominated by first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship 
+
+```{math}
+:label: GMS2
+\begin{cases}
+\nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot V dp = -\nabla \cdot \mathbf{V_1} \\ 
+m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot V dp (\nabla\cdot\mathbf{V_2})^{-1} \\
+m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot V dp (\nabla\cdot\mathbf{V_2})^{-1} \\
+\end{cases}
+```
 
 
 ```{bibliography}
