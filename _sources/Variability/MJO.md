@@ -212,7 +212,7 @@ where $F^{R}$, $F^{S}$ and $F^{LH}$ are fluxes of radiation, dry static energy (
 
 ```{math}
 :label: GMS2
-\l \frac{\partial m}{\partial t}\r+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = F^{m}_{B}-F^{m}_{T}
+\bigl \frac{\partial m}{\partial t}\bigr+ \nabla \cdot \mathbf{V}m + \frac{\partial L\omega m}{\partial p} = F^{m}_{B}-F^{m}_{T}
 ```
 
 
