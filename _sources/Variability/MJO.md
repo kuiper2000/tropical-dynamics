@@ -238,7 +238,7 @@ where the first equation of {eq}`GMS2` indicates the nature of mass continuity i
 \end{align}
 ```
 
-where the overline is time mean and prime is the transient components. The disappearance of $\overline{F_B^{S}}$ indicates there is no sensible heat transport at the tropopause. In the convective regions, the main balance happens $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$, while in clear sky region $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}$. 
+where the overline is time mean and prime is the transient components. The disappearance of $\overline{F_B^{S}}$ indicates there is no sensible heat transport at the tropopause. In the convective regions, the main balance happens $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}$, while in clear sky region $-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}$. One can find the static stability plays a role in $\Delta \overline{s}$ since it represents the vertical difference in dry static energy 
 
 
 
