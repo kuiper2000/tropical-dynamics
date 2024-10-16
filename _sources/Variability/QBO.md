@@ -30,7 +30,7 @@ width: 700px
 An example of the Doppler Shift in a moving object. 
 ```
 
-In the tropical atmosphere, such processes are (may be) dominated by the inertial gravity wave
+In the tropical atmosphere, such processes are dominated by the gravity wave with different wave length and frequency. One of the most prominant is the 
 
 
 
