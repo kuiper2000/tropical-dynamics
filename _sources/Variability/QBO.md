@@ -32,9 +32,8 @@ width: 700px
 An example of the Doppler Shift in a moving object. 
 ```
 
-## Mountain wave mechanism in QBO theory
 
-To understand how these waves influence the phase transition of QBO (zonal mean flow), we gonna start with something classic, the Ellassen Palm theory for mountain wave (one should notice that the upward motion from the boundary is similar to inhomogeneous topography at the lower boundary.) There are two important ingredients in this theory (1) the direction of momentum transport and (2) when the wave momentum is deposited. 
+To understand how these waves influence the phase transition of QBO (zonal mean flow), we gonna start with something classic, the Ellassen Palm theory for mountain wave (one should notice that the upward motion from the boundary is similar to inhomogeneous topography at the lower boundary.) There are two important ingredients in this theory (1) the direction of momentum transport and (2) when the wave momentum is deposited.  
 
 ```{figure} ../tropical-dynamics-figures/Mountain_wave.png
 ---
@@ -45,10 +44,14 @@ width: 700px
 An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and upward at the same time.  
 ```
 
+
+### The direction of momentum transport 
 In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to its zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves. 
 
-However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. 
+However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only the types of gravity wave matters but whether they are filtered by mean flow also matters. 
 
+### When momentum is deposited 
+One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. 
 
 
 ```{bibliography}
