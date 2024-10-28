@@ -296,12 +296,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">
+   Doppler-Shift of wave and the deposition of wave energy
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -313,6 +337,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">
+   Doppler-Shift of wave and the deposition of wave energy
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -330,6 +367,8 @@ title="Print to PDF"
 <p>The QBO can efficiently change the static stability around the tropopause, which has strong modulation on the convective activity. For example, during the easterly phase of QBO, the convection of MJO is much stronger than the westerly phase of QBO. Along with the MJO global impacts, one can expect that the fingerprint of QBO can be observed in most places around the globe.</p>
 <p>Given the QBO is high up in the stratosphere, the corresponding dynamics is relatively simple. A theory of QBO was first proposed by Charney and Drazin (1968), Lidzen and Holton (1968) and Holton and Lidzen (1972), which incorporates the well-known wave-mean flow interaction dynamics. According to their theory, the oscillation is due to the interaction of upward-propagating Kelvin and Yanai waves with the mean flow. More recently, it has been proposed that eastward and westward-propagating gravity waves play an important role and the low frequency waves were de-emphasized.</p>
 <p>The various equatorially trapped waves discovered by Matsuno (1966) (discussed <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>) are observed to produce wave energy which further propagates upward and downward. It is believed that the energy source comes from diabatic processes such as convection (Nitta 1972). While in <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>, a resting basic state is considered, it is very important to consider mean flow due to the <em>Doppler Shift</em>.</p>
+<div class="section" id="doppler-shift-of-wave-and-the-deposition-of-wave-energy">
+<h2>Doppler-Shift of wave and the deposition of wave energy<a class="headerlink" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy" title="Permalink to this headline">¶</a></h2>
 <p>Like other waves, the atmospheric waves also experience Doppler Shift as long as the relative motion happens between the observer and the source of waves. For example, the westward propagating wave looks more stationary when riding on a westerly mean flow (i.e., frequency <span class="math notranslate nohighlight">\(\sim \infty\)</span>) and the eastward propagating wave looks more transient in the same mean flow (i.e., complete multiple oscillations in a short period). The figure below demonstrates how Doppler Shift changes the frequency of a wave. The siren frequency from an ambulance sounds higher when the ambulance approaches the person listening to the sound and vice versa. In such cases, the observed wave number (or frequency) may exceed the critical value where the mean flow can sustain the corresponding wave propagation (i.e., you can still tell it’s a wave!). At the end, the wave breaks and deposits momentum. We will walk through more details in the later of this week.</p>
 <div class="figure align-default" id="fig5-2">
 <a class="reference internal image-reference" href="../_images/Doppler_Shift.jpeg"><img alt="../_images/Doppler_Shift.jpeg" src="../_images/Doppler_Shift.jpeg" style="width: 700px;" /></a>
@@ -360,6 +399,7 @@ title="Print to PDF"
 </dd>
 </dl>
 </p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
