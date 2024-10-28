@@ -43,6 +43,8 @@ width: 700px
 An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and upward at the same time.  
 ```
 
+In upper {numref}`FIG5-3`, we can find that when the  
+
 
 
 ```{bibliography}
