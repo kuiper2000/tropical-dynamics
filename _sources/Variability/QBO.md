@@ -53,18 +53,28 @@ However, when the mean westerly exists, the zonal height tilting due to the west
 ### When momentum is deposited 
 One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. The necessary condition of the presence of vertical momentum flux convergence can be derived through the angular momentum and eddy kinematic energy equations. 
 
-To have both equation, we will begin with zonal momentum equation, 
+To have both equations, we will begin with the zonal momentum equation, 
 
 ```{math}
 :label: QBO_zonal_momentum
 \begin{align}
-u_t + U u_x + w U_z + \frac{1}{rho_0} p_x = 0 \\ 
-w_t + U w_x + \frac{1}{rho_0} p_z + g = 0 \\
+u_t + U u_x + w U_z + \frac{1}{\rho_0} p_x = 0 \\ 
+w_t + U w_x + \frac{1}{\rho_0} p_z + g = 0 \\
 u_x + w_z = 0
 \end{align}
 ```
 
+Assume a wave solution of 
 
+
+```{math}
+:label: QBO_wave_solution
+\begin{align}
+u = \hat{u}(z)e^{ikx-ikct} \\ 
+w = \hat{u}(z)e^{ikx-ikct} \\ 
+p = \hat{u}(z)e^{ikx-ikct} \\ 
+\end{align}
+```
 
 
 
