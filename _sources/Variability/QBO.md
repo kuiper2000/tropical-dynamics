@@ -45,7 +45,7 @@ width: 700px
 An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and upward at the same time.  
 ```
 
-In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. 
+In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to its zonal height tilting (tilting eastward with height) and the same concept can be applied to the 
 
 
 
