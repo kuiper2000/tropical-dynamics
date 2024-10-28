@@ -59,6 +59,8 @@ To have both equation, we will begin with zonal momentum equation,
 :label: QBO_zonal_momentum
 \begin{align}
 u_t + U u_x + w U_z + \frac{1}{rho_0} p_x = 0 \\ 
+w_t + U w_x + \frac{1}{rho_0} p_z + g = 0 \\
+u_x + w_z = 0
 \end{align}
 ```
 
