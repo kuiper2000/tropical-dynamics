@@ -93,7 +93,7 @@ Multiply each equation in {eq}`QBO_spectral_form` by (1) $u$ (2) $w$ and (3) $p$
 :label: QBO_spectral_form
 \begin{cases}
 [ik \rho_0 (U-c) u^2 + ik up] = -\rho_0 uw U_z \\ 
-[ik \rho_0 (U-c) w^2 ]+ wp_z  =  \\
+[ik \rho_0 (U-c) w^2 ]+ wp_z  = 0 \\
 [ik up + w_z p] = 0
 \end{cases}
 ```
