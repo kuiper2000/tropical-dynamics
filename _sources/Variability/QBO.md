@@ -71,10 +71,23 @@ Assume a wave solution of
 :label: QBO_wave_solution
 \begin{align}
 u = \hat{u}(z)e^{ikx-ikct} \\ 
-w = \hat{u}(z)e^{ikx-ikct} \\ 
-p = \hat{u}(z)e^{ikx-ikct} \\ 
+w = \hat{w}(z)e^{ikx-ikct} \\ 
+p = \hat{p}(z)e^{ikx-ikct} \\ 
 \end{align}
 ```
+
+substitute into {eq}`QBO_zonal_momentum`, we have 
+```{math}
+:label: QBO_zonal_momentum
+\begin{align}
+ik (U-c) \hat{u} + \hat{w} U_z + ik\frac{1}{\rho_0} p = 0 \\ 
+ik (U-c) \hat{w} + \frac{1}{\rho_0} p_z + g = 0 \\
+ikc \hat{u} + \hat{w} = 0
+\end{align}
+```
+
+
+
 
 
 
