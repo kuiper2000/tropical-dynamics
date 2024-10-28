@@ -87,10 +87,7 @@ ik \hat{u} + \hat{w} = 0
 \end{align}
 ```
 
-Multiply each equation in {eq}`QBO_spectral_form` by (1) $\hat{u}$ (2) $\hat{w}$ and (3) $\hat{p}$ respectively  
-
-
-
+Multiply each equation in {eq}`QBO_spectral_form` by (1) $\hat{u}$ (2) $\hat{w}$ and (3) $\hat{p}$ respectively.  
 
 
 
