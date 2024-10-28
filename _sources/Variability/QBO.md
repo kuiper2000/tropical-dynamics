@@ -30,7 +30,9 @@ width: 700px
 An example of the Doppler Shift in a moving object. 
 ```
 
-In the tropical atmosphere, such processes are dominated by the gravity wave with different wavelength and frequency. One of the most prominent is the planetary gravity waves including (1) equatorial Kelvin wave (2) Yanai wave, and (3) inertial gravity waves. Around the 1980s, the community focused more on the role of the first two waves but they are more deemphasized recently. (and community is more interested in waves in transient timescales).  
+In the tropical atmosphere, such processes are dominated by the gravity wave with different wavelength and frequency. One of the most prominent is the planetary gravity waves including (1) equatorial Kelvin wave (2) Yanai wave, and (3) inertial gravity waves. Around the 1980s, the community focused more on the role of the first two waves but they are more deemphasized recently. (and community is more interested in waves in transient timescales). 
+
+To understand how these waves influence the phase transition of QBO, we gonna start with something classic, the Ellassen Palm theory for mountain wave (one should notice that the upward motion from the boundary is similar to inhomogeneous topography at the lower boundary. )
 
 
 
