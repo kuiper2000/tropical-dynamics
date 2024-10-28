@@ -72,19 +72,22 @@ Assume a wave solution of
 \begin{align}
 u = \hat{u}(z)e^{ikx-ikct} \\ 
 w = \hat{w}(z)e^{ikx-ikct} \\ 
-p = \hat{p}(z)e^{ikx-ikct} \\ 
+p = \hat{p}(z)e^{ikx-ikct} + p_0(z)\\ 
+\end{align}
+```
+(where $\frac{1}{\rho_0}p_0(z)+g=0$)
+
+substitute into {eq}`QBO_zonal_momentum` and eliminate the term of $e^{\ikx-ikct}$
+```{math}
+:label: QBO_spectral_form
+\begin{align}
+ik (U-c) \hat{u} + \hat{w} U_z + ik\frac{1}{\rho_0} \hat{p} = 0 \\ 
+ik (U-c) \hat{w} + \frac{1}{\rho_0} p_z + g = 0 \\
+ik \hat{u} + \hat{w} = 0
 \end{align}
 ```
 
-substitute into {eq}`QBO_zonal_momentum`, we have 
-```{math}
-:label: QBO_zonal_momentum
-\begin{align}
-ik (U-c) \hat{u} + \hat{w} U_z + ik\frac{1}{\rho_0} p = 0 \\ 
-ik (U-c) \hat{w} + \frac{1}{\rho_0} p_z + g = 0 \\
-ikc \hat{u} + \hat{w} = 0
-\end{align}
-```
+Multiply each equation in {eq}`QBO_spectral_form` by (1) $\hat{u}$ (2) $\hat{w}$ and (3) $\hat{p}$ respectively  
 
 
 
