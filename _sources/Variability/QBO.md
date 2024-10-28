@@ -34,6 +34,14 @@ In the tropical atmosphere, such processes are dominated by the gravity wave wit
 
 To understand how these waves influence the phase transition of QBO, we gonna start with something classic, the Ellassen Palm theory for mountain wave (one should notice that the upward motion from the boundary is similar to inhomogeneous topography at the lower boundary. )
 
+```{figure} ../tropical-dynamics-figures/Mountain_wave.png
+---
+name: FIG5-3
+width: 700px
+---
+
+An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and upward at the same time.  
+```
 
 
 
