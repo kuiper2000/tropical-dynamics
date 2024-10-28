@@ -46,9 +46,9 @@ An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and
 
 
 ### The direction of momentum transport 
-In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to its zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves. 
+In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of the lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to their zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves. 
 
-However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only the types of gravity wave matters but whether they are filtered by mean flow also matters. 
+However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only do the types of gravity waves matter but whether they are filtered by mean flow also matters. 
 
 ### When momentum is deposited 
 One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. The necessary condition of the presence of vertical momentum flux convergence can be derived through the angular momentum and eddy kinematic energy equations. 
@@ -77,18 +77,26 @@ p = \hat{p}(z)e^{ikx-ikct} + p_0(z)\\
 ```
 (where $\frac{1}{\rho_0}p_0(z)+g=0$)
 
-substitute into {eq}`QBO_zonal_momentum` and eliminate the term of $e^{\ikx-ikct}$
+substitute into {eq}`QBO_zonal_momentum` 
 ```{math}
 :label: QBO_spectral_form
 \begin{align}
-ik (U-c) \hat{u} + \hat{w} U_z + ik\frac{1}{\rho_0} \hat{p} = 0 \\ 
-ik (U-c) \hat{w} + \frac{1}{\rho_0} p_z + g = 0 \\
-ik \hat{u} + \hat{w} = 0
+ik (U-c) u + w U_z + ik\frac{1}{\rho_0} p = 0 \\ 
+ik (U-c) w + \frac{1}{\rho_0} p_z = 0 \\
+ik u + w_z = 0
 \end{align}
 ```
 
-Multiply each equation in {eq}`QBO_spectral_form` by (1) $\hat{u}$ (2) $\hat{w}$ and (3) $\hat{p}$ respectively.  
+Multiply each equation in {eq}`QBO_spectral_form` by (1) $u$ (2) $w$ and (3) $p$ respectively.  We have...
 
+```{math}
+:label: QBO_spectral_form
+\begin{align}
+[ik (U-c) u^2 + ik\frac{1}{\rho_0} up] = -uw U_z \\ 
+[ik (U-c) w^2 ]  = -\frac{1}{\rho_0} wp_z \\
+[ik up + w_z p] = 0
+\end{align}
+```
 
 
 ```{bibliography}
