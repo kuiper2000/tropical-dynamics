@@ -51,7 +51,20 @@ In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of low
 However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only the types of gravity wave matters but whether they are filtered by mean flow also matters. 
 
 ### When momentum is deposited 
-One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. 
+One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. The necessary condition of the presence of vertical momentum flux convergence can be derived through the angular momentum and eddy kinematic energy equations. 
+
+To have both equation, we will begin with zonal momentum equation, 
+
+```{math}
+:label: QBO_zonal_momentum
+\begin{align}
+u_t + U u_x + w U_z + \frac{1}{rho_0} p_x = 0 \\ 
+
+\end{align}
+```
+
+
+
 
 
 ```{bibliography}
