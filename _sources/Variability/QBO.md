@@ -43,7 +43,7 @@ width: 700px
 An example of how the mountain wave propagates Eastward($+C$)/Westward($-C$) and upward at the same time.  
 ```
 
-In upper {numref}`FIG5-3`, we can find that when the  
+In the panel of {numref}`FIG5-3`, we can find that when the inhomogeneity of lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. 
 
 
 
