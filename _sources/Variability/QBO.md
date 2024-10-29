@@ -120,7 +120,7 @@ We can also link the above equation to the angular momentum equation. To achieve
 \end{align}
 ```
 
-The necessary condition for both {eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` hold is 
+{eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` suggests that $\rho_0 \int_0^{2\pi} uw dx =\text{const}$ when $U-c\neq 0 $
 
 
 
