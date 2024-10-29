@@ -97,9 +97,11 @@ Multiply each equation in {eq}`QBO_spectral_form` by (1) $u$ (2) $w$ and (3) $p$
 [ik \rho_0 (U-c) w^2 ]+ wp_z  = 0 \\
 [ik up + w_z p] = 0
 \end{cases} \\
-\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of kinetic energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of kinetic energy}} = -\rho_0 uw U_z 
+\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{Shear production of mechanical energy} 
 \end{align}
 ```
+
+The above formula is similar to the _turbulence kinetic energy_ used in boundary layer dynamics. 
 
 
 ```{bibliography}
