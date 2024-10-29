@@ -445,14 +445,13 @@ ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p>The above formula is similar to the <em>turbulence kinetic energy</em> used in boundary layer dynamics. Integrate the last equation over zonal direction, we have the zonal mean mechanical energy</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean">
-<span class="eqno">(84)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean" title="Permalink to this equation">¶</a></span>\[\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw U_z dx}_{\text{Shear production}} \]</div>
-<p>We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by <span class="math notranslate nohighlight">\(\rho_0\)</span> Uu + p and integrate it over zonal direction (which eliminate the terms associated with zonal gradient, i.e., “<span class="math notranslate nohighlight">\(ik\)</span>” terms ) We have</p>
-<!-- ```{math}
-:label: QBO_mechanical_energy
-\begin{align}
-\int_0^{2\pi} pw dx = -U \rho_0 \int_0^{2\pi} 
-\end{align}
-``` -->
+<span class="eqno">(84)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean" title="Permalink to this equation">¶</a></span>\[\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw (U-c)_z dx}_{\text{Shear production}} \]</div>
+<p>We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by <span class="math notranslate nohighlight">\(\rho_0\)</span> Uu + p and integrate it over zonal direction (which eliminates the terms associated with zonal gradient, i.e., “<span class="math notranslate nohighlight">\(ik\)</span>” terms ) We have</p>
+<div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean2">
+<span class="eqno">(85)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean2" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\int_0^{2\pi} pw dx = -(U-c) \rho_0 \int_0^{2\pi} uw dx 
+\end{align}\]</div>
+<p>The necessary condition for both <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean">(84)</a> and <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean2">(85)</a> hold is</p>
 <p id="id1"><dl class="citation">
 <dt class="label" id="id5"><span class="brackets">AK16</span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>

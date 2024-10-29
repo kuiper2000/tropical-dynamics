@@ -106,19 +106,21 @@ The above formula is similar to the _turbulence kinetic energy_ used in boundary
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean
-\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw U_z dx}_{\text{Shear production}} 
+\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw (U-c)_z dx}_{\text{Shear production}} 
 ```
 
 
-We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of {eq}`QBO_spectral_form` by $\rho_0$ Uu + p and integrate it over zonal direction (which eliminate the terms associated with zonal gradient, i.e., "$ik$" terms ) We have 
+We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of {eq}`QBO_spectral_form` by $\rho_0$ Uu + p and integrate it over zonal direction (which eliminates the terms associated with zonal gradient, i.e., "$ik$" terms ) We have 
 
 
-<!-- ```{math}
-:label: QBO_mechanical_energy
+```{math}
+:label: QBO_mechanical_energy_zonal_mean2
 \begin{align}
-\int_0^{2\pi} pw dx = -U \rho_0 \int_0^{2\pi} 
+\int_0^{2\pi} pw dx = -(U-c) \rho_0 \int_0^{2\pi} uw dx 
 \end{align}
-``` -->
+```
+
+The necessary condition for both {eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` hold is 
 
 
 
