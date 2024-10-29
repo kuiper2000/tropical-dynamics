@@ -428,22 +428,32 @@ p = \hat{p}(z)e^{ikx-ikct} + p_0(z)\\
 <p>(where <span class="math notranslate nohighlight">\(\frac{1}{\rho_0}p_0(z)+g=0\)</span>)</p>
 <p>substitute into <a class="reference internal" href="#equation-qbo-zonal-momentum">(80)</a></p>
 <div class="math notranslate nohighlight" id="equation-qbo-spectral-form">
-<span class="eqno">(83)<a class="headerlink" href="#equation-qbo-spectral-form" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(82)<a class="headerlink" href="#equation-qbo-spectral-form" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 ik (U-c) u + w U_z + ik\frac{1}{\rho_0} p = 0 \\ 
 ik (U-c) w + \frac{1}{\rho_0} p_z = 0 \\
 ik u + w_z = 0
 \end{align}\end{split}\]</div>
-<p>Multiply each equation in <a class="reference internal" href="#equation-qbo-spectral-form">(83)</a> by (1) <span class="math notranslate nohighlight">\(u\)</span> (2) <span class="math notranslate nohighlight">\(w\)</span> and (3) <span class="math notranslate nohighlight">\(p\)</span> respectively.  We have…</p>
-<div class="math notranslate nohighlight" id="equation-qbo-spectral-form">
-<span class="eqno">(83)<a class="headerlink" href="#equation-qbo-spectral-form" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<p>Multiply each equation in <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by (1) <span class="math notranslate nohighlight">\(u\)</span> (2) <span class="math notranslate nohighlight">\(w\)</span> and (3) <span class="math notranslate nohighlight">\(p\)</span> respectively.  We have…</p>
+<div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy">
+<span class="eqno">(83)<a class="headerlink" href="#equation-qbo-mechanical-energy" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 &amp; \begin{cases}
 [ik \rho_0 (U-c) u^2 + ik up] = -\rho_0 uw U_z \\ 
 [ik \rho_0 (U-c) w^2 ]+ wp_z  = 0 \\
 [ik up + w_z p] = 0
 \end{cases} \\
-\rightarrow &amp; \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{Shear production of mechanical energy} 
+\rightarrow &amp; \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{\text{Shear production}} 
 \end{align}\end{split}\]</div>
-<p>The above formula is similar to the <em>turbulence kinetic energy</em> used in boundary layer dynamics.</p>
+<p>The above formula is similar to the <em>turbulence kinetic energy</em> used in boundary layer dynamics. Integrate the last equation over zonal direction, we have the zonal mean mechanical energy</p>
+<div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean">
+<span class="eqno">(84)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean" title="Permalink to this equation">¶</a></span>\[\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw U_z dx}_{\text{Shear production}} 
+\end{align}\]</div>
+<p>We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by <span class="math notranslate nohighlight">\(\rho_0\)</span> Uu + p and integrate it over zonal direction (which eliminate the terms associated with zonal gradient, i.e., “<span class="math notranslate nohighlight">\(ik\)</span>” terms ) We have</p>
+<!-- ```{math}
+:label: QBO_mechanical_energy
+\begin{align}
+\int_0^{2\pi} pw dx = -U \rho_0 \int_0^{2\pi} 
+\end{align}
+``` -->
 <p id="id1"><dl class="citation">
 <dt class="label" id="id5"><span class="brackets">AK16</span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>

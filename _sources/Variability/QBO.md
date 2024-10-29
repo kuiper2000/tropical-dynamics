@@ -90,18 +90,37 @@ ik u + w_z = 0
 Multiply each equation in {eq}`QBO_spectral_form` by (1) $u$ (2) $w$ and (3) $p$ respectively.  We have...
 
 ```{math}
-:label: QBO_spectral_form
+:label: QBO_mechanical_energy
 \begin{align}
 & \begin{cases}
 [ik \rho_0 (U-c) u^2 + ik up] = -\rho_0 uw U_z \\ 
 [ik \rho_0 (U-c) w^2 ]+ wp_z  = 0 \\
 [ik up + w_z p] = 0
 \end{cases} \\
-\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{Shear production of mechanical energy} 
+\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{\text{Shear production}} 
 \end{align}
 ```
 
-The above formula is similar to the _turbulence kinetic energy_ used in boundary layer dynamics. 
+The above formula is similar to the _turbulence kinetic energy_ used in boundary layer dynamics. Integrate the last equation over zonal direction, we have the zonal mean mechanical energy 
+
+
+```{math}
+:label: QBO_mechanical_energy_zonal_mean
+\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw U_z dx}_{\text{Shear production}} 
+\end{align}
+```
+
+
+We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of {eq}`QBO_spectral_form` by $\rho_0$ Uu + p and integrate it over zonal direction (which eliminate the terms associated with zonal gradient, i.e., "$ik$" terms ) We have 
+
+
+<!-- ```{math}
+:label: QBO_mechanical_energy
+\begin{align}
+\int_0^{2\pi} pw dx = -U \rho_0 \int_0^{2\pi} 
+\end{align}
+``` -->
+
 
 
 ```{bibliography}
