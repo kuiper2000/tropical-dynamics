@@ -107,7 +107,6 @@ The above formula is similar to the _turbulence kinetic energy_ used in boundary
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean
 \underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw U_z dx}_{\text{Shear production}} 
-\end{align}
 ```
 
 
