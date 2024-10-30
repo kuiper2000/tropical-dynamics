@@ -141,12 +141,13 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
-\begin{cases}
-\rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc
-\end{cases}
+\begin{align}
+\rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc \rightarrow \rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(U) dU \\
+\rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc \rightarrow \rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(U) dU \\
+\end{align}
 ```
 
-It is assumed that the disturbance which transports momentum consist of a spectrum of waves with continuous distribution of phase speed. 
+It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow.  
 
 
 ```{bibliography}
