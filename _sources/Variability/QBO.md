@@ -120,7 +120,19 @@ We can also link the above equation to the angular momentum equation. To achieve
 \end{align}
 ```
 
-{eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` suggests that $\rho_0 \int_0^{2\pi} uw dx =\text{const}$ when $U-c\neq 0$. i.e., no momentum will be deposited until the wave reaches the critical level (the level where $U=c$). At a critical level, we can find some analogs in our ambulance example. It corresponds to where ambulance and sound travel with the same speed and direction. Therefore, in a limited traveling length of the wave, we can observe a nearly infinite number of waves making the finite assumption of wave dynamics no longer hold.  
+{eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` suggests that $\rho_0 \int_0^{2\pi} uw dx =\text{const}$ when $U-c\neq 0$. i.e., no momentum will be deposited until the wave reaches the critical level (the level where $U=c$). At a critical level, we can find some analogs in our ambulance example. It corresponds to where ambulance and sound travel with the same speed and direction. Therefore, in a limited traveling length of the wave, we can observe a nearly infinite number of waves making the finite assumption of wave dynamics no longer hold and momentum is deposited. 
+
+In addition, when $\int_0^{2\pi} uw$ is positive through a critical level (i.e., keeps transporting mechanical energy upward), it implies that $uw$ term must change signs above and below the critical level, which breaks the assumption of $\rho_0 \int_0^{2\pi} uw dx =\text{const}$. 
+
+To solve the problem, all of the momentum _must_ be deposited at the critical level. i.e., 
+
+```{math}
+:label: QBO_mechanical_energy_zonal_mean3
+\begin{cases}
+\rho_0 \int_0^{2\pi} uw dx = A \text{ for z below critical level} \\
+\rho_0 \int_0^{2\pi} uw dx = -A e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}} \text{ for z below critical level} 
+\end{cases}
+```
 
 
 
