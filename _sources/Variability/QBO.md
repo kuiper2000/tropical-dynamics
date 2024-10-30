@@ -120,7 +120,7 @@ We can also link the above equation to the angular momentum equation. To achieve
 \end{align}
 ```
 
-{eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` suggests that $\rho_0 \int_0^{2\pi} uw dx =\text{const}$ when $U-c\neq 0 $
+{eq}`QBO_mechanical_energy_zonal_mean` and {eq}`QBO_mechanical_energy_zonal_mean2` suggests that $\rho_0 \int_0^{2\pi} uw dx =\text{const}$ when $U-c\neq 0$. i.e., no momentum will be deposited until the wave reaches the critical level (the level where $U=c$). At a critical level, we can find some analogs in our ambulance example. It corresponds to where ambulance and sound travel with the same speed and direction. Therefore, in a limited traveling length of the wave, we can observe a nearly infinite number of waves making the finite assumption of wave dynamics no longer hold.  
 
 
 
