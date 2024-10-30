@@ -134,10 +134,19 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 \end{cases}
 ```
 
-{eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short-range of traveling distance.  
+{eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. 
+
+However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. To circumvent this problem, we can approach it with a spectral perspective of wave propagation. 
 
 
+```{math}
+:label: QBO_mechanical_energy_zonal_mean4
+\begin{cases}
+\rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc
+\end{cases}
+```
 
+It is assumed that the disturbance which carries momentum upward 
 
 
 ```{bibliography}
