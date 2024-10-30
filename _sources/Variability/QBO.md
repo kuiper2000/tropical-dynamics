@@ -146,7 +146,7 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 \end{cases}
 ```
 
-It is assumed that the disturbance which carries momentum upward 
+It is assumed that the disturbance which transports momentum consist of a spectrum of waves with continuous distribution of phase speed. 
 
 
 ```{bibliography}
