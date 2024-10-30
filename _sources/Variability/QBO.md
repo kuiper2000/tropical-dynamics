@@ -124,7 +124,7 @@ We can also link the above equation to the angular momentum equation. To achieve
 
 In addition, when $\int_0^{2\pi} uw$ is positive through a critical level (i.e., keeps transporting mechanical energy upward), it implies that $uw$ term must change signs above and below the critical level, which breaks the assumption of $\rho_0 \int_0^{2\pi} uw dx =\text{const}$. 
 
-To solve the problem, all of the momentum _must_ be deposited at the critical level. i.e., 
+To solve the problem, all of the momentum _must_ be absorbed at the critical level. Booker and Bretherton (1967) provide a useful formula...  
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean3
@@ -133,6 +133,10 @@ To solve the problem, all of the momentum _must_ be deposited at the critical le
 \rho_0 \int_0^{2\pi} uw dx = -A e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}} \text{ for z below critical level} 
 \end{cases}
 ```
+
+{eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short-range of traveling distance.  
+
+
 
 
 
