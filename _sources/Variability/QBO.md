@@ -147,7 +147,7 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 \end{align}
 ```
 
-It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow.  
+It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`)
 
 
 ```{bibliography}
