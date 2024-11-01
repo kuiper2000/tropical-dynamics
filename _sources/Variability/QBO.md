@@ -143,12 +143,17 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
 \rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc = \int^{\infty}_{-\infty} f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k = \int^{\infty}_{-\infty} f(c_k) dc = \int^{\infty}_{-\infty} f(U_0) dU \\
+(\rho_0 \int_0^{2\pi} uw dx)_k = -\int^{\infty}_{-\infty} f(c_k) e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dc = -\int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dU \\
 \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}
 ```
 
-It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). If $\hat{f}(c)=\hat{A}$, {eq}`QBO_mechanical_energy_zonal_mean3` can be modified as 
+It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). Therefore, the corresponding momentum flux divergence can be written as 
+
+```{math}
+:label: QBO_mechanical_energy_zonal_mean5
+\frac{d F_{WM}}{dz} = \int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  \frac{dU}{dz}
+```
 
 
 
