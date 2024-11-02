@@ -158,7 +158,7 @@ It is assumed that the disturbance that transports momentum consists of a spectr
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean5
 \begin{align}
-\text{for the absorbed } &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
+F_{WM}^{z+}-F_{WM}^{z-} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
 \frac{d F_{WM}}{dz} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}
 \end{align}
 ```
