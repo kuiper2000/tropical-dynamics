@@ -141,15 +141,14 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 
 {eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. 
 
-However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. To circumvent this problem, we can approach it with a spectral perspective of wave propagation. 
+However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. To circumvent this problem, we can approach it with a spectral perspective of wave propagation. 
 
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
 \rho_0 \int_0^{2\pi} uw dx     & = \int^{\infty}_{-\infty} f(c) dc = \int^{\infty}_{-\infty} f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k & = -\int^{\infty}_{-\infty} f(c_k) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dc \\
-                               & = -\int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dU \\
+(\rho_0 \int_0^{2\pi} uw dx)_k & = \int^{\infty}_{-\infty} f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
 & \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}
 ```
@@ -166,8 +165,17 @@ F_{WM} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{
 
 $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
-Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. 
+Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. The first case represents the westerly shear and the second case represents easterly shear. 
 
+
+```{figure} ../tropical-dynamics-figures/QBO_dynamics.jpeg
+---
+name: FIG5-3
+width: 700px
+---
+
+Momentum fluxes in (a) westerly shear and (b) easterly shear
+```
 
 
 

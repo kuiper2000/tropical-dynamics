@@ -405,7 +405,7 @@ title="Print to PDF"
 </div>
 <div class="section" id="the-direction-of-momentum-transport">
 <h3>The direction of momentum transport<a class="headerlink" href="#the-direction-of-momentum-transport" title="Permalink to this headline">¶</a></h3>
-<p>In the panel of <a class="reference internal" href="#fig5-3"><span class="std std-numref">Fig. 26</span></a>, we can find that when the inhomogeneity of the lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to their zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves.</p>
+<p>In the panel of <code class="xref std std-numref docutils literal notranslate"><span class="pre">FIG5-3</span></code>, we can find that when the inhomogeneity of the lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to their zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves.</p>
 <p>However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only do the types of gravity waves matter but whether they are filtered by mean flow also matters.</p>
 </div>
 <div class="section" id="when-momentum-is-deposited">
@@ -464,12 +464,11 @@ ik u + w_z = 0
 &amp;  \text{ for z below critical level} 
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> suggests that <span class="math notranslate nohighlight">\(\rho_0 \int_0^{2\pi} uw dx\)</span> is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance.</p>
-<p>However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. To circumvent this problem, we can approach it with a spectral perspective of wave propagation.</p>
+<p>However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. To circumvent this problem, we can approach it with a spectral perspective of wave propagation.</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean4">
 <span class="eqno">(87)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \rho_0 \int_0^{2\pi} uw dx     &amp; = \int^{\infty}_{-\infty} f(c) dc = \int^{\infty}_{-\infty} f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k &amp; = -\int^{\infty}_{-\infty} f(c_k) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dc \\
-                               &amp; = -\int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dU \\
+(\rho_0 \int_0^{2\pi} uw dx)_k &amp; = \int^{\infty}_{-\infty} f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
 &amp; \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}\end{split}\]</div>
 <p>It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed <span class="math notranslate nohighlight">\(c\pm dc\)</span>, we can find a limited range of critical level (<span class="math notranslate nohighlight">\(U\pm dU\)</span>) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>). Therefore, the corresponding momentum flux divergence can be written as:</p>
@@ -479,21 +478,25 @@ F_{WM} &amp;= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac
 \frac{d F_{WM}}{dz} &amp;= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}
 \end{align}\end{split}\]</div>
 <p><span class="math notranslate nohighlight">\(F_{WM}\)</span> is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with <span class="math notranslate nohighlight">\(U_0=c\)</span> and <span class="math notranslate nohighlight">\(\frac{d F_{WM}}{dz}\)</span> is the corresponding momentum flux convergence at the critical level.</p>
-<p>Here, we will use two cases to analyze the sign of <span class="math notranslate nohighlight">\(f(U_0)\)</span> and <span class="math notranslate nohighlight">\(F_{WM}\)</span>.</p>
-<p id="id1"><dl class="citation">
-<dt class="label" id="id5"><span class="brackets">AK16</span></dt>
+<p>Here, we will use two cases to analyze the sign of <span class="math notranslate nohighlight">\(f(U_0)\)</span> and <span class="math notranslate nohighlight">\(F_{WM}\)</span>. The first case represents the westerly shear and the second case represents easterly shear.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="tropical-dynamics-figures/QBO_dynamics.jpeg"><img alt="tropical-dynamics-figures/QBO_dynamics.jpeg" src="tropical-dynamics-figures/QBO_dynamics.jpeg" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Momentum fluxes in (a) westerly shear and (b) easterly shear</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p id="id2"><dl class="citation">
+<dt class="label" id="id6"><span class="brackets">AK16</span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
 </dd>
-<dt class="label" id="id2"><span class="brackets">AW15</span></dt>
+<dt class="label" id="id3"><span class="brackets">AW15</span></dt>
 <dd><p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
 </dd>
-<dt class="label" id="id4"><span class="brackets">LNK+22</span></dt>
+<dt class="label" id="id5"><span class="brackets">LNK+22</span></dt>
 <dd><p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
 </dd>
-<dt class="label" id="id6"><span class="brackets">MJ71</span></dt>
+<dt class="label" id="id7"><span class="brackets">MJ71</span></dt>
 <dd><p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
 </dd>
-<dt class="label" id="id7"><span class="brackets">RH96</span></dt>
+<dt class="label" id="id8"><span class="brackets">RH96</span></dt>
 <dd><p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
 </dd>
 </dl>
