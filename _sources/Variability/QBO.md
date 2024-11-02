@@ -148,7 +148,7 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
 \rho_0 \int_0^{2\pi} uw dx     & = \int^{\infty}_{-\infty} f(c) dc = f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k & = f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
+(\rho_0 \int_0^{2\pi} uw dx)_k|^{z_0+}_{z_0-} & = f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU \\
 & \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}
 ```
