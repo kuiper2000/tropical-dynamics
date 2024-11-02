@@ -130,7 +130,7 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 :label: QBO_mechanical_energy_zonal_mean3
 \begin{cases}
 \rho_0 \int_0^{2\pi} uw dx = A \\
-\rho_0 \int_0^{2\pi} uw dx = -A [1+ e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}] \text{ for z below critical level} 
+\rho_0 \int_0^{2\pi} uw dx = -A [1+ e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}] 
 \end{cases}
 \begin{align}
 & \text{ for z below critical level} \\
