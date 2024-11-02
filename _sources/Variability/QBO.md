@@ -165,10 +165,9 @@ F_{WM} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{
 
 $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
-Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. The first case represents the westerly shear and the second case represents easterly shear. 
+Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. The first case represents the westerly shear and the second case represents the easterly shear. 
 
-
-```{figure} ../tropical-dynamics-figures/QBO_dynamics.jpeg
+```{figure} ../tropical-dynamics-figures/QBO_dynamics.png
 ---
 name: FIG5-3
 width: 700px
@@ -177,6 +176,7 @@ width: 700px
 Momentum fluxes in (a) westerly shear and (b) easterly shear
 ```
 
+In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive. For the regions above, since all of the momentum has been absorbed 
 
 
 
