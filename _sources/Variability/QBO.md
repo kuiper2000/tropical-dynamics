@@ -130,7 +130,7 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 :label: QBO_mechanical_energy_zonal_mean3
 \begin{cases}
 \rho_0 \int_0^{2\pi} uw dx = A \\
-\rho_0 \int_0^{2\pi} uw dx = -A [1+ e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}] 
+\rho_0 \int_0^{2\pi} uw dx = -A e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}} 
 \end{cases}
 \begin{align}
 & \text{ for z below critical level} \\
@@ -139,7 +139,7 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 
 ```
 
-{eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. Given the Richardson number is always greater than 1, the second equation of {eq}`QBO_mechanical_energy_zonal_mean3` indeed satisfies the condition we need. 
+{eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. Given the Richardson number is always greater than 1, the second equation of {eq}`QBO_mechanical_energy_zonal_mean3` indeed satisfies the condition we need. {eq}`QBO_mechanical_energy_zonal_mean3` also suggests the momentum absorbed at the critical level is $A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$. 
 
 However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. To circumvent this problem, we can approach it with a spectral perspective of wave propagation. 
 
