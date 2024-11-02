@@ -147,8 +147,9 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
-\rho_0 \int_0^{2\pi} uw dx = \int^{\infty}_{-\infty} f(c) dc = \int^{\infty}_{-\infty} f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k = -\int^{\infty}_{-\infty} f(c_k) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dc = -\int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dU \\
+\rho_0 \int_0^{2\pi} uw dx     & = \int^{\infty}_{-\infty} f(c) dc = \int^{\infty}_{-\infty} f(U) dU \\
+(\rho_0 \int_0^{2\pi} uw dx)_k & = -\int^{\infty}_{-\infty} f(c_k) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dc \\
+                               & = -\int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}  dU \\
 \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}
 ```
