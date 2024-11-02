@@ -129,9 +129,10 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean3
 \begin{cases}
-\rho_0 \int_0^{2\pi} uw dx = A \text{ for z below critical level} \\
-\rho_0 \int_0^{2\pi} uw dx = -A e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}} \text{ for z below critical level} 
+\rho_0 \int_0^{2\pi} uw dx = A \text{                                               for z below critical level} \\
+\rho_0 \int_0^{2\pi} uw dx = -A [1+ e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}] \text{ for z below critical level} 
 \end{cases}
+
 ```
 
 {eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. 
@@ -158,8 +159,11 @@ F_{WM} &= \int^{\infty}_{-\infty} f(U_0)  e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}
 \end{align}
 ```
 
+$F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
-Here, we will use two cases to analyze the sign of $f(U_0)$ and 
+Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. 
+
+
 
 
 
