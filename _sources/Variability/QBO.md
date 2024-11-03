@@ -162,7 +162,7 @@ It is assumed that the disturbance that transports momentum consists of a spectr
 -\frac{d F_{WM}}{dz} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
 \end{align}
 ```
-where $\nabla t=dU/dz$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
+where $\nabla t=|\frac{dU}{dz}|$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
 Here, we will use two cases to analyze the sign of $f(U_0)$. The first case represents the westerly shear and the second case represents the easterly shear. 
 
