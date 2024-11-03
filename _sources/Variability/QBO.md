@@ -153,22 +153,18 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 \end{align}
 ```
 
-It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). The second equation of {eq}`QBO_mechanical_energy_zonal_mean4` comes from that $f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ has a unit of momentum. Thus, the unit time (i.e., dU/dz) of momentum of absorption at the transition zone can be written as $f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]/(\nabla t)$ where $\nabla t=dU/dz$. 
+It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). The second equation of {eq}`QBO_mechanical_energy_zonal_mean4` comes from that $f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ has a unit of momentum. Thus, the unit time (i.e., dU/dz) of momentum of absorption at the transition zone can be written as   
 
 
-f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean5
-\frac{d F_{WM}}{dz} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
+-\frac{d F_{WM}}{dz} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
 \end{align}
 ```
+where $\nabla t=dU/dz$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
-$F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. The integration over $dU$ can be understood through a simple chain rule, i.e., 
-
-If the deposited momentum is $f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$, which equivalent to the eddy momentum flux convergence (-\frac{\partial \overline{ u'w'}}{\partial z}) 
-
-Here, we will use two cases to analyze the sign of $f(U_0)$ and $F_{WM}$. The first case represents the westerly shear and the second case represents the easterly shear. 
+Here, we will use two cases to analyze the sign of $f(U_0)$. The first case represents the westerly shear and the second case represents the easterly shear. 
 
 ```{figure} ../tropical-dynamics-figures/QBO_dynamics.png
 ---
