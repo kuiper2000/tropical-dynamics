@@ -157,7 +157,7 @@ It is assumed that the disturbance that transports momentum consists of a spectr
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean5
--\frac{d F_{WM}}{dz} = -\int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
+-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
 ```
 where $\nabla t=|\frac{dU}{dz}|$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
