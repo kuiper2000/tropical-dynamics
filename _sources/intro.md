@@ -44,7 +44,7 @@ __Part II: Variability__
 
 * {ref}`QBO`
     * Quasi-Bieannial Oscillation
-    * Holton-Tan Model  
+    * Lidzen and Holton model
   
 * {ref}`ENSO`
     * Governing equation and assumptions of large-scale tropical ocean
