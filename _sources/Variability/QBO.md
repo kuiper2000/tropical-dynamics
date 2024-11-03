@@ -147,23 +147,21 @@ However, the absorption of momentum at a single level will lead to a shock-like 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
-\rho_0 \int_0^{2\pi} uw dx     & = \int^{\infty}_{-\infty} f(c) dc = f(U) dU \\
-(\rho_0 \int_0^{2\pi} uw dx)_k|^{z_0+}_{z_0-}/dz & = f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  dU/dz \\
+\rho_0 \int_0^{2\pi} uw dx     & = \int^{\infty}_{-\infty} f(c) dc = f(U) |dU| \\
+(\rho_0 \int_0^{2\pi} uw dx)_k|^{z_0+}_{z_0-}/dz & = -A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]/dz = f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |dU/dz| \\
 & \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}
 ```
 
-It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). The second equation of {eq}`QBO_mechanical_energy_zonal_mean4` comes from that $f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ has a unit of momentum. Thus, the unit time (i.e., dU/dz) of momentum of absorption at the transition zone can be written as   
-
-
+It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed $c\pm dc$, we can find a limited range of critical level ($U\pm dU$) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of {eq}`QBO_mechanical_energy_zonal_mean4`). The second equation of {eq}`QBO_mechanical_energy_zonal_mean4` comes from the fact that $f(U) |dU|$ has a unit of momentum change per unit time. Thus, the eddy momentum flux convergence (i.e., the rate change of mean flow due to eddy can be written as)
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean5
--\frac{d F_{WM}}{dz} &= \int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
+-\frac{d F_{WM}}{dz} &= -\int^{\infty}_{-\infty} f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
 ```
 where $\nabla t=|\frac{dU}{dz}|$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
-Here, we will use two cases to analyze the sign of $f(U_0)$. The first case represents the westerly shear and the second case represents the easterly shear. 
+Here, we will use two cases to analyze the sign of $f(U_0)$. The first case represents the westerly shear (westerly increases with height) and the second case represents the easterly shear. 
 
 ```{figure} ../tropical-dynamics-figures/QBO_dynamics.png
 ---
