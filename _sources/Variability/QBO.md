@@ -159,7 +159,7 @@ It is assumed that the disturbance that transports momentum consists of a spectr
 :label: QBO_mechanical_energy_zonal_mean5
 -\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|
 ```
-where $\nabla t=|\frac{dU}{dz}|$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
+where $\Delta t=|\frac{dU}{dz}|$. $F_{WM}$ is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with $U_0=c$ and $-\frac{d F_{WM}}{dz}$ is the corresponding momentum flux convergence at the critical level. 
 
 Here, we will use two cases to analyze the sign of $f(U_0)$. The first case represents the westerly shear (westerly increases with height) and the second case represents the easterly shear. 
 
@@ -172,7 +172,10 @@ width: 700px
 Momentum fluxes in (a) westerly shear and (b) easterly shear
 ```
 
-In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. Therefore, the overall momentum flux convergence at the critical level is westerly.    
+In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive and so does $f(U)$ according to {eq}`QBO_mechanical_energy_zonal_mean4`. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. This also makes $f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ negative according to {eq}`QBO_mechanical_energy_zonal_mean4`. Since $|\frac{dU}{dz}|$ is positive definite, $f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ will be negative positive definite. (notice that Lidzen and Holton states this term is positive definite). 
+
+Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ is equivalent to $- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}$ by examining both westerly and easterly shear case. 
+
 
 
 
