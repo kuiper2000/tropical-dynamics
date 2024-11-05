@@ -141,9 +141,10 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 
 {eq}`QBO_mechanical_energy_zonal_mean3` suggests that $\rho_0 \int_0^{2\pi} uw dx$ is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. Given the Richardson number is always greater than 1, the second equation of {eq}`QBO_mechanical_energy_zonal_mean3` indeed satisfies the condition we need. {eq}`QBO_mechanical_energy_zonal_mean3` also suggests the momentum absorbed at the critical level is $A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$. 
 
-However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. To circumvent this problem, we can approach it with a spectral perspective of wave propagation. 
+However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. 
 
-
+### A spectral solution of momentum deposition 
+To circumvent the problem in previous section, we can approach it with a spectral perspective of wave propagation. 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
@@ -172,11 +173,17 @@ width: 700px
 Momentum fluxes in (a) westerly shear and (b) easterly shear
 ```
 
-In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive and so does $f(U)$ according to {eq}`QBO_mechanical_energy_zonal_mean4`. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. This also makes $f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ negative according to {eq}`QBO_mechanical_energy_zonal_mean4`. Since $|\frac{dU}{dz}|$ is positive definite, $f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ will be negative positive definite. (notice that Lidzen and Holton states this term is positive definite). 
+In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive and so does $f(U)^{z-}$ according to {eq}`QBO_mechanical_energy_zonal_mean4` and {eq}`QBO_mechanical_energy_zonal_mean2`. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. This also makes $(f(U)^{z+}-f(U)^{z-})/dz = f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ negative according to {eq}`QBO_mechanical_energy_zonal_mean4`. Since $|\frac{dU}{dz}|$ is positive definite, $f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ will be negative positive definite. (notice that Lidzen and Holton state this term is positive definite, which is different the analysis here). 
 
-Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ is equivalent to $- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}$ by examining both westerly and easterly shear case. 
+Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ is equivalent to $- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}$ by examining both westerly and easterly shear case. (HW)
 
+## Lidzen and Holton Model 
+{eq}`QBO_mechanical_energy_zonal_mean5` looks identical to a simple advection model, where the _downward_ propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence. 
 
+```{math}
+:label: QBO_mechanical_energy_zonal_mean5
+\frac{\partial \overline{u}}{\partial t} + \bar{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}
+```
 
 
 

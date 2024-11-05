@@ -333,7 +333,17 @@ title="Print to PDF"
      When momentum is deposited
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">
+     A spectral solution of momentum deposition
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lidzen-and-holton-model">
+   Lidzen and Holton Model
+  </a>
  </li>
 </ul>
 
@@ -369,7 +379,17 @@ title="Print to PDF"
      When momentum is deposited
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">
+     A spectral solution of momentum deposition
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lidzen-and-holton-model">
+   Lidzen and Holton Model
+  </a>
  </li>
 </ul>
 
@@ -464,7 +484,11 @@ ik u + w_z = 0
 &amp;  \text{ for z above critical level} 
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> suggests that <span class="math notranslate nohighlight">\(\rho_0 \int_0^{2\pi} uw dx\)</span> is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. Given the Richardson number is always greater than 1, the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> indeed satisfies the condition we need. <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> also suggests the momentum absorbed at the critical level is <span class="math notranslate nohighlight">\(A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]\)</span>.</p>
-<p>However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. To circumvent this problem, we can approach it with a spectral perspective of wave propagation.</p>
+<p>However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent.</p>
+</div>
+<div class="section" id="a-spectral-solution-of-momentum-deposition">
+<h3>A spectral solution of momentum deposition<a class="headerlink" href="#a-spectral-solution-of-momentum-deposition" title="Permalink to this headline">¶</a></h3>
+<p>To circumvent the problem in previous section, we can approach it with a spectral perspective of wave propagation.</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean4">
 <span class="eqno">(87)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \rho_0 \int_0^{2\pi} uw dx                       &amp; = \int^{\infty}_{-\infty} f(c) dc = f(U) |dU| \\
@@ -473,15 +497,22 @@ ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p>It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed <span class="math notranslate nohighlight">\(c\pm dc\)</span>, we can find a limited range of critical level (<span class="math notranslate nohighlight">\(U\pm dU\)</span>) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>). The second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a> comes from the fact that <span class="math notranslate nohighlight">\(f(U) |dU|\)</span> has a unit of momentum change per unit time. Thus, the eddy momentum flux convergence (i.e., the rate change of mean flow due to eddy can be written as)</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean5">
-<span class="eqno">(88)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
+<span class="eqno">(89)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta t=|\frac{dU}{dz}|\)</span>. <span class="math notranslate nohighlight">\(F_{WM}\)</span> is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with <span class="math notranslate nohighlight">\(U_0=c\)</span> and <span class="math notranslate nohighlight">\(-\frac{d F_{WM}}{dz}\)</span> is the corresponding momentum flux convergence at the critical level.</p>
 <p>Here, we will use two cases to analyze the sign of <span class="math notranslate nohighlight">\(f(U_0)\)</span>. The first case represents the westerly shear (westerly increases with height) and the second case represents the easterly shear.</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/QBO_dynamics.png"><img alt="../_images/QBO_dynamics.png" src="../_images/QBO_dynamics.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Momentum fluxes in (a) westerly shear and (b) easterly shear</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>In the westerly shear, if <span class="math notranslate nohighlight">\(\int_0^{2\pi} pw dx\)</span> remains positive, for the regions below the critical level (where <span class="math notranslate nohighlight">\(c&gt;U\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be positive and so does <span class="math notranslate nohighlight">\(f(U)\)</span> according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>. For the regions above where (where <span class="math notranslate nohighlight">\(U&gt;c\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be negative. This also makes <span class="math notranslate nohighlight">\(f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> negative according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>. Since <span class="math notranslate nohighlight">\(|\frac{dU}{dz}|\)</span> is positive definite, <span class="math notranslate nohighlight">\(f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]\)</span> will be negative positive definite. (notice that Lidzen and Holton states this term is positive definite).</p>
-<p>Readers will also find <span class="math notranslate nohighlight">\(- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> is equivalent to <span class="math notranslate nohighlight">\(- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}\)</span> by examining both westerly and easterly shear case.</p>
+<p>In the westerly shear, if <span class="math notranslate nohighlight">\(\int_0^{2\pi} pw dx\)</span> remains positive, for the regions below the critical level (where <span class="math notranslate nohighlight">\(c&gt;U\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be positive and so does <span class="math notranslate nohighlight">\(f(U)^{z-}\)</span> according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a> and <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean2">(85)</a>. For the regions above where (where <span class="math notranslate nohighlight">\(U&gt;c\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be negative. This also makes <span class="math notranslate nohighlight">\((f(U)^{z+}-f(U)^{z-})/dz = f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> negative according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>. Since <span class="math notranslate nohighlight">\(|\frac{dU}{dz}|\)</span> is positive definite, <span class="math notranslate nohighlight">\(f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]\)</span> will be negative positive definite. (notice that Lidzen and Holton state this term is positive definite, which is different the analysis here).</p>
+<p>Readers will also find <span class="math notranslate nohighlight">\(- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> is equivalent to <span class="math notranslate nohighlight">\(- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}\)</span> by examining both westerly and easterly shear case. (HW)</p>
+</div>
+</div>
+<div class="section" id="lidzen-and-holton-model">
+<h2>Lidzen and Holton Model<a class="headerlink" href="#lidzen-and-holton-model" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean5">(89)</a> looks identical to a simple advection model, where the <em>downward</em> propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence.</p>
+<div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean5">
+<span class="eqno">(89)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[\frac{\partial \overline{u}}{\partial t} + \bar{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}\]</div>
 <p id="id2"><dl class="citation">
 <dt class="label" id="id6"><span class="brackets">AK16</span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
@@ -500,7 +531,6 @@ ik u + w_z = 0
 </dd>
 </dl>
 </p>
-</div>
 </div>
 </div>
 
