@@ -182,7 +182,7 @@ Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |
 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean5
-\frac{\partial \overline{u}}{\partial t} + \bar{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}
+\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}
 ```
 
 
