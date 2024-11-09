@@ -191,9 +191,13 @@ In this model, some simple setup is given. First, we assume there is no mean ver
 ```{math}
 :label: LH68_02
 \begin{cases}
-f(u) &= \text{constant for $-c<u<c$, where $c=5m/s$} \\
-f(u) &= 0\text{$U>=|c|$, where $c=5m/s$} 
+f(u) &= \text{constant} \\  
+f(u) &= 0
 \end{cases}
+\begin{align}
+\text{for $-c<u<c$, where $c=5m/s$}\\
+\text{for $U>=|c|$, where $c=5m/s$} 
+\end{align}
 ```
 
 Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly. 
