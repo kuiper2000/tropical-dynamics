@@ -25,7 +25,7 @@ Like other waves, the atmospheric waves also experience Doppler Shift as long as
 
 ```{figure} ../tropical-dynamics-figures/Doppler_Shift.jpeg
 ---
-name: FIG5-2
+name: FIG6-2
 width: 700px
 ---
 
@@ -37,7 +37,7 @@ To understand how these waves influence the phase transition of QBO (zonal mean 
 
 ```{figure} ../tropical-dynamics-figures/Mountain_wave.png
 ---
-name: FIG5-3
+name: FIG6-3
 width: 700px
 ---
 
@@ -166,7 +166,7 @@ Here, we will use two cases to analyze the sign of $f(U_0)$. The first case repr
 
 ```{figure} ../tropical-dynamics-figures/QBO_dynamics.png
 ---
-name: FIG5-3
+name: FIG6-4
 width: 700px
 ---
 
@@ -187,7 +187,6 @@ Substitute the above conclusion back into zonal momentum equation, the yielded {
 
 In this model, some simple setup is given. First, we assume there is no mean vertical motion $\overline{w}$. Second, the downward motion due to the momentum flux convergence only happens over a limited range of wind speed. i.e., 
 
-
 ```{math}
 :label: LH68_02
 \begin{cases}
@@ -201,6 +200,8 @@ f(u) &= 0
 ```
 
 Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly. 
+
+At the end, one can observe the downward propagation 
 
 
 
