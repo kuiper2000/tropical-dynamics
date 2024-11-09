@@ -497,7 +497,7 @@ ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p>It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed <span class="math notranslate nohighlight">\(c\pm dc\)</span>, we can find a limited range of critical level (<span class="math notranslate nohighlight">\(U\pm dU\)</span>) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>). The second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a> comes from the fact that <span class="math notranslate nohighlight">\(f(U) |dU|\)</span> has a unit of momentum change per unit time. Thus, the eddy momentum flux convergence (i.e., the rate change of mean flow due to eddy can be written as)</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean5">
-<span class="eqno">(89)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
+<span class="eqno">(88)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta t=|\frac{dU}{dz}|\)</span>. <span class="math notranslate nohighlight">\(F_{WM}\)</span> is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with <span class="math notranslate nohighlight">\(U_0=c\)</span> and <span class="math notranslate nohighlight">\(-\frac{d F_{WM}}{dz}\)</span> is the corresponding momentum flux convergence at the critical level.</p>
 <p>Here, we will use two cases to analyze the sign of <span class="math notranslate nohighlight">\(f(U_0)\)</span>. The first case represents the westerly shear (westerly increases with height) and the second case represents the easterly shear.</p>
 <div class="figure align-default" id="id1">
@@ -510,9 +510,16 @@ ik u + w_z = 0
 </div>
 <div class="section" id="lidzen-and-holton-model">
 <h2>Lidzen and Holton Model<a class="headerlink" href="#lidzen-and-holton-model" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean5">(89)</a> looks identical to a simple advection model, where the <em>downward</em> propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence.</p>
-<div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean5">
-<span class="eqno">(89)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}\]</div>
+<p>Substitute the above conclusion back into zonal momentum equation, the yielded <a class="reference internal" href="#equation-lh68-01">(89)</a> looks identical to a simple advection model, where the <em>downward</em> propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence.</p>
+<div class="math notranslate nohighlight" id="equation-lh68-01">
+<span class="eqno">(89)<a class="headerlink" href="#equation-lh68-01" title="Permalink to this equation">¶</a></span>\[\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}\]</div>
+<p>In this model, some simple setup is given. First, we assume there is no mean vertical motion <span class="math notranslate nohighlight">\(\overline{w}\)</span>. Second, the downward motion due to the momentum flux convergence only happens over a limited range of wind speed. i.e.,</p>
+<div class="math notranslate nohighlight" id="equation-lh68-02">
+<span class="eqno">(90)<a class="headerlink" href="#equation-lh68-02" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+f(u) &amp;= \text{constant for $-c&lt;u&lt;c$, where $c=5m/s$} \\
+f(u) &amp;= 0\text{$U&gt;=|c|$, where $c=5m/s$} 
+\end{cases}\end{split}\]</div>
+<p>Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly.</p>
 <p id="id2"><dl class="citation">
 <dt class="label" id="id6"><span class="brackets">AK16</span></dt>
 <dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>

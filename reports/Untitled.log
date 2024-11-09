@@ -1,0 +1,134 @@
+Traceback (most recent call last):
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/Shared/miniconda3/envs/default_env2/lib/python3.9/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Model parameters
+z_levels = 50               # Number of vertical levels
+dz = 1000                   # Vertical spacing (1 km in meters)
+dt = 86400                  # Time step in seconds (1 day)
+time_steps = 30*12*5        # Total time steps for 3 years
+
+# Initial conditions
+A = -20                     # Initial zonal wind offset (m/s)
+B = 2 / 3                   # Gradient of initial zonal wind (m/s per km)
+c_r = 5                     # Phase speed cutoff (m/s)
+rho_0 = 1.2                              # Reference density (kg/m^3)
+f_const = -rho_0 * 1000/86400/30         # Factor for f(U), as per paper
+
+# Initialize arrays for mean zonal wind and height
+U = A + B * np.arange(z_levels) * dz / 1000  # Initial zonal wind profile
+output_intervals = []       # Store wind profiles for each time interval
+
+# Define wave forcing function f(U) based on Lindzen and Holton (1968)
+def wave_forcing(U, c_r, f_const):
+    f_U  = np.zeros_like(U)
+    mask = (np.abs(U) < c_r)  # Condition -cr < U < cr
+    f_U[mask] = f_const       # Apply constant value for -cr < U < cr
+    return f_U
+
+# Time integration loop
+for t in range(time_steps):
+    # Calculate wave forcing f(U) for the current U profile
+    f_U = wave_forcing(U, c_r, f_const)
+    
+    # Update the mean zonal wind profile
+    for k in range(1, z_levels - 1):
+        dU_dz = (U[k+1] - U[k]) / (dz)  # Central difference for dU/dz
+        U[k] += dt * (-f_U[k] * dU_dz / rho_0)  # Update U based on Eq. (14)
+
+    # Store results every 4 months (about 120 days)
+    if t % 15 == 0:
+        output_intervals.append(U.copy())
+
+# Convert to a 2D array for plotting
+zonal_wind_time_height = np.array(output_intervals)
+time     = np.arange(0, len(output_intervals) * 4, 4)  # Time in months
+altitude = np.linspace(0, z_levels * dz, z_levels) / 1000  # Altitude in km
+
+# Plotting the time-height section of the zonal wind
+plt.figure(figsize=(10, 8))
+plt.contourf(time, altitude, zonal_wind_time_height.T, levels=np.linspace(-20, 20, 21), cmap='RdBu_r')
+plt.colorbar(label='Zonal Wind (m/s)')
+plt.xlabel('Time (Months)')
+plt.ylabel('Altitude (km)')
+plt.title('Time-Height Section of Zonal Wind (Lindzen and Holton 1968 QBO)')
+plt.show()
+
+
+def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)
+    c1=np.array(mpl.colors.to_rgb(c1))
+    c2=np.array(mpl.colors.to_rgb(c2))
+    return mpl.colors.to_hex((1-mix)*c1 + mix*c2)
+
+
+# plt.figure(figsize=(10, 8))
+# for i in range(0,120,4):
+#     #print(i)
+#     plt.plot(zonal_wind_time_height[i,:],altitude)
+# #plt.colorbar(label='Zonal Wind (m/s)')
+# #plt.xlabel('Time (Months)')
+# plt.ylabel('Altitude (km)')
+# plt.xlim([-10,10])
+# plt.title('Time-Height Section of Zonal Wind (Lindzen and Holton 1968 QBO)')
+# plt.show()
+
+mm = 1/25.4  # millimeters in inches
+fig = plt.figure(figsize=(2*70*mm,2*50*mm), dpi=200)  # create a figure object
+fig.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.15)
+ax = fig.add_subplot(1, 1, 1)  # create an axes object in the figure
+
+def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)
+    c1=np.array(mpl.colors.to_rgb(c1))
+    c2=np.array(mpl.colors.to_rgb(c2))
+    return mpl.colors.to_hex((1-mix)*c1 + mix*c2)
+
+c1='red' #blue
+c2='blue' #green
+n = 30
+x = np.linspace(0,3*np.pi,100)
+
+for i in range(0,n,3):
+    #ax.plot(x,i*np.sin(x),color=colorFader(c1,c2,i/n),linewidth = 1)
+    ax.plot(zonal_wind_time_height[i,:],altitude,color=colorFader(c1,c2,i/n),linewidth = 1,label='lead='+str(i*0.5)+'month')
+ax.legend()
+ax.set_xlabel('Wind relative to 20m/s')
+ax.set_ylabel('Altitude(km)')
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn [1], line 91[0m
+[1;32m     87[0m x [38;5;241m=[39m np[38;5;241m.[39mlinspace([38;5;241m0[39m,[38;5;241m3[39m[38;5;241m*[39mnp[38;5;241m.[39mpi,[38;5;241m100[39m)
+[1;32m     89[0m [38;5;28;01mfor[39;00m i [38;5;129;01min[39;00m [38;5;28mrange[39m([38;5;241m0[39m,n,[38;5;241m3[39m):
+[1;32m     90[0m     [38;5;66;03m#ax.plot(x,i*np.sin(x),color=colorFader(c1,c2,i/n),linewidth = 1)[39;00m
+[0;32m---> 91[0m     ax[38;5;241m.[39mplot(zonal_wind_time_height[i,:],altitude,color[38;5;241m=[39m[43mcolorFader[49m[43m([49m[43mc1[49m[43m,[49m[43mc2[49m[43m,[49m[43mi[49m[38;5;241;43m/[39;49m[43mn[49m[43m)[49m,linewidth [38;5;241m=[39m [38;5;241m1[39m,label[38;5;241m=[39m[38;5;124m'[39m[38;5;124mlead=[39m[38;5;124m'[39m[38;5;241m+[39m[38;5;28mstr[39m(i[38;5;241m*[39m[38;5;241m0.5[39m)[38;5;241m+[39m[38;5;124m'[39m[38;5;124mmonth[39m[38;5;124m'[39m)
+[1;32m     92[0m ax[38;5;241m.[39mlegend()
+[1;32m     93[0m ax[38;5;241m.[39mset_xlabel([38;5;124m'[39m[38;5;124mWind relative to 20m/s[39m[38;5;124m'[39m)
+
+Cell [0;32mIn [1], line 80[0m, in [0;36mcolorFader[0;34m(c1, c2, mix)[0m
+[1;32m     79[0m [38;5;28;01mdef[39;00m [38;5;21mcolorFader[39m(c1,c2,mix[38;5;241m=[39m[38;5;241m0[39m): [38;5;66;03m#fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)[39;00m
+[0;32m---> 80[0m     c1[38;5;241m=[39mnp[38;5;241m.[39marray([43mmpl[49m[38;5;241m.[39mcolors[38;5;241m.[39mto_rgb(c1))
+[1;32m     81[0m     c2[38;5;241m=[39mnp[38;5;241m.[39marray(mpl[38;5;241m.[39mcolors[38;5;241m.[39mto_rgb(c2))
+[1;32m     82[0m     [38;5;28;01mreturn[39;00m mpl[38;5;241m.[39mcolors[38;5;241m.[39mto_hex(([38;5;241m1[39m[38;5;241m-[39mmix)[38;5;241m*[39mc1 [38;5;241m+[39m mix[38;5;241m*[39mc2)
+
+[0;31mNameError[0m: name 'mpl' is not defined
+NameError: name 'mpl' is not defined
+

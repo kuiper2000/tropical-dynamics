@@ -178,12 +178,25 @@ In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the region
 Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ is equivalent to $- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}$ by examining both westerly and easterly shear case. (HW)
 
 ## Lidzen and Holton Model 
-{eq}`QBO_mechanical_energy_zonal_mean5` looks identical to a simple advection model, where the _downward_ propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence. 
+Substitute the above conclusion back into zonal momentum equation, the yielded {eq}`LH68_01` looks identical to a simple advection model, where the _downward_ propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence. 
 
 ```{math}
-:label: QBO_mechanical_energy_zonal_mean5
+:label: LH68_01
 \rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}
 ```
+
+In this model, some simple setup is given. First, we assume there is no mean vertical motion $\overline{w}$. Second, the downward motion due to the momentum flux convergence only happens over a limited range of wind speed. i.e., 
+
+
+```{math}
+:label: LH68_02
+\begin{cases}
+f(u) &= \text{constant for $-c<u<c$, where $c=5m/s$} \\
+f(u) &= 0\text{$U>=|c|$, where $c=5m/s$} 
+\end{cases}
+```
+
+Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly. 
 
 
 
