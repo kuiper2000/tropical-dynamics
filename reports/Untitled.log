@@ -111,6 +111,7 @@ for i in range(0,n,3):
 ax.legend()
 ax.set_xlabel('Wind relative to 20m/s')
 ax.set_ylabel('Altitude(km)')
+fig.savefig('QBO_model.png')
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m

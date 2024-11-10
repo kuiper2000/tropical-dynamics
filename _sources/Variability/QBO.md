@@ -203,6 +203,13 @@ Using the example below, at the initial time, only regions between 37.5 and 22.5
 
 At the end, one can observe the downward propagation of zonal wind anomaly. Currently, the scientific community doesn't have a good parameterization of bulk eddy 
 
+```{figure} ../tropical-dynamics-figures/QBO_model.png
+---
+name: FIG6-5
+width: 700px
+---
+The simulated QBO evolution in the westerly shear using {eq}`LH68_01` 
+```
 
 
 ```{bibliography}
