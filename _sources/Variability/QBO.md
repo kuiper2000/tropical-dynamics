@@ -201,7 +201,7 @@ f(u) &= 0
 
 Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly. 
 
-At the end, one can observe the downward propagation of zonal wind anomaly. Currently, the scientific community doesn't have a good parameterization of bulk eddy 
+At the end, one can observe the downward propagation of zonal wind anomaly. Currently, the scientific community doesn't have a good parameterization of bulk eddy. (given the challenges of higher-order closure problem) Therefore, the downward propagation is determined through the observation.  
 
 ```{figure} ../tropical-dynamics-figures/QBO_model.png
 ---
@@ -210,6 +210,9 @@ width: 700px
 ---
 The simulated QBO evolution in the westerly shear using {eq}`LH68_01` 
 ```
+
+The study of QBO also shows the importance of properly parameterized gravity wave drag given its global scale of change in zonal wind. In earlier years, most GCM experienced severe cold bias over the polar regions and stratosphere. One reason is that most gravity waves don't deposit enough momentum to change the mean flow. 
+
 
 
 ```{bibliography}

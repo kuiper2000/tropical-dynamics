@@ -44,6 +44,8 @@ __Part II: Variability__
 
 * {ref}`QBO`
     * Quasi-Bieannial Oscillation
+    * Doppler-Shift of wave and the deposition of wave energy
+    * The direction of momentum transport 
     * Lidzen and Holton model
   
 * {ref}`ENSO`
