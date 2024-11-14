@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Week 9: Quasi-biennial Oscillation" href="QBO.html" />
@@ -392,7 +394,16 @@ title="Print to PDF"
 <p>(3)+(4)+(5) is the negative feedback through subtropical cells. When the enhanced westerly happens over the equatorial surface, it increases cyclonic wind stress curl at the subtropical regions. To balance the reduced relative vorticity, a poleward geostrophic current brings negative planetary vorticity to this region. Such geostrophic currents also bring warm water to high latitudes and shallow the equatorial thermocline. An opposite process happens during the La Nina year.</p>
 <p>(6)+(7) The enhanced westerly during the El Nino year also suppresses the equatorial upwelling by Ekman pumping. (i.e., Ekman feedback)</p>
 <p>(8)+(9) On the other hand, the deepened thermocline also makes it harder to bring cold water below the thermocline (i.e., thermocline feedback).</p>
-<p>Considering all of these processes as a whole is the well-known recharge-discharge oscillator. One should notice, that the existence of oscillation should involve at least one negative feedback</p>
+<p>Considering all of these processes as a whole is the well-known recharge-discharge oscillator by Jin (1997). One should notice, that the existence of <em>oscillation</em> should involve at least one negative feedback. The diagram above also indicates that the entire processes can be reduced to a two-variable system, where SST and thermocline depth are only predictors. The atmospheric-related processes is in a steady state due to its transient timescales compared to ocean processes. Thus, the entire system can be formulated as follows:</p>
+<div class="math notranslate nohighlight" id="equation-recharge-discharge">
+<span class="eqno">(91)<a class="headerlink" href="#equation-recharge-discharge" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+&amp; \begin{cases}
+[ik \rho_0 (U-c) u^2 + ik up] &amp; = -\rho_0 uw U_z \\ 
+[ik \rho_0 (U-c) w^2 ]+ wp_z  &amp; = 0 \\
+[ik up + w_z p] &amp; = 0
+\end{cases} \\
+\rightarrow &amp; \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{\text{Shear production}} 
+\end{align}\end{split}\]</div>
 </div>
 </div>
 

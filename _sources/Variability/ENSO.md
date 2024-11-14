@@ -36,4 +36,20 @@ The (known) feedback processes in ENSO.
 
 (8)+(9) On the other hand, the deepened thermocline also makes it harder to bring cold water below the thermocline (i.e., thermocline feedback). 
 
-Considering all of these processes as a whole is the well-known recharge-discharge oscillator. One should notice, that the existence of oscillation should involve at least one negative feedback 
+Considering all of these processes as a whole is the well-known recharge-discharge oscillator by Jin (1997). One should notice, that the existence of _oscillation_ should involve at least one negative feedback. The diagram above also indicates that the entire processes can be reduced to a two-variable system, where SST and thermocline depth are only predictors. The atmospheric-related processes is in a steady state due to its transient timescales compared to ocean processes. Thus, the entire system can be formulated as follows: 
+
+
+```{math}
+:label: Recharge-discharge
+\begin{align}
+& \begin{cases}
+[ik \rho_0 (U-c) u^2 + ik up] & = -\rho_0 uw U_z \\ 
+[ik \rho_0 (U-c) w^2 ]+ wp_z  & = 0 \\
+[ik up + w_z p] & = 0
+\end{cases} \\
+\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{\text{Shear production}} 
+\end{align}
+```
+
+
+
