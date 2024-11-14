@@ -42,14 +42,12 @@ Considering all of these processes as a whole is the well-known recharge-dischar
 ```{math}
 :label: Recharge-discharge
 \begin{align}
-& \begin{cases}
-[ik \rho_0 (U-c) u^2 + ik up] & = -\rho_0 uw U_z \\ 
-[ik \rho_0 (U-c) w^2 ]+ wp_z  & = 0 \\
-[ik up + w_z p] & = 0
-\end{cases} \\
-\rightarrow & \underbrace{ik [E(U-c)+pu]}_{\text{the horizontal flux of mechanical energy }} + \underbrace{(pw)_z}_{\text{the vertical flux of mechanical energy}} = \underbrace{-\rho_0 uw U_z}_{\text{Shear production}} 
+\frac{dT}{dt}=CT+Dh-\epsilon T^3
+\frac{dh}{dt}=-ET-R_h
 \end{align}
 ```
+
+Details of each term will be provided in the final project. 
 
 
 
