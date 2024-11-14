@@ -36,7 +36,7 @@ The (known) feedback processes in ENSO.
 
 (8)+(9) On the other hand, the deepened thermocline also makes it harder to bring cold water below the thermocline (i.e., thermocline feedback). 
 
-Considering all of these processes as a whole is the well-known recharge-discharge oscillator by Jin (1997). One should notice, that the existence of _oscillation_ should involve at least one negative feedback. The diagram above also indicates that the entire processes can be reduced to a two-variable system, where SST and thermocline depth are only predictors. The atmospheric-related processes is in a steady state due to its transient timescales compared to ocean processes. Thus, the entire system can be formulated as follows: 
+Considering all of these processes as a whole is the well-known recharge-discharge oscillator by Jin (1997). One should notice, that the existence of _oscillation_ should involve at least one negative feedback. The diagram above also indicates that the entire process can be reduced to a two-variable system, where SST and thermocline depth are only predictors. The atmospheric-related processes are in a steady state due to their transient timescales compared to ocean processes. Thus, the entire system can be formulated as follows: 
 
 
 ```{math}
@@ -48,6 +48,11 @@ Considering all of these processes as a whole is the well-known recharge-dischar
 ```
 
 Details of each term will be provided in the final project. 
+
+
+## Delayed Oscillator 
+
+Originally formulated by McCreary (1983) and modified by  
 
 
 
