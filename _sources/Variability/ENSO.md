@@ -14,6 +14,8 @@ The 2016 El Nino events from. Credits: NOAA_PSL.
 ## Background 
 The earliest record of El Nino Southern oscillation was by a sailor in Peru back in 1892, long before its theory was developed. It wasn't until 1969, that Jacob Bjerknes proposed a conceptual model for positive feedback in tropical air-sea interaction. The ENSO theory is more completed when Drs. Mark Cane and Stephan Zebiak proposed a series of modeling frameworks, which incorporates (1) atmosphere, (2) ocean mixed layer, and (3) thermocline. Building on their prototype ENSO model, two schools of theory were proposed to explain the observed variability: (1) Delayed oscillation by Dr. David Battisti, and (2) Recharge-discharge oscillator by Dr. Fei-Fei Jin. 
 
+
+## Recharge-Discharge Mechanism
 We will go through some fundamental processes consisting of ENSO. It is summarized in the diagram below. 
 
 
@@ -31,6 +33,7 @@ The (known) feedback processes in ENSO.
 
 
 (6)+(7) The enhanced westerly during the El Nino year also suppresses the equatorial upwelling by Ekman pumping. (i.e., Ekman feedback)
-(8)+(9) On the other hand, the deepened thermocline also make it harder to bring cold water below the thermocline (i.e., thermocline feedback). 
 
+(8)+(9) On the other hand, the deepened thermocline also makes it harder to bring cold water below the thermocline (i.e., thermocline feedback). 
 
+Considering all of these processes as a whole is the well-known recharge-discharge oscillator. One should notice, that the existence of oscillation should involve at least one negative feedback 
