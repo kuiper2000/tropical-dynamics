@@ -25,3 +25,7 @@ width: 700px
 The (known) feedback processes in ENSO.  
 ```
 
+(1)+(2) is the well-known Bjerknes feedback. When the central or eastern Pacific is characterized by warm SST (where is climatologically cold), it will favor the development of convection over that region, i.e., weakened Walker circulation. The enhanced westerly will advect warm water from the western Pacific to the eastern Pacific. 
+
+(2)+(3) is the negative feedback through subtropical cells. When the enhanced westerly happens over the equatorial surface, it increases cyclonic wind stress curl at the subtropical regions. To balance the reduced relative vorticity, a poleward geostrophic current brings negative planetary vorticity to this region. Such geostrophic currents also bring warm water to high latitudes and shallow the equatorial thermocline.   
+
