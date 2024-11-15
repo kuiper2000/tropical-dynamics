@@ -68,4 +68,16 @@ width: 700px
 The western Pacific oscillator in the Delayed oscillator. From Wang (2018): A review of ENSO theories. 
 ```
 
-We first start with equatorial easterly. The equatorial easterly ($\tau_1$) will increase 
+and the corresponding equation 
+
+```{math}
+:label: Delayed_oscillator
+\begin{align}
+\frac{dT}{dt} &= a \tau_1 +b_2\tau_2(t-\delta)-\epsilon T^3 \\ 
+\frac{dh}{dt} &= -c \tau_1(t-\lambda)-R_hh \\ 
+\frac{d \tau_1}{dt} &= dT -R_{\tau_1}\tau_1 \\
+\frac{d \tau_2}{dt} &= eh -R_{\tau_2}\tau_2 \\
+\end{align}
+```
+
+We first start with equatorial easterly. The equatorial easterly ($\tau_1$) at Nino 4 driven by tropical convection (like MJO) will increase Nino 3 region SST anomaly. 
