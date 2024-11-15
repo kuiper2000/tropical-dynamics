@@ -58,18 +58,14 @@ Details of each term will be provided in the final project.
 
 Originally formulated by McCreary (1983) and modified by Dr. David Battisti, the Delayed Oscillator perceives ENSO evolutions from a transient perspective. In the Sverdrup Balance, the existence of meridional geostrophic flow balances the anomalous vorticity by wind stress. On transient timescales, many oceanic waves complete such planetary vorticity advection by zonal mean geostrophic flow. For example, during the propagation of a Rossby wave, it continuously exchanges angular momentum and warm water volume across latitudes. Thus, the Sverdrup balance can also be explained through the waves' lens. 
 
-
-The delayed oscillator can be summarized through the following figure 
+The delayed oscillator can be summarized in the following figure.  
 
 ```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
 ---
 name: FIG10-2
 width: 700px
 ---
-The western Pacific oscillator in the Delayed oscillator
+The western Pacific oscillator in the Delayed oscillator. From Wang (2018): A review of ENSO theories. 
 ```
 
-
-
-
-
+We first start with equatorial easterly. The equatorial easterly ($\tau_1$) will increase 
