@@ -31,6 +31,10 @@ The (known) feedback processes in ENSO.
 
 (3)+(4)+(5) is the negative feedback through subtropical cells. When the enhanced westerly happens over the equatorial surface, it increases cyclonic wind stress curl at the subtropical regions. To balance the reduced relative vorticity, a poleward geostrophic current brings negative planetary vorticity to this region. Such geostrophic currents also bring warm water to high latitudes and shallow the equatorial thermocline. An opposite process happens during the La Nina year. 
 
+:::{note}
+Sverdrup balance was first used to explain the existence of Western Boundary current. It was then modified by Dr. Biran Hoskins to explain the extension of subtropical high and monsoon gyre. (See Hoskins and Rodwell). Dr. Fei-Fei Jin was working with Dr. Brian Hoskins  
+:::
+
 
 (6)+(7) The enhanced westerly during the El Nino year also suppresses the equatorial upwelling by Ekman pumping. (i.e., Ekman feedback)
 
@@ -52,7 +56,20 @@ Details of each term will be provided in the final project.
 
 ## Delayed Oscillator 
 
-Originally formulated by McCreary (1983) and modified by  
+Originally formulated by McCreary (1983) and modified by Dr. David Battisti, the Delayed Oscillator perceives ENSO evolutions from a transient perspective. In the Sverdrup Balance, the existence of meridional geostrophic flow balances the anomalous vorticity by wind stress. On transient timescales, many oceanic waves complete such planetary vorticity advection by zonal mean geostrophic flow. For example, during the propagation of a Rossby wave, it continuously exchanges angular momentum and warm water volume across latitudes. Thus, the Sverdrup balance can also be explained through the waves' lens. 
+
+
+The delayed oscillator can be summarized through the following figure 
+
+```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
+---
+name: FIG10-2
+width: 700px
+---
+The western Pacific oscillator in the Delayed oscillator
+```
+
+
 
 
 
