@@ -42,7 +42,7 @@ Considering all of these processes as a whole is the well-known recharge-dischar
 ```{math}
 :label: Recharge-discharge
 \begin{align}
-\frac{dT}{dt}=CT+Dh-\epsilon T^3
+\frac{dT}{dt}=CT+Dh-\epsilon T^3 \\
 \frac{dh}{dt}=-ET-R_h
 \end{align}
 ```
