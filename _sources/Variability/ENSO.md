@@ -82,14 +82,12 @@ The delayed oscillator can be formulated as follows:
 \frac{dT}{dt} = AT-BT(t-\eta)-\epsilon T^3
 \end{align}
 ```
- where T represents the SST anomaly in the equatorial eastern Pacific. The first term on the right-hand side is the Bjerknes feedback between ocean and the atmosphere. The second term represents the negative feedback due to the wave reflection on the western boundary. The cubic term is an higher-order damping (doesn't rule out the periodicity). Overall, Delayed oscillator focuses on the western boundary processes but can capture most of the variability found in Zebiak and Cane model. 
+ where T represents the SST anomaly in the _equatorial eastern Pacific_. The first term on the right-hand side is the Bjerknes feedback between the ocean and the atmosphere. The second term represents the negative feedback due to the wave reflection on the western boundary. The cubic term is a higher-order damping (doesn't rule out the periodicity). Overall, the Delayed oscillator focuses on the western boundary processes but can capture most of the variability found in the Zebiak and Cane model. 
 
 
-### Western oscillator
+### Western-Pacific Oscillator
 
-Originally formulated by McCreary (1983) and modified by Dr. David Battisti, the Delayed Oscillator perceives ENSO evolutions from a transient perspective. In the Sverdrup Balance, the existence of meridional geostrophic flow balances the anomalous vorticity by wind stress. On transient timescales, many oceanic waves complete such planetary vorticity advection by zonal mean geostrophic flow. For example, during the propagation of a Rossby wave, it continuously exchanges angular momentum and warm water volume across latitudes. Thus, the Sverdrup balance can also be explained through the waves' lens. 
-
-The delayed oscillator can be summarized in the following figure.  
+Supported by observational evidence and other modeling studies, Weisberg and Wang (1997) proposed the Western-Pacific oscillator. One can consider it a more complicated version of the delayed oscillator but more focusing on the role of the western Pacific. The Western-Pacific oscillator can be summarized in the following figure.  
 
 ```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
 ---
