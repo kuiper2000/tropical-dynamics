@@ -334,10 +334,15 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#delayed-oscillator">
-   Delayed oscillator
+  <a class="reference internal nav-link" href="#enso-oscillator">
+   ENSO oscillator
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delayed-oscillator">
+     Delayed oscillator
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#western-oscillator">
      Western oscillator
@@ -375,10 +380,15 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#delayed-oscillator">
-   Delayed oscillator
+  <a class="reference internal nav-link" href="#enso-oscillator">
+   ENSO oscillator
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delayed-oscillator">
+     Delayed oscillator
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#western-oscillator">
      Western oscillator
@@ -431,26 +441,42 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <p>Details of each term will be provided in the final project.</p>
 </div>
+<div class="section" id="enso-oscillator">
+<h2>ENSO oscillator<a class="headerlink" href="#enso-oscillator" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="delayed-oscillator">
-<h2>Delayed oscillator<a class="headerlink" href="#delayed-oscillator" title="Permalink to this headline">¶</a></h2>
+<h3>Delayed oscillator<a class="headerlink" href="#delayed-oscillator" title="Permalink to this headline">¶</a></h3>
+<p>The earliest ENSO oscillator is proposed by McCreary (1983) (Fig. <a class="reference internal" href="#mccreary"><span class="std std-numref">Fig. 31</span></a>), which coupled an oceanic shallow water model with a diagnostic atmospheric component.</p>
+<div class="figure align-default" id="mccreary">
+<a class="reference internal image-reference" href="../_images/ENSO.gif"><img alt="../_images/ENSO.gif" src="../_images/ENSO.gif" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">The simulated ENSO evolution based on McCreary mdeol.</span><a class="headerlink" href="#mccreary" title="Permalink to this image">¶</a></p>
+</div>
+<p>McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. Battisti and Hirst (1989) used such an intermediate model to propose the well-know delayed oscillator mechanism.</p>
+<p>Different from the Recharge-discharge oscillator, the delayed oscillator focuses on the transient dynamics and explains the change of warm water volume through a <em>wave</em> lens.</p>
+<p>The delayed oscillator can be formulated as follows:</p>
+<div class="math notranslate nohighlight" id="equation-western-oscillator">
+<span class="eqno">(93)<a class="headerlink" href="#equation-western-oscillator" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\frac{dT}{dt} = AT-BT(t-\eta)-\epsilon T^3
+\end{align}\]</div>
+<p>where T represents the SST anomaly in the equatorial eastern Pacific. The first term on the right-hand-side is the Bjerknes feedback between ocean and the atmosphere. The second term represents the negative feedback due to the wave reflection on the western boundary.</p>
+</div>
 <div class="section" id="western-oscillator">
 <h3>Western oscillator<a class="headerlink" href="#western-oscillator" title="Permalink to this headline">¶</a></h3>
 <p>Originally formulated by McCreary (1983) and modified by Dr. David Battisti, the Delayed Oscillator perceives ENSO evolutions from a transient perspective. In the Sverdrup Balance, the existence of meridional geostrophic flow balances the anomalous vorticity by wind stress. On transient timescales, many oceanic waves complete such planetary vorticity advection by zonal mean geostrophic flow. For example, during the propagation of a Rossby wave, it continuously exchanges angular momentum and warm water volume across latitudes. Thus, the Sverdrup balance can also be explained through the waves’ lens.</p>
 <p>The delayed oscillator can be summarized in the following figure.</p>
-<div class="figure align-default" id="fig10-3">
+<div class="figure align-default" id="fig10-4">
 <a class="reference internal image-reference" href="../_images/delayed_oscillator.jpeg"><img alt="../_images/delayed_oscillator.jpeg" src="../_images/delayed_oscillator.jpeg" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">The western Pacific oscillator in the Delayed oscillator. From Wang (2018): A review of ENSO theories.</span><a class="headerlink" href="#fig10-3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">The western Pacific oscillator in the Delayed oscillator. From Wang (2018): A review of ENSO theories.</span><a class="headerlink" href="#fig10-4" title="Permalink to this image">¶</a></p>
 </div>
 <p>and the corresponding equation</p>
-<div class="math notranslate nohighlight" id="equation-delayed-oscillator">
-<span class="eqno">(92)<a class="headerlink" href="#equation-delayed-oscillator" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<div class="math notranslate nohighlight" id="equation-western-oscillator">
+<span class="eqno">(93)<a class="headerlink" href="#equation-western-oscillator" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 \frac{dT}{dt} &amp;= a \tau_1 +b_2\tau_2(t-\delta)-\epsilon T^3 \\ 
 \frac{dh}{dt} &amp;= -c \tau_1(t-\lambda)-R_hh \\ 
 \frac{d \tau_1}{dt} &amp;= dT -R_{\tau_1}\tau_1 \\
 \frac{d \tau_2}{dt} &amp;= eh -R_{\tau_2}\tau_2 \\
 \end{align}\end{split}\]</div>
 <p>Where, T, h, <span class="math notranslate nohighlight">\(\tau_1\)</span> and <span class="math notranslate nohighlight">\(\tau_2\)</span> are illustrated in <a href="#id1"><span class="problematic" id="id2">:numerf:`FIG10-3`</span></a></p>
-<p>We first start with equatorial westerly. The equatorial westerly (<span class="math notranslate nohighlight">\(\tau_1\)</span>) at Nino 4 driven by tropical convection (like MJO) will drive a downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. At the same time, the atmospheric Gill response also drives twin cyclones off the equator. The twin cyclone can induce oceanic upwelling due to Ekman pumping, which further expands westward to the Nino 6 regions (as indicated in the time delayed term in the second equation of <a class="reference internal" href="#equation-delayed-oscillator">(92)</a>). The cold SST then triggers surface high, which induces equatorial easterly at Nino 5. Unlike the equatorial westerly, the equatorial easterly will induce upwelling Kelvin wave, reversing the warm anomaly pattern. Such equatorial easterly has been the main focus over the past few years (i.e., Dr. Wayne Lee’s PhD work).</p>
+<p>We first start with equatorial westerly. The equatorial westerly (<span class="math notranslate nohighlight">\(\tau_1\)</span>) at Nino 4 driven by tropical convection (like MJO) will drive a downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. At the same time, the atmospheric Gill response also drives twin cyclones off the equator. The twin cyclone can induce oceanic upwelling due to Ekman pumping, which further expands westward to the Nino 6 regions (as indicated in the time-delayed term of <span class="math notranslate nohighlight">\(\tau_1(t-\lambda)\)</span>). The cold SST then triggers surface high, which induces equatorial easterly at Nino 5. Unlike the equatorial westerly, the equatorial easterly will induce upwelling Kelvin wave, reversing the warm anomaly pattern. Such equatorial easterly has been the main focus over the past few years (i.e., Dr. Wayne Lee’s PhD work).</p>
 </div>
 </div>
 </div>
