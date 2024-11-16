@@ -158,6 +158,7 @@ Y_b(y) & = 1/2[1-\cos (2\pi y/\lambda)] \\
 |y|\leq \lambda_h \\ 
 |y|\leq \lambda/2 \\
 |y|\leq \lambda   \\
+X = Y_h = Y_w = Y_b = 0, \text{otherwise} 
 \end{cases}
 ```
 
