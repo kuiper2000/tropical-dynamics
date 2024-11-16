@@ -21,7 +21,7 @@ We will go through some fundamental processes consisting of ENSO. It is summariz
 
 ```{figure} ../tropical-dynamics-figures/ENSO_diagram.png
 ---
-name: FIG6-1
+name: FIG10-2
 width: 700px
 ---
 The (known) feedback processes in ENSO.  
@@ -62,7 +62,7 @@ The delayed oscillator can be summarized in the following figure.
 
 ```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
 ---
-name: FIG10-2
+name: FIG10-3
 width: 700px
 ---
 The western Pacific oscillator in the Delayed oscillator. From Wang (2018): A review of ENSO theories. 
@@ -80,4 +80,7 @@ and the corresponding equation
 \end{align}
 ```
 
-We first start with equatorial easterly. The equatorial easterly ($\tau_1$) at Nino 4 driven by tropical convection (like MJO) will increase Nino 3 region SST anomaly. 
+
+Where, T, h, $\tau_1$ and $\tau_2$ are illustrated in {numerf}`FIG10-3` 
+
+We first start with equatorial easterly. The equatorial easterly ($\tau_1$) at Nino 4 driven by tropical convection (like MJO) will drive downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. 
