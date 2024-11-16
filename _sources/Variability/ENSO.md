@@ -15,7 +15,7 @@ The 2016 El Nino events from. Credits: NOAA_PSL.
 The earliest record of El Nino Southern oscillation was by a sailor in Peru back in 1892, long before its theory was developed. It wasn't until 1969, that Jacob Bjerknes proposed a conceptual model for positive feedback in tropical air-sea interaction. The ENSO theory is more completed when Drs. Mark Cane and Stephan Zebiak proposed a series of modeling frameworks, which incorporates (1) atmosphere, (2) ocean mixed layer, and (3) thermocline. Building on their prototype ENSO model, two schools of theory were proposed to explain the observed variability: (1) Wave theory and (2) Recharge-discharge of warm water volume. Among the wave theories, the Delayed oscillator by Drs. Max Suarez, Paul S. Schopf, David Battisti, and Anthony Hirts is the most famous. The recharge-discharge oscillator is proposed by Dr. Fei-Fei Jin (also Tim Li in the following year).  
 
 
-## Recharge-Discharge Mechanism
+## Warm Water Volume (Recharge-Discharge Mechanism)
 We will go through some fundamental processes consisting of ENSO. One should notice that both mechanisms (recharge-discharge and delayed oscillator) are simplified versions of the Zebiak and Cane and McCreary models for better physical interpretation given the more complex structure of these two intermediate models. 
 
 
@@ -57,7 +57,7 @@ Considering all of these processes as a whole is the well-known recharge-dischar
 Details of each term will be provided in the final project. 
 
 
-## ENSO oscillators
+## Wave School (the oscillators)
 ### Delayed oscillator
 The earliest ENSO oscillator is proposed by McCreary (1983) (Fig. {numref}`McCreary`), which coupled an oceanic shallow water model with a diagnostic atmospheric component. 
 
@@ -115,8 +115,26 @@ We first start with equatorial westerly. The equatorial westerly ($\tau_1$) at N
 ### Advective-reflective oscillator
 The advective-reflective oscillator is very similar to the previous two oscillators except looking into the wave reflection on both sides of the basin.
 
-### Zebiak and Cane model 
-While these oscillators focus on different aspects of ENSO, they all got some success in simulating ENSO due to the strong air-sea coupling, i.e., omitting one or a few variables won't hurt the main variability as long as the omitted variable can be represented by other processes. 
+## The Primitive Equation-based ENSO models
+While these oscillators/theories focus on different aspects of ENSO, they all got some success in simulating ENSO due to the strong air-sea coupling, i.e., omitting one or a few variables won't hurt the main variability as long as the omitted variables can be represented by other processes. 
+
+For a more completed picture, the McCreary (1983) and Zebiak and Cane (1987) models have incorporated all of the ingredients above using the primitive equations. Both models are a combination of (1) one oceanic shallow water model and (2) a diagnostic atmosphere component. Here we use McCreary Model as an example. 
+
+For the oceanic component, 
+
+
+```{math}
+:label: McCreary_ocean
+\begin{align}
+& u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
+& v_t +\beta y u + p_x = G + \nu_h \nabla^2 v \\
+& p_t + c^2 (u_x+v_x) = 0 
+\end{align}
+```
+
+
+
+
 
 
 
