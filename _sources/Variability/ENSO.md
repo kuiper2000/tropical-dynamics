@@ -82,7 +82,7 @@ The delayed oscillator can be formulated as follows:
 \frac{dT}{dt} = AT-BT(t-\eta)-\epsilon T^3
 \end{align}
 ```
- where T represents the SST anomaly in the equatorial eastern Pacific. The first term on the right-hand-side is the Bjerknes feedback between ocean and the atmosphere. The second term represents the negative feedback due to the wave reflection on the western boundary. 
+ where T represents the SST anomaly in the equatorial eastern Pacific. The first term on the right-hand side is the Bjerknes feedback between ocean and the atmosphere. The second term represents the negative feedback due to the wave reflection on the western boundary. The cubic term is an higher-order damping (doesn't rule out the periodicity). Overall, Delayed oscillator focuses on the western boundary processes but can capture most of the variability found in Zebiak and Cane model. 
 
 
 ### Western oscillator
