@@ -67,7 +67,7 @@ The earliest ENSO oscillator is proposed by McCreary (1983) (Fig. {numref}`McCre
 name: McCreary
 width: 700px
 ---
-The simulated ENSO evolution based on McCreary mdeol. 
+The simulated ENSO evolution is based on McCreary model. 
 ```
 
 McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. Battisti and Hirst (1989) used such an intermediate model to propose the well-know delayed oscillator mechanism. 
@@ -113,6 +113,10 @@ and the corresponding equation
 Where, T, h, $\tau_1$ and $\tau_2$ are illustrated in {numerf}`FIG10-3` 
 
 We first start with equatorial westerly. The equatorial westerly ($\tau_1$) at Nino 4 driven by tropical convection (like MJO) will drive a downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. At the same time, the atmospheric Gill response also drives twin cyclones off the equator. The twin cyclone can induce oceanic upwelling due to Ekman pumping, which further expands westward to the Nino 6 regions (as indicated in the time-delayed term of $\tau_1(t-\lambda)$). The cold SST then triggers surface high, which induces equatorial easterly at Nino 5. Unlike the equatorial westerly, the equatorial easterly will induce upwelling Kelvin wave, reversing the warm anomaly pattern. Such equatorial easterly has been the main focus over the past few years (i.e., Dr. Wayne Lee's PhD work). 
+
+### Advective-reflective oscillator
+
+
 
 
 
