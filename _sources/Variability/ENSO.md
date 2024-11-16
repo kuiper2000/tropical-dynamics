@@ -152,7 +152,7 @@ Y_h(y) & = 1/2[1-cos (2\pi y/\lambda_h)] \\
 Y_w(y) & = 1/2[1+cos (2\pi y/\lambda)] \\
 Y_b(y) & = 1/2[1-cos (2\pi y/\lambda)] 
 \end{align}
-
+=
 \begin{cases}
 |x|\leq D/4 \\
 |y|\leq \lambda_h \\ 
