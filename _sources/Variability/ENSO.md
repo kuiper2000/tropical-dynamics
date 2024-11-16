@@ -137,9 +137,9 @@ The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill
 ```{math}
 :label: McCreary_atmosphere
 \begin{cases}
-\tau_h = \tau_{0h}X(x-x_h)Y_h(y) \\
-\tau_w = \tau_{0w}X(x-x_h)Y_w(y) \\
-\tau_b = \tau_{0b}X(x-x_h)Y_b(y) \\
+\tau_h &= \tau_{0h}X(x-x_h)Y_h(y) \\
+\tau_w &= \tau_{0w}X(x-x_h)Y_w(y) \\
+\tau_b &= \tau_{0b}X(x-x_h)Y_b(y) \\
 \end{cases}
 ```
 
