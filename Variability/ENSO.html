@@ -335,8 +335,15 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#delayed-oscillator">
-   Delayed Oscillator
+   Delayed oscillator
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#western-oscillator">
+     Western oscillator
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -369,8 +376,15 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#delayed-oscillator">
-   Delayed Oscillator
+   Delayed oscillator
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#western-oscillator">
+     Western oscillator
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -395,7 +409,8 @@ title="Print to PDF"
 </div>
 <div class="section" id="recharge-discharge-mechanism">
 <h2>Recharge-Discharge Mechanism<a class="headerlink" href="#recharge-discharge-mechanism" title="Permalink to this headline">¶</a></h2>
-<p>We will go through some fundamental processes consisting of ENSO. It is summarized in the diagram below.</p>
+<p>We will go through some fundamental processes consisting of ENSO. One should notice that both mechanisms (recharge-discharge and delayed oscillator) are simplified versions of the Zebiak and Cane and McCreary models for better physical interpretation given the more complex structure of these two intermediate models.</p>
+<p>Recharge-Discharge Mechanism is summarized in the diagram below.</p>
 <div class="figure align-default" id="fig10-2">
 <a class="reference internal image-reference" href="../_images/ENSO_diagram.png"><img alt="../_images/ENSO_diagram.png" src="../_images/ENSO_diagram.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">The (known) feedback processes in ENSO.</span><a class="headerlink" href="#fig10-2" title="Permalink to this image">¶</a></p>
@@ -417,7 +432,9 @@ title="Print to PDF"
 <p>Details of each term will be provided in the final project.</p>
 </div>
 <div class="section" id="delayed-oscillator">
-<h2>Delayed Oscillator<a class="headerlink" href="#delayed-oscillator" title="Permalink to this headline">¶</a></h2>
+<h2>Delayed oscillator<a class="headerlink" href="#delayed-oscillator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="western-oscillator">
+<h3>Western oscillator<a class="headerlink" href="#western-oscillator" title="Permalink to this headline">¶</a></h3>
 <p>Originally formulated by McCreary (1983) and modified by Dr. David Battisti, the Delayed Oscillator perceives ENSO evolutions from a transient perspective. In the Sverdrup Balance, the existence of meridional geostrophic flow balances the anomalous vorticity by wind stress. On transient timescales, many oceanic waves complete such planetary vorticity advection by zonal mean geostrophic flow. For example, during the propagation of a Rossby wave, it continuously exchanges angular momentum and warm water volume across latitudes. Thus, the Sverdrup balance can also be explained through the waves’ lens.</p>
 <p>The delayed oscillator can be summarized in the following figure.</p>
 <div class="figure align-default" id="fig10-3">
@@ -433,7 +450,8 @@ title="Print to PDF"
 \frac{d \tau_2}{dt} &amp;= eh -R_{\tau_2}\tau_2 \\
 \end{align}\end{split}\]</div>
 <p>Where, T, h, <span class="math notranslate nohighlight">\(\tau_1\)</span> and <span class="math notranslate nohighlight">\(\tau_2\)</span> are illustrated in <a href="#id1"><span class="problematic" id="id2">:numerf:`FIG10-3`</span></a></p>
-<p>We first start with equatorial easterly. The equatorial easterly (<span class="math notranslate nohighlight">\(\tau_1\)</span>) at Nino 4 driven by tropical convection (like MJO) will drive downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1.</p>
+<p>We first start with equatorial westerly. The equatorial westerly (<span class="math notranslate nohighlight">\(\tau_1\)</span>) at Nino 4 driven by tropical convection (like MJO) will drive a downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. At the same time, the atmospheric Gill response also drives twin cyclones off the equator. The twin cyclone can induce oceanic upwelling due to Ekman pumping, which further expands westward to the Nino 6 regions (as indicated in the time delayed term in the second equation of <a class="reference internal" href="#equation-delayed-oscillator">(92)</a>). The cold SST then triggers surface high, which induces equatorial easterly at Nino 5. Unlike the equatorial westerly, the equatorial easterly will induce upwelling Kelvin wave, reversing the warm anomaly pattern. Such equatorial easterly has been the main focus over the past few years (i.e., Dr. Wayne Lee’s PhD work).</p>
+</div>
 </div>
 </div>
 
