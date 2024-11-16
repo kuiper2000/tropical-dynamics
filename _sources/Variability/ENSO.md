@@ -122,7 +122,6 @@ For a more completed picture, the McCreary (1983) and Zebiak and Cane (1987) mod
 
 For the oceanic component, 
 
-
 ```{math}
 :label: McCreary_ocean
 \begin{align}
@@ -137,16 +136,28 @@ The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill
 
 ```{math}
 :label: McCreary_atmosphere
-\begin{align}
-& u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
-& v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
-& p_t + c^2 (u_x+v_x) = 0 
-\end{align}
+\begin{cases}
+\tau_h = \tau_{0h}X(x-x_h)Y_h(y) \\
+\tau_w = \tau_{0w}X(x-x_h)Y_w(y) \\
+\tau_b = \tau_{0b}X(x-x_h)Y_b(y) \\
+\end{cases}
 ```
 
 
+```{math}
+:label: McCreary_atmosphere2
+\begin{align}
+X(x)   & = \cos (2\pi x/D) \\ 
+Y_h(y) & = 1/2[1-\cos (2\pi y/\lambda_h)] \\
+Y_w(y) & = 1/2[1+\cos (2\pi y/\lambda)] \\
+Y_b(y) & = 1/2[1-\cos (2\pi y/\lambda)] \\
+\end{align}
 
-
-
-
+\begin{cases}
+|x|\leq D/4 \\
+|y|\leq \lambda_h \\ 
+|y|\leq \lambda/2 \\
+|y|\leq \lambda   \\
+\end{cases}
+```
 

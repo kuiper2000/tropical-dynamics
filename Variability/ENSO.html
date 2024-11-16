@@ -515,11 +515,23 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <p>The ocean model <a class="reference internal" href="#equation-mccreary-ocean">(94)</a> is nearly identical to the atmospheric Gill model. The only difference is the existence of wind stress forcing (i.e., <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(G\)</span>). The wind stress forcing is the main process in triggering the oceanic waves.</p>
 <div class="math notranslate nohighlight" id="equation-mccreary-atmosphere">
-<span class="eqno">(95)<a class="headerlink" href="#equation-mccreary-atmosphere" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
-&amp; u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
-&amp; v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
-&amp; p_t + c^2 (u_x+v_x) = 0 
-\end{align}\end{split}\]</div>
+<span class="eqno">(95)<a class="headerlink" href="#equation-mccreary-atmosphere" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+\tau_h = \tau_{0h}X(x-x_h)Y_h(y) \\
+\tau_w = \tau_{0w}X(x-x_h)Y_w(y) \\
+\tau_b = \tau_{0b}X(x-x_h)Y_b(y) \\
+\end{cases}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-mccreary-atmosphere2">
+<span class="eqno">(96)<a class="headerlink" href="#equation-mccreary-atmosphere2" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}\begin{align}
+X(x)   &amp; = \cos (2\pi x/D) \\ 
+Y_h(y) &amp; = 1/2[1-\cos (2\pi y/\lambda_h)] \\
+Y_w(y) &amp; = 1/2[1+\cos (2\pi y/\lambda)] \\
+Y_b(y) &amp; = 1/2[1-\cos (2\pi y/\lambda)] \\
+\end{align}\end{split}\\\begin{split}\begin{cases}
+|x|\leq D/4 \\
+|y|\leq \lambda_h \\ 
+|y|\leq \lambda/2 \\
+|y|\leq \lambda   \\
+\end{cases}\end{split}\end{aligned}\end{align} \]</div>
 </div>
 </div>
 
