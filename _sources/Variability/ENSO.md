@@ -147,10 +147,10 @@ The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill
 ```{math}
 :label: McCreary_atmosphere2
 \begin{align}
-X(x)   & = \cos (2\pi x/D) \\ 
-Y_h(y) & = 1/2[1-\cos (2\pi y/\lambda_h)] \\
-Y_w(y) & = 1/2[1+\cos (2\pi y/\lambda)] \\
-Y_b(y) & = 1/2[1-\cos (2\pi y/\lambda)] \\
+X(x)   & = cos (2\pi x/D) \\ 
+Y_h(y) & = 1/2[1-cos (2\pi y/\lambda_h)] \\
+Y_w(y) & = 1/2[1+cos (2\pi y/\lambda)] \\
+Y_b(y) & = 1/2[1-cos (2\pi y/\lambda)] \\
 \end{align}
 
 \begin{cases}
