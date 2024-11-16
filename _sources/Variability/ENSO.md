@@ -57,8 +57,7 @@ Considering all of these processes as a whole is the well-known recharge-dischar
 Details of each term will be provided in the final project. 
 
 
-## ENSO oscillator
-
+## ENSO oscillators
 ### Delayed oscillator
 The earliest ENSO oscillator is proposed by McCreary (1983) (Fig. {numref}`McCreary`), which coupled an oceanic shallow water model with a diagnostic atmospheric component. 
 
@@ -86,8 +85,7 @@ The delayed oscillator can be formulated as follows:
 
 
 ### Western-Pacific Oscillator
-
-Supported by observational evidence and other modeling studies, Weisberg and Wang (1997) proposed the Western-Pacific oscillator. One can consider it a more complicated version of the delayed oscillator but more focusing on the role of the western Pacific. The Western-Pacific oscillator can be summarized in the following figure.  
+Supported by observational evidence and other modeling studies, Weisberg and Wang (1997) proposed the Western-Pacific oscillator. One can consider it a more complicated version of the delayed oscillator but more focused on the role of the western Pacific. The Western-Pacific oscillator can be summarized in the following figure.  
 
 ```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
 ---
@@ -110,12 +108,15 @@ and the corresponding equation
 ```
 
 
-Where, T, h, $\tau_1$ and $\tau_2$ are illustrated in {numref}`FIG10-3` 
+Where, T, h, $\tau_1$ and $\tau_2$ are illustrated in {numref}`FIG10-4` 
 
 We first start with equatorial westerly. The equatorial westerly ($\tau_1$) at Nino 4 driven by tropical convection (like MJO) will drive a downwelling Kelvin wave (warm anomaly) which further propagates eastward to increase Nino 3 temperature. This is represented in the first term of equation 1. At the same time, the atmospheric Gill response also drives twin cyclones off the equator. The twin cyclone can induce oceanic upwelling due to Ekman pumping, which further expands westward to the Nino 6 regions (as indicated in the time-delayed term of $\tau_1(t-\lambda)$). The cold SST then triggers surface high, which induces equatorial easterly at Nino 5. Unlike the equatorial westerly, the equatorial easterly will induce upwelling Kelvin wave, reversing the warm anomaly pattern. Such equatorial easterly has been the main focus over the past few years (i.e., Dr. Wayne Lee's PhD work). 
 
 ### Advective-reflective oscillator
+The advective-reflective oscillator is very similar to the previous two oscillators except looking into the wave reflection on both sides of the basin.
 
+### Zebiak and Cane model 
+While these oscillators focus on different aspects of ENSO, they all got some success in simulating ENSO due to the strong air-sea coupling, i.e., omitting one or a few variables won't hurt the main variability as long as the omitted variable can be represented by other processes. 
 
 
 
