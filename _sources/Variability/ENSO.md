@@ -12,7 +12,7 @@ The 2016 El Nino events from. Credits: NOAA_PSL.
 ```
 
 ## Background 
-The earliest record of El Nino Southern oscillation was by a sailor in Peru back in 1892, long before its theory was developed. It wasn't until 1969, that Jacob Bjerknes proposed a conceptual model for positive feedback in tropical air-sea interaction. The ENSO theory is more completed when Drs. Mark Cane and Stephan Zebiak proposed a series of modeling frameworks, which incorporates (1) atmosphere, (2) ocean mixed layer, and (3) thermocline. Building on their prototype ENSO model, two schools of theory were proposed to explain the observed variability: (1) Delayed oscillation by Dr. David Battisti, and (2) Recharge-discharge oscillator by Dr. Fei-Fei Jin. 
+The earliest record of El Nino Southern oscillation was by a sailor in Peru back in 1892, long before its theory was developed. It wasn't until 1969, that Jacob Bjerknes proposed a conceptual model for positive feedback in tropical air-sea interaction. The ENSO theory is more completed when Drs. Mark Cane and Stephan Zebiak proposed a series of modeling frameworks, which incorporates (1) atmosphere, (2) ocean mixed layer, and (3) thermocline. Building on their prototype ENSO model, two schools of theory were proposed to explain the observed variability: (1) Wave theory and (2) Recharge-discharge of warm water volume. Among the wave theories, the Delayed oscillator by Drs. Max Suarez, Paul S. Schopf, David Battisti, and Anthony Hirts is the most famous. The recharge-discharge oscillator is proposed by Dr. Fei-Fei Jin (also Tim Li in the following year).  
 
 
 ## Recharge-Discharge Mechanism
