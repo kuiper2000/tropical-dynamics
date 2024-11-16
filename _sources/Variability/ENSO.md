@@ -127,13 +127,22 @@ For the oceanic component,
 :label: McCreary_ocean
 \begin{align}
 & u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
-& v_t +\beta y u + p_x = G + \nu_h \nabla^2 v \\
+& v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
 & p_t + c^2 (u_x+v_x) = 0 
 \end{align}
 ```
 
+The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill model. The only difference is the existence of wind stress forcing (i.e., $F$ and $G$). The wind stress forcing is the main process in triggering the oceanic waves.   
 
 
+```{math}
+:label: McCreary_atmosphere
+\begin{align}
+& u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
+& v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
+& p_t + c^2 (u_x+v_x) = 0 
+\end{align}
+```
 
 
 

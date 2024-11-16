@@ -510,7 +510,14 @@ title="Print to PDF"
 <div class="math notranslate nohighlight" id="equation-mccreary-ocean">
 <span class="eqno">(94)<a class="headerlink" href="#equation-mccreary-ocean" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
 &amp; u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
-&amp; v_t +\beta y u + p_x = G + \nu_h \nabla^2 v \\
+&amp; v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
+&amp; p_t + c^2 (u_x+v_x) = 0 
+\end{align}\end{split}\]</div>
+<p>The ocean model <a class="reference internal" href="#equation-mccreary-ocean">(94)</a> is nearly identical to the atmospheric Gill model. The only difference is the existence of wind stress forcing (i.e., <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(G\)</span>). The wind stress forcing is the main process in triggering the oceanic waves.</p>
+<div class="math notranslate nohighlight" id="equation-mccreary-atmosphere">
+<span class="eqno">(95)<a class="headerlink" href="#equation-mccreary-atmosphere" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+&amp; u_t -\beta y v + p_x = F + \nu_h \nabla^2 u \\
+&amp; v_t +\beta y u + p_y = G + \nu_h \nabla^2 v \\
 &amp; p_t + c^2 (u_x+v_x) = 0 
 \end{align}\end{split}\]</div>
 </div>
