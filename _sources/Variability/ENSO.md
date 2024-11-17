@@ -131,7 +131,7 @@ For the oceanic component,
 \end{align}
 ```
 
-The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill model. The only difference is the existence of wind stress forcing (i.e., $F$ and $G$). The wind stress forcing is the main process in triggering the oceanic waves.   
+The ocean model {eq}`McCreary_ocean` is nearly identical to the atmospheric Gill model. The only difference is the existence of wind stress forcing (i.e., $F$ and $G$, which are $\tau_x/H$ and $\tau_y/H$ respectively). The wind stress forcing is the main process in triggering the oceanic waves.   
 
 
 ```{math}
