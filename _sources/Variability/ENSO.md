@@ -176,3 +176,7 @@ The model wind stress forcing is only witched between two states (1) enhanced of
 ```
 
 when eastern Pacific is anomalously warm, we have reduced equatorial trades but enhanced subtropical trades and vice versa. With such simple setup, climate scientists are able to simulate interannual variability similar to the observed ENSO. 
+
+{numref}`McCreary` shows the simulations with modified parameters (with $x_w$ = $x_b$ = 3000km and $x_h$ = 5000km and keep the rest the same). One can find the equatorial westerly can trigger off-equatorial downwelling Rossby waves that propagate westward and reflect as an equaotiral Kelvin wave (downwelling) at the western boundary. When the reflected waves touch the eastern boundary, it change the intensity of Walker circulation and thus change the equatorial trades intensity. 
+
+On the other hand, one can also find the Recharge-discharge mechanisms in the simulation. When the eastern Pacific is anomalously warm/cold (and during its peak phase), the difference in warm water volume over the western Pacific is small (during its peak transition). On the contrary, when the eastern Pacific has small change in SST, the difference in warm water volume between the subtropics and the extratropics is the largest.  
