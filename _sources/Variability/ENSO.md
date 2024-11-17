@@ -162,7 +162,7 @@ X = Y_h = Y_w = Y_b = 0, \text{otherwise}
 ```
 
 
-where $x_h$ = 7500km, and $x_w$ = $x_b$ = 5000km. $\tau_{0h}$ = -0.025$N\cdotm^{-1}$, and $\tau_{0w}$=$\tau_{0b}$ = -0.05$N\cdotm^{-1}$. $D$ is the zoanl domain size. The structure of $\tau_b$ and $\tau_h$ are the same except $\tau_{b}$ is located in the central Pacific and $\tau{h}$ is located in the eastern Pacific. $\tau_h$ represents enhanced Hadley cell and enhanced trade wind centered off equator. $\tau_{w}$ represents an enhanced equatorial esterly or well-developed Walker cell. 
+where $x_h$ = 7500km, and $x_w$ = $x_b$ = 5000km. $\tau_{0h}$ = -0.025$N\cdot m^{-1}$, and $\tau_{0w}$=$\tau_{0b}$ = -0.05$N\cdot m^{-1}$. $D$ is the zoanl domain size. The structure of $\tau_b$ and $\tau_h$ are the same except $\tau_{b}$ is located in the central Pacific and $\tau{h}$ is located in the eastern Pacific. $\tau_h$ represents enhanced Hadley cell and enhanced trade wind centered off equator. $\tau_{w}$ represents an enhanced equatorial esterly or well-developed Walker cell. 
 
 The model wind stress forcing is only witched between two states (1) enhanced off-equator trades at the eastern Pacific and (2) enhanced trades at the equator, where the switch is eastern boundary SST. u.e., 
 
