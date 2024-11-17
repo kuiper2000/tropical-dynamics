@@ -339,8 +339,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-change-in-speficif-humidity">
-     The Change in Speficif Humidity
+    <a class="reference internal nav-link" href="#the-change-in-specific-relative-humidity">
+     The Change in Specific/Relative Humidity
     </a>
    </li>
   </ul>
@@ -375,8 +375,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-change-in-speficif-humidity">
-     The Change in Speficif Humidity
+    <a class="reference internal nav-link" href="#the-change-in-specific-relative-humidity">
+     The Change in Specific/Relative Humidity
     </a>
    </li>
   </ul>
@@ -399,18 +399,25 @@ title="Print to PDF"
 <div class="section" id="wtg-and-qe">
 <h3>WTG and QE<a class="headerlink" href="#wtg-and-qe" title="Permalink to this headline">¶</a></h3>
 <p>In the tropics, the moist adiabat dominates the vertical profile of saturated MSE regardless of land or ocean. Thus, for regions above the cloud base, they all share the same MSE profile. (Green curves in <a class="reference internal" href="#fig11-1"><span class="std std-numref">Fig. 33</span></a>). As climate warms, the oceanic regions’ temperature below the cloud base shifts from the first light red line to the first dark red line. (i.e., <span class="math notranslate nohighlight">\(\Delta T^{O}\)</span>). The corresponding MSE profile shifts from the first green curve (on the left) to the second green curve (on the right) (i.e., <span class="math notranslate nohighlight">\(\Delta T^{L}_{FT}=\Delta T^{O}_{FT}\)</span>).</p>
-<p>For land regions, the cloud base is usually higher than the ocean regions due to stronger CIN. Thus, starting from the cloud base over the land and following the dry adiabat to the surface, we can predict surface warming. In addition, given the zero buoyancy assumption (column MSE conserved, i.e., A-profile), we can go back down to the surface for both land and ocean. This implies the change in MSE is the same for both land and ocean. (the portion of dry static energy and latent energy can be different).</p>
+<p>For land regions, the cloud base is usually higher than the ocean regions due to stronger CIN. Thus, starting from the cloud base over the land and following the dry adiabat to the surface, we can predict surface warming. In addition, given the zero buoyancy assumption (column MSE conserved, i.e., A-profile), we can go back down to the surface for both land and ocean. This implies the change in MSE is the same for both land and ocean. (the portion of dry static energy and latent energy can be different). (i.e., <span class="math notranslate nohighlight">\(\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{ocean}}\)</span>)</p>
 <div class="figure align-default" id="fig11-1">
 <a class="reference internal image-reference" href="../_images/OGorman.png"><img alt="../_images/OGorman.png" src="../_images/OGorman.png" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">The conceptual model for tropical hydrological cycle. Modified from Duan, McKinnon and Simpson (2024) and Byrne and O’Gorman, PNAS (2018)</span><a class="headerlink" href="#fig11-1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<div class="section" id="the-change-in-speficif-humidity">
-<h3>The Change in Speficif Humidity<a class="headerlink" href="#the-change-in-speficif-humidity" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="the-change-in-specific-relative-humidity">
+<h3>The Change in Specific/Relative Humidity<a class="headerlink" href="#the-change-in-specific-relative-humidity" title="Permalink to this headline">¶</a></h3>
 <p>Some box model and trajectory model suggests that the ratio of change in specific humidity over the land and over the ocean remains constant.  i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-specific-humidity-ratio">
 <span class="eqno">(98)<a class="headerlink" href="#equation-specific-humidity-ratio" title="Permalink to this equation">¶</a></span>\[\delta q_{\text{land}} = \gamma \delta q_{\text{ocean}}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\gamma&lt;1\)</span>. We can set <span class="math notranslate nohighlight">\(\gamma\)</span> based on current climate value.</p>
+<p>where <span class="math notranslate nohighlight">\(\gamma&lt;1\)</span>. We can set <span class="math notranslate nohighlight">\(\gamma\)</span> based on the current climate value.</p>
+<p>Following the conclusion of <span class="math notranslate nohighlight">\(\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{ocean}}\)</span>, one can easily show that based on the definition of MSE and linearized Clausius-Claperyon relationship.</p>
+<div class="math notranslate nohighlight" id="equation-land-warms-more">
+<span class="eqno">(99)<a class="headerlink" href="#equation-land-warms-more" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+\delta T_{\text{land}} &amp; = \delta T_{\text{land}}+ (1-\gamma)\frac{L}{c_p} \delta q_{\text{ocean}} \\
+\frac{\delta \text{RH}_{\text{land}}}{\text{RH}_{\text{land}}} = \alpha (\gamma-1)\frac{L}{c_p} \delta q_{\text{ocean}} 
+\end{align}\end{split}\]</div>
+<p>The second equation of <a class="reference internal" href="#equation-land-warms-more">(99)</a></p>
 </div>
 </div>
 </div>
