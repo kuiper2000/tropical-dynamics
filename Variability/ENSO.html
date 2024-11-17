@@ -517,8 +517,8 @@ title="Print to PDF"
 <div class="math notranslate nohighlight" id="equation-mccreary-atmosphere">
 <span class="eqno">(95)<a class="headerlink" href="#equation-mccreary-atmosphere" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
 \tau_h &amp;= \tau_{0h}X(x-x_h)Y_h(y) \\
-\tau_w &amp;= \tau_{0w}X(x-x_h)Y_w(y) \\
-\tau_b &amp;= \tau_{0b}X(x-x_h)Y_b(y) \\
+\tau_w &amp;= \tau_{0w}X(x-x_w)Y_w(y) \\
+\tau_b &amp;= \tau_{0b}X(x-x_b)Y_b(y) \\
 \end{cases}\end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-mccreary-atmosphere2">
 <span class="eqno">(96)<a class="headerlink" href="#equation-mccreary-atmosphere2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
@@ -533,6 +533,13 @@ Y_b(y) &amp; = 1/2[1-\mathrm{cos} (2\pi y/\lambda)]
 |y|\leq \lambda/2 \\
 |y|\leq \lambda   \\
 X = Y_h = Y_w = Y_b = 0, \text{otherwise} 
+\end{cases}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(x_h\)</span> = 7500km, and <span class="math notranslate nohighlight">\(x_w\)</span> = <span class="math notranslate nohighlight">\(x_b\)</span> = 5000km. <span class="math notranslate nohighlight">\(\tau_{0h}\)</span> = -0.025<span class="math notranslate nohighlight">\(N\cdotm^{-1}\)</span>, and <span class="math notranslate nohighlight">\(\tau_{0w}\)</span>=<span class="math notranslate nohighlight">\(\tau_{0b}\)</span> = -0.05<span class="math notranslate nohighlight">\(N\cdotm^{-1}\)</span>. <span class="math notranslate nohighlight">\(D\)</span> is the zoanl domain size. The structure of <span class="math notranslate nohighlight">\(\tau_b\)</span> and <span class="math notranslate nohighlight">\(\tau_h\)</span> are the same except <span class="math notranslate nohighlight">\(\tau_{b}\)</span> is located in the central Pacific and <span class="math notranslate nohighlight">\(\tau{h}\)</span> is located in the eastern Pacific. <span class="math notranslate nohighlight">\(\tau_h\)</span> represents enhanced Hadley cell and enhanced trade wind centered off equator. <span class="math notranslate nohighlight">\(\tau_{w}\)</span> represents an enhanced equatorial esterly or well-developed Walker cell.</p>
+<p>The model wind stress forcing is only witched between two states (1) enhanced off-equator trades at the eastern Pacific and (2) enhanced trades at the equator, where the switch is eastern boundary SST. u.e.,</p>
+<div class="math notranslate nohighlight" id="equation-mccreary-atmosphere3">
+<span class="eqno">(97)<a class="headerlink" href="#equation-mccreary-atmosphere3" title="Permalink to this equation">¶</a></span>\[\begin{split}\tau_x = \begin{cases}
+\tau_b +\tau_h \text{ when $h_e&gt;h_c$} \\
+\tau_b +\tau_w \text{ when $h_e\leqh_c$} \\
 \end{cases}\end{split}\]</div>
 </div>
 </div>
