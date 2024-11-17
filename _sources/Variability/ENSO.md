@@ -171,6 +171,8 @@ The model wind stress forcing is only witched between two states (1) enhanced of
 :label: McCreary_atmosphere3
 \tau_x = \begin{cases}
 \tau_b +\tau_h \text{ when $h_e>h_c$} \\
-\tau_b +\tau_w \text{ when $h_e\leqh_c$} \\
+\tau_b +\tau_w \text{ when $h_e\leq h_c$} \\
 \end{cases}
 ```
+
+when eastern Pacific is anomalously warm, we have reduced equatorial trades but enhanced subtropical trades and vice versa. With such simple setup, climate scientists are able to simulate interannual variability similar to the observed ENSO. 
