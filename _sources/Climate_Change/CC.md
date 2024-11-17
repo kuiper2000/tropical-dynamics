@@ -36,7 +36,7 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 :label: land_warms_more
 \begin{align}
 \delta T_{\text{land}} & = \delta T_{\text{land}}+ (1-\gamma)\frac{L}{c_p} \delta q_{\text{ocean}} \\
-\frac{\delta \text{RH}_{\text{land}}}{\text{RH}_{\text{land}}} = \alpha (\gamma-1)\frac{L}{c_p} \delta q_{\text{ocean}} 
+\frac{\delta \text{RH}_{\text{land}}}{\text{RH}_{\text{land}}} & = \alpha (\gamma-1)\frac{L}{c_p} \delta q_{\text{ocean}} 
 \end{align}
 ```
 
