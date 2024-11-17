@@ -19,3 +19,7 @@ width: 700px
 The conceptual model for tropical hydrological cycle. Modified from Duan, McKinnon and Simpson (2024) and Byrne and O'Gorman, PNAS (2018)
 ```
 
+## The Change in Speficif Humidity 
+Some box model and trajectory model suggests that the ratio of change in specific humidity over the land and over the ocean remains a constant.  
+
+
