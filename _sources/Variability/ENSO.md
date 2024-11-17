@@ -58,7 +58,6 @@ Details of each term will be provided in the final project.
 
 ## Wave School (the oscillators)
 ### Delayed oscillator
-McCreary (1983) first introduced a coupled ocean-atmosphere model, which Suarez and Schopf (1988) later refined into the delayed oscillator. This model explains SST variability via Rossby wave reflection at the western boundary. The following equation captures the dynamics:
 
 ```{figure} ../tropical-dynamics-figures/ENSO.gif
 ---
