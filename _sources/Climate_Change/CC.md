@@ -40,9 +40,5 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 \end{align}
 ```
 
-
-
-The second equation of {eq}`land_warms_more`
-
-
+{eq}`land_warms_more` suggests that land warms more than the ocean and the relative humidity over land tends to decrease.  
 
