@@ -49,10 +49,11 @@ __Part II: Variability__
     * Lidzen and Holton model
   
 * {ref}`ENSO`
-    * Governing equation and assumptions of large-scale tropical ocean
-    * The model hierarchy of ENSO
-    * Delayed oscillator
-    * Recharge-discharge oscillator
+    * Background
+    * Warm Water Volume (Recharge-Discharge oscillator)
+    * Wave School
+    * The Primitive Equation of ENSO Model
+    * ENSO Diversity 
 
 * {ref}`teleconnection`
     * The conservation of planetary vorticity and Rossby wave source
