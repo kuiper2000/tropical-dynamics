@@ -5,7 +5,7 @@ Studying the future change of the hydrological cycle is a challenging task given
 
 
 ## Zeroth Order Assumption: WTG
-In the tropics, the moist adiabat dominates the vertical profile of saturated MSE regardless  
+In the tropics, the moist adiabat dominates the vertical profile of saturated MSE regardless over land or ocean. Thus, for regions above the cloud base, they all share the same MSE profile. (Green curves in {numref}`FIG11-1`) 
 
 
 ```{figure} ../tropical-dynamics-figures/OGorman.png
