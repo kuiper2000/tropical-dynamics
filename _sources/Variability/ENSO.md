@@ -12,7 +12,7 @@ The 2016 El Niño event. Credit: NOAA_PSL.
 ```
 
 ## Background 
-The earliest recorded observation of ENSO dates back to 1892 when a sailor in Peru noted its effects, long before its theoretical foundation was established. In 1969, Jacob Bjerknes introduced a conceptual model describing the positive feedback mechanisms in tropical air-sea interactions. ENSO theory was further developed when Drs. Mark Cane and Stephen Zebiak proposed a modeling framework integrating (1) the atmosphere, (2) the ocean's mixed layer, and (3) thermocline dynamics. Building on their prototype, two major theories emerged to explain ENSO variability: (1) Wave Theory and (2) the Recharge-Discharge Mechanism. Among wave theories, the Delayed Oscillator model, advanced by Drs. Max Suarez, Paul Schopf, David Battisti, and Anthony Hirst, is particularly notable. The recharge-discharge oscillator was proposed by Dr. Fei-Fei Jin, with further contributions by Dr. Tim Li.
+The earliest recorded observation of ENSO dates back to 1892 when a sailor in Peru noted its effects, long before its theoretical foundation was established. In 1969, {cite}`Bjerknes1969-wh` introduced a conceptual model describing the positive feedback mechanisms in tropical air-sea interactions. ENSO theory was further developed when Drs. Mark Cane and Stephen Zebiak proposed a modeling framework integrating (1) the atmosphere, (2) the ocean's mixed layer, and (3) thermocline dynamics. Building on their prototype, two major theories emerged to explain ENSO variability: (1) Wave Theory and (2) the Recharge-Discharge Mechanism. Among wave theories, the Delayed Oscillator model, advanced by Drs. Max Suarez, Paul Schopf, David Battisti, and Anthony Hirst, is particularly notable. The recharge-discharge oscillator was proposed by Dr. Fei-Fei Jin, with further contributions by Dr. Tim Li.
 
 ## Warm Water Volume (Recharge-Discharge Mechanism)
 We will explore key processes underlying ENSO. Both the recharge-discharge mechanism and the delayed oscillator are simplified interpretations of the more complex Zebiak and Cane models, enabling better physical insights.
@@ -36,7 +36,7 @@ Key Processes:
 
 (8)+(9) Thermocline Feedback: A deepened thermocline reduces the ability of upwelling to bring cooler subsurface water to the surface.
 
-These processes collectively form the recharge-discharge oscillator described by Jin (1997). Oscillations require at least one negative feedback, and SST and thermocline depth are primary predictors, with atmospheric processes modeled as steady states due to their transient nature compared to ocean processes. 
+These processes collectively form the recharge-discharge oscillator described by {cite}`Jin1997-ct`. Oscillations require at least one negative feedback, and SST and thermocline depth are primary predictors, with atmospheric processes modeled as steady states due to their transient nature compared to ocean processes. 
 
 
 :::{note}
@@ -67,9 +67,9 @@ width: 700px
 The simulated ENSO evolution is based on McCreary model. 
 ```
 
-McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. Battisti and Hirst (1989) used such an intermediate model to propose the well-know delayed oscillator mechanism. 
+McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. {cite}`Battisti1989-tj` used such an intermediate model to propose the well-know delayed oscillator mechanism. 
 
-Different from the Recharge-discharge oscillator, the delayed oscillator focuses on the transient dynamics and explains the change of warm water volume through a _wave_ lens. 
+Different from the Recharge-discharge oscillator, the delayed oscillator focuses on the transient dynamics and explains the change of warm water volume and SST through a _wave_ lens. 
 
 The delayed oscillator can be formulated as follows: 
 
@@ -117,7 +117,7 @@ The advective-reflective oscillator is very similar to the previous two oscillat
 ## The Primitive Equation-based ENSO models
 While these oscillators/theories focus on different aspects of ENSO, they all got some success in simulating ENSO due to the strong air-sea coupling, i.e., omitting one or a few variables won't hurt the main variability as long as the omitted variables can be represented by other processes. 
 
-For a more completed picture, the McCreary (1983) and Zebiak and Cane (1987) models have incorporated all of the ingredients above using the primitive equations. Both models are a combination of (1) one oceanic shallow water model and (2) a diagnostic atmosphere component. Here we use McCreary Model as an example. 
+For a more completed picture, the {cite}`McCreary1983-ex` and {cite}`Zebiak1987-cz` models have incorporated all of the ingredients above using the primitive equations. Both models are a combination of (1) one oceanic shallow water model and (2) a diagnostic atmosphere component. Here we use McCreary Model as an example. 
 
 For the oceanic component, 
 
@@ -180,5 +180,9 @@ when eastern Pacific is anomalously warm, we have reduced equatorial trades but 
 
 On the other hand, one can also find the Recharge-discharge mechanisms in the simulation. When the eastern Pacific is anomalously warm/cold (and during its peak phase), the difference in warm water volume over the western Pacific is small (during its peak transition). On the contrary, when the eastern Pacific has small change in SST, the difference in warm water volume between the subtropics and the tropics is the largest.
 
-
 The Recharge-discharge oscillator describes evolution in eastern Pacific SST and western Pacific warm water volume. These two variables are orthogonal in time and thus their interaction forms an oscillation. 
+
+
+
+```{bibliography}
+```

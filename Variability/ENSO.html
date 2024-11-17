@@ -435,7 +435,7 @@ title="Print to PDF"
 </div>
 <div class="section" id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
-<p>The earliest recorded observation of ENSO dates back to 1892 when a sailor in Peru noted its effects, long before its theoretical foundation was established. In 1969, Jacob Bjerknes introduced a conceptual model describing the positive feedback mechanisms in tropical air-sea interactions. ENSO theory was further developed when Drs. Mark Cane and Stephen Zebiak proposed a modeling framework integrating (1) the atmosphere, (2) the ocean’s mixed layer, and (3) thermocline dynamics. Building on their prototype, two major theories emerged to explain ENSO variability: (1) Wave Theory and (2) the Recharge-Discharge Mechanism. Among wave theories, the Delayed Oscillator model, advanced by Drs. Max Suarez, Paul Schopf, David Battisti, and Anthony Hirst, is particularly notable. The recharge-discharge oscillator was proposed by Dr. Fei-Fei Jin, with further contributions by Dr. Tim Li.</p>
+<p>The earliest recorded observation of ENSO dates back to 1892 when a sailor in Peru noted its effects, long before its theoretical foundation was established. In 1969, <span id="id1">[<a class="reference internal" href="QBO.html#id5"><span>Bje69</span></a>]</span> introduced a conceptual model describing the positive feedback mechanisms in tropical air-sea interactions. ENSO theory was further developed when Drs. Mark Cane and Stephen Zebiak proposed a modeling framework integrating (1) the atmosphere, (2) the ocean’s mixed layer, and (3) thermocline dynamics. Building on their prototype, two major theories emerged to explain ENSO variability: (1) Wave Theory and (2) the Recharge-Discharge Mechanism. Among wave theories, the Delayed Oscillator model, advanced by Drs. Max Suarez, Paul Schopf, David Battisti, and Anthony Hirst, is particularly notable. The recharge-discharge oscillator was proposed by Dr. Fei-Fei Jin, with further contributions by Dr. Tim Li.</p>
 </div>
 <div class="section" id="warm-water-volume-recharge-discharge-mechanism">
 <h2>Warm Water Volume (Recharge-Discharge Mechanism)<a class="headerlink" href="#warm-water-volume-recharge-discharge-mechanism" title="Permalink to this headline">¶</a></h2>
@@ -450,7 +450,7 @@ title="Print to PDF"
 <p>(3)+(4)+(5) Subtropical Feedback: Westerly winds increase cyclonic wind stress curl in subtropical areas. To balance reduced relative vorticity, poleward geostrophic currents transport warm water to higher latitudes and shallow the equatorial thermocline. The opposite occurs during La Niña.</p>
 <p>(6)+(7) Ekman Feedback: Westerly winds during El Niño years suppress equatorial upwelling through Ekman pumping.</p>
 <p>(8)+(9) Thermocline Feedback: A deepened thermocline reduces the ability of upwelling to bring cooler subsurface water to the surface.</p>
-<p>These processes collectively form the recharge-discharge oscillator described by Jin (1997). Oscillations require at least one negative feedback, and SST and thermocline depth are primary predictors, with atmospheric processes modeled as steady states due to their transient nature compared to ocean processes.</p>
+<p>These processes collectively form the recharge-discharge oscillator described by <span id="id2">[<a class="reference internal" href="QBO.html#id20"><span>Jin97</span></a>]</span>. Oscillations require at least one negative feedback, and SST and thermocline depth are primary predictors, with atmospheric processes modeled as steady states due to their transient nature compared to ocean processes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Sverdrup balance was first used to explain the existence of Western Boundary current. It was then modified by Dr. Biran Hoskins to explain the extension of subtropical high and monsoon gyre. (See Hoskins and Rodwell). Dr. Fei-Fei Jin was working with Dr. Brian Hoskins</p>
@@ -470,8 +470,8 @@ title="Print to PDF"
 <a class="reference internal image-reference" href="../_images/ENSO.gif"><img alt="../_images/ENSO.gif" src="../_images/ENSO.gif" style="width: 700px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">The simulated ENSO evolution is based on McCreary model.</span><a class="headerlink" href="#mccreary" title="Permalink to this image">¶</a></p>
 </div>
-<p>McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. Battisti and Hirst (1989) used such an intermediate model to propose the well-know delayed oscillator mechanism.</p>
-<p>Different from the Recharge-discharge oscillator, the delayed oscillator focuses on the transient dynamics and explains the change of warm water volume through a <em>wave</em> lens.</p>
+<p>McCreary hypothesized that the reflection of oceanic Rossby waves can help generate the interannual variability of SST. By emphasizing on the western boundary, Suarez and Schopf (1988) proposed the prototype of the delayed oscillator. Zebiak and Cane then coupled an atmospheric Gill model with a 1.5-layer SST model (mixed layer + thermocline dynamics) becoming the first who successfully predicted the ENSO. <span id="id3">[<a class="reference internal" href="QBO.html#id11"><span>BH89</span></a>]</span> used such an intermediate model to propose the well-know delayed oscillator mechanism.</p>
+<p>Different from the Recharge-discharge oscillator, the delayed oscillator focuses on the transient dynamics and explains the change of warm water volume and SST through a <em>wave</em> lens.</p>
 <p>The delayed oscillator can be formulated as follows:</p>
 <div class="math notranslate nohighlight" id="equation-western-oscillator">
 <span class="eqno">(93)<a class="headerlink" href="#equation-western-oscillator" title="Permalink to this equation">¶</a></span>\[\begin{align}
@@ -505,7 +505,7 @@ title="Print to PDF"
 <div class="section" id="the-primitive-equation-based-enso-models">
 <h2>The Primitive Equation-based ENSO models<a class="headerlink" href="#the-primitive-equation-based-enso-models" title="Permalink to this headline">¶</a></h2>
 <p>While these oscillators/theories focus on different aspects of ENSO, they all got some success in simulating ENSO due to the strong air-sea coupling, i.e., omitting one or a few variables won’t hurt the main variability as long as the omitted variables can be represented by other processes.</p>
-<p>For a more completed picture, the McCreary (1983) and Zebiak and Cane (1987) models have incorporated all of the ingredients above using the primitive equations. Both models are a combination of (1) one oceanic shallow water model and (2) a diagnostic atmosphere component. Here we use McCreary Model as an example.</p>
+<p>For a more completed picture, the <span id="id4">[<a class="reference internal" href="QBO.html#id13"><span>McC83</span></a>]</span> and <span id="id5">[<a class="reference internal" href="QBO.html#id12"><span>ZC87</span></a>]</span> models have incorporated all of the ingredients above using the primitive equations. Both models are a combination of (1) one oceanic shallow water model and (2) a diagnostic atmosphere component. Here we use McCreary Model as an example.</p>
 <p>For the oceanic component,</p>
 <div class="math notranslate nohighlight" id="equation-mccreary-ocean">
 <span class="eqno">(94)<a class="headerlink" href="#equation-mccreary-ocean" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
@@ -545,6 +545,48 @@ X = Y_h = Y_w = Y_b = 0, \text{otherwise}
 <p><a class="reference internal" href="#mccreary"><span class="std std-numref">Fig. 31</span></a> shows the simulations with modified parameters (with <span class="math notranslate nohighlight">\(x_w\)</span> = <span class="math notranslate nohighlight">\(x_b\)</span> = 3000km and <span class="math notranslate nohighlight">\(x_h\)</span> = 5000km and keep the rest the same). One can find the equatorial westerly can trigger off-equatorial downwelling Rossby waves that propagate westward and reflect as an equaotiral Kelvin wave (downwelling) at the western boundary. When the reflected waves touch the eastern boundary, it change the intensity of Walker circulation and thus change the equatorial trades intensity.</p>
 <p>On the other hand, one can also find the Recharge-discharge mechanisms in the simulation. When the eastern Pacific is anomalously warm/cold (and during its peak phase), the difference in warm water volume over the western Pacific is small (during its peak transition). On the contrary, when the eastern Pacific has small change in SST, the difference in warm water volume between the subtropics and the tropics is the largest.</p>
 <p>The Recharge-discharge oscillator describes evolution in eastern Pacific SST and western Pacific warm water volume. These two variables are orthogonal in time and thus their interaction forms an oscillation.</p>
+<p id="id6"><dl class="citation">
+<dt class="label" id="id23"><span class="brackets">AK16</span></dt>
+<dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets">AW15</span></dt>
+<dd><p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id3">BH89</a></span></dt>
+<dd><p>David S Battisti and Anthony C Hirst. Interannual variability in a tropical atmosphere–ocean model: influence of the basic state, ocean geometry and nonlinearity. <em>J. Atmos. Sci.</em>, 46(12):1687–1712, June 1989.</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id1">Bje69</a></span></dt>
+<dd><p>J Bjerknes. Atmospheric teleconnections from the equatorial pacific1. <em>Mon. Weather Rev.</em>, 97(3):163–172, March 1969.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets">HL72</span></dt>
+<dd><p>James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. <em>J. Atmos. Sci.</em>, 29(6):1076–1080, September 1972.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id2">Jin97</a></span></dt>
+<dd><p>Fei-Fei Jin. An equatorial ocean recharge paradigm for ENSO. part I: conceptual model. <em>J. Atmos. Sci.</em>, 54(7):811–829, April 1997.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets">LNK+22</span></dt>
+<dd><p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets">LH68</span></dt>
+<dd><p>Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. <em>J. Atmos. Sci.</em>, 25(6):1095–1107, November 1968.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets">MJ71</span></dt>
+<dd><p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
+</dd>
+<dt class="label" id="id9"><span class="brackets">Mat66</span></dt>
+<dd><p>Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. <em>J. Meteorol. Soc. Japan</em>, 44(1):25–43, 1966.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id4">McC83</a></span></dt>
+<dd><p>Julian P McCreary, Jr. A model of tropical ocean-atmosphere interaction. <em>Mon. Weather Rev.</em>, 111(2):370–387, February 1983.</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets">RH96</span></dt>
+<dd><p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id5">ZC87</a></span></dt>
+<dd><p>Stephen E Zebiak and Mark A Cane. A model el niñ–southern oscillation. <em>Mon. Weather Rev.</em>, 115(10):2262–2278, October 1987.</p>
+</dd>
+</dl>
+</p>
 </div>
 </div>
 
