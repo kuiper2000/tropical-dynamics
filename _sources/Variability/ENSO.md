@@ -1,25 +1,23 @@
 (ENSO)=
 # Week 10: El Ni\~no Southern Oscillation
 
-The El Nino Southern Oscillation (ENSO) is one of the most important variability on seasonal to interannual time scales. It has profound global influence and even influences across timescales. For example, the spring tornado frequency over the continental US, the North Western subtropical high variability, tropical cyclone frequency, and global warming patterns are all shaped by ENSO. These are only a few. ENSO is characterized by 2-7 years, making it highly predictable on seasonal timescales. Given its global impact and long predictability, successfully modeling ENSO has been one of the Holy Grails of the climate community. 
+The El Niño-Southern Oscillation (ENSO) represents one of the most significant sources of variability on seasonal to interannual timescales. Its global influence spans multiple domains, impacting phenomena like spring tornado frequency in the continental US, variability in the North Western subtropical high, tropical cyclone activity, and patterns of global warming. These examples are just the tip of the iceberg. ENSO typically cycles every 2–7 years, making it highly predictable on seasonal scales. Its profound global impacts and predictability have made modeling ENSO one of the climate science community's enduring challenges.
 
 ```{figure} ../tropical-dynamics-figures/El_Nino_Image.png
 ---
 name: FIG10-1
 width: 700px
 ---
-The 2016 El Nino events from. Credits: NOAA_PSL. 
+The 2016 El Niño event. Credit: NOAA_PSL. 
 ```
 
 ## Background 
-The earliest record of El Nino Southern oscillation was by a sailor in Peru back in 1892, long before its theory was developed. It wasn't until 1969, that Jacob Bjerknes proposed a conceptual model for positive feedback in tropical air-sea interaction. The ENSO theory is more completed when Drs. Mark Cane and Stephan Zebiak proposed a series of modeling frameworks, which incorporates (1) atmosphere, (2) ocean mixed layer, and (3) thermocline. Building on their prototype ENSO model, two schools of theory were proposed to explain the observed variability: (1) Wave theory and (2) Recharge-discharge of warm water volume. Among the wave theories, the Delayed oscillator by Drs. Max Suarez, Paul S. Schopf, David Battisti, and Anthony Hirts is the most famous. The recharge-discharge oscillator is proposed by Dr. Fei-Fei Jin (also Tim Li in the following year).  
-
+The earliest recorded observation of ENSO dates back to 1892 when a sailor in Peru noted its effects, long before its theoretical foundation was established. In 1969, Jacob Bjerknes introduced a conceptual model describing the positive feedback mechanisms in tropical air-sea interactions. ENSO theory was further developed when Drs. Mark Cane and Stephen Zebiak proposed a modeling framework integrating (1) the atmosphere, (2) the ocean's mixed layer, and (3) thermocline dynamics. Building on their prototype, two major theories emerged to explain ENSO variability: (1) Wave Theory and (2) the Recharge-Discharge Mechanism. Among wave theories, the Delayed Oscillator model, advanced by Drs. Max Suarez, Paul Schopf, David Battisti, and Anthony Hirst, is particularly notable. The recharge-discharge oscillator was proposed by Dr. Fei-Fei Jin, with further contributions by Dr. Tim Li.
 
 ## Warm Water Volume (Recharge-Discharge Mechanism)
-We will go through some fundamental processes consisting of ENSO. One should notice that both mechanisms (recharge-discharge and delayed oscillator) are simplified versions of the Zebiak and Cane and McCreary models for better physical interpretation given the more complex structure of these two intermediate models. 
+We will explore key processes underlying ENSO. Both the recharge-discharge mechanism and the delayed oscillator are simplified interpretations of the more complex Zebiak and Cane models, enabling better physical insights.
 
-
-Recharge-Discharge Mechanism is summarized in the diagram below. 
+The recharge-discharge mechanism is summarized in the diagram below:
 
 
 ```{figure} ../tropical-dynamics-figures/ENSO_diagram.png
@@ -29,21 +27,22 @@ width: 700px
 ---
 The (known) feedback processes in ENSO.  
 ```
+Key Processes:
+(1)+(2) Bjerknes Feedback: Warm sea surface temperatures (SSTs) in the central/eastern Pacific weaken the Walker Circulation, favoring convection in these regions. Enhanced westerly winds transfer warm water eastward.
 
-(1)+(2) is the well-known Bjerknes feedback. When the central or eastern Pacific is characterized by warm SST (where is climatologically cold), it will favor the development of convection over that region, i.e., weakened Walker circulation. The enhanced westerly will advect warm water from the western Pacific to the eastern Pacific. 
+(3)+(4)+(5) Subtropical Feedback: Westerly winds increase cyclonic wind stress curl in subtropical areas. To balance reduced relative vorticity, poleward geostrophic currents transport warm water to higher latitudes and shallow the equatorial thermocline. The opposite occurs during La Niña.
 
-(3)+(4)+(5) is the negative feedback through subtropical cells. When the enhanced westerly happens over the equatorial surface, it increases cyclonic wind stress curl at the subtropical regions. To balance the reduced relative vorticity, a poleward geostrophic current brings negative planetary vorticity to this region. Such geostrophic currents also bring warm water to high latitudes and shallow the equatorial thermocline. An opposite process happens during the La Nina year. 
+(6)+(7) Ekman Feedback: Westerly winds during El Niño years suppress equatorial upwelling through Ekman pumping.
+
+(8)+(9) Thermocline Feedback: A deepened thermocline reduces the ability of upwelling to bring cooler subsurface water to the surface.
+
+These processes collectively form the recharge-discharge oscillator described by Jin (1997). Oscillations require at least one negative feedback, and SST and thermocline depth are primary predictors, with atmospheric processes modeled as steady states due to their transient nature compared to ocean processes. 
+
 
 :::{note}
 Sverdrup balance was first used to explain the existence of Western Boundary current. It was then modified by Dr. Biran Hoskins to explain the extension of subtropical high and monsoon gyre. (See Hoskins and Rodwell). Dr. Fei-Fei Jin was working with Dr. Brian Hoskins  
 :::
 
-
-(6)+(7) The enhanced westerly during the El Nino year also suppresses the equatorial upwelling by Ekman pumping. (i.e., Ekman feedback)
-
-(8)+(9) On the other hand, the deepened thermocline also makes it harder to bring cold water below the thermocline (i.e., thermocline feedback). 
-
-Considering all of these processes as a whole is the well-known recharge-discharge oscillator by Jin (1997). One should notice, that the existence of _oscillation_ should involve at least one negative feedback. The diagram above also indicates that the entire process can be reduced to a two-variable system, where SST and thermocline depth are only predictors. The atmospheric-related processes are in a steady state due to their transient timescales compared to ocean processes. Thus, the entire system can be formulated as follows: 
 
 
 ```{math}
@@ -59,7 +58,7 @@ Details of each term will be provided in the final project.
 
 ## Wave School (the oscillators)
 ### Delayed oscillator
-The earliest ENSO oscillator is proposed by McCreary (1983) (Fig. {numref}`McCreary`), which coupled an oceanic shallow water model with a diagnostic atmospheric component. 
+McCreary (1983) first introduced a coupled ocean-atmosphere model, which Suarez and Schopf (1988) later refined into the delayed oscillator. This model explains SST variability via Rossby wave reflection at the western boundary. The following equation captures the dynamics:
 
 ```{figure} ../tropical-dynamics-figures/ENSO.gif
 ---
@@ -85,7 +84,8 @@ The delayed oscillator can be formulated as follows:
 
 
 ### Western-Pacific Oscillator
-Supported by observational evidence and other modeling studies, Weisberg and Wang (1997) proposed the Western-Pacific oscillator. One can consider it a more complicated version of the delayed oscillator but more focused on the role of the western Pacific. The Western-Pacific oscillator can be summarized in the following figure.  
+Weisberg and Wang (1997) expanded on the delayed oscillator, emphasizing the role of western Pacific dynamics. This oscillator captures the interplay of equatorial westerlies, upwelling, and cyclones using more detailed formulations:
+
 
 ```{figure} ../tropical-dynamics-figures/delayed_oscillator.jpeg
 ---
@@ -179,4 +179,7 @@ when eastern Pacific is anomalously warm, we have reduced equatorial trades but 
 
 {numref}`McCreary` shows the simulations with modified parameters (with $x_w$ = $x_b$ = 3000km and $x_h$ = 5000km and keep the rest the same). One can find the equatorial westerly can trigger off-equatorial downwelling Rossby waves that propagate westward and reflect as an equaotiral Kelvin wave (downwelling) at the western boundary. When the reflected waves touch the eastern boundary, it change the intensity of Walker circulation and thus change the equatorial trades intensity. 
 
-On the other hand, one can also find the Recharge-discharge mechanisms in the simulation. When the eastern Pacific is anomalously warm/cold (and during its peak phase), the difference in warm water volume over the western Pacific is small (during its peak transition). On the contrary, when the eastern Pacific has small change in SST, the difference in warm water volume between the subtropics and the extratropics is the largest.  
+On the other hand, one can also find the Recharge-discharge mechanisms in the simulation. When the eastern Pacific is anomalously warm/cold (and during its peak phase), the difference in warm water volume over the western Pacific is small (during its peak transition). On the contrary, when the eastern Pacific has small change in SST, the difference in warm water volume between the subtropics and the tropics is the largest.
+
+
+The Recharge-discharge oscillator describes evolution in eastern Pacific SST and western Pacific warm water volume. These two variables are orthogonal in time and thus their interaction forms an oscillation. 
