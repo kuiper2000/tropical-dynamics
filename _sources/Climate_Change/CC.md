@@ -51,7 +51,7 @@ width: 500px
 The predictive land temperature, specific humidity, and relative humidity (from Byrne and O'Gorman 2018, PNAS)
 ```
 
-{eq}`FIG11-2` adopted from Byrne and O'Gorman (2018) shows the predictive results. One can find that both temperature and specific humidity are precisely predicted by the theory. The prediction of relatively humidity is moderately well (capturing the trend but not the variability). The change in relative humidity is especially interesting to the community since it determines where the LCL might be. 
+{numref}`FIG11-2` adopted from Byrne and O'Gorman (2018) shows the predictive results. One can find that the theory precisely predicts both temperature and specific humidity. The prediction of relatively humidity is moderately well (capturing the trend but not the variability). The change in relative humidity is especially interesting to the community since it determines where the LCL might be. 
 
 
 ### The difference between land and ocean warming
