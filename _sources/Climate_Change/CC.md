@@ -43,8 +43,7 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 {eq}`land_warms_more` suggests that land warms more than the ocean and the relative humidity over land tends to decrease. {numref}`FIG11-1` and equations {eq}`Specific_humidity_ratio`, {eq}`land_warms_more` form a simple predictive theory. 
 
 
-```{figure} ../tropical-dynamics-figures/CCpredictive_theory
----
+```{figure} ../tropical-dynamics-figures/CCpredictive_theory.png
 name: FIG11-2
 width: 700px
 ---
