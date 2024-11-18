@@ -45,7 +45,7 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 
 ```{figure} ../tropical-dynamics-figures/CCpredictive_theory.png
 name: FIG11-2
-width: 700px
+width: 300px
 ---
 The predictive land temperature, specific humidity and relative humidity (from Byrne and O'Gorman 2018, PNAS)
 ```
