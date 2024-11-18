@@ -8,7 +8,7 @@ Studying the future change in the hydrological cycle is challenging given the un
 ### WTG and QE
 In the tropics, the moist adiabat dominates the vertical profile of saturated MSE regardless of land or ocean. Thus, for regions above the cloud base, they all share the same MSE profile. (Green curves in {numref}`FIG11-1`). As climate warms, the oceanic regions' temperature below the cloud base shifts from the first light red line to the first dark red line. (i.e., $\Delta T^{O}$). The corresponding MSE profile shifts from the first green curve (on the left) to the second green curve (on the right) (i.e., $\Delta T^{L}_{FT}=\Delta T^{O}_{FT}$).    
 
-For land regions, the cloud base is usually higher than the ocean regions due to stronger CIN. Thus, starting from the cloud base over the land and following the dry adiabat to the surface, we can predict surface warming. In addition, given the zero buoyancy assumption (column MSE conserved, i.e., A-profile), we can go back down to the surface for both land and ocean. This implies the change in MSE is the same for both land and ocean. (the portion of dry static energy and latent energy can be different). (i.e., $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{ocean}}$)
+For land regions, the cloud base is usually higher than the ocean regions due to stronger CIN. Thus, starting from the cloud base over the land and following the dry adiabat to the surface, we can predict surface warming. In addition, given the zero buoyancy assumption (column MSE conserved, i.e., A-profile), we can go back down to the surface for both land and ocean. This implies the change in MSE is the same for both land and ocean. (the portion of dry static energy and latent energy can be different). (i.e., $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{surface}}$)
 
 
 ```{figure} ../tropical-dynamics-figures/OGorman.png
@@ -40,5 +40,5 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 \end{align}
 ```
 
-{eq}`land_warms_more` suggests that land warms more than the ocean and the relative humidity over land tends to decrease.  
+{eq}`land_warms_more` suggests that land warms more than the ocean and the relative humidity over land tends to decrease. {numref}`FIG11-1` and equations {eq}`Specific_humidity_ratio`, {eq}`land_warms_more` form a simple predictive theory. 
 
