@@ -81,7 +81,7 @@ For regions above the cloud base, if we assume the change in buoyancy is small, 
 \end{align}
 ```
 
-We can further apply {eq}` Plume_model_mse_sat` to calculate temperature difference between the environment and unentrained parcel. (CAPE can be considered as the temperature difference between the air parcel and environment). i.e., 
+We can further apply {eq}`Plume_model_mse_sat` to calculate temperature difference between the environment and unentrained parcel. (CAPE can be considered as the temperature difference between the air parcel and environment). i.e., 
 
 ```{math}
 :label: Plume_model_dT
