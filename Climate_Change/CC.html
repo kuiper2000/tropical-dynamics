@@ -477,6 +477,14 @@ title="Print to PDF"
 <span class="eqno">(101)<a class="headerlink" href="#equation-plume-model-mse-sat" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{d h_{e}^{\text{sat}}}{dz} = -\epsilon L(q_e^{\text{sat}}-q_e)
 \end{align}\]</div>
+<p>We can further apply <code class="xref eq docutils literal notranslate"> <span class="pre">Plume_model_mse_sat</span></code> to calculate temperature difference between the environment and unentrained parcel. (CAPE can be considered as the temperature difference between the air parcel and environment). i.e.,</p>
+<div class="math notranslate nohighlight" id="equation-plume-model-dt">
+<span class="eqno">(102)<a class="headerlink" href="#equation-plume-model-dt" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\Delta T(z) \sim \frac{\epsilon (1-\text{RH}_e)}{1+\frac{L^2 q^{SAT}_{e}}{c_pR_vT^2}}\int_{zb}^{z}\frac{Lq_e^{sat}}{c_p}dz
+\end{align}\]</div>
+<p><a class="reference internal" href="#equation-plume-model-dt">(102)</a> is interesting but not intuitive. It says  (1) CAPE should increase with warming (almost exponentially) and (2)
+the decreases in the environment of relative humidity increase the CAPE.</p>
+<p>One reason is that the environment temperature is determined by those convective plumes that experience entrainment. In a moister environment, those plumes are more populated which can maintain a warmer environment (because it has zero buoyancy!!). When the environment is moister and warmer, the temperature difference between unentrained plume (which we use to calculate CAPE!) will be smaller. This also explains why the convection over a drier environment is usually more intense than in a moist environment.</p>
 </div>
 </div>
 </div>

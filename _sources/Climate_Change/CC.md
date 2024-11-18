@@ -81,3 +81,17 @@ For regions above the cloud base, if we assume the change in buoyancy is small, 
 \end{align}
 ```
 
+We can further apply {eq}` Plume_model_mse_sat` to calculate temperature difference between the environment and unentrained parcel. (CAPE can be considered as the temperature difference between the air parcel and environment). i.e., 
+
+```{math}
+:label: Plume_model_dT
+\begin{align}
+\Delta T(z) \sim \frac{\epsilon (1-\text{RH}_e)}{1+\frac{L^2 q^{SAT}_{e}}{c_pR_vT^2}}\int_{zb}^{z}\frac{Lq_e^{sat}}{c_p}dz
+\end{align}
+```
+
+{eq}`Plume_model_dT` is interesting but not intuitive. It says  (1) CAPE should increase with warming (almost exponentially) and (2)
+the decreases in the environment of relative humidity increase the CAPE. 
+
+One reason is that the environment temperature is determined by those convective plumes that experience entrainment. In a moister environment, those plumes are more populated which can maintain a warmer environment (because it has zero buoyancy!!). When the environment is moister and warmer, the temperature difference between unentrained plume (which we use to calculate CAPE!) will be smaller. This also explains why the convection over a drier environment is usually more intense than in a moist environment.  
+
