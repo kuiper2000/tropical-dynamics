@@ -60,4 +60,24 @@ From the framework above, one key ingredient in determining the warming differen
 
 
 ## Change in Convection Intensity 
-While the discussion above focusing on the quasi-equilibrium of convective adjustment. 
+While the discussion above focuses on the quasi-equilibrium of convective adjustment. It does not necessarily apply to convection. Based on simulations, most studies suggest an increase in CAPE, it is, however, the change in _actual buoyancy_ is limited. This implies when convection develops, it might experience stronger entrainment than it had in the past. 
+
+### Theory for zero buoyancy model (Dr. Marty Singh's work) 
+According to plume-based cumulus parameterization, the vertical change in moist static energy can be written as 
+
+```{math}
+:label: Plume_model_mse
+\frac{d h }{dz} = -\epsilon (h-h_e)
+```
+
+where $\epsilon$ is the entrainment rate and $h_e$ is the environment mse. 
+
+For regions above the cloud base, if we assume the change in buoyancy is small, then the change in saturated MSE is determined by the change in specific humidity. 
+
+```{math}
+:label: Plume_model_mse_sat
+\begin{align}
+\frac{d h_{e}^{\text{sat}}}{dz} = -\epsilon L(q_e^{\text{sat}}-q_e)
+\end{align}
+```
+

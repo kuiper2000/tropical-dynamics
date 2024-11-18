@@ -354,6 +354,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#change-in-convection-intensity">
    Change in Convection Intensity
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#theory-for-zero-buoyancy-model-dr-marty-singh-s-work">
+     Theory for zero buoyancy model (Dr. Marty Singh’s work)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -400,6 +407,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#change-in-convection-intensity">
    Change in Convection Intensity
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#theory-for-zero-buoyancy-model-dr-marty-singh-s-work">
+     Theory for zero buoyancy model (Dr. Marty Singh’s work)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -451,7 +465,19 @@ title="Print to PDF"
 </div>
 <div class="section" id="change-in-convection-intensity">
 <h2>Change in Convection Intensity<a class="headerlink" href="#change-in-convection-intensity" title="Permalink to this headline">¶</a></h2>
-<p>While the discussion above focusing on the quasi-equilibrium of convective adjustment.</p>
+<p>While the discussion above focuses on the quasi-equilibrium of convective adjustment. It does not necessarily apply to convection. Based on simulations, most studies suggest an increase in CAPE, it is, however, the change in <em>actual buoyancy</em> is limited. This implies when convection develops, it might experience stronger entrainment than it had in the past.</p>
+<div class="section" id="theory-for-zero-buoyancy-model-dr-marty-singh-s-work">
+<h3>Theory for zero buoyancy model (Dr. Marty Singh’s work)<a class="headerlink" href="#theory-for-zero-buoyancy-model-dr-marty-singh-s-work" title="Permalink to this headline">¶</a></h3>
+<p>According to plume-based cumulus parameterization, the vertical change in moist static energy can be written as</p>
+<div class="math notranslate nohighlight" id="equation-plume-model-mse">
+<span class="eqno">(100)<a class="headerlink" href="#equation-plume-model-mse" title="Permalink to this equation">¶</a></span>\[\frac{d h }{dz} = -\epsilon (h-h_e)\]</div>
+<p>where <span class="math notranslate nohighlight">\(\epsilon\)</span> is the entrainment rate and <span class="math notranslate nohighlight">\(h_e\)</span> is the environment mse.</p>
+<p>For regions above the cloud base, if we assume the change in buoyancy is small, then the change in saturated MSE is determined by the change in specific humidity.</p>
+<div class="math notranslate nohighlight" id="equation-plume-model-mse-sat">
+<span class="eqno">(101)<a class="headerlink" href="#equation-plume-model-mse-sat" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\frac{d h_{e}^{\text{sat}}}{dz} = -\epsilon L(q_e^{\text{sat}}-q_e)
+\end{align}\]</div>
+</div>
 </div>
 </div>
 
