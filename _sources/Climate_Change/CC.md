@@ -55,5 +55,9 @@ The predictive land temperature, specific humidity, and relative humidity (from 
 
 
 ### The difference between land and ocean warming
-From the framework above, one key ingredient in determining the warming difference between land and the ocean is the humidity difference, i.e., $\gamma$. However, whether $\gamma$ is a constant remains a question.  
+From the framework above, one key ingredient in determining the warming difference between land and the ocean is the humidity difference, i.e., $\gamma$. However, whether $\gamma$ is a constant remains a question. 
 
+
+
+## Change in Convection Intensity 
+While the discussion above focusing on the quasi-equilibrium of convective adjustment. 
