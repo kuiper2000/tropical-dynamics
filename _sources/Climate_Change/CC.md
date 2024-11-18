@@ -44,6 +44,7 @@ Following the conclusion of $\delta h^{L}_{\text{surface}}=\delta h^{O}_{\text{o
 
 
 ```{figure} ../tropical-dynamics-figures/CCpredictive_theory.jpeg
+---
 name: FIG11-2
 width: 300px
 ---
