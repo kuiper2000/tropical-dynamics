@@ -110,7 +110,7 @@ The above formula is similar to the _turbulence kinetic energy_ used in boundary
 ```
 
 
-We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of {eq}`QBO_spectral_form` by $\rho_0$ Uu + p and integrate it over zonal direction (which eliminates the terms associated with zonal gradient, i.e., "$ik$" terms ) We have 
+We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of {eq}`QBO_spectral_form` by $\rho_0$ (U-c) u + p and integrate it over zonal direction (which eliminates the terms associated with zonal gradient, i.e., "$ik$" terms ) We have 
 
 
 ```{math}
@@ -173,7 +173,7 @@ width: 700px
 Momentum fluxes in (a) westerly shear and (b) easterly shear
 ```
 
-In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive and so does $f(U)^{z-}$ according to {eq}`QBO_mechanical_energy_zonal_mean4` and {eq}`QBO_mechanical_energy_zonal_mean2`. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. This also makes $(f(U)^{z+}-f(U)^{z-})/dz = f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ negative according to {eq}`QBO_mechanical_energy_zonal_mean4`. Since $|\frac{dU}{dz}|$ is positive definite, $f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ will be negative positive definite. (notice that Lidzen and Holton state this term is positive definite, which is different the analysis here). 
+In the westerly shear, if $\int_0^{2\pi} pw dx$ remains positive, for the regions below the critical level (where $c>U$), $\int_0^{2\pi} uw dx $ must be positive and so does $f(U)^{z-}$ according to {eq}`QBO_mechanical_energy_zonal_mean4` and {eq}`QBO_mechanical_energy_zonal_mean2`. For the regions above where (where $U>c$), $\int_0^{2\pi} uw dx $ must be negative. This also makes $(f(U)^{z+}-f(U)^{z-})/dz = f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ negative according to {eq}`QBO_mechanical_energy_zonal_mean4`. Since $|\frac{dU}{dz}|$ is positive definite, $f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]$ will be negative definite. (notice that Lidzen and Holton state this term is positive definite, which is different the analysis here). 
 
 Readers will also find $- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|$ is equivalent to $- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}$ by examining both westerly and easterly shear case. (HW)
 
