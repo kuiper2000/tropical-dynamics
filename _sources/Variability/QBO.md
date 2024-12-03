@@ -144,7 +144,7 @@ To solve the problem, all of the momentum _must_ be absorbed at the critical lev
 However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent. 
 
 ### A spectral solution of momentum deposition 
-To circumvent the problem in previous section, we can approach it with a spectral perspective of wave propagation. 
+To circumvent the problem in the previous section, we can approach it with a spectral perspective of wave propagation. 
 ```{math}
 :label: QBO_mechanical_energy_zonal_mean4
 \begin{align}
@@ -182,7 +182,7 @@ Substitute the above conclusion back into zonal momentum equation, the yielded {
 
 ```{math}
 :label: LH68_01
-\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\overline{u}}{\partial z}
+\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\partial \overline{u}}{\partial z}
 ```
 
 In this model, some simple setup is given. First, we assume there is no mean vertical motion $\overline{w}$. Second, the downward motion due to the momentum flux convergence only happens over a limited range of wind speed. i.e., 
