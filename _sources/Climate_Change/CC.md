@@ -1,5 +1,5 @@
 (CC)=
-# Week 11: The Projection of Future Hydrological Cycle
+# Week 12: The Projection of Future Hydrological Cycle
 
 Studying the future change in the hydrological cycle is challenging given the uncertainty in many aspects, including the change in radiative boundary conditions and the dynamical structure. Fortunately, some dynamical constraints in the tropics provide means for the development of predictive theory. We will start with a weak temperature gradient. 
 

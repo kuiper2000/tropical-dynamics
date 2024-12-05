@@ -55,7 +55,7 @@ __Part II: Variability__
     * The Primitive Equation of ENSO Model
     * ENSO Diversity 
 
-* {ref}`teleconnection`
+* Week 11 Teleconnection
     * The conservation of planetary vorticity and Rossby wave source
     * Hoskins' model  
   
