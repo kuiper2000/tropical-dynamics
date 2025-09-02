@@ -1,108 +1,167 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Week 6 and 7: Tropical Wave Theory &#8212; Dynamic Climatology</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Variability/waves1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Week 8: Madden-Julian oscillation" href="MJO.html" />
     <link rel="prev" title="Week 4 and 5: Hadley Cell" href="../Climatology/Hadley_cell.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
     
-    <div class="container-fluid" id="banner"></div>
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
 
-    
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Dynamic Climatology</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Dynamic Climatology - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Dynamic Climatology - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,369 +171,251 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Obs.html">
-   Week 1: Observational Evidence
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/governing_equation.html">
-   Week 2 and 3: Scale Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Hadley_cell.html">
-   Week 4 and 5: Hadley Cell
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Week 6 and 7: Tropical Wave Theory
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="MJO.html">
-   Week 8: Madden-Julian oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="QBO.html">
-   Week 9: Quasi-biennial Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ENSO.html">
-   Week 10: El Ni~no Southern Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climate_Change/CC.html">
-   Week 12: The Projection of Future Hydrological Cycle
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Obs.html">Week 1: Observational Evidence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/governing_equation.html">Week 2 and 3: Scale Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Hadley_cell.html">Week 4 and 5: Hadley Cell</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 6 and 7: Tropical Wave Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MJO.html">Week 8: Madden-Julian oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QBO.html">Week 9: Quasi-biennial Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ENSO.html">Week 10: El Ni~no Southern Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climate_Change/CC.html">Week 12: The Projection of Future Hydrological Cycle</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/waves1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Variability/waves1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/waves1.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/Variability/waves1.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button>
 
-      </li>
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shallow-water-model">
-   Shallow Water Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
-     Conservation of Shallow Water PV
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equatorial-wave-equations">
-     Equatorial Wave Equations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#horizontal-wave-solutions">
-     Horizontal Wave Solutions
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-1-rossby-wave-regime">
-       Case 1: Rossby wave regime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-2-inertia-gravity-wave-regime">
-       Case 2: Inertia-gravity wave regime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-3-mixed-rossby-gravity-wave-yanai-wave">
-       Case 3: Mixed Rossby-gravity wave (Yanai wave)
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vertical-normal-mode">
-     Vertical Normal Mode
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#convective-coupled-wave">
-   Convective Coupled Wave
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 6 and 7: Tropical Wave Theory</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shallow-water-model">
-   Shallow Water Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">
-     Conservation of Shallow Water PV
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equatorial-wave-equations">
-     Equatorial Wave Equations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#horizontal-wave-solutions">
-     Horizontal Wave Solutions
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-1-rossby-wave-regime">
-       Case 1: Rossby wave regime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-2-inertia-gravity-wave-regime">
-       Case 2: Inertia-gravity wave regime
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#case-3-mixed-rossby-gravity-wave-yanai-wave">
-       Case 3: Mixed Rossby-gravity wave (Yanai wave)
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#vertical-normal-mode">
-     Vertical Normal Mode
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#convective-coupled-wave">
-   Convective Coupled Wave
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Week 6 and 7: Tropical Wave Theory</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shallow-water-model">Shallow Water Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">Conservation of Shallow Water PV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-wave-equations">Equatorial Wave Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-wave-solutions">Horizontal Wave Solutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-1-rossby-wave-regime">Case 1: Rossby wave regime</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-inertia-gravity-wave-regime">Case 2: Inertia-gravity wave regime</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-3-mixed-rossby-gravity-wave-yanai-wave">Case 3: Mixed Rossby-gravity wave (Yanai wave)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-normal-mode">Vertical Normal Mode</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convective-coupled-wave">Convective Coupled Wave</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="section" id="week-6-and-7-tropical-wave-theory">
-<span id="waves1"></span><h1>Week 6 and 7: Tropical Wave Theory<a class="headerlink" href="#week-6-and-7-tropical-wave-theory" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="shallow-water-model">
-<h2>Shallow Water Model<a class="headerlink" href="#shallow-water-model" title="Permalink to this headline">¶</a></h2>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="week-6-and-7-tropical-wave-theory">
+<span id="waves1"></span><h1>Week 6 and 7: Tropical Wave Theory<a class="headerlink" href="#week-6-and-7-tropical-wave-theory" title="Link to this heading">#</a></h1>
+<section id="shallow-water-model">
+<h2>Shallow Water Model<a class="headerlink" href="#shallow-water-model" title="Link to this heading">#</a></h2>
 <p>Aside from the zonal mean circulation, eddies significantly influence tropical climatology. We refer to the results from <a class="reference internal" href="../Climatology/governing_equation.html#scale-analysis"><span class="std std-ref">Week 2 and 3: Scale Analysis</span></a> in this section for the discussion of this week. In a hydrostatic, and low-latitude atmosphere (weak temperature gradient), the governing equation can be written as.</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-1">
-<span class="eqno">(44)<a class="headerlink" href="#equation-shallow-water-1" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(44)<a class="headerlink" href="#equation-shallow-water-1" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv &amp; = -\frac{1}{\rho}\frac{\partial p}{\partial x}\\
 \frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu &amp; = -\frac{1}{\rho}\frac{\partial p}{\partial y}\\
 \frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z} &amp;= 0 \\
 \frac{\partial p}{\partial z} &amp;= -\rho g \\
 \end{align}\end{split}\]</div>
-<div class="figure align-default" id="fig4-1">
+<figure class="align-default" id="fig4-1">
 <img alt="../_images/reduced_gravity2.PNG" src="../_images/reduced_gravity2.PNG" />
-<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">As in <a class="reference internal" href="../Climatology/governing_equation.html#fig2-2"><span class="std std-numref">Fig. 7</span></a> except that <span class="math notranslate nohighlight">\(h_B\neq0\)</span></span><a class="headerlink" href="#fig4-1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">As in <a class="reference internal" href="../Climatology/governing_equation.html#fig2-2"><span class="std std-numref">Fig. 7</span></a> except that <span class="math notranslate nohighlight">\(h_B\neq0\)</span></span><a class="headerlink" href="#fig4-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>By integrating the third equation from the surface (or the boundary top) to the interface <span class="math notranslate nohighlight">\(\eta\)</span> (refer to <a class="reference internal" href="#fig4-1"><span class="std std-numref">Fig. 15</span></a>) and using the reduced gravity concept from <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a>, we can rewrite <a class="reference internal" href="#equation-shallow-water-1">(44)</a>.</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-2">
-<span class="eqno">(45)<a class="headerlink" href="#equation-shallow-water-2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(45)<a class="headerlink" href="#equation-shallow-water-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} + [u\frac{\partial u}{\partial x}+ v\frac{\partial u}{\partial y}]-\beta yv &amp; = -g'\frac{\partial \eta}{\partial x}\\
 \frac{\partial v}{\partial t} + [u\frac{\partial v}{\partial x}+ v\frac{\partial v}{\partial y}]+\beta yu &amp; = -g'\frac{\partial \eta}{\partial y}\\
 w(z=\eta) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  
@@ -482,7 +423,7 @@ w(z=\eta) &amp; = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\parti
 <p>Here, <span class="math notranslate nohighlight">\(\eta\)</span> represents the interface location (see <a class="reference internal" href="../Climatology/governing_equation.html#equation-reduced-gravity2">(18)</a>), and <span class="math notranslate nohighlight">\(w(z)\)</span> denotes the rate of displacement change, expressed as <span class="math notranslate nohighlight">\(\frac{d \eta}{dt}\)</span>.</p>
 <p>Furthermore, based on quasi-equilibrium principles, we understand that diabatic heating and cooling are counterbalanced by the adiabatic cooling and heating from vertical motion, as indicated by <a class="reference internal" href="../Climatology/governing_equation.html#equation-thermodynamics">(20)</a>. Consequently, a forcing term can be introduced into the final equation, expressed as:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-3">
-<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(46)<a class="headerlink" href="#equation-shallow-water-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) + w_0  &amp; = \frac{g}{N^2}\frac{Q}{c_p T} \\
 &amp; = \frac{g}{g\frac{\partial \mathrm{ln}\theta}{\partial z}}\frac{Q}{c_p T} \\
 &amp; = \frac{1}{\frac{\partial \mathrm{ln}T}{\partial z}-\frac{R}{c_p}\frac{\partial \mathrm{ln}p}{\partial z}} \frac{Q}{c_p T} \\
@@ -496,29 +437,29 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <p class="admonition-title">Note</p>
 <p>It’s important to note that <span class="math notranslate nohighlight">\(w_0\)</span> in <a class="reference internal" href="#equation-shallow-water-2">(45)</a> isn’t necessarily zero. For non-normal flow at the lower boundary, we need <span class="math notranslate nohighlight">\(w(x, y, z = h_B, t) = u\frac{\partial h_B}{\partial x} + v\frac{\partial h_B}{\partial y}\)</span>, assuming <span class="math notranslate nohighlight">\(\frac{\partial h_B}{\partial t} = 0\)</span> at the boundary. This results in:</p>
 <div class="math notranslate nohighlight" id="equation-boundary-layer">
-<span class="eqno">(47)<a class="headerlink" href="#equation-boundary-layer" title="Permalink to this equation">¶</a></span>\[w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}}_{\text{momentum advection}}+\underbrace{h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})}_{\text{mass convergence from lower bound}}\]</div>
+<span class="eqno">(47)<a class="headerlink" href="#equation-boundary-layer" title="Link to this equation">#</a></span>\[w_0=\underbrace{u\frac{\partial h_B}{\partial x}+v\frac{\partial h_B}{\partial y}}_{\text{momentum advection}}+\underbrace{h_B(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y})}_{\text{mass convergence from lower bound}}\]</div>
 <p><a class="reference internal" href="#equation-boundary-layer">(47)</a> shows that normal velocity arises from two processes: (1) momentum advection of <span class="math notranslate nohighlight">\(h_B\)</span> by <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(v\)</span>, and (2) mass convergence/divergence at <span class="math notranslate nohighlight">\(h_B\)</span>.</p>
 </div>
 <p>To simplify <a class="reference internal" href="#equation-shallow-water-3">(46)</a> into an internal wave equation, we can calculate the difference between two vertical layers, introducing a counteracting force from the upper fluid. Alternatively, a more useful form of the final equation in <a class="reference internal" href="#equation-shallow-water-3">(46)</a> is:</p>
 <div class="math notranslate nohighlight" id="equation-hydrostatic-thermo">
-<span class="eqno">(48)<a class="headerlink" href="#equation-hydrostatic-thermo" title="Permalink to this equation">¶</a></span>\[\frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha\]</div>
+<span class="eqno">(48)<a class="headerlink" href="#equation-hydrostatic-thermo" title="Link to this equation">#</a></span>\[\frac{d \phi_p}{dt} +\sigma \omega = -\frac{Q}{ c_p T} \alpha\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(\phi_p = -\alpha\)</span>, <span class="math notranslate nohighlight">\(\omega = \overline{\rho} g w\)</span>, and <span class="math notranslate nohighlight">\(\sigma = \frac{R}{p \rho g} (\Gamma_d - \Gamma) = \frac{N^2}{\rho^2 g^2} = \frac{C_0}{p^2}\)</span>, where <span class="math notranslate nohighlight">\(C_0\)</span> is the external gravity wave speed. <a class="reference internal" href="#equation-hydrostatic-thermo">(48)</a> represents the hydrostatic thermodynamic equation, derived by rewriting <span class="math notranslate nohighlight">\(d \mathrm{ln}\theta\)</span> from <a class="reference internal" href="../Climatology/governing_equation.html#equation-primitive">(5)</a> with <span class="math notranslate nohighlight">\(\frac{c_p}{R} \mathrm{ln}\alpha\)</span>. This form makes it easier to solve vertical motion since pressure velocity weighting is already factored in.</p>
-<div class="section" id="conservation-of-shallow-water-pv">
-<h3>Conservation of Shallow Water PV<a class="headerlink" href="#conservation-of-shallow-water-pv" title="Permalink to this headline">¶</a></h3>
+<section id="conservation-of-shallow-water-pv">
+<h3>Conservation of Shallow Water PV<a class="headerlink" href="#conservation-of-shallow-water-pv" title="Link to this heading">#</a></h3>
 <p><a class="reference internal" href="#equation-shallow-water-2">(45)</a> also conserves potential vorticity. To demonstrate this, we can take the curl of the first equation, resulting in:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-4">
-<span class="eqno">(49)<a class="headerlink" href="#equation-shallow-water-4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(49)<a class="headerlink" href="#equation-shallow-water-4" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{d\zeta}{dt} = \frac{\partial \zeta}{\partial t} + u\frac{\partial \zeta}{\partial x}+v\frac{\partial \zeta}{\partial y} &amp;= -(\zeta+f)(\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) \\
 &amp; = \frac{\zeta+f}{\overline{\eta}}\frac{d\eta}{dt} \text{  or}\\
 &amp; \rightarrow  \frac{1}{\zeta+f}\frac{d\zeta+f}{dt} = \frac{1}{\overline{\eta}}\frac{d\eta}{dt}
 \end{align}\end{split}\]</div>
 <p>The last equation of <a class="reference internal" href="#equation-shallow-water-4">(49)</a> indicates that the rate of change in absolute vorticity is proportional to the rate of change in height, implying that <span class="math notranslate nohighlight">\(\frac{d}{dt}\left( \frac{\zeta + f}{\eta} \right) = 0\)</span>. (Note that the expression derived in the final equation of <a class="reference internal" href="#equation-shallow-water-2">(45)</a> imposes a stricter constraint on potential vorticity conservation.) Furthermore, {eq}shallow_water_4 can also be derived from <a class="reference internal" href="#equation-shallow-water-2">(45)</a> using the Kelvin circulation theorem (homework).</p>
-</div>
-<div class="section" id="equatorial-wave-equations">
-<h3>Equatorial Wave Equations<a class="headerlink" href="#equatorial-wave-equations" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="equatorial-wave-equations">
+<h3>Equatorial Wave Equations<a class="headerlink" href="#equatorial-wave-equations" title="Link to this heading">#</a></h3>
 <p>Although <a class="reference internal" href="#equation-shallow-water-2">(45)</a> is significantly simplified, it remains unsolvable due to its nonlinear nature. To address this, we can begin with a linear approximation or assume a resting basic state (<span class="math notranslate nohighlight">\(u = \overline{u} + u'\)</span> where <span class="math notranslate nohighlight">\(\overline{u}\)</span> is independent of time, or <span class="math notranslate nohighlight">\(\overline{u} = 0\)</span> for a resting basic state) with a boundary condition of <span class="math notranslate nohighlight">\(w_0 = 0\)</span>. This simplifies the equations as follows:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear">
-<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(50)<a class="headerlink" href="#equation-shallow-water-linear" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -\beta yv &amp; = -\frac{\partial \phi'}{\partial x}\\
 \frac{\partial v}{\partial t} +\beta yu &amp; = -\frac{\partial \phi'}{\partial y}\\
 \frac{\partial u}{\partial x} +\frac{\partial v}{\partial y} + \frac{\partial \omega}{\partial p}&amp; = 0 \\
@@ -527,7 +468,7 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 <p>where <span class="math notranslate nohighlight">\(g'\eta = C_0^2\)</span>, with <span class="math notranslate nohighlight">\(C_0\)</span> representing the gravity wave speed. This set of equations is the well-known formulation derived by Matsuno (1966) and is a solvable system.</p>
 <p>As <a class="reference internal" href="#equation-shallow-water-linear">(50)</a> contains four unknowns and four equations, it is inherently solvable. Additionally, the equation has a separable form, allowing us to assume a solution of the form <span class="math notranslate nohighlight">\(u, v, \phi = {\widehat{u}, \widehat{v}, \widehat{\phi}}(x, y, t) \frac{dW(p)}{dp}\)</span> and <span class="math notranslate nohighlight">\(w = \widehat{w}(x, y, t) W(p)\)</span> to separate the horizontal and vertical structures. Substituting this back into <a class="reference internal" href="#equation-shallow-water-linear">(50)</a>, we obtain:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear2">
-<span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(51)<a class="headerlink" href="#equation-shallow-water-linear2" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta yv &amp; = -\frac{\partial \widehat{\phi'}}{\partial x}\\
 \frac{\partial \widehat{v}}{\partial t} +\beta yu &amp; = -\frac{\partial \widehat{\phi'}}{\partial y}\\
 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} + \widehat{\omega}&amp; = 0 \\
@@ -540,19 +481,19 @@ w(z) = \frac{d \eta}{dt} = -\overline{\eta} (\frac{\partial u}{\partial x}+\frac
 </div>
 <p>With the separation of variables, we can rewrite the governing equations as:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear3">
-<span class="eqno">(52)<a class="headerlink" href="#equation-shallow-water-linear3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(52)<a class="headerlink" href="#equation-shallow-water-linear3" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial \widehat{u}}{\partial t} -\beta y\widehat{v} &amp; = -\frac{\partial \widehat{\phi'}}{\partial x}\\
 \frac{\partial \widehat{v}}{\partial t} +\beta y\widehat{u} &amp; = -\frac{\partial \widehat{\phi'}}{\partial y}\\
 \frac{\partial \widehat{\phi'}}{\partial t} + C^2 \frac{\partial \widehat{u}}{\partial x} +\frac{\partial \widehat{v}}{\partial y} &amp;= 0 \\
 \frac{d^2W(p)}{dp^2}+\frac{C_0^2}{C^2}W(p) &amp;=0
 \end{align}\end{split}\]</div>
 <p>Here, the first three equations describe the horizontal structure, while the last equation describes the vertical structure, making both sets of equations solvable. We will begin by solving for the horizontal structure, followed by a discussion of the vertical structure.</p>
-</div>
-<div class="section" id="horizontal-wave-solutions">
-<h3>Horizontal Wave Solutions<a class="headerlink" href="#horizontal-wave-solutions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="horizontal-wave-solutions">
+<h3>Horizontal Wave Solutions<a class="headerlink" href="#horizontal-wave-solutions" title="Link to this heading">#</a></h3>
 <p>To further simplify the problem, we can non-dimensionalize each variable by introducing non-dimensional parameters:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear4">
-<span class="eqno">(53)<a class="headerlink" href="#equation-shallow-water-linear4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(53)<a class="headerlink" href="#equation-shallow-water-linear4" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 (x,y) &amp; = \sqrt {\frac{C}{\beta}}(x^{\text{non}},y^{\text{non}}) \\
 t     &amp; = \frac{t^{\text{non}}}{\sqrt{\beta C}} \\
 u     &amp; = C u^{\text{non}} \\
@@ -560,109 +501,120 @@ u     &amp; = C u^{\text{non}} \\
 \end{align}\end{split}\]</div>
 <p>Here, the superscript <span class="math notranslate nohighlight">\(\text{non}\)</span> indicates the non-dimensional variable. With this scaling, we can isolate the independent parameters, and the resulting equations can be written as follows (for simplicity, the superscripts are dropped):</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension1">
-<span class="eqno">(54)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension1" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(54)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension1" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} -yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \frac{\partial v}{\partial t} +yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}) &amp;= 0   \\
 \end{align}\end{split}\]</div>
 <p>One advantage of using this non-dimensional form is its broad applicability to different parameter spaces. For instance, as long as the shallow water assumption holds, this set of equations remains valid regardless of the Rossby number. We can further simplify by assuming a separable structure for the meridional and zonal components of the waves:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension2">
-<span class="eqno">(55)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(55)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension2" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 u &amp;= U(y)e^{ikx-i\omega t} \\
 v &amp;= V(y)e^{ikx-i\omega t} \\
 \phi &amp;= \Phi(y)e^{ikx-i\omega t} \\
 \end{align}\end{split}\]</div>
 <p>Substituting <a class="reference internal" href="#equation-shallow-water-linear-no-dimension2">(55)</a> back into <a class="reference internal" href="#equation-shallow-water-linear-no-dimension1">(54)</a> and eliminating terms involving <span class="math notranslate nohighlight">\(U(y)\)</span> and <span class="math notranslate nohighlight">\(\Phi(y)\)</span>, we derive a differential equation that describes the meridional structure of tropical waves:</p>
 <div class="math notranslate nohighlight" id="equation-y-differential-equation">
-<span class="eqno">(56)<a class="headerlink" href="#equation-y-differential-equation" title="Permalink to this equation">¶</a></span>\[\frac{d^2}{dy^2} V + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0\]</div>
+<span class="eqno">(56)<a class="headerlink" href="#equation-y-differential-equation" title="Link to this equation">#</a></span>\[\frac{d^2}{dy^2} V + (\omega^2-k^2-\frac{k}{\omega}-y^2)V = 0\]</div>
 <p>We can solve this equation by applying the boundary condition that <span class="math notranslate nohighlight">\(V(y)\)</span> tapers off to zero as <span class="math notranslate nohighlight">\(y \to \pm \infty\)</span> and assume <span class="math notranslate nohighlight">\(V(y)=\widehat{V(y)}e^{-y^2}\)</span>. This assumption can convert <a class="reference internal" href="#equation-y-differential-equation">(56)</a> into a typical Hermite differential equation, where <span class="math notranslate nohighlight">\(\widehat{V(y)}=H_m(y)\)</span> is so-called Hermite polynomial.</p>
 <p>Another special case arises when we use the long-wave approximation (where <span class="math notranslate nohighlight">\(v\)</span> vanishes due to the wave’s length being so large that the zonal boundaries, where meridional winds occur, are negligible in a limited domain). This leads to:</p>
 <div class="math notranslate nohighlight" id="equation-shallow-water-linear-no-dimension3">
-<span class="eqno">(57)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(57)<a class="headerlink" href="#equation-shallow-water-linear-no-dimension3" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u}{\partial t} &amp; = -\frac{\partial \phi}{\partial x}\\
 yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \frac{\partial \phi}{\partial t} + (\frac{\partial u}{\partial x}) &amp;= 0   \\
 \end{align}\end{split}\]</div>
 <p>The corresponding differential equation is:</p>
 <div class="math notranslate nohighlight" id="equation-kelvin-wave-equation">
-<span class="eqno">(58)<a class="headerlink" href="#equation-kelvin-wave-equation" title="Permalink to this equation">¶</a></span>\[\frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0\]</div>
+<span class="eqno">(58)<a class="headerlink" href="#equation-kelvin-wave-equation" title="Link to this equation">#</a></span>\[\frac{\partial ^2 u}{\partial t^2}-\frac{\partial ^2 u }{\partial x^2} = 0\]</div>
 <p>Equations <a class="reference internal" href="#equation-y-differential-equation">(56)</a> and <a class="reference internal" href="#equation-kelvin-wave-equation">(58)</a> yield two distinct dispersion relationships where the wave amplitude is conserved along characteristic lines:</p>
 <div class="math notranslate nohighlight" id="equation-dispersion">
-<span class="eqno">(59)<a class="headerlink" href="#equation-dispersion" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(59)<a class="headerlink" href="#equation-dispersion" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\omega}{k} &amp;= \mp 1 \\
 \omega^2-k^2-\frac{k}{\omega} &amp;= 2m+1 \text{   where } m\in[0,1,2,\cdots]\\
 \end{align}\end{split}\]</div>
 <p>Note that the negative sign in the first equation is unphysical due to certain constraints (this is an exercise left for the reader). The term <span class="math notranslate nohighlight">\(2m+1\)</span> in the second equation is derived from Sturm-Liouville theory.</p>
 <p>Looking at <a class="reference internal" href="#equation-dispersion">(59)</a>, we see that the first equation is non-dispersive (i.e., the wavelength does not affect the wave propagation speed). This represents a pure gravity wave, which can be proven by calculating the potential vorticity in <a class="reference internal" href="#equation-shallow-water-linear-no-dimension3">(57)</a> (another exercise for the reader). The second equation can be broken down into three distinct regimes: (1) Rossby wave-dominated, (2) gravity wave-dominated, and (3) mixed regimes.</p>
-<div class="section" id="case-1-rossby-wave-regime">
-<h4>Case 1: Rossby wave regime<a class="headerlink" href="#case-1-rossby-wave-regime" title="Permalink to this headline">¶</a></h4>
+<section id="case-1-rossby-wave-regime">
+<h4>Case 1: Rossby wave regime<a class="headerlink" href="#case-1-rossby-wave-regime" title="Link to this heading">#</a></h4>
 <p>In this case, the dominant balance is <span class="math notranslate nohighlight">\(-k^2-\frac{k}{\omega} \approx 2m+1\)</span>, meaning <span class="math notranslate nohighlight">\(\omega\)</span> is small. Therefore, <span class="math notranslate nohighlight">\(\omega \approx -\frac{k}{k^2+2m+1}\)</span>, similar to the result from the barotropic vorticity equation. This regime represents the low-frequency limit (i.e., the time scales dominated by the Earth’s rotation)</p>
-</div>
-<div class="section" id="case-2-inertia-gravity-wave-regime">
-<h4>Case 2: Inertia-gravity wave regime<a class="headerlink" href="#case-2-inertia-gravity-wave-regime" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="case-2-inertia-gravity-wave-regime">
+<h4>Case 2: Inertia-gravity wave regime<a class="headerlink" href="#case-2-inertia-gravity-wave-regime" title="Link to this heading">#</a></h4>
 <p>Here, <span class="math notranslate nohighlight">\(\omega^2-k^2 \approx 2m+1\)</span>, meaning <span class="math notranslate nohighlight">\(\omega\)</span> is large. In this case, <span class="math notranslate nohighlight">\(\omega = \pm \sqrt{k^2+2m+1}\)</span>. For large <span class="math notranslate nohighlight">\(k\)</span> (larger than <span class="math notranslate nohighlight">\(2m+1\)</span> but about the same scale of <span class="math notranslate nohighlight">\(\omega\)</span>), <span class="math notranslate nohighlight">\(\omega \approx \pm k\)</span>, indicating the wave is dominated by gravity wave propagation. The reader can continue the analysis for small <span class="math notranslate nohighlight">\(k\)</span> and will find it slightly tilting westward due to the existence of <span class="math notranslate nohighlight">\(2m+1\)</span>, indicating this wave can still feel the rotation of the earth given its planetary scale circulation.</p>
-</div>
-<div class="section" id="case-3-mixed-rossby-gravity-wave-yanai-wave">
-<h4>Case 3: Mixed Rossby-gravity wave (Yanai wave)<a class="headerlink" href="#case-3-mixed-rossby-gravity-wave-yanai-wave" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="case-3-mixed-rossby-gravity-wave-yanai-wave">
+<h4>Case 3: Mixed Rossby-gravity wave (Yanai wave)<a class="headerlink" href="#case-3-mixed-rossby-gravity-wave-yanai-wave" title="Link to this heading">#</a></h4>
 <p>A special case occurs when <span class="math notranslate nohighlight">\(m=0\)</span>, leading to the simplified dispersion relation <span class="math notranslate nohighlight">\((\omega+k)(\omega^2+k\omega-1)=0\)</span>. The three roots are <span class="math notranslate nohighlight">\(\omega=-k\)</span>, <span class="math notranslate nohighlight">\(\omega = \frac{k}{2}+\sqrt{\left(\frac{k}{2}\right)^2+1}\)</span>, and <span class="math notranslate nohighlight">\(\omega = \frac{k}{2}-\sqrt{\left(\frac{k}{2}\right)^2+1}\)</span>. The root <span class="math notranslate nohighlight">\(\omega=-k\)</span> behaves like a gravity wave, while the other two can be categorized into three cases (eastward propagation, westward propagation with small <span class="math notranslate nohighlight">\(k\)</span>, and westward propagation with large <span class="math notranslate nohighlight">\(k\)</span>). In the eastward-propagating case, it tapers toward the inertia gravity wave’s dispersion relationship. In low wave number to westward propagating cases, it behaves like a Rossby wave. Therefore, this special case is called mixed Rossby-gravity wave, which has the characters of both waves. In the real world, MRG is an important embryo for cyclone genesis.</p>
 <p>These three cases are summarized and shown in the figure below.</p>
-<div class="figure align-default" id="fig4-2">
+<figure class="align-default" id="fig4-2">
 <img alt="../_images/Dispersion_Relationship.png" src="../_images/Dispersion_Relationship.png" />
-<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">The dispersion relationship of tropical waves.</span><a class="headerlink" href="#fig4-2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">The dispersion relationship of tropical waves.</span><a class="headerlink" href="#fig4-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>An easy way to understand wave dispersion is to plot the Hovmoller diagram of variables of interest in a longitude-time plane. (i.e., the figure below <a class="reference internal" href="#fig4-2"><span class="std std-numref">Fig. 16</span></a>). If we track along a specific feature (let’s say ), the slope of that feature on the Hovmoller diagram represents one single dot on the space-time plot i.e., <span class="math notranslate nohighlight">\((\omega,k)\)</span> is a specific pair. One can also take Fourier transform twice (one along time and the other along longitude coordinate) of the Hovmoller diagram, the yielded result is also the space-time diagram.</p>
-<div class="figure align-default" id="fig4-3">
-<a class="reference internal image-reference" href="../_images/TRMM_DYNAMO.png"><img alt="../_images/TRMM_DYNAMO.png" src="../_images/TRMM_DYNAMO.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">The meridional averaged precipitation from TRMM product during the DYNAMO field campaign.</span><a class="headerlink" href="#fig4-3" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="vertical-normal-mode">
-<h3>Vertical Normal Mode<a class="headerlink" href="#vertical-normal-mode" title="Permalink to this headline">¶</a></h3>
+<figure class="align-default" id="fig4-3">
+<a class="reference internal image-reference" href="../_images/TRMM_DYNAMO.png"><img alt="../_images/TRMM_DYNAMO.png" src="../_images/TRMM_DYNAMO.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">The meridional averaged precipitation from TRMM product during the DYNAMO field campaign.</span><a class="headerlink" href="#fig4-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="vertical-normal-mode">
+<h3>Vertical Normal Mode<a class="headerlink" href="#vertical-normal-mode" title="Link to this heading">#</a></h3>
 <p>An important thing is <a class="reference internal" href="#equation-shallow-water-linear4">(53)</a> is scaled by <span class="math notranslate nohighlight">\(C\)</span> rather than <span class="math notranslate nohighlight">\(C_0\)</span> indicating that we still need to determine <span class="math notranslate nohighlight">\(C\)</span> to close the problem. According to the separation of variable, we know <span class="math notranslate nohighlight">\(\frac{C_0^2}{C^2}=\lambda\)</span> or <span class="math notranslate nohighlight">\(C = \sqrt{\frac{C_0^2}{\lambda}}\)</span>. <span class="math notranslate nohighlight">\(\lambda\)</span> on the other hand represents the “ID” of a wave’s vertical structure. To see what <span class="math notranslate nohighlight">\(\lambda\)</span> stands for, we will complete the derivation of vertical normal mode.</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode1">
-<span class="eqno">(60)<a class="headerlink" href="#equation-vertical-normal-mode1" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(60)<a class="headerlink" href="#equation-vertical-normal-mode1" title="Link to this equation">#</a></span>\[\begin{align}
 \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 
 \end{align}\]</div>
 <p>Here we implement two boundary conditions. At <span class="math notranslate nohighlight">\(p=p_s\)</span> and <span class="math notranslate nohighlight">\(p=p_t\)</span>, <span class="math notranslate nohighlight">\(W(p)=0\)</span>, which represents the ridge-lid boundary condition. (one should notice that the lower boundary is not necessarily 0 given the frictional convergence plays a certain role in wave dynamics).</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode2">
-<span class="eqno">(61)<a class="headerlink" href="#equation-vertical-normal-mode2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(61)<a class="headerlink" href="#equation-vertical-normal-mode2" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 &amp; \frac{d^2 W(p)}{dp^2}+\lambda \frac{W^2}{p^2} = 0 \\
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-vertical-normal-mode2">(61)</a> is an Euler differential equation, which can be solved by assuming a solution form of <span class="math notranslate nohighlight">\(W(p)=\sum_{n=0}^{\infty} C_n p^{n+r}\)</span>. Using this series solution, we can have</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode3">
-<span class="eqno">(62)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(62)<a class="headerlink" href="#equation-vertical-normal-mode3" title="Link to this equation">#</a></span>\[\begin{align}
 W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}
 \end{align}\]</div>
 <p>Substitute two boundary conditions into <a class="reference internal" href="#equation-vertical-normal-mode3">(62)</a> we have</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode4">
-<span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases} 
+<span class="eqno">(63)<a class="headerlink" href="#equation-vertical-normal-mode4" title="Link to this equation">#</a></span>\[\begin{split}\begin{cases} 
 W(p_s) &amp;= Ap_s^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_s^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} \\
 W(p_t) &amp;= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}} 
 \end{cases}\end{split}\]</div>
 <p>which implies <span class="math notranslate nohighlight">\(\sqrt{\frac{1}{4}-\lambda}=\frac{i \pi m}{\mathrm{ln}(\frac{p_s}{p_t})}\)</span> and <span class="math notranslate nohighlight">\(B=-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}\)</span> (readers will complete the steps in the HW). The vertical structure solution can therefore be written as</p>
 <div class="math notranslate nohighlight" id="equation-vertical-normal-mode5">
-<span class="eqno">(64)<a class="headerlink" href="#equation-vertical-normal-mode5" title="Permalink to this equation">¶</a></span>\[W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}p^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}\]</div>
+<span class="eqno">(64)<a class="headerlink" href="#equation-vertical-normal-mode5" title="Link to this equation">#</a></span>\[W(p) = Ap^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}-A p_t^{2\sqrt{\frac{1}{4}-\lambda}}p^{\frac{1}{2}-\sqrt{\frac{1}{4}-\lambda}}\]</div>
 <p>It is obvious that two basis functions constitute the vertical structure solution i.e., <span class="math notranslate nohighlight">\(p^{\frac{1}{2}}p^{\frac{i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}\)</span> and <span class="math notranslate nohighlight">\(p^{\frac{1}{2}}p^{\frac{-i\pi m}{\mathrm{ln}(\frac{p_s}{p_t})}}\)</span>. Results are plotted in the figure below</p>
-<div class="figure align-default" id="fig4-4">
-<a class="reference internal image-reference" href="../_images/Vertical_Normal_Mode.png"><img alt="../_images/Vertical_Normal_Mode.png" src="../_images/Vertical_Normal_Mode.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">The vertical normal mode for m=1,2,3,4</span><a class="headerlink" href="#fig4-4" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig4-4">
+<a class="reference internal image-reference" href="../_images/Vertical_Normal_Mode.png"><img alt="../_images/Vertical_Normal_Mode.png" src="../_images/Vertical_Normal_Mode.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">The vertical normal mode for m=1,2,3,4</span><a class="headerlink" href="#fig4-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Recall that <span class="math notranslate nohighlight">\(\lambda = \frac{C_0^2}{C^2}\)</span>, also <span class="math notranslate nohighlight">\(\frac{1}{4}-\lambda=-\frac{\pi^2 m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}\)</span>. Two equations lead to <span class="math notranslate nohighlight">\(C^2=\frac{C_0^2}{\frac{1}{4}+\frac{\pi^2m^2}{(\mathrm{ln}(\frac{p_s}{p_t}))^2}}\)</span>.</p>
 <p>It’s not hard to find that bigger <span class="math notranslate nohighlight">\(m\)</span> corresponds to a more complicated vertical structure and slower propagating speed. Indeed, higher <span class="math notranslate nohighlight">\(m\)</span> usually represents are more stratified fluid and therefore the density difference between two adjacent layers is smaller as well. Small density difference leads to more reduction in gravitational acceleration.</p>
 <p>If one substitutes the non-dimension parameters with typical tropical conditions, we will have <span class="math notranslate nohighlight">\(C_0\sim 76\frac{m}{s}\)</span>, <span class="math notranslate nohighlight">\(C_1\sim 50\frac{m}{s}\)</span>, <span class="math notranslate nohighlight">\(C_2\sim 26.2\frac{m}{s}\)</span>,… The first baroclinic structure has a wave speed around 50<span class="math notranslate nohighlight">\(\frac{m}{s}\)</span> which is much faster than the observed tropical wave phase speed. Madden-Julian oscillation (one of the dominant tropical variability), has a phase speed around 5-10<span class="math notranslate nohighlight">\(\frac{m}{s}\)</span> closer to the fourth baroclinic mode. MJO is, however, dominated by the first baroclinic mode structure. This inconsistency drives the community to study MJO in two different directions (1) the MJO is governed by wave dynamics with various vertical structures or (2) the MJO’s characteristic time sccales are determined by something else other than the internal timescales of free-wave solution. We will have a more in-depth discussion next week.</p>
-</div>
-</div>
-<div class="section" id="convective-coupled-wave">
-<h2>Convective Coupled Wave<a class="headerlink" href="#convective-coupled-wave" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="convective-coupled-wave">
+<h2>Convective Coupled Wave<a class="headerlink" href="#convective-coupled-wave" title="Link to this heading">#</a></h2>
 <p>While <a class="reference internal" href="#equation-dispersion">(59)</a> seems over-simplified (linear, resting basic states…), the observation is however closely tied to the analytical solution of tropical wave solution. The figure below shows the symmetric components of tropical OLR (averaged over 15<span class="math notranslate nohighlight">\(^{\circ}\)</span>N-15<span class="math notranslate nohighlight">\(^{\circ}\)</span>S). One can find two peaks stand out, one follows the dispersion relationship of Kelvin wave and the other one follows the equatorial Rossby waves. Given that OLR is a good proxy of convection, <a class="reference internal" href="#fig4-5"><span class="std std-numref">Fig. 19</span></a> suggests that the convectively coupled tropical waves to some degree can be considered as a forced response of free-wave solution, where the forcing time scales are either much shorter or equivalent to the internal time scales of free-wave solutions.</p>
-<div class="figure align-default" id="fig4-5">
-<a class="reference internal image-reference" href="../_images/Dispersion_Relationship_OLR.png"><img alt="../_images/Dispersion_Relationship_OLR.png" src="../_images/Dispersion_Relationship_OLR.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">The OLR power spectrum superimposed with the analytical dispersion relationship. The three curves (from top to bottom) for each type of wave correspond to different equivalent depths (50,25 and 12 meter).</span><a class="headerlink" href="#fig4-5" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig4-5">
+<a class="reference internal image-reference" href="../_images/Dispersion_Relationship_OLR.png"><img alt="../_images/Dispersion_Relationship_OLR.png" src="../_images/Dispersion_Relationship_OLR.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">The OLR power spectrum superimposed with the analytical dispersion relationship. The three curves (from top to bottom) for each type of wave correspond to different equivalent depths (50,25 and 12 meter).</span><a class="headerlink" href="#fig4-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Another interesting but less addressed feature is the maximum around <span class="math notranslate nohighlight">\(k=1-4\)</span> and <span class="math notranslate nohighlight">\(\text{CPD}\leq 0.05\)</span> (i.e., period lower than 20 days). This is the famous Madden-Julian oscillation. Its distinct spectrum suggests the linear wave theory may not be able to explain the corresponding dynamics. Finding the governing equation for modeling MJO has been the Holy Grail in the scientific community of tropical large-scale dynamics. We will go through more debates in between different communities in the next week.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -676,7 +628,7 @@ W(p_t) &amp;= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\s
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Variability"
         },
         predefinedOutput: true
@@ -684,50 +636,116 @@ W(p_t) &amp;= Ap_t^{\frac{1}{2}+\sqrt{\frac{1}{4}-\lambda}}+Bp_t^{\frac{1}{2}-\s
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../Climatology/Hadley_cell.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Week 4 and 5: Hadley Cell</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Climatology/Hadley_cell.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Week 4 and 5: Hadley Cell</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="MJO.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="MJO.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Week 8: Madden-Julian oscillation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shallow-water-model">Shallow Water Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-shallow-water-pv">Conservation of Shallow Water PV</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-wave-equations">Equatorial Wave Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-wave-solutions">Horizontal Wave Solutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-1-rossby-wave-regime">Case 1: Rossby wave regime</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-inertia-gravity-wave-regime">Case 2: Inertia-gravity wave regime</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#case-3-mixed-rossby-gravity-wave-yanai-wave">Case 3: Mixed Rossby-gravity wave (Yanai wave)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-normal-mode">Vertical Normal Mode</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convective-coupled-wave">Convective Coupled Wave</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By The Jupyter Book Community<br/>
-  
-      &copy; Copyright 2020.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

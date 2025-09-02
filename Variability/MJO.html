@@ -1,108 +1,167 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Week 8: Madden-Julian oscillation &#8212; Dynamic Climatology</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Variability/MJO';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Week 9: Quasi-biennial Oscillation" href="QBO.html" />
     <link rel="prev" title="Week 6 and 7: Tropical Wave Theory" href="waves1.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
     
-    <div class="container-fluid" id="banner"></div>
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
 
-    
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Dynamic Climatology</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Dynamic Climatology - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Dynamic Climatology - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,385 +171,269 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Obs.html">
-   Week 1: Observational Evidence
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/governing_equation.html">
-   Week 2 and 3: Scale Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Hadley_cell.html">
-   Week 4 and 5: Hadley Cell
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="waves1.html">
-   Week 6 and 7: Tropical Wave Theory
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Week 8: Madden-Julian oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="QBO.html">
-   Week 9: Quasi-biennial Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ENSO.html">
-   Week 10: El Ni~no Southern Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climate_Change/CC.html">
-   Week 12: The Projection of Future Hydrological Cycle
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Obs.html">Week 1: Observational Evidence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/governing_equation.html">Week 2 and 3: Scale Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Hadley_cell.html">Week 4 and 5: Hadley Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waves1.html">Week 6 and 7: Tropical Wave Theory</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 8: Madden-Julian oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QBO.html">Week 9: Quasi-biennial Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ENSO.html">Week 10: El Ni~no Southern Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climate_Change/CC.html">Week 12: The Projection of Future Hydrological Cycle</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/MJO.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Variability/MJO.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/MJO.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/Variability/MJO.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button>
 
-      </li>
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theories-for-mjo">
-   Theories for MJO
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wave-perspective">
-     wave perspective
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moisture-mode-framework">
-     moisture mode framework
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">
-   Some Evidence from Wave Dynamics Perspective
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">
-     The boundary layer momentum balance
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">
-     Lidzen-Nigam Model (optional reading)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">
-   Some Evidence from Moisture Mode Perspective
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">
-     Gill Solution (the forced and steady state wave solution)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">
-     Gross Moist Stability and Gross Moist Stratification
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 8: Madden-Julian oscillation</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#theories-for-mjo">
-   Theories for MJO
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#wave-perspective">
-     wave perspective
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#moisture-mode-framework">
-     moisture mode framework
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">
-   Some Evidence from Wave Dynamics Perspective
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">
-     The boundary layer momentum balance
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">
-     Lidzen-Nigam Model (optional reading)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">
-   Some Evidence from Moisture Mode Perspective
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">
-     Gill Solution (the forced and steady state wave solution)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">
-     Gross Moist Stability and Gross Moist Stratification
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Week 8: Madden-Julian oscillation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
-  <div class="section" id="week-8-madden-julian-oscillation">
-<span id="mjo"></span><h1>Week 8: Madden-Julian oscillation<a class="headerlink" href="#week-8-madden-julian-oscillation" title="Permalink to this headline">¶</a></h1>
-<p>The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO’s signal is so strong that it can even be detected in raw-sounding data and water vapor channels. <a class="reference internal" href="#fig5-1"><span class="std std-numref">Fig. 20</span></a> below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the <span id="id1">[<a class="reference internal" href="QBO.html#id22"><span>MJ71</span></a>]</span> paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, <a class="reference internal" href="#fig5-2"><span class="std std-numref">Fig. 21</span></a> shows an observed MJO event located at the western Pacific from unfiltered column water vapor.</p>
-<div class="figure align-default" id="fig5-1">
-<a class="reference internal image-reference" href="../_images/MJO_power_spectrum.png"><img alt="../_images/MJO_power_spectrum.png" src="../_images/MJO_power_spectrum.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">The power spectrum of tropical intraseasonal variability</span><a class="headerlink" href="#fig5-1" title="Permalink to this image">¶</a></p>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theories-for-mjo">Theories for MJO</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-perspective">wave perspective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moisture-mode-framework">moisture mode framework</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">Some Evidence from Wave Dynamics Perspective</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">The boundary layer momentum balance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">Lidzen-Nigam Model (optional reading)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">Some Evidence from Moisture Mode Perspective</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">Gill Solution (the forced and steady state wave solution)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">Gross Moist Stability and Gross Moist Stratification</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
 </div>
-<div class="figure align-default" id="fig5-2">
-<a class="reference internal image-reference" href="../_images/latest72hrs.gif"><img alt="../_images/latest72hrs.gif" src="../_images/latest72hrs.gif" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">The total precipitable water of an MJO event in Indian ocean from MIMIC-TPW.</span><a class="headerlink" href="#fig5-2" title="Permalink to this image">¶</a></p>
-</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="week-8-madden-julian-oscillation">
+<span id="mjo"></span><h1>Week 8: Madden-Julian oscillation<a class="headerlink" href="#week-8-madden-julian-oscillation" title="Link to this heading">#</a></h1>
+<p>The Madden-Julian Oscillation (MJO) is a distinctive phenomenon that occurs in the tropical Indian Ocean and the Western Pacific. It is characterized by large-scale atmospheric circulation patterns (with zonal wave numbers ranging from 1 to 4) and operates on intraseasonal timescales, lasting between 20 to 90 days. Due to its intraseasonal nature, it is often referred to as tropical intraseasonal variability. The MJO’s signal is so strong that it can even be detected in raw-sounding data and water vapor channels. <a class="reference internal" href="#fig5-1"><span class="std std-numref">Fig. 20</span></a> below illustrate the power spectrum of tropical sea-level pressure from various sounding stations , as presented in the <span id="id1">[<a class="reference internal" href="QBO.html#id22" title="Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. Journal of Atmospheric Sciences, 28:702–708, July 1971.">MJ71</a>]</span> paper. A notable peak around 40-50 days is a clear indicator of the MJO. Also, <a class="reference internal" href="#fig5-2"><span class="std std-numref">Fig. 21</span></a> shows an observed MJO event located at the western Pacific from unfiltered column water vapor.</p>
+<figure class="align-default" id="fig5-1">
+<a class="reference internal image-reference" href="../_images/MJO_power_spectrum.png"><img alt="../_images/MJO_power_spectrum.png" src="../_images/MJO_power_spectrum.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">The power spectrum of tropical intraseasonal variability</span><a class="headerlink" href="#fig5-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig5-2">
+<a class="reference internal image-reference" href="../_images/latest72hrs.gif"><img alt="../_images/latest72hrs.gif" src="../_images/latest72hrs.gif" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">The total precipitable water of an MJO event in Indian ocean from MIMIC-TPW.</span><a class="headerlink" href="#fig5-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The MJO has significant global effects. It plays a key role in modulating the variability of the summer monsoon in South and Southeast Asia, influencing related extreme events such as tropical cyclones and droughts. Additionally, its interaction with the subtropical jet stream can generate quasi-stationary Rossby waves, allowing wave energy to propagate toward North America, creating the Pacific-North America (PNA) pattern. This, in turn, impacts winter storms and the polar vortex. Despite the considerable global influence of the MJO, modeling its dynamics has posed challenges for the scientific community since its discovery. Two critical aspects in understanding the MJO are its (1) frequency (or period) and (2) the evolution of its vertical structure from shallow to deep convection. We will explore these various characteristics and examine how they affect the ability to accurately model the MJO.</p>
-<div class="section" id="theories-for-mjo">
-<h2>Theories for MJO<a class="headerlink" href="#theories-for-mjo" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="wave-perspective">
-<h3>wave perspective<a class="headerlink" href="#wave-perspective" title="Permalink to this headline">¶</a></h3>
+<section id="theories-for-mjo">
+<h2>Theories for MJO<a class="headerlink" href="#theories-for-mjo" title="Link to this heading">#</a></h2>
+<section id="wave-perspective">
+<h3>wave perspective<a class="headerlink" href="#wave-perspective" title="Link to this heading">#</a></h3>
 <p>Two primary theories have been developed to explain the MJO: (1) wave dynamics and (2) the moisture mode framework. Each theory addresses different physical thresholds. Regarding wave dynamics, notable contributions were made in the 1990s by Dr. Bin Wang, Dr. Tim Li, and C.-P. Chang (from our department). The wave dynamics theory, often referred to as the wave school, originates from the shallow water equations, where the influence of gravity and Rossby waves is significant. For example:</p>
 <div class="math notranslate nohighlight" id="equation-mjo-wave">
-<span class="eqno">(65)<a class="headerlink" href="#equation-mjo-wave" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(65)<a class="headerlink" href="#equation-mjo-wave" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial \text{Div}}{\partial t} &amp;\sim O( \nabla \cdot (f+\zeta)\times \vec{u})  \\
 \frac{\partial \zeta}{\partial t} &amp;\sim O(\nabla \cdot (f+\zeta)\times \vec{u}) \\
 \frac{\partial \phi_p}{\partial t} &amp;\sim O(w\frac{N^2}{g}-\frac{Q}{c_p T}) \\
 Q &amp;\sim -Lw\frac{\partial \tilde{q}}{\partial z}(\text{SST}) \\
 \end{align}\end{split}\]</div>
 <p>in <a class="reference internal" href="#equation-mjo-wave">(65)</a> <span class="math notranslate nohighlight">\(\text{Div}\)</span>, <span class="math notranslate nohighlight">\(\zeta\)</span> and <span class="math notranslate nohighlight">\(\phi_p\)</span> represent the divergence, vorticity, and temperature, respectively. The tendency terms in these equations have magnitudes similar to other terms, such as advection, indicating that the inertial effects are still significant. This suggests the system has not yet reached a full dynamical equilibrium, and wave processes continue to play a role. Additionally, diabatic heating is governed by the vertical redistribution of moisture, similar to the convective instability of the second kind (CISK).</p>
-</div>
-<div class="section" id="moisture-mode-framework">
-<h3>moisture mode framework<a class="headerlink" href="#moisture-mode-framework" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="moisture-mode-framework">
+<h3>moisture mode framework<a class="headerlink" href="#moisture-mode-framework" title="Link to this heading">#</a></h3>
 <p>In the moisture mode framework, the assumption is that the internal adjustment of gravity waves has already reached equilibrium, leading to the removal of <span class="math notranslate nohighlight">\(\frac{\partial \text{Div}}{\partial t}\)</span> from the system. Furthermore, under the weak temperature gradient approximation, the third equation simplifies as follows:</p>
 <div class="math notranslate nohighlight" id="equation-mjo-moisture-mode">
-<span class="eqno">(66)<a class="headerlink" href="#equation-mjo-moisture-mode" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(66)<a class="headerlink" href="#equation-mjo-moisture-mode" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial \text{Div}}{\partial t} &amp;\sim 0  \\
 \frac{\partial \zeta}{\partial t} &amp;\sim O(\nabla \cdot (f+\zeta)\times \vec{u}) \\
 w\frac{N^2}{g}&amp;=\frac{Q}{c_p T} \\
@@ -498,107 +441,113 @@ Q &amp;\sim L\frac{dq}{dt}+Q_R(T,p,q,\text{Cloud})\\
 \end{align}\end{split}\]</div>
 <p>A key distinction in the moisture mode framework is that the forcing is considered a prognostic variable rather than a diagnostic one. This means that the forcing evolves over time, rather than being predetermined. From the comparison between <a class="reference internal" href="#equation-mjo-wave">(65)</a> and <a class="reference internal" href="#equation-mjo-moisture-mode">(66)</a>, we can see that the treatment of both the internal wave processes and the forcing mechanism is crucial.</p>
 <p>It’s important to note that these two frameworks represent opposite ends of the parameter spectrum, with one being more wave-like and the other more akin to moist static energy (MSE) variability. A substantial amount of tropical variability lies somewhere between these two perspectives.</p>
-</div>
-</div>
-<div class="section" id="some-evidence-from-wave-dynamics-perspective">
-<h2>Some Evidence from Wave Dynamics Perspective<a class="headerlink" href="#some-evidence-from-wave-dynamics-perspective" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="some-evidence-from-wave-dynamics-perspective">
+<h2>Some Evidence from Wave Dynamics Perspective<a class="headerlink" href="#some-evidence-from-wave-dynamics-perspective" title="Link to this heading">#</a></h2>
 <p>From the perspective of wave dynamics, the MJO has long been regarded as a type of convectively coupled wave for several reasons. First, the circulation pattern associated with the MJO closely resembles that of a forced Kelvin wave, where the horizontal winds exhibit a Gill-like response (which we will explore in more detail later). Specifically, there are easterly winds to the east of the convection and westerly winds to the west. The eastern portion of the MJO shows similarities to observed convectively coupled Kelvin waves, while the western part is often characterized by twin cyclones. Moreover, the easterly phase is associated with shallower circulation (and lower cloud heights), while the westerly phase is linked to stratiform clouds, featuring a top-heavy heating profile.</p>
 <p>The shallow circulation aids in recharging moist entropy into the free troposphere through shallow divergent flow, which exports lower dry static energy but imports moist-laden air from the boundary layer. Conversely, deep circulation efficiently discharges moist entropy from the column to other regions. This recharge-discharge process of column energy is crucial to MJO dynamics, as it directly influences the intensity and distribution of diabatic heating. This aspect has been largely absent from traditional wave dynamics theories (or more focus on the recharge of DSE from wave dynamics perspective). We will delve deeper into this topic when discussing the Gill solution.</p>
 <p>The vertical structure of the MJO, which tilts from east to west, strongly resembles the structure observed in equatorial Kelvin waves. In tropical wave theory, the presence of shallow circulation can be explained by momentum balance within a frictional planetary boundary layer. Upward motion at the top of this boundary layer induces shallow heating (around the 4th baroclinic mode), which in turn slows the propagation speed. During the convective phase, the maximum upward motion near 300 hPa, coupled with divergence in the upper troposphere, creates a first baroclinic mode structure. This process allows the column to export energy, which accelerates the propagation speed. The coupling between shallow and deep heating profiles results in a wave speed that falls between these two modes. However, even with shallow heating factored in, the phase speed remains faster than what is observed.</p>
-<div class="figure align-default" id="fig5-3">
-<a class="reference internal image-reference" href="../_images/MJO_vertical_structure.png"><img alt="../_images/MJO_vertical_structure.png" src="../_images/MJO_vertical_structure.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">The vertical structure of MJO and the cross-section at westerly/easterly phase. From <span id="id2">[<a class="reference internal" href="QBO.html#id17"><span>AW15</span></a>]</span></span><a class="headerlink" href="#fig5-3" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="the-boundary-layer-momentum-balance">
-<h3>The boundary layer momentum balance<a class="headerlink" href="#the-boundary-layer-momentum-balance" title="Permalink to this headline">¶</a></h3>
+<figure class="align-default" id="fig5-3">
+<a class="reference internal image-reference" href="../_images/MJO_vertical_structure.png"><img alt="../_images/MJO_vertical_structure.png" src="../_images/MJO_vertical_structure.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">The vertical structure of MJO and the cross-section at westerly/easterly phase. From <span id="id2">[<a class="reference internal" href="QBO.html#id17" title="Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. J. Atmos. Sci., 72(10):3733–3754, October 2015.">AW15</a>]</span></span><a class="headerlink" href="#fig5-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-boundary-layer-momentum-balance">
+<h3>The boundary layer momentum balance<a class="headerlink" href="#the-boundary-layer-momentum-balance" title="Link to this heading">#</a></h3>
 <p>In the boundary layer, the momentum equation can be written as</p>
 <div class="math notranslate nohighlight" id="equation-wave-boundary-layer">
-<span class="eqno">(67)<a class="headerlink" href="#equation-wave-boundary-layer" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(67)<a class="headerlink" href="#equation-wave-boundary-layer" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \frac{\partial u_B}{\partial t} -\beta y v_B &amp;= -\frac{\partial \phi}{\partial x}-E u_B \\
 \frac{\partial v_B}{\partial t} +\beta y v_B &amp;= -\frac{\partial \phi}{\partial y}-E v_B \\
 \end{align}\end{split}\]</div>
 <p>where the subscript <em>B</em> represents boundary layer. One should notice that we don’t include the thermodynamics equation in the boundary layer equation given that the diabatic processes associated with shallow cumulus is weaker those those found in the free troposphere (not a perfect but workable assumption). Another important feature is that the boundary and lower free troposphere share the same pressure gradient, which can be attributed to the fast adjustment in the planetary boundary. Leveraging the same assumption (fast adjustment) for scale analysis, we can also drop the tendency term due to the fast adjustment, leading to</p>
 <div class="math notranslate nohighlight" id="equation-wave-boundary-layer2">
-<span class="eqno">(68)<a class="headerlink" href="#equation-wave-boundary-layer2" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(68)<a class="headerlink" href="#equation-wave-boundary-layer2" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 -\beta y v_B &amp;= -\frac{\partial \phi}{\partial x}-E u_B \\
 \beta y v_B &amp;= -\frac{\partial \phi}{\partial y}-E v_B \\
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a> is a diagnostic equation, i.e., as long as we know the pressure gradient force in the free troposphere, we know <span class="math notranslate nohighlight">\(u_B\)</span> and <span class="math notranslate nohighlight">\(v_B\)</span> in the boundary layer. The boundary layer in turn feedback to the free troposphere through <a class="reference internal" href="waves1.html#equation-boundary-layer">(47)</a> (<span class="math notranslate nohighlight">\(\tilde{w}\)</span>). The shallow vertical motion can trigger shallow mode of heating and recharge the column MSE.</p>
 <p>From <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a> we also know the steady motion of boundary layer convergence on an equatorial beta plane can be written as</p>
 <div class="math notranslate nohighlight" id="equation-wave-boundary-layer3">
-<span class="eqno">(69)<a class="headerlink" href="#equation-wave-boundary-layer3" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(69)<a class="headerlink" href="#equation-wave-boundary-layer3" title="Link to this equation">#</a></span>\[\begin{align}
 D=-E(\underbrace{\nabla^2 \phi}_{\text{pressure gradient force}}+\underbrace{\beta u}_{\text{Ekman Pumping}} +\underbrace{\beta^2 yv/E}_{\text{Sverdrup Balance}})/(E^2+\beta^2y^2)
 \end{align}\]</div>
 <p>In large-scale motion (where the pressure gradient is small), the second term is the dominant forcing where the lower-troposphere westerly/esterly is characterized by boundary layer top convergence/divergence. Such boundary-top convergence/divergence will further lead to the downward/upward motion in the lower troposphere. In the off-equatorial region, Severdrup balance (negative planetary PV advection balanced by stretching) is the main cause of the lower-troposphere vertical motion.</p>
 <p>One key take-home message is that the boundary-layer top easterly collocated with boundary ascending motion, which is a quarter phase leading the mid-troposphere ascending motion. Thus, as long as the surface friction exists, we can always see such phase difference between the boundary layer ascending motion and the mid-troposhere ascending motion.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="QBO.html#id23"><span>RH96</span></a>]</span></p>
+<p>Severdrup balance has also been applied to explain the stationary Rossby wave response such as the monsoon-desert mechanism proposed by Dr. Brian Hoskins back in 1980s. See <span id="id3">[<a class="reference internal" href="QBO.html#id23" title="Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. Quart. J. Roy. Meteor. Soc., 122(534):1385–1404, July 1996.">RH96</a>]</span></p>
 </div>
-</div>
-<div class="section" id="lidzen-nigam-model-optional-reading">
-<h3>Lidzen-Nigam Model (optional reading)<a class="headerlink" href="#lidzen-nigam-model-optional-reading" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="lidzen-nigam-model-optional-reading">
+<h3>Lidzen-Nigam Model (optional reading)<a class="headerlink" href="#lidzen-nigam-model-optional-reading" title="Link to this heading">#</a></h3>
 <p>In the previous subsection, we show that the boundary convergence/divergence is determined through 3 processes. (1) pressure gradient force at the top of boundary layer (2) Ekman pumping and (3) Sverdrup balance. However, all three processes are controls from the lower free troposphere. The lower boundary i.e., SST, on the other hand, also plays a role in the boundary layer convergence. Lidzen-Nigam model (Lidzen and Nigam 1987) is one of the few model exploring the contribution of SST.</p>
 <p>In Lidzen-Nigam model, we have a balanced momentum equation on a sphere.</p>
 <div class="math notranslate nohighlight" id="equation-wave-boundary-layer4">
-<span class="eqno">(70)<a class="headerlink" href="#equation-wave-boundary-layer4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(70)<a class="headerlink" href="#equation-wave-boundary-layer4" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 -\beta y v &amp; = -\frac{1}{\rho a \mathrm{cos}\phi}\frac{\partial p}{\partial \lambda}+\frac{1}{\rho}\frac{\partial \tau_x}{\partial z} \\ 
 \beta y u &amp; = -\frac{1}{\rho a }\frac{\partial p}{\partial \phi}+\frac{1}{\rho}\frac{\partial \tau_y}{\partial z} \\ 
 \end{align}\end{split}\]</div>
 <p>Similar to <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a>, <a class="reference internal" href="#equation-wave-boundary-layer4">(70)</a> is a diagnostic equation, indicating that as long as we have the information of pressure gradient force, we know the convergence within the boundary layer.</p>
 <p>Different from <a class="reference internal" href="#equation-wave-boundary-layer2">(68)</a>, we would like to link such pressure gradient force to the surface temperature. To achieve that, one can integrate the hydrostatic equation vertically, i.e., <span class="math notranslate nohighlight">\(\int_{p_s}^{p_T}dp=\int_{z_s}^{z_T}-\rho g dz\)</span>. Given the Bousinessq approximation is solid in the boundary layer, the density change can be directly attributed to the change in temperature. i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-ln87-temperature">
-<span class="eqno">(71)<a class="headerlink" href="#equation-ln87-temperature" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(71)<a class="headerlink" href="#equation-ln87-temperature" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \rho(T) &amp; = \rho_0 + \frac{\partial \rho}{\partial T}|_{T_0}\delta T = \rho_0[2-\frac{T}{T_0}]\\
 \text{ comes from } &amp; \frac{\rho -\rho_0}{\rho_0} = -\frac{T-T_0}{T_0}
 \end{align}\end{split}\]</div>
 <p>Also, given the 3-D boundary layer temperature as a function of surface temperature, we have</p>
 <div class="math notranslate nohighlight" id="equation-ln87-temperature-3d">
-<span class="eqno">(72)<a class="headerlink" href="#equation-ln87-temperature-3d" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(72)<a class="headerlink" href="#equation-ln87-temperature-3d" title="Link to this equation">#</a></span>\[\begin{align}
 T(\lambda,\phi,z) = \underbrace{\overline{T}_s(\phi)-\alpha z}_{\text{zonal mean SST}}  + \underbrace{T'(1-\gamma\frac{z}{H_0})}_{\text{eddy component SST (decay faster)}} 
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the lapse rate of zonal mean temperature (~3K/km) and <span class="math notranslate nohighlight">\(1-\gamma\frac{z}{H_0}\)</span> is the decaying rate of the eddy temperature, which is about 0.7 from surface to trade-wind inversion (PBL top). The surface temperature has two components (1) zonal mean and (2) eddy. The eddy component decays faster than the zonal mean temperature due to the weak temperature gradient in the free troposphere.</p>
 <p>Substituting <a class="reference internal" href="#equation-ln87-temperature-3d">(72)</a> and <a class="reference internal" href="#equation-ln87-temperature">(71)</a> back into <a class="reference internal" href="#equation-wave-boundary-layer4">(70)</a>, one can easily diagnose the boundary convergence. Readers will find that the meridional SST gradient plays the dominant role in determining the boundary layer convergence as long as the pressure gradient at the boundary layer top is small. This is especially the case for Eastern Pacific ITCZ and the boreal winter ITCZ at Indian ocean. (see Lidzen and Nigam 1987 for more details)</p>
-</div>
-</div>
-<div class="section" id="some-evidence-from-moisture-mode-perspective">
-<h2>Some Evidence from Moisture Mode Perspective<a class="headerlink" href="#some-evidence-from-moisture-mode-perspective" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="some-evidence-from-moisture-mode-perspective">
+<h2>Some Evidence from Moisture Mode Perspective<a class="headerlink" href="#some-evidence-from-moisture-mode-perspective" title="Link to this heading">#</a></h2>
 <p>Three necessary conditions for a moisture mode variability happens, (1) the diabatic heating is dominated by the moisture-related processes (2) weak temperature gradient (3) Precipitation anomaly is highly correlated with moisture anomaly.</p>
 <p>According to these criteria, there are evidences supporting the moisture mode framework, especially over the Indo-Pacific regions. First, the weak temperature gradient approximation (i.e., <span class="math notranslate nohighlight">\(w\frac{N^2}{g}=\frac{Q}{c_p T}\)</span> is a good approximation on intraseasonal timescales (even a more solid approximation than applying it to wave time scales). This indicates that the dynamics are nearly in a state of equilibrium. Second, the moistening/drying in the lower troposphere (<span class="math notranslate nohighlight">\(\sim\)</span>700-hPa) has an equivalent contribution to the residual of the column process (i.e., vertical moisture advection balanced by the physical processes), suggesting what happens in horizontal directions is equally important. Precipitation anomaly is in generally highly correlated to column moisture if it’s linearized in intraseasonal timescales.</p>
 <p>Overall, MJO has satisfied all three criteria in the region of the Indian Ocean, and it meets either one or two criteria over other basins. Details can be found in XXX.</p>
-<div class="section" id="gill-solution-the-forced-and-steady-state-wave-solution">
-<h3>Gill Solution (the forced and steady state wave solution)<a class="headerlink" href="#gill-solution-the-forced-and-steady-state-wave-solution" title="Permalink to this headline">¶</a></h3>
+<section id="gill-solution-the-forced-and-steady-state-wave-solution">
+<h3>Gill Solution (the forced and steady state wave solution)<a class="headerlink" href="#gill-solution-the-forced-and-steady-state-wave-solution" title="Link to this heading">#</a></h3>
 <p>The Gill solution is a steady state, forced response of the wave solution. To acquire the steady-state wave solution, we adopt <a class="reference internal" href="waves1.html#equation-shallow-water-linear3">(52)</a></p>
 <div class="math notranslate nohighlight" id="equation-gill-solution">
-<span class="eqno">(73)<a class="headerlink" href="#equation-gill-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(73)<a class="headerlink" href="#equation-gill-solution" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \epsilon u -\beta yv &amp; = -\frac{\partial \phi}{\partial x}\\
 \epsilon v +\beta yu &amp; = -\frac{\partial \phi}{\partial y}\\
 \epsilon \phi + C_m^2 (\frac{\partial u}{\partial x} +\frac{\partial v}{\partial y}) &amp;= Q_{m} \\
 \frac{Q}{c_p T} &amp;=\sum_{m} Q_{m} W_m(p) \\ 
 \end{align}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(W_m(p)\)</span> is the eigen basis of vertical normal mode decomposition and <span class="math notranslate nohighlight">\(Q_{m}\)</span> is the coefficient of the corresponding vertical mode. (see <a class="reference internal" href="waves1.html#equation-vertical-normal-mode2">(61)</a>). Thus, the first step to solve Gill solution is decomposing the diabatic heating into various normal modes, where each mode corresponds to different equivalent depths (gravity wave speed). Then, the derived coefficients (i.e., <span class="math notranslate nohighlight">\(Q_m\)</span> in the third equation of <a class="reference internal" href="#equation-gill-solution">(73)</a>) of each mode are functions of longitude and latitude, which will be used to solve the horizontal wave solution (i.e., the first 3 equations in <a class="reference internal" href="#equation-gill-solution">(73)</a>). In Gill (1980), he employed variable transformation to solve the analytical solution of a Gaussian-like heating on the equator. To the west of the heating shows a twin-cyclone and to the east of the heating is characterized by a Kelvin wave-like feature.</p>
-<div class="figure align-default" id="id4">
-<a class="reference internal image-reference" href="../_images/Gill.png"><img alt="../_images/Gill.png" src="../_images/Gill.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Gill solution. Contours are prescribed heating patterns and vectors show the circulation driven by heating.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/Gill.png"><img alt="../_images/Gill.png" src="../_images/Gill.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Gill solution. Contours are prescribed heating patterns and vectors show the circulation driven by heating.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Gill’s solution has been applied to explain the observed circulation on a beta plane with a resting basic state. Some real-world cases include the monsoon-desert relationship, MJO circulation, and North American low-level jet. In addition, it’s the backbone of the moisture mode framework. In moisture mode, heating is dominated by the variation of moisture, which is redistributed by circulation. The circulation can further be diagnosed using Gill solution.</p>
 <p>Following the discussion in the first week, one can find that the moisture mode starts from an energetic perspective and emphasizes on the role of moisture in determining the intraseasonal variation of moist static energy. Thus, the intrinsic timescales of moisture mode variability is determined by the redistribution of MSE rather than the adjustment of DSE.</p>
-<p>More details can be found in <span id="id5">[<a class="reference internal" href="QBO.html#id21"><span>AK16</span></a>]</span>.</p>
-</div>
-<div class="section" id="gross-moist-stability-and-gross-moist-stratification">
-<h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Permalink to this headline">¶</a></h3>
+<p>More details can be found in <span id="id5">[<a class="reference internal" href="QBO.html#id21" title="Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. J. Atmos. Sci., 2016.">AK16</a>]</span>.</p>
+</section>
+<section id="gross-moist-stability-and-gross-moist-stratification">
+<h3>Gross Moist Stability and Gross Moist Stratification<a class="headerlink" href="#gross-moist-stability-and-gross-moist-stratification" title="Link to this heading">#</a></h3>
 <p>The last important concept in moisture theory is the <em>Gross Moist Stability</em>. The gross moist stability was originally proposed by Neelin and Held (1987), which describes the gross effect of convection in redistributing column moist static energy. It starts from the dry and moist static energy equations</p>
 <div class="math notranslate nohighlight" id="equation-gms1">
-<span class="eqno">(74)<a class="headerlink" href="#equation-gms1" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}\begin{cases}
+<span class="eqno">(74)<a class="headerlink" href="#equation-gms1" title="Link to this equation">#</a></span>\[ \begin{align}\begin{aligned}\begin{split}\begin{cases}
 \frac{\partial s}{\partial t}+ \nabla \cdot \mathbf{V}s + \frac{\partial \omega s}{\partial p} = g\partial_p (F^{R}+F^{S})+Q_{LH} \\ 
 \frac{\partial Lq}{\partial t}+ \nabla \cdot L\mathbf{V}q + \frac{\partial L\omega q}{\partial p} = -Q_{LH} + g\partial_p (F^{LH}) \\ 
 \end{cases} \rightarrow \end{split}\\\frac{\partial m}{\partial t}+ \nabla \cdot \mathbf{V}m + \frac{\partial \omega m}{\partial p} = g\partial_p (F^{m})\end{aligned}\end{align} \]</div>
 <p>where <span class="math notranslate nohighlight">\(F^{R}\)</span>, <span class="math notranslate nohighlight">\(F^{S}\)</span> and <span class="math notranslate nohighlight">\(F^{LH}\)</span> are fluxes of radiation, dry static energy (s), and latent energy respectively. <span class="math notranslate nohighlight">\(-Q_{LH}\)</span> is the latent heating due to the transition from water vapor to cloud liquid water. Combining the dry static energy equation with the moisture equation, we have the prognostic equation of MSE (m). The column-integrated m can therefore be written as</p>
 <div class="math notranslate nohighlight" id="equation-gms2">
-<span class="eqno">(75)<a class="headerlink" href="#equation-gms2" title="Permalink to this equation">¶</a></span>\[\langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}\]</div>
+<span class="eqno">(75)<a class="headerlink" href="#equation-gms2" title="Link to this equation">#</a></span>\[\langle \frac{\partial m}{\partial t}\rangle+ \langle  \nabla \cdot \mathbf{V}m \rangle + \langle\frac{\partial L\omega m}{\partial p} \rangle= F^{m}_{B}-F^{m}_{T}\]</div>
 <p>While the observed tropical circulation is dominated by the first baroclinic structure (divergence in the upper layer and convergence in the lower layer or vice versa), we have the following relationship</p>
 <div class="math notranslate nohighlight" id="equation-gms3">
-<span class="eqno">(76)<a class="headerlink" href="#equation-gms3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+<span class="eqno">(76)<a class="headerlink" href="#equation-gms3" title="Link to this equation">#</a></span>\[\begin{split}\begin{cases}
 \nabla\cdot\mathbf{V_2} = \frac{1}{g}\int_{p_m}^{p_B} \nabla \cdot \mathbf{V} dp = -\nabla \cdot \mathbf{V_1} =  -\frac{1}{g}\int_{p_T}^{p_m} \nabla \cdot \mathbf{V} dp \\ 
 m_2 = \frac{1}{g}\int_{p_m}^{p_B} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_2})^{-1} \\
 m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\mathbf{V_1})^{-1} \\
@@ -606,67 +555,82 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
 \end{cases}\end{split}\]</div>
 <p>where the first equation of <a class="reference internal" href="#equation-gms2">(75)</a> indicates the nature of mass continuity in the first baroclinic structure. <span class="math notranslate nohighlight">\(m_2\)</span> and <span class="math notranslate nohighlight">\(m_1\)</span> are the vertical velocity weighted (mass flux i.e., the integration of divergence) moist static energy in the lower and the upper layers. (equivalent to cumulus ensemble in Yanai et al. 1973). In a steady state, <a class="reference internal" href="#equation-gms3">(76)</a> leads to</p>
 <div class="math notranslate nohighlight" id="equation-gms4">
-<span class="eqno">(77)<a class="headerlink" href="#equation-gms4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(77)<a class="headerlink" href="#equation-gms4" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 -\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} + \langle \overline{\mathbf{V}}\cdot \nabla \overline{s} \rangle +  \langle \nabla \cdot \overline{\mathbf{V}'s'} \rangle &amp;= \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}+L\overline{P} \\ 
 \Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}}  + \langle \overline{\mathbf{V}}\cdot \nabla \overline{q} \rangle +  \langle \nabla \cdot \overline{\mathbf{V}'q'} \rangle &amp;= \overline{E} - \overline{P} 
 \end{align}\end{split}\]</div>
 <p>where the overline is time mean and prime is the transient components. The disappearance of <span class="math notranslate nohighlight">\(\overline{F_B^{S}}\)</span> indicates there is no sensible heat transport at the tropopause. In the convective regions, the main balance happens <span class="math notranslate nohighlight">\(-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}\)</span>, while in clear sky region <span class="math notranslate nohighlight">\(-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B^{R}}+\overline{F_B^{S}}-\overline{F_T^{R}}\)</span>. One can find that the static stability plays a role in <span class="math notranslate nohighlight">\(\Delta \overline{s}\)</span> since it represents the vertical difference in dry static energy. Similar balance happens in moisture budget, where in convective regions:  <span class="math notranslate nohighlight">\(-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}\)</span> and in other regions  <span class="math notranslate nohighlight">\(-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}+E\)</span>. The problem is <span class="math notranslate nohighlight">\(-\Delta \overline{q} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{P}\)</span>  as well as <span class="math notranslate nohighlight">\(-\Delta \overline{s} \nabla \cdot \overline{\mathbf{V_2}} \sim L\overline{P}\)</span> are not viable equations given that they don’t link convergence or precipitation to the boundary forcing (i.e., not a predictive theory). Thus, the small flux terms at the boundary must be retained to form a predictive theory through averaging a wider domain i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-gms5">
-<span class="eqno">(78)<a class="headerlink" href="#equation-gms5" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(78)<a class="headerlink" href="#equation-gms5" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 -\Delta \overline{m} \nabla \cdot \overline{\mathbf{V_2}} \sim \overline{F_B}-\overline{F_T} \\ 
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-gms5">(78)</a> says that the vertical transport of moist energy static energy is mainly balanced by the difference in flux at the top and the bottom of the column. Through this, we can have a simple diagnostic equation for convergence.</p>
 <div class="math notranslate nohighlight" id="equation-gms6">
-<span class="eqno">(79)<a class="headerlink" href="#equation-gms6" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(79)<a class="headerlink" href="#equation-gms6" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 - \nabla \cdot \overline{\mathbf{V_2}} \sim \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{m}} \sim  \frac{\overline{F_B}-\overline{F_T}}{\Delta \overline{s}-Lq_2} (\text{given that $q_1\sim 0$})\\ 
 \end{align}\end{split}\]</div>
 <p>The term <span class="math notranslate nohighlight">\({\Delta \overline{m}} \)</span> or <span class="math notranslate nohighlight">\(\Delta \overline{s}-Lq_2\)</span> is so-called gross moist stability. It is defined as the weighted moist static energy by vertical velocity and take the difference between upper layer and the lower layer (kind of similar to static stability but take the effect of convective heating into account). Physically, it quantifies how much of the column energy can be exported through the unit convergence/divergence. i.e., <span class="math notranslate nohighlight">\({\Delta \overline{m}} \sim \frac{\overline{F_B}-\overline{F_T}}{-\nabla \cdot \overline{\mathbf{V_2}}} \)</span> . A similar equation can be found in the moisture budget, so-called gross moist stratification.</p>
-<p>Back to the moisture mode framework (i.e., <a class="reference internal" href="#equation-mjo-moisture-mode">(66)</a>), the gross moist stability/stratification states how efficient it is for convection to redistribute (export) the column MSE or moisture. The reason why vertical structure matters is that <span class="math notranslate nohighlight">\({\Delta \overline{m}}\)</span> is column weighted (by vertical velocity), thus, different vertical structures of convection can lead to different efficiencies of MSE transport. Details can also be found in the discussion of <span id="id6">[<a class="reference internal" href="QBO.html#id21"><span>AK16</span></a>]</span>.</p>
-<p id="id7"><dl class="citation">
-<dt class="label" id="id24"><span class="brackets">AK16</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id6">2</a>)</span></dt>
-<dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
-</dd>
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id2">AW15</a></span></dt>
-<dd><p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
-</dd>
-<dt class="label" id="id14"><span class="brackets">BH89</span></dt>
-<dd><p>David S Battisti and Anthony C Hirst. Interannual variability in a tropical atmosphere–ocean model: influence of the basic state, ocean geometry and nonlinearity. <em>J. Atmos. Sci.</em>, 46(12):1687–1712, June 1989.</p>
-</dd>
-<dt class="label" id="id8"><span class="brackets">Bje69</span></dt>
-<dd><p>J Bjerknes. Atmospheric teleconnections from the equatorial pacific1. <em>Mon. Weather Rev.</em>, 97(3):163–172, March 1969.</p>
-</dd>
-<dt class="label" id="id12"><span class="brackets">HL72</span></dt>
-<dd><p>James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. <em>J. Atmos. Sci.</em>, 29(6):1076–1080, September 1972.</p>
-</dd>
-<dt class="label" id="id23"><span class="brackets">Jin97</span></dt>
-<dd><p>Fei-Fei Jin. An equatorial ocean recharge paradigm for ENSO. part I: conceptual model. <em>J. Atmos. Sci.</em>, 54(7):811–829, April 1997.</p>
-</dd>
-<dt class="label" id="id22"><span class="brackets">LNK+22</span></dt>
-<dd><p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
-</dd>
-<dt class="label" id="id11"><span class="brackets">LH68</span></dt>
-<dd><p>Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. <em>J. Atmos. Sci.</em>, 25(6):1095–1107, November 1968.</p>
-</dd>
-<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id1">MJ71</a></span></dt>
-<dd><p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
-</dd>
-<dt class="label" id="id10"><span class="brackets">Mat66</span></dt>
-<dd><p>Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. <em>J. Meteorol. Soc. Japan</em>, 44(1):25–43, 1966.</p>
-</dd>
-<dt class="label" id="id16"><span class="brackets">McC83</span></dt>
-<dd><p>Julian P McCreary, Jr. A model of tropical ocean-atmosphere interaction. <em>Mon. Weather Rev.</em>, 111(2):370–387, February 1983.</p>
-</dd>
-<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id3">RH96</a></span></dt>
-<dd><p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
-</dd>
-<dt class="label" id="id15"><span class="brackets">ZC87</span></dt>
-<dd><p>Stephen E Zebiak and Mark A Cane. A model el niñ–southern oscillation. <em>Mon. Weather Rev.</em>, 115(10):2262–2278, October 1987.</p>
-</dd>
-</dl>
-</p>
+<p>Back to the moisture mode framework (i.e., <a class="reference internal" href="#equation-mjo-moisture-mode">(66)</a>), the gross moist stability/stratification states how efficient it is for convection to redistribute (export) the column MSE or moisture. The reason why vertical structure matters is that <span class="math notranslate nohighlight">\({\Delta \overline{m}}\)</span> is column weighted (by vertical velocity), thus, different vertical structures of convection can lead to different efficiencies of MSE transport. Details can also be found in the discussion of <span id="id6">[<a class="reference internal" href="QBO.html#id21" title="Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. J. Atmos. Sci., 2016.">AK16</a>]</span>.</p>
+<div class="docutils container" id="id7">
+<div role="list" class="citation-list">
+<div class="citation" id="id24" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>AK16<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id5">1</a>,<a role="doc-backlink" href="#id6">2</a>)</span>
+<p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
+</div>
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">AW15</a><span class="fn-bracket">]</span></span>
+<p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
+</div>
+<div class="citation" id="id14" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>BH89<span class="fn-bracket">]</span></span>
+<p>David S Battisti and Anthony C Hirst. Interannual variability in a tropical atmosphere–ocean model: influence of the basic state, ocean geometry and nonlinearity. <em>J. Atmos. Sci.</em>, 46(12):1687–1712, June 1989.</p>
+</div>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Bje69<span class="fn-bracket">]</span></span>
+<p>J Bjerknes. Atmospheric teleconnections from the equatorial pacific1. <em>Mon. Weather Rev.</em>, 97(3):163–172, March 1969.</p>
+</div>
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>HL72<span class="fn-bracket">]</span></span>
+<p>James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. <em>J. Atmos. Sci.</em>, 29(6):1076–1080, September 1972.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Jin97<span class="fn-bracket">]</span></span>
+<p>Fei-Fei Jin. An equatorial ocean recharge paradigm for ENSO. part I: conceptual model. <em>J. Atmos. Sci.</em>, 54(7):811–829, April 1997.</p>
+</div>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LNK+22<span class="fn-bracket">]</span></span>
+<p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LH68<span class="fn-bracket">]</span></span>
+<p>Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. <em>J. Atmos. Sci.</em>, 25(6):1095–1107, November 1968.</p>
+</div>
+<div class="citation" id="id25" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">MJ71</a><span class="fn-bracket">]</span></span>
+<p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
+</div>
+<div class="citation" id="id10" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Mat66<span class="fn-bracket">]</span></span>
+<p>Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. <em>J. Meteorol. Soc. Japan</em>, 44(1):25–43, 1966.</p>
+</div>
+<div class="citation" id="id16" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>McC83<span class="fn-bracket">]</span></span>
+<p>Julian P McCreary, Jr. A model of tropical ocean-atmosphere interaction. <em>Mon. Weather Rev.</em>, 111(2):370–387, February 1983.</p>
+</div>
+<div class="citation" id="id26" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">RH96</a><span class="fn-bracket">]</span></span>
+<p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
+</div>
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>ZC87<span class="fn-bracket">]</span></span>
+<p>Stephen E Zebiak and Mark A Cane. A model el niñ–southern oscillation. <em>Mon. Weather Rev.</em>, 115(10):2262–2278, October 1987.</p>
 </div>
 </div>
 </div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -680,7 +644,7 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Variability"
         },
         predefinedOutput: true
@@ -688,50 +652,118 @@ m_1 = \frac{1}{g}\int_{p_T}^{p_m} m \nabla \cdot \mathbf{V} dp (\nabla\cdot\math
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="waves1.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Week 6 and 7: Tropical Wave Theory</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="waves1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Week 6 and 7: Tropical Wave Theory</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="QBO.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="QBO.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Week 9: Quasi-biennial Oscillation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theories-for-mjo">Theories for MJO</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-perspective">wave perspective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moisture-mode-framework">moisture mode framework</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-evidence-from-wave-dynamics-perspective">Some Evidence from Wave Dynamics Perspective</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boundary-layer-momentum-balance">The boundary layer momentum balance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lidzen-nigam-model-optional-reading">Lidzen-Nigam Model (optional reading)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-evidence-from-moisture-mode-perspective">Some Evidence from Moisture Mode Perspective</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gill-solution-the-forced-and-steady-state-wave-solution">Gill Solution (the forced and steady state wave solution)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gross-moist-stability-and-gross-moist-stratification">Gross Moist Stability and Gross Moist Stratification</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By The Jupyter Book Community<br/>
-  
-      &copy; Copyright 2020.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

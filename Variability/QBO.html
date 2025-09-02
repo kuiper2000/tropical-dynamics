@@ -1,108 +1,167 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Week 9: Quasi-biennial Oscillation &#8212; Dynamic Climatology</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Variability/QBO';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Week 10: El Ni~no Southern Oscillation" href="ENSO.html" />
     <link rel="prev" title="Week 8: Madden-Julian oscillation" href="MJO.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
     
-    <div class="container-fluid" id="banner"></div>
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
 
-    
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Dynamic Climatology</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Dynamic Climatology - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Dynamic Climatology - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,346 +171,273 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Obs.html">
-   Week 1: Observational Evidence
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/governing_equation.html">
-   Week 2 and 3: Scale Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climatology/Hadley_cell.html">
-   Week 4 and 5: Hadley Cell
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="waves1.html">
-   Week 6 and 7: Tropical Wave Theory
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="MJO.html">
-   Week 8: Madden-Julian oscillation
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Week 9: Quasi-biennial Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ENSO.html">
-   Week 10: El Ni~no Southern Oscillation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Climate_Change/CC.html">
-   Week 12: The Projection of Future Hydrological Cycle
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Obs.html">Week 1: Observational Evidence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/governing_equation.html">Week 2 and 3: Scale Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climatology/Hadley_cell.html">Week 4 and 5: Hadley Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="waves1.html">Week 6 and 7: Tropical Wave Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MJO.html">Week 8: Madden-Julian oscillation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 9: Quasi-biennial Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ENSO.html">Week 10: El Ni~no Southern Oscillation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Climate_Change/CC.html">Week 12: The Projection of Future Hydrological Cycle</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/QBO.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Variability/QBO.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
 
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FVariability/QBO.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/Variability/QBO.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button>
 
-      </li>
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">
-   Doppler-Shift of wave and the deposition of wave energy
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-direction-of-momentum-transport">
-     The direction of momentum transport
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#when-momentum-is-deposited">
-     When momentum is deposited
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">
-     A spectral solution of momentum deposition
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lidzen-and-holton-model">
-   Lidzen and Holton Model
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 9: Quasi-biennial Oscillation</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">
-   Doppler-Shift of wave and the deposition of wave energy
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-direction-of-momentum-transport">
-     The direction of momentum transport
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#when-momentum-is-deposited">
-     When momentum is deposited
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">
-     A spectral solution of momentum deposition
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lidzen-and-holton-model">
-   Lidzen and Holton Model
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Week 9: Quasi-biennial Oscillation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">Doppler-Shift of wave and the deposition of wave energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-direction-of-momentum-transport">The direction of momentum transport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-momentum-is-deposited">When momentum is deposited</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">A spectral solution of momentum deposition</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lidzen-and-holton-model">Lidzen and Holton Model</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="section" id="week-9-quasi-biennial-oscillation">
-<span id="qbo"></span><h1>Week 9: Quasi-biennial Oscillation<a class="headerlink" href="#week-9-quasi-biennial-oscillation" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="week-9-quasi-biennial-oscillation">
+<span id="qbo"></span><h1>Week 9: Quasi-biennial Oscillation<a class="headerlink" href="#week-9-quasi-biennial-oscillation" title="Link to this heading">#</a></h1>
 <p>Quasi-biennial Oscillation (QBO) is a quasi-periodic oscillation in the stratospheric, zonal-mean zonal wind, characterized by a period of around 28 months. It was first discovered by Richard and Reed in 1960. The signal is so regular that one can observe it without implementing any filtering (see figure below)</p>
-<div class="figure align-default" id="fig6-1">
-<a class="reference internal image-reference" href="../_images/QBO.png"><img alt="../_images/QBO.png" src="../_images/QBO.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">The zonal mean zonal wind in the stratospheric tropics.</span><a class="headerlink" href="#fig6-1" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig6-1">
+<a class="reference internal image-reference" href="../_images/QBO.png"><img alt="../_images/QBO.png" src="../_images/QBO.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">The zonal mean zonal wind in the stratospheric tropics.</span><a class="headerlink" href="#fig6-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The QBO can efficiently change the static stability around the tropopause, which has strong modulation on the convective activity. For example, during the easterly phase of QBO, the convection of MJO is much stronger than the westerly phase of QBO. Along with the MJO global impacts, one can expect that the fingerprint of QBO can be observed in most places around the globe.</p>
-<p>Given the QBO is high up in the stratosphere, the corresponding dynamics is relatively simple. A theory of QBO was first proposed by Charney and Drazin (1968), <span id="id1">[<a class="reference internal" href="#id8"><span>LH68</span></a>]</span> and <span id="id2">[<a class="reference internal" href="#id9"><span>HL72</span></a>]</span>, which incorporates the well-known wave-mean flow interaction dynamics. According to their theory, the oscillation is due to the interaction of upward-propagating Kelvin and Yanai waves with the mean flow. More recently, it has been proposed that eastward and westward-propagating gravity waves play an important role and the low-frequency waves were de-emphasized.</p>
-<p>The various equatorially trapped waves discovered by <span id="id3">[<a class="reference internal" href="#id7"><span>Mat66</span></a>]</span> (discussed <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>) are observed to produce wave energy which further propagates upward and downward. It is believed that the energy source comes from diabatic processes such as convection (Nitta 1972). While in <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>, a resting basic state is considered, it is very important to consider mean flow due to the <em>Doppler Shift</em>.</p>
-<div class="section" id="doppler-shift-of-wave-and-the-deposition-of-wave-energy">
-<h2>Doppler-Shift of wave and the deposition of wave energy<a class="headerlink" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy" title="Permalink to this headline">¶</a></h2>
+<p>Given the QBO is high up in the stratosphere, the corresponding dynamics is relatively simple. A theory of QBO was first proposed by Charney and Drazin (1968), <span id="id1">[<a class="reference internal" href="#id8" title="Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. J. Atmos. Sci., 25(6):1095–1107, November 1968.">LH68</a>]</span> and <span id="id2">[<a class="reference internal" href="#id9" title="James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. J. Atmos. Sci., 29(6):1076–1080, September 1972.">HL72</a>]</span>, which incorporates the well-known wave-mean flow interaction dynamics. According to their theory, the oscillation is due to the interaction of upward-propagating Kelvin and Yanai waves with the mean flow. More recently, it has been proposed that eastward and westward-propagating gravity waves play an important role and the low-frequency waves were de-emphasized.</p>
+<p>The various equatorially trapped waves discovered by <span id="id3">[<a class="reference internal" href="#id7" title="Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. J. Meteorol. Soc. Japan, 44(1):25–43, 1966.">Mat66</a>]</span> (discussed <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>) are observed to produce wave energy which further propagates upward and downward. It is believed that the energy source comes from diabatic processes such as convection (Nitta 1972). While in <a class="reference internal" href="waves1.html#waves1"><span class="std std-ref">Week 6 and 7: Tropical Wave Theory</span></a>, a resting basic state is considered, it is very important to consider mean flow due to the <em>Doppler Shift</em>.</p>
+<section id="doppler-shift-of-wave-and-the-deposition-of-wave-energy">
+<h2>Doppler-Shift of wave and the deposition of wave energy<a class="headerlink" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy" title="Link to this heading">#</a></h2>
 <p>Like other waves, the atmospheric waves also experience Doppler Shift as long as the relative motion happens between the observer and the source of waves. For example, the westward propagating wave looks more stationary when riding on a westerly mean flow (i.e., frequency <span class="math notranslate nohighlight">\(\sim \infty\)</span>) and the eastward propagating wave looks more transient in the same mean flow (i.e., complete multiple oscillations in a short period). The figure below demonstrates how Doppler Shift changes the frequency of a wave. The siren frequency from an ambulance sounds higher when the ambulance approaches the person listening to the sound and vice versa. In such cases, the observed wave number (or frequency) may exceed the critical value where the mean flow can sustain the corresponding wave propagation (i.e., you can still tell it’s a wave!). At the end, the wave breaks and deposits momentum. We will walk through more details in the later of this week.</p>
-<div class="figure align-default" id="fig6-2">
-<a class="reference internal image-reference" href="../_images/Doppler_Shift.jpeg"><img alt="../_images/Doppler_Shift.jpeg" src="../_images/Doppler_Shift.jpeg" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">An example of the Doppler Shift in a moving object.</span><a class="headerlink" href="#fig6-2" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig6-2">
+<a class="reference internal image-reference" href="../_images/Doppler_Shift.jpeg"><img alt="../_images/Doppler_Shift.jpeg" src="../_images/Doppler_Shift.jpeg" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">An example of the Doppler Shift in a moving object.</span><a class="headerlink" href="#fig6-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>To understand how these waves influence the phase transition of QBO (zonal mean flow), we gonna start with something classic, the Ellassen Palm theory for mountain wave (one should notice that the upward motion from the boundary is similar to inhomogeneous topography at the lower boundary.) There are two important ingredients in this theory (1) the direction of momentum transport and (2) when the wave momentum is deposited.</p>
-<div class="figure align-default" id="fig6-3">
-<a class="reference internal image-reference" href="../_images/Mountain_wave.png"><img alt="../_images/Mountain_wave.png" src="../_images/Mountain_wave.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">An example of how the mountain wave propagates Eastward(<span class="math notranslate nohighlight">\(+C\)</span>)/Westward(<span class="math notranslate nohighlight">\(-C\)</span>) and upward at the same time.</span><a class="headerlink" href="#fig6-3" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="the-direction-of-momentum-transport">
-<h3>The direction of momentum transport<a class="headerlink" href="#the-direction-of-momentum-transport" title="Permalink to this headline">¶</a></h3>
+<figure class="align-default" id="fig6-3">
+<a class="reference internal image-reference" href="../_images/Mountain_wave.png"><img alt="../_images/Mountain_wave.png" src="../_images/Mountain_wave.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">An example of how the mountain wave propagates Eastward(<span class="math notranslate nohighlight">\(+C\)</span>)/Westward(<span class="math notranslate nohighlight">\(-C\)</span>) and upward at the same time.</span><a class="headerlink" href="#fig6-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-direction-of-momentum-transport">
+<h3>The direction of momentum transport<a class="headerlink" href="#the-direction-of-momentum-transport" title="Link to this heading">#</a></h3>
 <p>In the panel of <a class="reference internal" href="#fig6-3"><span class="std std-numref">Fig. 26</span></a>, we can find that when the inhomogeneity of the lower boundary exists (such as mountain/mass flux from the lower boundary), it will trigger gravity propagating eastward and westward. The eastward propagating waves (westerly to the mean state) generally transport westerly momentum upward due to their zonal height tilting (tilting eastward with height) and the same concept can be applied to the westward propagating waves.</p>
 <p>However, when the mean westerly exists, the zonal height tilting due to the westward propagating wave vanishes, which is not the case for the eastward propagating wave. Therefore, not only do the types of gravity waves matter but whether they are filtered by mean flow also matters.</p>
-</div>
-<div class="section" id="when-momentum-is-deposited">
-<h3>When momentum is deposited<a class="headerlink" href="#when-momentum-is-deposited" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="when-momentum-is-deposited">
+<h3>When momentum is deposited<a class="headerlink" href="#when-momentum-is-deposited" title="Link to this heading">#</a></h3>
 <p>One should notice that the presence of vertical momentum transport does not necessarily indicate the change in mean flow. Because when the input and output have an equivalent amount, then there is no acceleration/deceleration of mean flow. The necessary condition of the presence of vertical momentum flux convergence can be derived through the angular momentum and eddy kinematic energy equations.</p>
 <p>To have both equations, we will begin with the zonal momentum equation,</p>
 <div class="math notranslate nohighlight" id="equation-qbo-zonal-momentum">
-<span class="eqno">(80)<a class="headerlink" href="#equation-qbo-zonal-momentum" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(80)<a class="headerlink" href="#equation-qbo-zonal-momentum" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 u_t + U u_x + w U_z + \frac{1}{\rho_0} p_x = 0 \\ 
 w_t + U w_x + \frac{1}{\rho_0} p_z + g = 0 \\
 u_x + w_z = 0
 \end{align}\end{split}\]</div>
 <p>Assume a wave solution of</p>
 <div class="math notranslate nohighlight" id="equation-qbo-wave-solution">
-<span class="eqno">(81)<a class="headerlink" href="#equation-qbo-wave-solution" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(81)<a class="headerlink" href="#equation-qbo-wave-solution" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 u = \hat{u}(z)e^{ikx-ikct} \\ 
 w = \hat{w}(z)e^{ikx-ikct} \\ 
 p = \hat{p}(z)e^{ikx-ikct} + p_0(z)\\ 
@@ -459,14 +445,14 @@ p = \hat{p}(z)e^{ikx-ikct} + p_0(z)\\
 <p>(where <span class="math notranslate nohighlight">\(\frac{1}{\rho_0}p_0(z)+g=0\)</span>)</p>
 <p>substitute into <a class="reference internal" href="#equation-qbo-zonal-momentum">(80)</a></p>
 <div class="math notranslate nohighlight" id="equation-qbo-spectral-form">
-<span class="eqno">(82)<a class="headerlink" href="#equation-qbo-spectral-form" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(82)<a class="headerlink" href="#equation-qbo-spectral-form" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 ik (U-c) u + w U_z + ik\frac{1}{\rho_0} p = 0 \\ 
 ik (U-c) w + \frac{1}{\rho_0} p_z = 0 \\
 ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p>Multiply each equation in <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by (1) <span class="math notranslate nohighlight">\(u\)</span> (2) <span class="math notranslate nohighlight">\(w\)</span> and (3) <span class="math notranslate nohighlight">\(p\)</span> respectively.  We have…</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy">
-<span class="eqno">(83)<a class="headerlink" href="#equation-qbo-mechanical-energy" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(83)<a class="headerlink" href="#equation-qbo-mechanical-energy" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 &amp; \begin{cases}
 [ik \rho_0 (U-c) u^2 + ik up] &amp; = -\rho_0 uw U_z \\ 
 [ik \rho_0 (U-c) w^2 ]+ wp_z  &amp; = 0 \\
@@ -476,17 +462,17 @@ ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p>The above formula is similar to the <em>turbulence kinetic energy</em> used in boundary layer dynamics. Integrate the last equation over zonal direction, we have the zonal mean mechanical energy</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean">
-<span class="eqno">(84)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean" title="Permalink to this equation">¶</a></span>\[\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw (U-c)_z dx}_{\text{Shear production}} \]</div>
+<span class="eqno">(84)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean" title="Link to this equation">#</a></span>\[\underbrace{\int_{0}^{2\pi}(pw)_z dx}_{\text{the vertical flux of mechanical energy}} = \underbrace{\int_{0}^{2\pi} -\rho_0 uw (U-c)_z dx}_{\text{Shear production}} \]</div>
 <p>We can also link the above equation to the angular momentum equation. To achieve this, we multiply the first equation of <a class="reference internal" href="#equation-qbo-spectral-form">(82)</a> by <span class="math notranslate nohighlight">\(\rho_0\)</span> (U-c) u + p and integrate it over zonal direction (which eliminates the terms associated with zonal gradient, i.e., “<span class="math notranslate nohighlight">\(ik\)</span>” terms ) We have</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean2">
-<span class="eqno">(85)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean2" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<span class="eqno">(85)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean2" title="Link to this equation">#</a></span>\[\begin{align}
 \int_0^{2\pi} pw dx = -(U-c) \rho_0 \int_0^{2\pi} uw dx 
 \end{align}\]</div>
 <p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean">(84)</a> and <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean2">(85)</a> suggests that <span class="math notranslate nohighlight">\(\rho_0 \int_0^{2\pi} uw dx =\text{const}\)</span> when <span class="math notranslate nohighlight">\(U-c\neq 0\)</span>. i.e., no momentum will be deposited until the wave reaches the critical level (the level where <span class="math notranslate nohighlight">\(U=c\)</span>). At a critical level, we can find some analogs in our ambulance example. It corresponds to where ambulance and sound travel with the same speed and direction. Therefore, in a limited traveling length of the wave, we can observe a nearly infinite number of waves making the finite assumption of wave dynamics no longer hold and momentum is deposited.</p>
 <p>In addition, when <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw\)</span> is positive through a critical level (i.e., keeps transporting mechanical energy upward), it implies that <span class="math notranslate nohighlight">\(uw\)</span> term must change signs above and below the critical level, which breaks the assumption of <span class="math notranslate nohighlight">\(\rho_0 \int_0^{2\pi} uw dx =\text{const}\)</span>.</p>
 <p>To solve the problem, all of the momentum <em>must</em> be absorbed at the critical level. Booker and Bretherton (1967) provide a useful formula…</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean3">
-<span class="eqno">(86)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean3" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+<span class="eqno">(86)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean3" title="Link to this equation">#</a></span>\[\begin{split}\begin{cases}
 \rho_0 \int_0^{2\pi} uw dx = A \\
 \rho_0 \int_0^{2\pi} uw dx = -A e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}} 
 \end{cases}
@@ -496,37 +482,40 @@ ik u + w_z = 0
 \end{align}\end{split}\]</div>
 <p><a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> suggests that <span class="math notranslate nohighlight">\(\rho_0 \int_0^{2\pi} uw dx\)</span> is constant below critical level. Right above the critical level, it needs to taper toward 0 in a short range of traveling distance. Given the Richardson number is always greater than 1, the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> indeed satisfies the condition we need. <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean3">(86)</a> also suggests the momentum absorbed at the critical level is <span class="math notranslate nohighlight">\(A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]\)</span>.</p>
 <p>However, the absorption of momentum at a single level will lead to a shock-like signal and modeling difficulty. Also, we need to determine the sign of A to make all necessary conditions consistent.</p>
-</div>
-<div class="section" id="a-spectral-solution-of-momentum-deposition">
-<h3>A spectral solution of momentum deposition<a class="headerlink" href="#a-spectral-solution-of-momentum-deposition" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="a-spectral-solution-of-momentum-deposition">
+<h3>A spectral solution of momentum deposition<a class="headerlink" href="#a-spectral-solution-of-momentum-deposition" title="Link to this heading">#</a></h3>
 <p>To circumvent the problem in the previous section, we can approach it with a spectral perspective of wave propagation.</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean4">
-<span class="eqno">(87)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean4" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{align}
+<span class="eqno">(87)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean4" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
 \rho_0 \int_0^{2\pi} uw dx                       &amp; = \int^{\infty}_{-\infty} f(c) dc = f(U) |dU| \\
 (\rho_0 \int_0^{2\pi} uw dx)_k|^{z_0+}_{z_0-}/dz &amp; = -A[1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]/dz = f(U_0) [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |dU/dz| \\
 &amp; \text{ where $U_0$ is the critical mean flow for wave $k$}\\
 \end{align}\end{split}\]</div>
 <p>It is assumed that the disturbance that transports momentum consists of a spectrum of waves with a continuous distribution of phase speed. For a limited range of phase speed <span class="math notranslate nohighlight">\(c\pm dc\)</span>, we can find a limited range of critical level (<span class="math notranslate nohighlight">\(U\pm dU\)</span>) which absorbs the momentum. Such momentum absorption only applies to a finite range of wave and keep the rest unaffected by the mean flow. (i.e., the second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>). The second equation of <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a> comes from the fact that <span class="math notranslate nohighlight">\(f(U) |dU|\)</span> has a unit of momentum change per unit time. Thus, the eddy momentum flux convergence (i.e., the rate change of mean flow due to eddy can be written as)</p>
 <div class="math notranslate nohighlight" id="equation-qbo-mechanical-energy-zonal-mean5">
-<span class="eqno">(88)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Permalink to this equation">¶</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
+<span class="eqno">(88)<a class="headerlink" href="#equation-qbo-mechanical-energy-zonal-mean5" title="Link to this equation">#</a></span>\[-\frac{d F_{WM}}{dz} = - f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Delta t=|\frac{dU}{dz}|\)</span>. <span class="math notranslate nohighlight">\(F_{WM}\)</span> is the eddy momentum flux (i.e., the amount of absorbed momentum) by wave with <span class="math notranslate nohighlight">\(U_0=c\)</span> and <span class="math notranslate nohighlight">\(-\frac{d F_{WM}}{dz}\)</span> is the corresponding momentum flux convergence at the critical level.</p>
 <p>Here, we will use two cases to analyze the sign of <span class="math notranslate nohighlight">\(f(U_0)\)</span>. The first case represents the westerly shear (westerly increases with height) and the second case represents the easterly shear.</p>
-<div class="figure align-default" id="fig6-4">
-<a class="reference internal image-reference" href="../_images/QBO_dynamics.png"><img alt="../_images/QBO_dynamics.png" src="../_images/QBO_dynamics.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Momentum fluxes in (a) westerly shear and (b) easterly shear</span><a class="headerlink" href="#fig6-4" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig6-4">
+<a class="reference internal image-reference" href="../_images/QBO_dynamics.png"><img alt="../_images/QBO_dynamics.png" src="../_images/QBO_dynamics.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Momentum fluxes in (a) westerly shear and (b) easterly shear</span><a class="headerlink" href="#fig6-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In the westerly shear, if <span class="math notranslate nohighlight">\(\int_0^{2\pi} pw dx\)</span> remains positive, for the regions below the critical level (where <span class="math notranslate nohighlight">\(c&gt;U\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be positive and so does <span class="math notranslate nohighlight">\(f(U)^{z-}\)</span> according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a> and <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean2">(85)</a>. For the regions above where (where <span class="math notranslate nohighlight">\(U&gt;c\)</span>), <span class="math notranslate nohighlight">\(\int_0^{2\pi} uw dx \)</span> must be negative. This also makes <span class="math notranslate nohighlight">\((f(U)^{z+}-f(U)^{z-})/dz = f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> negative according to <a class="reference internal" href="#equation-qbo-mechanical-energy-zonal-mean4">(87)</a>. Since <span class="math notranslate nohighlight">\(|\frac{dU}{dz}|\)</span> is positive definite, <span class="math notranslate nohighlight">\(f(U)=f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]\)</span> will be negative definite. (notice that Lidzen and Holton state this term is positive definite, which is different the analysis here).</p>
 <p>Readers will also find <span class="math notranslate nohighlight">\(- f(U_0)  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  |\frac{dU}{dz}|\)</span> is equivalent to <span class="math notranslate nohighlight">\(- |f(U_0)|  [1+e^{-2\pi\sqrt{\mathbf{Ri}-\frac{1}{4}}}]  \frac{dU}{dz}\)</span> by examining both westerly and easterly shear case. (HW)</p>
-</div>
-</div>
-<div class="section" id="lidzen-and-holton-model">
-<h2>Lidzen and Holton Model<a class="headerlink" href="#lidzen-and-holton-model" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="lidzen-and-holton-model">
+<h2>Lidzen and Holton Model<a class="headerlink" href="#lidzen-and-holton-model" title="Link to this heading">#</a></h2>
 <p>Substitute the above conclusion back into zonal momentum equation, the yielded <a class="reference internal" href="#equation-lh68-01">(89)</a> looks identical to a simple advection model, where the <em>downward</em> propagation of zonal wind is influenced by the flux convergence of eddy momentum. The downward propagation speed is determined by the intensity of momentum flux convergence.</p>
 <div class="math notranslate nohighlight" id="equation-lh68-01">
-<span class="eqno">(89)<a class="headerlink" href="#equation-lh68-01" title="Permalink to this equation">¶</a></span>\[\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\partial \overline{u}}{\partial z}\]</div>
+<span class="eqno">(89)<a class="headerlink" href="#equation-lh68-01" title="Link to this equation">#</a></span>\[\rho\frac{\partial \overline{u}}{\partial t} + \overline{w}\frac{\partial \overline{u}}{\partial z} = -f(U)\frac{\partial \overline{u}}{\partial z}\]</div>
 <p>In this model, some simple setup is given. First, we assume there is no mean vertical motion <span class="math notranslate nohighlight">\(\overline{w}\)</span>. Second, the downward motion due to the momentum flux convergence only happens over a limited range of wind speed. i.e.,</p>
 <div class="math notranslate nohighlight" id="equation-lh68-02">
-<span class="eqno">(90)<a class="headerlink" href="#equation-lh68-02" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{cases}
+<span class="eqno">(90)<a class="headerlink" href="#equation-lh68-02" title="Link to this equation">#</a></span>\[\begin{split}\begin{cases}
 f(u) &amp;= \text{constant} \\  
 f(u) &amp;= 0
 \end{cases}
@@ -536,55 +525,72 @@ f(u) &amp;= 0
 \end{align}\end{split}\]</div>
 <p>Using the example below, at the initial time, only regions between 37.5 and 22.5 km can experience westerly acceleration while other regions are left out. Therefore, for wind speed fall within this ranges will keep accelerating until it hit the upper bound of westerly. The same idea can be applied to mean easterly.</p>
 <p>At the end, one can observe the downward propagation of zonal wind anomaly. Currently, the scientific community doesn’t have a good parameterization of bulk eddy. (given the challenges of higher-order closure problem) Therefore, the downward propagation is determined through the observation.</p>
-<div class="figure align-default" id="fig6-5">
-<a class="reference internal image-reference" href="../_images/QBO_model.png"><img alt="../_images/QBO_model.png" src="../_images/QBO_model.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">The simulated QBO evolution in the westerly shear using <a class="reference internal" href="#equation-lh68-01">(89)</a></span><a class="headerlink" href="#fig6-5" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-default" id="fig6-5">
+<a class="reference internal image-reference" href="../_images/QBO_model.png"><img alt="../_images/QBO_model.png" src="../_images/QBO_model.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">The simulated QBO evolution in the westerly shear using <a class="reference internal" href="#equation-lh68-01">(89)</a></span><a class="headerlink" href="#fig6-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The study of QBO also shows the importance of properly parameterized gravity wave drag given its global scale of change in zonal wind. In earlier years, most GCM experienced severe cold bias over the polar regions and stratosphere. One reason is that most gravity waves don’t deposit enough momentum to change the mean flow.</p>
-<p id="id4"><dl class="citation">
-<dt class="label" id="id21"><span class="brackets">AK16</span></dt>
-<dd><p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
-</dd>
-<dt class="label" id="id17"><span class="brackets">AW15</span></dt>
-<dd><p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
-</dd>
-<dt class="label" id="id11"><span class="brackets">BH89</span></dt>
-<dd><p>David S Battisti and Anthony C Hirst. Interannual variability in a tropical atmosphere–ocean model: influence of the basic state, ocean geometry and nonlinearity. <em>J. Atmos. Sci.</em>, 46(12):1687–1712, June 1989.</p>
-</dd>
-<dt class="label" id="id5"><span class="brackets">Bje69</span></dt>
-<dd><p>J Bjerknes. Atmospheric teleconnections from the equatorial pacific1. <em>Mon. Weather Rev.</em>, 97(3):163–172, March 1969.</p>
-</dd>
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id2">HL72</a></span></dt>
-<dd><p>James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. <em>J. Atmos. Sci.</em>, 29(6):1076–1080, September 1972.</p>
-</dd>
-<dt class="label" id="id20"><span class="brackets">Jin97</span></dt>
-<dd><p>Fei-Fei Jin. An equatorial ocean recharge paradigm for ENSO. part I: conceptual model. <em>J. Atmos. Sci.</em>, 54(7):811–829, April 1997.</p>
-</dd>
-<dt class="label" id="id19"><span class="brackets">LNK+22</span></dt>
-<dd><p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
-</dd>
-<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id1">LH68</a></span></dt>
-<dd><p>Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. <em>J. Atmos. Sci.</em>, 25(6):1095–1107, November 1968.</p>
-</dd>
-<dt class="label" id="id22"><span class="brackets">MJ71</span></dt>
-<dd><p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
-</dd>
-<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id3">Mat66</a></span></dt>
-<dd><p>Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. <em>J. Meteorol. Soc. Japan</em>, 44(1):25–43, 1966.</p>
-</dd>
-<dt class="label" id="id13"><span class="brackets">McC83</span></dt>
-<dd><p>Julian P McCreary, Jr. A model of tropical ocean-atmosphere interaction. <em>Mon. Weather Rev.</em>, 111(2):370–387, February 1983.</p>
-</dd>
-<dt class="label" id="id23"><span class="brackets">RH96</span></dt>
-<dd><p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
-</dd>
-<dt class="label" id="id12"><span class="brackets">ZC87</span></dt>
-<dd><p>Stephen E Zebiak and Mark A Cane. A model el niñ–southern oscillation. <em>Mon. Weather Rev.</em>, 115(10):2262–2278, October 1987.</p>
-</dd>
-</dl>
-</p>
+<div class="docutils container" id="id4">
+<div role="list" class="citation-list">
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>AK16<span class="fn-bracket">]</span></span>
+<p>Á F Adames and D Kim. The MJO as a dispersive, convectively coupled moisture wave: theory and observations. <em>J. Atmos. Sci.</em>, 2016.</p>
+</div>
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>AW15<span class="fn-bracket">]</span></span>
+<p>Ángel F Adames and John M Wallace. Three-dimensional structure and evolution of the moisture field in the MJO. <em>J. Atmos. Sci.</em>, 72(10):3733–3754, October 2015.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>BH89<span class="fn-bracket">]</span></span>
+<p>David S Battisti and Anthony C Hirst. Interannual variability in a tropical atmosphere–ocean model: influence of the basic state, ocean geometry and nonlinearity. <em>J. Atmos. Sci.</em>, 46(12):1687–1712, June 1989.</p>
+</div>
+<div class="citation" id="id5" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Bje69<span class="fn-bracket">]</span></span>
+<p>J Bjerknes. Atmospheric teleconnections from the equatorial pacific1. <em>Mon. Weather Rev.</em>, 97(3):163–172, March 1969.</p>
+</div>
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">HL72</a><span class="fn-bracket">]</span></span>
+<p>James R Holton and Richard S Lindzen. An updated theory for the quasi-biennial cycle of the tropical stratosphere. <em>J. Atmos. Sci.</em>, 29(6):1076–1080, September 1972.</p>
+</div>
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Jin97<span class="fn-bracket">]</span></span>
+<p>Fei-Fei Jin. An equatorial ocean recharge paradigm for ENSO. part I: conceptual model. <em>J. Atmos. Sci.</em>, 54(7):811–829, April 1997.</p>
+</div>
+<div class="citation" id="id19" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LNK+22<span class="fn-bracket">]</span></span>
+<p>Yi-Xian Li, J David Neelin, Yi-Hung Kuo, Huang-Hsiung Hsu, and Jia-Yuh Yu. How close are leading tropical tropospheric temperature perturbations to those under convective quasi equilibrium? <em>J. Atmos. Sci.</em>, 79(9):2307–2321, September 2022.</p>
+</div>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">LH68</a><span class="fn-bracket">]</span></span>
+<p>Richard S Lindzen and James R Holton. A theory of the quasi-biennial oscillation. <em>J. Atmos. Sci.</em>, 25(6):1095–1107, November 1968.</p>
+</div>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>MJ71<span class="fn-bracket">]</span></span>
+<p>Roland A Madden and Paul R Julian. Detection of a 40-50 day oscillation in the zonal wind in the tropical pacific. <em>Journal of Atmospheric Sciences</em>, 28:702–708, July 1971.</p>
+</div>
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Mat66</a><span class="fn-bracket">]</span></span>
+<p>Taroh Matsuno. Quasi-geostrophic motions in the equatorial area. <em>J. Meteorol. Soc. Japan</em>, 44(1):25–43, 1966.</p>
+</div>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>McC83<span class="fn-bracket">]</span></span>
+<p>Julian P McCreary, Jr. A model of tropical ocean-atmosphere interaction. <em>Mon. Weather Rev.</em>, 111(2):370–387, February 1983.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>RH96<span class="fn-bracket">]</span></span>
+<p>Mark J Rodwell and Brian J Hoskins. Monsoons and the dynamics of deserts. <em>Quart. J. Roy. Meteor. Soc.</em>, 122(534):1385–1404, July 1996.</p>
+</div>
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>ZC87<span class="fn-bracket">]</span></span>
+<p>Stephen E Zebiak and Mark A Cane. A model el niñ–southern oscillation. <em>Mon. Weather Rev.</em>, 115(10):2262–2278, October 1987.</p>
 </div>
 </div>
+</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -598,7 +604,7 @@ f(u) &amp;= 0
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Variability"
         },
         predefinedOutput: true
@@ -606,50 +612,110 @@ f(u) &amp;= 0
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="MJO.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Week 8: Madden-Julian oscillation</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="MJO.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Week 8: Madden-Julian oscillation</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="ENSO.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="ENSO.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Week 10: El Ni~no Southern Oscillation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doppler-shift-of-wave-and-the-deposition-of-wave-energy">Doppler-Shift of wave and the deposition of wave energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-direction-of-momentum-transport">The direction of momentum transport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-momentum-is-deposited">When momentum is deposited</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-spectral-solution-of-momentum-deposition">A spectral solution of momentum deposition</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lidzen-and-holton-model">Lidzen and Holton Model</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By The Jupyter Book Community<br/>
-  
-      &copy; Copyright 2020.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
