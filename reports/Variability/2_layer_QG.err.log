@@ -1,0 +1,346 @@
+Traceback (most recent call last):
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/Shared/miniconda3/envs/jupyterbook/lib/python3.9/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+"""
+Two‑Layer Quasi‑Geostrophic (QG) Channel — pseudo‑spectral (2D FFT, doubly periodic)
+-----------------------------------------------------------------------------------
+• 2 layers on a beta‑plane; zonal (x) periodic, meridional (y) effectively "channel" via sponge.
+• Inversion: solve for (psi1, psi2) from (q1, q2) in spectral space for each wavenumber.
+• Dynamics: dq/dt + J(psi, q) + beta * v = forcing − friction − hyperdiffusion.
+• Forcing: simple sinusoidal Ekman pumping in the upper layer (wind‑stress curl pattern).
+• Time stepping: RK4.
+
+This script is intentionally compact but complete and well‑commented for modification.
+Tested with Python ≥3.9, NumPy ≥1.23, Matplotlib ≥3.7.
+"""
+from __future__ import annotations
+import numpy as np
+import numpy.fft as fft
+import matplotlib.pyplot as plt
+from dataclasses import dataclass
+
+# -------------------------
+# Utilities
+# -------------------------
+
+def dealias_23(a_hat: np.ndarray) -> np.ndarray:
+    """2/3‑rule dealiasing for a complex spectral array with shape (Ny, Nx)."""
+    Ny, Nx = a_hat.shape
+    ky_cut = Ny // 3
+    kx_cut = Nx // 3
+    out = a_hat.copy()
+    out[ky_cut:Ny-ky_cut, :] = 0.0
+    out[:, kx_cut:Nx-kx_cut] = 0.0
+    return out
+
+
+def jacobian(psi: np.ndarray, q: np.ndarray, kx: np.ndarray, ky: np.ndarray) -> np.ndarray:
+    """Compute J(psi, q) = u dq/dx + v dq/dy using pseudo‑spectral method with 2/3 dealiasing."""
+    # velocities: u = - dpsi/dy, v = dpsi/dx
+    psi_hat = fft.rfft2(psi)
+    q_hat   = fft.rfft2(q)
+
+    dpsi_dx_hat = (1j * kx) * psi_hat
+    dpsi_dy_hat = (1j * ky) * psi_hat
+    dq_dx_hat   = (1j * kx) * q_hat
+    dq_dy_hat   = (1j * ky) * q_hat
+
+    # Back to physical space
+    u = -fft.irfft2(dpsi_dy_hat, s=psi.shape)
+    v =  fft.irfft2(dpsi_dx_hat, s=psi.shape)
+    dq_dx = fft.irfft2(dq_dx_hat, s=q.shape)
+    dq_dy = fft.irfft2(dq_dy_hat, s=q.shape)
+
+    J = u * dq_dx + v * dq_dy
+
+    # Dealias: transform back, filter, return to physical
+    J_hat = fft.rfft2(J)
+    J_hat = dealias_23(J_hat)
+    return fft.irfft2(J_hat, s=psi.shape)
+
+
+@dataclass
+class QGParams:
+    # Grid
+    Nx: int = 256
+    Ny: int = 129
+    Lx: float = 4.0e6       # m
+    Ly: float = 2.0e6       # m
+
+    # Physical
+    f0: float = 1.0e-4      # s^-1
+    beta: float = 1.6e-11   # m^-1 s^-2
+    H1: float = 500.0       # m
+    H2: float = 3500.0      # m
+    gprime: float = 0.02    # m s^-2 (reduced gravity)
+
+    # Mean zonal flows (add uniform U to layer velocities)
+    U1: float = 10.0        # m s^-1
+    U2: float = 0.0         # m s^-1
+
+    # Friction & mixing
+    r1: float = 1.0e-7      # s^-1 (linear friction upper; can be ~0)
+    r2: float = 5.0e-7      # s^-1 (bottom drag)
+    nu8: float = 5.0e9      # m^8 s^-1 hyperdiffusion (tune for stability)
+
+    # Forcing (Ekman pumping pattern in upper layer)
+    tau_amp: float = 0.05   # Pa (sets magnitude via curl tau)
+    rho0: float = 1025.0    # kg m^-3
+
+    # Time step & integration
+    dt: float = 600.0       # s
+    nsteps: int = 20000
+    save_every: int = 200   # output cadence (steps)
+
+    # Sponge near meridional boundaries (to emulate channel walls)
+    sponge_tau: float = 5.0 * 24 * 3600.0  # s (e‑folding time ~ days)
+    sponge_width: float = 2.0e5            # m
+
+
+class TwoLayerQG:
+    def __init__(self, p: QGParams):
+        self.p = p
+        # Grid & wavenumbers
+        self.x = np.linspace(0, p.Lx, p.Nx, endpoint=False)
+        self.y = np.linspace(0, p.Ly, p.Ny, endpoint=False)
+        self.dx = self.x[1] - self.x[0]
+        self.dy = self.y[1] - self.y[0]
+        self.X, self.Y = np.meshgrid(self.x, self.y)
+
+        # rFFT wavenumbers: shape (Ny, Nx//2+1)
+        kx = 2.0*np.pi*fft.rfftfreq(p.Nx, d=self.dx)
+        ky = 2.0*np.pi*fft.fftfreq(p.Ny, d=self.dy)
+        self.kx, self.ky = np.meshgrid(kx, ky)
+        self.K2 = self.kx**2 + self.ky**2
+        self.K2[0,0] = np.inf  # avoid div by 0 for inversion at k=0 (set psi mean=0)
+
+        # Layer coupling coefficients
+        self.F1 = p.f0**2/(p.gprime * p.H1)
+        self.F2 = p.f0**2/(p.gprime * p.H2)
+
+        # Precompute inversion matrices in spectral space for each k
+        # For each wavenumber, we solve A * [psi1, psi2]^T = [q1, q2]^T with
+        # A = [[-(K2 + F1), F1], [F2, -(K2 + F2)]]
+        self.Inv11 = np.empty_like(self.K2, dtype=np.complex128)
+        self.Inv12 = np.empty_like(self.K2, dtype=np.complex128)
+        self.Inv21 = np.empty_like(self.K2, dtype=np.complex128)
+        self.Inv22 = np.empty_like(self.K2, dtype=np.complex128)
+        K2 = self.K2
+        a = -(K2 + self.F1)
+        b = self.F1
+        c = self.F2
+        d = -(K2 + self.F2)
+        # det = (K2+F1)(K2+F2) - F1 F2 = K2 (K2 + F1 + F2)
+        det = K2 * (K2 + self.F1 + self.F2)
+        mask0 = (K2 == 0.0) | (~np.isfinite(det))
+        det_safe = np.where(mask0, 1.0, det)
+        self.Inv11 = d / det_safe
+        self.Inv12 = -b / det_safe
+        self.Inv21 = -c / det_safe
+        self.Inv22 = a / det_safe
+        # Zero out singular/non-finite modes explicitly (incl. k=0)
+        self.Inv11[mask0] = 0.0
+        self.Inv12[mask0] = 0.0
+        self.Inv21[mask0] = 0.0
+        self.Inv22[mask0] = 0.0
+
+        # Initial condition: small baroclinic perturbations in PV (safer than psi noise)
+        rng = np.random.default_rng(42)
+        amp = 1e-8  # tiny PV amplitude
+        self.q1 = amp * rng.standard_normal((p.Ny, p.Nx))
+        self.q2 = -amp * rng.standard_normal((p.Ny, p.Nx))
+        # remove means
+        self.q1 -= self.q1.mean(); self.q2 -= self.q2.mean()
+
+        # Precompute sponge mask near y boundaries
+        self.sponge = self._make_sponge()
+
+        # Forcing pattern (upper layer Ekman pumping -> PV tendency f0/H1 * w_E)
+        self.forc1 = self._make_ekman_forcing()
+
+    # ----- Operators -----
+    def q_from_psi(self, psi1: np.ndarray, psi2: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """Compute PV from streamfunctions (excluding the beta*y piece)."""
+        psi1_hat = fft.rfft2(psi1)
+        psi2_hat = fft.rfft2(psi2)
+        lap_psi1 = fft.irfft2(-(self.K2) * psi1_hat, s=psi1.shape)
+        lap_psi2 = fft.irfft2(-(self.K2) * psi2_hat, s=psi2.shape)
+        q1 = lap_psi1 + self.F1 * (psi2 - psi1)
+        q2 = lap_psi2 + self.F2 * (psi1 - psi2)
+        return q1, q2
+
+    def psi_from_q(self, q1: np.ndarray, q2: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """Invert spectral system to obtain (psi1, psi2) from (q1, q2).
+        Enforce zero-mean streamfunction by zeroing k=0 PV.
+        """
+        q1_hat = fft.rfft2(q1)
+        q2_hat = fft.rfft2(q2)
+        q1_hat[0, 0] = 0.0
+        q2_hat[0, 0] = 0.0
+        psi1_hat = self.Inv11 * q1_hat + self.Inv12 * q2_hat
+        psi2_hat = self.Inv21 * q1_hat + self.Inv22 * q2_hat
+        psi1 = fft.irfft2(psi1_hat, s=q1.shape)
+        psi2 = fft.irfft2(psi2_hat, s=q2.shape)
+        return psi1, psi2
+
+     -> np.ndarray:
+        a_hat = fft.rfft2(a)
+        # sanitize spectrum
+        a_hat[~np.isfinite(a_hat)] = 0.0
+        a_hat[0, 0] = 0.0  # no action at k=0
+        out_hat = -(self.p.nu8) * (self.K2**4) * a_hat
+        out_hat[~np.isfinite(out_hat)] = 0.0
+        return fft.irfft2(out_hat, s=a.shape) -> np.ndarray:
+        a_hat = fft.rfft2(a)
+        a_hat[0, 0] = 0.0  # no action at k=0 to avoid invalid ops
+        return fft.irfft2(-(self.p.nu8) * (self.K2**4) * a_hat, s=a.shape)
+
+    def _make_sponge(self) -> np.ndarray:
+        """Meridional sponge damper to mimic channel walls (damps anomalies near y=0, Ly)."""
+        y = self.Y[:, 0]
+        w = self.p.sponge_width
+        s = np.zeros_like(y)
+        # cosine taper within width w from both boundaries
+        left = y <= w
+        right = (self.p.Ly - y) <= w
+        if left.any():
+            s[left] = 0.5 * (1 + np.cos(np.pi * (y[left] / w)))
+        if right.any():
+            s[right] = np.maximum(s[right], 0.5 * (1 + np.cos(np.pi * ((self.p.Ly - y[right]) / w))))
+        S = np.tile(s[:, None], (1, self.p.Nx))
+        return S / self.p.sponge_tau
+
+    def _make_ekman_forcing(self) -> np.ndarray:
+        """Gentle Ekman pumping to avoid blow‑ups.
+        Use a small amplitude and large‑scale meridional mode.
+        """
+        w0 = 2.0e-6  # m s^-1 (much smaller than before)
+        wE = w0 * np.sin(2*np.pi * self.Y / self.p.Ly)
+        return (self.p.f0 / self.p.H1) * wE
+
+        lap1_hat = -self.K2 * psi1_hat
+        lap2_hat = -self.K2 * psi2_hat
+        lap1_hat[~np.isfinite(lap1_hat)] = 0.0
+        lap2_hat[~np.isfinite(lap2_hat)] = 0.0
+        fric1 = -self.p.r1 * fft.irfft2(lap1_hat, s=psi1.shape)
+        fric2 = -self.p.r2 * fft.irfft2(lap2_hat, s=psi2.shape)
+        diff1 = self.hyperdiffuse(q1)
+        diff2 = self.hyperdiffuse(q2)
+
+        # Sponge
+        sponge1 = -self.sponge * q1
+        sponge2 = -self.sponge * q2
+
+        # Forcing (upper layer only)
+        forc1 = self.forc1
+        forc2 = 0.0
+
+        dq1dt = -(J1 + beta_term1) + fric1 + diff1 + forc1 + sponge1
+        dq2dt = -(J2 + beta_term2) + fric2 + diff2 + forc2 + sponge2
+        # sanitize tendencies to avoid propagation of non-finites
+        dq1dt = np.where(np.isfinite(dq1dt), dq1dt, 0.0)
+        dq2dt = np.where(np.isfinite(dq2dt), dq2dt, 0.0)
+        return dq1dt, dq2dt
+
+    # ----- Time integration (RK4) -----
+    def step(self, q1: np.ndarray, q2: np.ndarray, dt: float) -> tuple[np.ndarray, np.ndarray]:
+        k1_1, k1_2 = self.tendencies(q1, q2)
+        k2_1, k2_2 = self.tendencies(q1 + 0.5*dt*k1_1, q2 + 0.5*dt*k1_2)
+        k3_1, k3_2 = self.tendencies(q1 + 0.5*dt*k2_1, q2 + 0.5*dt*k2_2)
+        k4_1, k4_2 = self.tendencies(q1 + dt*k3_1, q2 + dt*k3_2)
+        q1_new = q1 + (dt/6.0) * (k1_1 + 2*k2_1 + 2*k3_1 + k4_1)
+        q2_new = q2 + (dt/6.0) * (k1_2 + 2*k2_2 + 2*k3_2 + k4_2)
+        # Stabilizing spectral filter (very mild) to kill grid‑scale noise
+        def spec_filter(a):
+            a_hat = fft.rfft2(a)
+            K = np.sqrt(self.K2)
+            Kxmax = np.max(self.kx)
+            Kymax = np.max(np.abs(self.ky))
+            Kmax = np.sqrt(Kxmax**2 + Kymax**2)
+            alpha = 18.0
+            filt = np.exp(-alpha * (K / (0.65*Kmax))**8)
+            return fft.irfft2(a_hat * filt, s=a.shape)
+        q1_new = spec_filter(q1_new)
+        q2_new = spec_filter(q2_new)
+        # Zero PV means (avoid drift of k=0)
+        q1_new -= q1_new.mean(); q2_new -= q2_new.mean()
+        return q1_new, q2_new
+
+    def integrate(self):
+        p = self.p
+        q1, q2 = self.q1.copy(), self.q2.copy()
+
+        snap_t = []
+        snap_psi1 = []
+        snap_psi2 = []
+
+        for n in range(p.nsteps+1):
+            if n % p.save_every == 0:
+                psi1, psi2 = self.psi_from_q(q1, q2)
+                snap_t.append(n * p.dt / (24*3600))  # days
+                snap_psi1.append(psi1.copy())
+                snap_psi2.append(psi2.copy())
+                print(f"step {n:6d}/{p.nsteps}  t = {snap_t[-1]:7.2f} days")
+            q1, q2 = self.step(q1, q2, p.dt)
+            # Basic NaN/Inf guard
+            if not np.isfinite(q1).all() or not np.isfinite(q2).all():
+                raise FloatingPointError("Detected non-finite values in state (reduce dt, increase diffusion, or check forcing).")
+
+        return np.array(snap_t), np.array(snap_psi1), np.array(snap_psi2)
+
+
+# -------------------------
+# Run a demo and plot
+# -------------------------
+if __name__ == "__main__":
+    p = QGParams(
+        Nx=192, Ny=97, Lx=4.0e6, Ly=2.0e6,
+        f0=1.0e-4, beta=1.6e-11, H1=500.0, H2=3500.0, gprime=0.02,
+        U1=2.0, U2=0.0, r1=3.0e-7, r2=1.2e-6, nu8=3.0e10,
+        dt=60.0, nsteps=4000, save_every=200,
+        sponge_tau=2.0*24*3600.0, sponge_width=3.0e5,
+    )
+
+    model = TwoLayerQG(p)
+    t_days, psi1_hist, psi2_hist = model.integrate()
+
+    # Quick visualization of last snapshot
+    psi1 = psi1_hist[-1]
+    psi2 = psi2_hist[-1]
+
+    fig, axs = plt.subplots(1, 2, figsize=(11, 4), constrained_layout=True)
+    im0 = axs[0].contourf(model.x/1e6, model.y/1e6, psi1/1e5, levels=21)
+    axs[0].set_title(r"$\psi_1$ (×1e5 m$^2$ s$^{-1}$)")
+    axs[0].set_xlabel("x (10^6 m)"); axs[0].set_ylabel("y (10^6 m)")
+    fig.colorbar(im0, ax=axs[0])
+
+    im1 = axs[1].contourf(model.x/1e6, model.y/1e6, psi2/1e5, levels=21)
+    axs[1].set_title(r"$\psi_2$ (×1e5 m$^2$ s$^{-1}$)")
+    axs[1].set_xlabel("x (10^6 m)"); axs[1].set_ylabel("y (10^6 m)")
+    fig.colorbar(im1, ax=axs[1])
+
+    plt.show()
+
+------------------
+
+
+[0;36m  File [0;32m<tokenize>:183[0;36m[0m
+[0;31m    -> np.ndarray:[0m
+[0m    ^[0m
+[0;31mIndentationError[0m[0;31m:[0m unindent does not match any outer indentation level
+
+
